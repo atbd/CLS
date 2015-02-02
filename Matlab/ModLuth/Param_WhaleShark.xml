@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Fichier avec les parametres par defaut -->
+<parametres>
+    <lovi> 
+	<!-- Vitesse maximal en m/s-->
+        <vitesse_max>1.4</vitesse_max>  
+    </lovi>
+</parametres>
+
+
+
+
+
+

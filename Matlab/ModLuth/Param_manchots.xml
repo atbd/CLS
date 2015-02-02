@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Fichier avec les parametres par defaut -->
+<parametres>
+    <lovi> 
+	<!-- Vitesse maximal en m/s-->
+        <vitesse_max>2</vitesse_max>  
+    </lovi>
+	<redi>
+		<!-- pas de rediscretisation (s)-->
+		<pas_redisc>7200</pas_redisc>
+	</redi>
+
+</parametres>
+
+
+
+
+
+

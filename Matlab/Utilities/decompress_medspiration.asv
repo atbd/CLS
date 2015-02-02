@@ -1,0 +1,16 @@
+function decompress_medspiration(inputDir)
+
+cdir = pwd;
+
+if inputDir(end) ~= '\' && inputDir(end) ~= '/' 
+    inputDir(end+1) = '\';
+end
+
+listidirs = dir(indir);
+
+for i=1:length(listidirs)
+   cd ([inputDir listdirs(i).name])
+   dos('IZARCE  *.bz2');
+   cd (cdir);
+end
+

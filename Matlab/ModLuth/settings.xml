@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+   <inputDir>C:\temp\track_luth\TOPP\diag</inputDir>
+   <outputDir>C:\temp\track_luth\TOPP\epan_8h</outputDir>
+   <paramFile>C:\Documents and Settings\bcalmettes\Mes documents\DEV\MATLAB\ModLuth\Param_luth_8h.xml</paramFile>
+</settings>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Fichier avec les parametres par defaut -->
+<parametres>
+    <lovi>
+	<!-- Vitesse maximal de la tortue  en m/s-->
+        <vitesse_max>2.8</vitesse_max>  
+    </lovi>
+	<redi>
+		<!-- pas de rediscretisation (s)-->
+		<pas_redisc>10800</pas_redisc>
+	</redi>
+    <epan>
+		<!-- pourcentage de points a conserver -->
+		<ecart_max_pourcentage>95</ecart_max_pourcentage>
+		<!-- intervale en secondes pour l'estimation -->
+		<periode>10800</periode>
+		<!-- nombre minimal de points dans la fenetre pou l'estimation 1  -->
+		<min_estim1>5</min_estim1> 
+		<!-- nombre minimal de points dans la fenetre pou l'estimation 2  -->
+		<min_estim2>5</min_estim2> 
+		<!-- taille minimale de la demifenetre pour l'estimation 1 -->
+		<demi_fenetre_min_estim1>43200</demi_fenetre_min_estim1> 
+		<!-- taille maximale de la demifenetre pour l'estimation 1 -->
+		<demi_fenetre_max_estim1>86400</demi_fenetre_max_estim1> 
+		<!-- taille minimale de la demifenetre pourl'estimation 2 -->
+		<demi_fenetre_min_estim2>86400</demi_fenetre_min_estim2> 
+		<!-- taille maximale de la demifenetre pour l'estimation 2 -->
+		<demi_fenetre_max_estim2>86400</demi_fenetre_max_estim2> 
+		<!-- nombre miniale de points pour la demifenetre pour l'estimation 1 -->
+		<nb_pt_demi_fenetre_estim1>2</nb_pt_demi_fenetre_estim1> 
+		<!-- nombre miniale de points pour la demifenetre pour l'estimation 2 -->
+		<nb_pt_demi_fenetre_estim2>2</nb_pt_demi_fenetre_estim2> 
+    </epan>
+    <kalm>
+		<!--  Loc accuracies (core - km) -->
+		<locAccuracy>[1,0.7,0.2,1.5,0.5,0.2,0.1]</locAccuracy>
+		<!-- Regularization time step (hours) -->
+		<TimeStep>6</TimeStep>
+		<!-- diffusive coefficent for the animal's mouvement -->
+		<D>500</D>
+		<!-- Multiplicative factor for the tail -->
+		<rho>100</rho>
+		<!-- Core probability -->
+		<p0>0.9</p0>
+    </kalm>
+	<ksim>
+		<loc_err>[NaN,700,200,1500,500,200,100]</loc_err>
+		<lat_ini>18</lat_ini>
+		<lon_ini>-65</lon_ini>
+		<moy_alpha_ini>75</moy_alpha_ini>
+		<ecarttype_alpha_ini>30</ecarttype_alpha_ini>
+		<moy_vit_ini>0.7</moy_vit_ini>
+		<ecarttype_v_ini>0.03</ecarttype_v_ini>
+	</ksim>
+	
+</parametres>
+
+
+
+
+
+

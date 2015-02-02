@@ -1,0 +1,30 @@
+function diag2themis(diagFile, themisFile)
+
+diagFile =  'C:\Data\DEPE\Originales\DIAG\25532.diag'
+addpath('..\RWFormats')
+[res, balise, reference, readData] = readDiag (diagFile);
+
+readData(find(readData(:,3)==-9) ,:) =[];
+readData(:,9)=0;
+inData = correction_mat_choix_loc(readData);
+
+for i=1:size(inData,1)
+   outData(i,1:6)= datevec(datestr(datenum('01-01-1950')+inData(i,1) + inData(i,2)/24/60/60));
+end
+
+outData(:,7:8)=inData(:,5:6);
+
+str ='';
+for i=1:size(outData,1)
+    str_h=num2str(outData(i,4))
+    if outData(i,4)<10; str_d=['0' str_d]; end;
+    str_m=num2str(outData(i,5))
+    if outData(i,5)<10; str_d=['0' str_m]; end;
+    str_s=num2str(outData(i,6))
+    if outData(i,6)<10; str_s=['0' str_s]; end;
+    
+    sprintf('%s%d/%d/%d %s%s%s; %3.3f;%3.3f;G;',...
+             outData(i,1),outData(i,2),outData(i,3), ...
+             );
+end
+return

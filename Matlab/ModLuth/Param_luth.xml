@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Fichier avec les parametres par defaut -->
+<parametres>
+    <lovi>
+	<!-- Vitesse maximal de la tortue  en m/s-->
+        <vitesse_max>2.8</vitesse_max>  
+    </lovi>
+	<redi>
+		<!-- pas de rediscretisation (s)-->
+		<pas_redisc>3600</pas_redisc>
+	</redi>
+    <epan>
+		<!-- pourcentage de points a conserver -->
+		<ecart_max_pourcentage>95</ecart_max_pourcentage>
+		<!-- intervale en secondes pour l'estimation -->
+		<periode>10800</periode>
+		<!-- nombre minimal de points dans la fenetre pou l'estimation 1  -->
+		<min_estim1>5</min_estim1> 
+		<!-- nombre minimal de points dans la fenetre pou l'estimation 2  -->
+		<min_estim2>5</min_estim2> 
+		<!-- taille minimale de la demifenetre pour l'estimation 1 -->
+		<demi_fenetre_min_estim1>43200</demi_fenetre_min_estim1> 
+		<!-- taille maximale de la demifenetre pour l'estimation 1 -->
+		<demi_fenetre_max_estim1>86400</demi_fenetre_max_estim1> 
+		<!-- taille minimale de la demifenetre pourl'estimation 2 -->
+		<demi_fenetre_min_estim2>86400</demi_fenetre_min_estim2> 
+		<!-- taille maximale de la demifenetre pour l'estimation 2 -->
+		<demi_fenetre_max_estim2>86400</demi_fenetre_max_estim2> 
+		<!-- nombre miniale de points pour la demifenetre pour l'estimation 1 -->
+		<nb_pt_demi_fenetre_estim1>2</nb_pt_demi_fenetre_estim1> 
+		<!-- nombre miniale de points pour la demifenetre pour l'estimation 2 -->
+		<nb_pt_demi_fenetre_estim2>2</nb_pt_demi_fenetre_estim2> 
+    </epan>
+</parametres>
+
+
+
+
+
+

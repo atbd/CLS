@@ -1,0 +1,24 @@
+[N T C]= xlsread('C:\Documents and Settings\bcalmettes\Mes documents\DOC\LightTrack\Old tags\tag lost 1998-2005_completed.xls');
+
+DSdir = 'W:\OCEANO\Pour Calmettes\DS\';
+DIAGdir = 'W:\OCEANO\Pour Calmettes\DIAG\';
+
+tags =cell2mat( C(4:end,2));
+initday = C(4:end,3 );
+
+
+for (i=1:length(tags))
+    tag = num2str(tags(i));
+    fname = [DSdir tag '.DS'];
+    if (exist(fname))  
+        [ds_nbdays(i,1) days]=GetDSDays(fname, initday(i));
+        if(isempty(days))
+              ds_popoff{i,:} = ' ';
+        else
+            ds_popoff{i,:} = days(1,:);
+        end
+    else
+        dsnbdays(i,1)=0;
+        ds_popoff(i,:)={' '};
+    end
+end

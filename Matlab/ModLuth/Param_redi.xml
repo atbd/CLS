@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Fichier avec les parametres par defaut -->
+<parametres>
+    <lovi> 
+	<!-- Vitesse maximal en m/s-->
+        <vitesse_max>100000</vitesse_max>  
+    </lovi>
+	<redi>
+		<!-- pas de rediscretisation (s)-->
+		<pas_redisc>10800</pas_redisc>
+	</redi>
+    <epan>
+		<!-- pourcentage de points a conserver -->
+		<ecart_max_pourcentage>95</ecart_max_pourcentage>
+		<!-- intervale en secondes pour l'estimation -->
+    </epan>
+</parametres>
+
+
+
+
+
+
