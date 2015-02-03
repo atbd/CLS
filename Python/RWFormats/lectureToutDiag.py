@@ -3,7 +3,7 @@
 
 def lectureToutDiag(pathDiagFile, liste):
 # pathDiagFile est le chemin d'accès au fichier .DIAG
-# data est un dictionnaire vide qui contiendra les données d'une
+# data est un dictionnaire qui contiendra les données d'une
 #   seul transmission
 # liste contiendra tous les dictionnaires
 
@@ -11,19 +11,19 @@ def lectureToutDiag(pathDiagFile, liste):
 
         data = {}
         
-        for num, line in enumerate(f,1):
+        for (num, line) in enumerate(f,1):
             if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
 
                 tmp = line.strip()
                 k = filter(None, tmp.split(" "))
 
-                if k == []:
+                if k == []:     # on évite les lignes vides
                     continue
                 
                 k = [w for w in k if w != ":"]
 
                 if (k[0].isdigit()):  
-                    data["num"] = k[0]
+                    #data["num"] = k[0]
                     data["date"] = k[2]
                     data["heure"] = k[3]
                     data["LC"] = k[4]
@@ -55,19 +55,27 @@ def lectureToutDiag(pathDiagFile, liste):
                 data = {}
 
 
+def lectureDossierDiag(folderPath, viveLesLuth):
+# viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant 
+# de l'émetteur, contiendra la liste correspondante (générée par lectureToutDiag())
+#
+# folderPath est le chemin du répertoire contenant tous les .DIAG 
+# NB : ne pas oublier le "/" à la fin de folderPath
 
-path = "../../DIAG/10249.DIAG"
-#path = "./test.DIAG"
-l = []
+    from os import listdir
 
-lectureToutDiag(path,l)
+    diagFiles = listdir(folderPath)
+    print(diagFiles)
 
-print(len(l))
-#print(l)
+    for (num, files) in enumerate(diagFiles,1):
+        
+        filePath = folderPath + diagFiles[num-1]
+        tmp = []
+        lectureToutDiag(filePath, tmp)
 
+        identifiant = diagFiles[num-1].split(".")[0]
 
-
-
+        viveLesLuth[identifiant] = tmp
 
 
 
