@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
 
+#####################################################
+#####################################################
+                ### PARTIE LECTURE ###
+#####################################################
+#####################################################
+
 def lectureToutDiag(pathDiagFile, liste):
 # pathDiagFile est le chemin d'accès au fichier .DIAG
 # data est un dictionnaire qui contiendra les données d'une
@@ -37,7 +43,7 @@ def lectureToutDiag(pathDiagFile, liste):
 
                 elif tmp.startswith("Nb"):
                     data["nbrMess"] = k[2]
-                    data["db"] = k[4].split(">")[1]
+                    data["nbMessSupp120dB"] = k[5]
                     data["bestdb"] = k[8]
 
                 elif tmp.startswith("Pass"):
@@ -78,11 +84,38 @@ def lectureDossierDiag(folderPath, viveLesLuth):
         viveLesLuth[identifiant] = tmp
 
 
+#####################################################
+#####################################################
+                ### PARTIE ÉCRITURE ###
+#####################################################
+#####################################################
 
 
+def ecritureUneTransmission(data): # pas encore testé
 
+""" data doit contenir :
+        - l'identifiant, date, heure, LC et IQ
+        - lat1, lat2, lon1, lon2
+        - nbr message + >120dB + bestLevel
+        - Pass duration et NOPC
+        - freq et altitude
+        - autres chiffres ?
+"""
+    firstLine = " %d  Date : %s %s  LC : %d  IQ : %d \n" % (data["identifiant"], data["date"], data["heure"], data["LC"], data["IQ"])
 
+    secondLine = "      Lat1 : %s  Lon1 : %s  Lat2 : %s  Lon2 : %s \n" % (data["lat1"], data["lon1"], data["lat2"], data["lon2"])
 
+    thirdLine = "      Nb mes : %d  Nb mes>-120dB : %d  Best level : %d dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdb"])
+
+    fourthLine = "      Pass duration : %ds  NOPC : %d\n" % (data["passDuration"], data["NOPC"])
+    
+    fifthLine = "      Calcul freq : %s Hz   Altitude :   %d m\n" % (data["freq"], data["altitude"])
+    
+    sixthLine = "                 00          00          00          00\n" # sais pas encore
+    
+    total = "\n" + firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine
+
+    return total
 
 
 
