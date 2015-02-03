@@ -20,12 +20,12 @@ def lectureToutDiag(pathDiagFile, liste):
                 if k == []:
                     continue
                 
-                k = [w for w in k if not ":" in w]
+                k = [w for w in k if w != ":"]
 
                 if (k[0].isdigit()):  
                     data["num"] = k[0]
                     data["date"] = k[2]
-                    #data["heure"] = k[5] ; si on la veut enlever filtrage de ":"
+                    data["heure"] = k[3]
                     data["LC"] = k[4]
                     data["IQ"] = k[6]
 
@@ -63,7 +63,7 @@ l = []
 lectureToutDiag(path,l)
 
 print(len(l))
-
+#print(l)
 
 
 
