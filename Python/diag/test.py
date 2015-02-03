@@ -1,43 +1,98 @@
+#!/usr/bin/python
 # -*-coding:utf-8 -*
 
-# Lecture des .DIAG
-# data = dictionnaire avec les données
+def lectureToutDiag(pathDiagFile, liste):
+# pathDiagFile est le chemin d'accès au fichier .DIAG
+# data est un dictionnaire vide qui contiendra les données d'une
+#   seul transmission
+# liste contiendra tous les dictionnaires
 
-def lectureUnDiag(diagFile, data):
-    # with open(pathDiagFile,"r") as diagFile:
-    # cette ligne pour la fct "lectureToutDiag()"
+    with open(pathDiagFile, "r") as f:
 
-    # Première ligne est juste "/r/n"
-    diagFile.seek(2,1)
+        data = {}
+        
+        for num, line in enumerate(f,1):
+            if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
 
-    # Chaque loc est composé de 6 lignes
-    for line in range(6):
+                tmp = line.strip()
+                k = filter(None, tmp.split(" "))
 
-        tmp = diagFile.readline().split(" ")
+                if k == []:
+                    continue
+                
+                k = [w for w in k if not ":" in w]
 
-        if line == 0:
-            data["num"] = tmp[1]
-            data["date"] = tmp[5]
-            data["heure"] = tmp[6]
-            data["LC"] = tmp[10]
-            data["IQ"] = tmp[14]
-        elif line == 1:
-            data["lat1"] = tmp[9]
-            data["lon1"] = tmp[14]
-            data["lat2"] = tmp[19]
-            data["lon2"] = tmp[24]
-        elif line == 2:
-            data["nbrMess"] = tmp[9]
-            data["db"] = tmp[12].split(">")[1]
-            data["bestdb"] = tmp[19]
-        elif line == 3:
-            data["passDuration"] = tmp[9]
-            data["NOPC"] = tmp[14]
-        elif line == 4:
-            data["freq"] = tmp[9] + tmp[10]
-            data["altitude"] = tmp[19]
-        else:
-            continue
+                if (k[0].isdigit()):  
+                    data["num"] = k[0]
+                    data["date"] = k[2]
+                    #data["heure"] = k[5] ; si on la veut enlever filtrage de ":"
+                    data["LC"] = k[4]
+                    data["IQ"] = k[6]
+
+                elif tmp.startswith("Lat"):
+                    data["lat1"] = k[1]
+                    data["lon1"] = k[3]
+                    data["lat2"] = k[5]
+                    data["lon2"] = k[7]
+
+                elif tmp.startswith("Nb"):
+                    data["nbrMess"] = k[2]
+                    data["db"] = k[4].split(">")[1]
+                    data["bestdb"] = k[8]
+
+                elif tmp.startswith("Pass"):
+                    data["passDuration"] = k[2]
+                    data["NOPC"] = k[4]
+
+                elif tmp.startswith("Calcul"):
+                    data["freq"] = k[2] + k[3]
+                    data["altitude"] = k[6]
+                else:
+                    continue
+
+            else:
+                liste.append(data)
+                data = {}
 
 
-def lectureToutDiag(pathDiagFile):
+
+path = "../../DIAG/10249.DIAG"
+#path = "./test.DIAG"
+l = []
+
+lectureToutDiag(path,l)
+
+print(len(l))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
