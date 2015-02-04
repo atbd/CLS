@@ -50,7 +50,7 @@ def lectureToutDiag(pathDiagFile, liste):
                 elif tmp.startswith("Nb"):
                     data["nbrMess"] = k[2]
                     data["nbMessSupp120dB"] = k[5]
-                    data["bestdb"] = k[8]
+                    data["bestdB"] = k[8]
 
                 elif tmp.startswith("Pass"):
                     data["passDuration"] = k[2]
@@ -77,7 +77,6 @@ def lectureDossierDiag(folderPath, viveLesLuth):
     from os import listdir
 
     diagFiles = listdir(folderPath)
-    print(diagFiles)
 
     for (num, files) in enumerate(diagFiles,1):
         
@@ -111,7 +110,7 @@ def ecritureUneTransmission(data): # pas encore testé
 
     secondLine = "      Lat1 : %s  Lon1 : %s  Lat2 : %s  Lon2 : %s \n" % (data["lat1"], data["lon1"], data["lat2"], data["lon2"])
 
-    thirdLine = "      Nb mes : %s  Nb mes>-120dB : %s  Best level : %s dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdb"])
+    thirdLine = "      Nb mes : %s  Nb mes>-120dB : %s  Best level : %s dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdB"])
 
     fourthLine = "      Pass duration : %ss  NOPC : %s\n" % (data["passDuration"], data["NOPC"])
     
