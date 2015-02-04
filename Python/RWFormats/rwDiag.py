@@ -7,6 +7,12 @@
 #####################################################
 #####################################################
 
+"""
+    Chaque Luth sera identifié dans le dictionnaire par son numero de balise et donnera accès à la liste de données.
+    Cette liste contiendra un dictionnaire pour chaque transmission, il contiendra :
+        - date, heure, LC, IQ, latitudes et longitudes, infos sur les messages, durée, NOPC, fréquence et altitude. 
+"""
+
 def lectureToutDiag(pathDiagFile, liste):
 # pathDiagFile est le chemin d'accès au fichier .DIAG
 # data est un dictionnaire qui contiendra les données d'une
@@ -93,7 +99,7 @@ def lectureDossierDiag(folderPath, viveLesLuth):
 
 def ecritureUneTransmission(data): # pas encore testé
 
-""" data doit contenir :
+""" data (dictionnaire) doit contenir :
         - l'identifiant, date, heure, LC et IQ
         - lat1, lat2, lon1, lon2
         - nbr message + >120dB + bestLevel
@@ -101,15 +107,15 @@ def ecritureUneTransmission(data): # pas encore testé
         - freq et altitude
         - autres chiffres ?
 """
-    firstLine = " %d  Date : %s %s  LC : %d  IQ : %d \n" % (data["identifiant"], data["date"], data["heure"], data["LC"], data["IQ"])
+    firstLine = " %s  Date : %s %s  LC : %s  IQ : %s \n" % (data["identifiant"], data["date"], data["heure"], data["LC"], data["IQ"])
 
     secondLine = "      Lat1 : %s  Lon1 : %s  Lat2 : %s  Lon2 : %s \n" % (data["lat1"], data["lon1"], data["lat2"], data["lon2"])
 
-    thirdLine = "      Nb mes : %d  Nb mes>-120dB : %d  Best level : %d dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdb"])
+    thirdLine = "      Nb mes : %s  Nb mes>-120dB : %s  Best level : %s dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdb"])
 
-    fourthLine = "      Pass duration : %ds  NOPC : %d\n" % (data["passDuration"], data["NOPC"])
+    fourthLine = "      Pass duration : %ss  NOPC : %s\n" % (data["passDuration"], data["NOPC"])
     
-    fifthLine = "      Calcul freq : %s Hz   Altitude :   %d m\n" % (data["freq"], data["altitude"])
+    fifthLine = "      Calcul freq : %s Hz   Altitude :   %s m\n" % (data["freq"], data["altitude"])
     
     sixthLine = "                 00          00          00          00\n" # sais pas encore
     
@@ -119,7 +125,18 @@ def ecritureUneTransmission(data): # pas encore testé
 
 
 
+def ecritureDIAG(liste, nomFichier): # pas encore testé
 
+"""
+    Cette fonction écrira les données sous format ARGOS dans un .DIAG (nommé selon l'identifiant de la tortue).
+    liste est la liste contenant tous les dictionnaires de transmission.
+"""
+    fichier = "../../DIAG/" # voir comment ça se passe si on appelle la fonction depuis un autre .py dans un autre dossier. Si ça marche pas, mettre le chemin en argument.
+
+    with open(fichier + nomFichier, "w") as f:
+        for i in liste:
+            tmp = ecritureUneTransmission(liste[i])
+            f.write(tmp)
 
 
 
