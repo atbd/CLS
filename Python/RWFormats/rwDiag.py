@@ -67,24 +67,66 @@ def lectureToutDiag(pathDiagFile, liste):
                 data = {}
 
 
-def lectureDossierDiag(folderPath, viveLesLuth):
+def lectureUnCSV(pathCSVFile, liste): # pas encore testé
+    """
+        pathCSVFile = chemin d'accès au fichier CSV
+        liste = contient les dictionnaires contenant les données d'une transmission
+    """
+    import csv
+
+    #name = pathCSVFile.split("/")[-1].split("-")[0]
+
+    with open("pathCSVFile", "r") as txt:
+        f = csv.reader(txt)
+
+        for row in f:   # voir encadrant pour info sur ceux commentés + les données dans CSV que j'ai pas pris
+            
+            data = {}
+            
+            row = filter(None, row)
+            
+            data["date"] = row[1]
+            data["heure"] = row[2]
+            #data["LC"] = 
+            #data["IQ"] = 
+            data["lat1"] = row[9]
+            data["lon1"] = row[10]
+            data["lat2"] = row[12]
+            data["lon2"] = row[13]
+            data["nbrMess"] = row[3]
+            #data["nbMessSupp120dB"] = 
+            #data["bestdB"] = 
+            data["passDuration"] = row[4] # time Offset ?
+            #data["NOPC"] = 
+            #data["freq"] = 
+            #data["altitude"] = 
+
+            liste.append(data)
+
+
+def lectureDossier(folderPath, viveLesLuth, choix):
     # viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant 
     # de l'émetteur, contiendra la liste correspondante (générée par lectureToutDiag())
     #
     # folderPath est le chemin du répertoire contenant tous les .DIAG 
     # NB : ne pas oublier le "/" à la fin de folderPath
+    #
+    # choix pour le type de fichier
 
     from os import listdir
 
-    diagFiles = listdir(folderPath)
+    Files = listdir(folderPath)
 
-    for (num, files) in enumerate(diagFiles,1):
+    for (num, files) in enumerate(Files,1):
         
-        filePath = folderPath + diagFiles[num-1]
+        filePath = folderPath + Files[num-1]
         tmp = []
         lectureToutDiag(filePath, tmp)
 
-        identifiant = diagFiles[num-1].split(".")[0]
+        if choix == "diag":
+            identifiant = Files[num-1].split(".")[0]
+        elif choix == "csv":
+            identifiant = Files[num-1].split("-")[0]
 
         viveLesLuth[identifiant] = tmp
 
