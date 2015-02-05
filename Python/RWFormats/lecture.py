@@ -17,7 +17,6 @@ def lectureToutDS(pathDSFile, liste):
 
 	with open(pathDSFile,"r") as f:
 
-		data = {}
 		for line in f:
 			k = filter(None,line.split(" "))
 
@@ -25,15 +24,16 @@ def lectureToutDS(pathDSFile, liste):
 				continue
 
 			if len(k) >= 10:
+				data = {}
 				data["LC"] = k[4]
 				data["date"] = k[6]
 				data["heure"] = k[7]
 				data["lat"] = k[8]
 				data["lon"] = k[9]
-				data["freq"] = k[11]
-			else:
+				data["freq"] = k[11][:9]
 				liste.append(data)
-				data = {}
+			else:
+				continue
 
 def lectureToutDiag(pathDiagFile, liste):
     """
