@@ -15,22 +15,22 @@
 
 def lectureToutDS(pathDSFile, liste):
 
-	with open(pathDSFile,"r") as f
+	with open(pathDSFile,"r") as f:
 
 		data = {}
 		for line in f:
 			k = filter(None,line.split(" "))
 
-			if k == [] #on évite les lignes vides
+			if k == []: #on évite les lignes vides
 				continue
 
 			if len(k) >= 10:
-				data["LC"] = k[5]
-				data["date"] = k[7]
-				data["heure"] = k[8]
-				data["lat"] = k[9]
-				data["lon"] = k[10]
-				data["freq"] = k[12]
+				data["LC"] = k[4]
+				data["date"] = k[6]
+				data["heure"] = k[7]
+				data["lat"] = k[8]
+				data["lon"] = k[9]
+				data["freq"] = k[11]
 			else:
 				liste.append(data)
 				data = {}
@@ -171,7 +171,10 @@ def lectureDossier(folderPath, viveLesLuth):
 
 
 
-
+liste = []
+path = "../../tortues/DS/119846.DS"
+lectureToutDS(path, liste)
+print(liste)
 
 
 
