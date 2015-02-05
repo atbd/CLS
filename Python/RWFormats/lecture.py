@@ -13,6 +13,28 @@
         - date, heure, LC, IQ, latitudes et longitudes, infos sur les messages, durée, NOPC, fréquence et altitude. 
 """
 
+def lectureToutDS(pathDSFile, liste):
+
+	with open(pathDSFile,"r") as f
+
+		data = {}
+		for line in f:
+			k = filter(None,line.split(" "))
+
+			if k == [] #on évite les lignes vides
+				continue
+
+			if len(k) >= 10:
+				data["LC"] = k[5]
+				data["date"] = k[7]
+				data["heure"] = k[8]
+				data["lat"] = k[9]
+				data["lon"] = k[10]
+				data["freq"] = k[12]
+			else:
+				liste.append(data)
+				data = {}
+
 def lectureToutDiag(pathDiagFile, liste):
     """
         # pathDiagFile est le chemin d'accès au fichier .DIAG
@@ -134,8 +156,8 @@ def lectureDossier(folderPath, viveLesLuth):
             identifiant = Files[num-1].split(".")[0]
 
         elif Format == "DS":
-            # à faire
-            continue
+            lectureToutDS(filePath,tmp)
+            identifiant = Files[num-1].split(".")[0]
 
         elif Format == "CSV":
             lectureUnCSV(filePath, tmp)
