@@ -25,9 +25,17 @@ def lectureToutDS(pathDSFile, liste):
 
 			if len(k) >= 10:
 				data = {}
+				dat = {}
 				data["LC"] = k[5]
-				data["date"] = k[6]
-				data["heure"] = k[7]
+				tmp = k[6].split("-")
+				tmp2 = k[7].split(":")
+				dat["annee"] = tmp[0]
+				dat["mois"] = tmp[1]
+				dat["jour"] = tmp[2]
+				dat["heure"] = tmp2[0]
+				dat["min"] = tmp2[1]
+				dat["sec"] = tmp2[2]
+				data["date"] = dat
 				data["lat"] = k[8]
 				data["lon"] = k[9]
 				data["freq"] = k[11][:9]
@@ -45,7 +53,7 @@ def lectureToutDiag(pathDiagFile, liste):
 
     with open(pathDiagFile, "r") as f:
 
-        data = {}
+        data,dat = {},{}
         
         for (num, line) in enumerate(f,1):
             if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
@@ -60,16 +68,35 @@ def lectureToutDiag(pathDiagFile, liste):
 
                 if (k[0].isdigit()):  
                     #data["num"] = k[0]
-                    data["date"] = k[2]
-                    data["heure"] = k[3]
-                    data["LC"] = k[4]
-                    data["IQ"] = k[6]
+					tmp = k[2].split(".")
+					tmp2 = k[3].split(":")
+					dat["annee"] = "20"+tmp[2]
+					dat["mois"] = tmp[1]
+					dat["jour"] = tmp[0]
+					dat["heure"] = tmp2[0]
+					dat["min"] = tmp2[1]
+					dat["sec"] = tmp2[2]
+					data["date"] = dat
+					data["LC"] = k[5]
+					data["IQ"] = k[7]
 
                 elif tmp.startswith("Lat"):
-                    data["lat1"] = k[1]
-                    data["lon1"] = k[3]
-                    data["lat2"] = k[5]
-                    data["lon2"] = k[7]
+					if k[1][-1] == "N":
+						data["lat1"] = k[1][:-1]
+					else:
+						data["lat1"] = "-"+k[1][:-1]
+					if k[3][-1] == "W":
+						data["lon1"] = k[3][:-1]
+					else:
+						data["lon1"] = "-"+k[3][:-1]
+					if k[5][-1] == "N":
+						data["lat2"] = k[5][:-1]
+					else:
+						data["lat2"] = "-"+k[5][:-1]
+					if k[7][-1] == "W":
+						data["lon2"] = k[7][:-1]
+					else:
+						data["lon2"] = "-"+k[7][:-1]
 
                 elif tmp.startswith("Nb"):
                     data["nbrMess"] = k[2]
@@ -88,7 +115,7 @@ def lectureToutDiag(pathDiagFile, liste):
 
             else:
                 liste.append(data)
-                data = {}
+                data,dat = {},{}
 
 
 def lectureUnCSV(pathCSVFile, liste): # pas encore testé
@@ -104,33 +131,61 @@ def lectureUnCSV(pathCSVFile, liste): # pas encore testé
         f = csv.reader(txt)
 
         for row in f:   # voir encadrant pour info sur ceux commentés + les données dans CSV que j'ai pas pris
-            
-            if row == [] or len(row) <= 15:
-                continue
-			
-            data = {}
-
-            row = filter(None, row)
-            
-            data["date"] = row[1]
-            data["heure"] = row[2]
+			row = filter(None, row)
+			if row == [] or len(row) <= 15 or row[0].startswith("Name"):
+				continue
+			data = {}
+			dat = {}
+			tmp = row[1].split("-")
+			tmp2 = row[2].split(":")
+			dat["annee"] = tmp[2]
+			mois = tmp[1].upper()
+			if mois == "JAN":
+				tmp[1] = "01"
+			elif mois == "FEB":
+				tmp[1] = "02"
+			elif mois == "MAR":
+				tmp[1] = "03"
+			elif mois == "APR":
+				tmp[1] = "04"
+			elif mois == "MAY":
+				tmp[1] = "05"
+			elif mois == "JUN":
+				tmp[1] = "06"
+			elif mois == "JUL":
+				tmp[1] = "07"
+			elif mois == "AUG":
+				tmp[1] = "08"
+			elif mois == "SEP":
+				tmp[1] = "09"
+			elif mois == "OCT.":
+				tmp[1] = "10"
+			elif mois == "NOV":
+				tmp[1] = "11"
+			elif mois == "DEC":
+				tmp[1] = "12"
+			dat["mois"] = tmp[1]
+			dat["jour"] = tmp[0]
+			dat["heure"] = tmp2[0]
+			dat["min"] = tmp2[1]
+			dat["sec"] = tmp2[2]
+			data["date"] = dat
             #data["LC"] = 
             #data["IQ"] = 
-            data["lat1"] = row[9]
-            data["lon1"] = row[10]
-            data["lat2"] = row[12]
-            data["lon2"] = row[13]
-            data["nbrMess"] = row[3]
+			data["lat1"] = row[9]
+			data["lon1"] = row[10]
+			data["lat2"] = row[12]
+			data["lon2"] = row[13]
+			data["nbrMess"] = row[3]
             #data["nbMessSupp120dB"] = 
             #data["bestdB"] = 
-            data["passDuration"] = row[4] # time Offset ?
+			data["passDuration"] = row[4] # time Offset ?
             #data["NOPC"] = 
             #data["freq"] = 
-            #data["altitude"] = 
-
-            liste.append(data)
-
-
+            #data["altitude"] =  
+			liste.append(data)
+	
+	
 def lectureDossier(folderPath, viveLesLuth):
     """
         # viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant 
@@ -172,10 +227,9 @@ def lectureDossier(folderPath, viveLesLuth):
 
 
 liste = {}
-path = "../../tortues/CSV/"
+path = "../../tortues/DIAG/"
 lectureDossier(path, liste)
 print(liste)
-
 
 
 
