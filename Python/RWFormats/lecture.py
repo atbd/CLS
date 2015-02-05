@@ -100,14 +100,14 @@ def lectureUnCSV(pathCSVFile, liste): # pas encore testé
 
     #name = pathCSVFile.split("/")[-1].split("-")[0]
 
-    with open("pathCSVFile", "r") as txt:
+    with open(pathCSVFile, "r") as txt:
         f = csv.reader(txt)
 
         for row in f:   # voir encadrant pour info sur ceux commentés + les données dans CSV que j'ai pas pris
             
-            if row == []:
+            if row == [] or len(row) <= 15:
                 continue
-
+			
             data = {}
 
             row = filter(None, row)
@@ -172,8 +172,8 @@ def lectureDossier(folderPath, viveLesLuth):
 
 
 liste = []
-path = "../../tortues/DS/119846.DS"
-lectureToutDS(path, liste)
+path = "../../tortues/CSV/119846-FastGPS.csv"
+lectureUnCSV(path, liste)
 print(liste)
 
 
