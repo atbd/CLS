@@ -67,11 +67,12 @@ def convertDateToSecond(dictDate):
 	return (aConv - ref).total_seconds()
 
 
-def arrayOfTime():
+def convertArrayOfTime(arrayOfTime): # pas encore testé
 	"""
 		D'une liste de dictionnaire "dictDate" donnera une liste de temps en secondes (boucle de convertDateToSecond ?)
 	"""
 
+	return [convertDateToSecond(arrayOfTime[i]) for i in range(len(arrayOfTime))]
 
 
 
