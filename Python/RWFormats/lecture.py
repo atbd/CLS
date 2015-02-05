@@ -171,9 +171,9 @@ def lectureDossier(folderPath, viveLesLuth):
 
 
 
-liste = []
-path = "../../tortues/CSV/119846-FastGPS.csv"
-lectureUnCSV(path, liste)
+liste = {}
+path = "../../tortues/CSV/"
+lectureDossier(path, liste)
 print(liste)
 
 
