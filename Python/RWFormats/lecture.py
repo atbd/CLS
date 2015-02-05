@@ -25,7 +25,7 @@ def lectureToutDS(pathDSFile, liste):
 
 			if len(k) >= 10:
 				data = {}
-				data["LC"] = k[4]
+				data["LC"] = k[5]
 				data["date"] = k[6]
 				data["heure"] = k[7]
 				data["lat"] = k[8]
