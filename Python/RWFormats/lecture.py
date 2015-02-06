@@ -245,14 +245,11 @@ def lectureDossier(folderPath):
 	return viveLesLuth
 
 
-<<<<<<< HEAD
-liste = {}
-path = "../../tortues/CSV/"
-lectureDossier(path, liste)
-print(liste)
 
-=======
->>>>>>> f478118bb697c6e4cb74f1a013ab7bda9b18f5a7
+path = "../../tortues/CSV/"
+print(lectureDossier(path))
+
+
 
 
 
