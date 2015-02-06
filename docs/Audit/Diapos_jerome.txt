@@ -1,0 +1,40 @@
+présentation CLS
+	diapo 1
+		image = http://upload.wikimedia.org/wikipedia/fr/3/3d/Logo_cls.JPG
+		CLS = Collecte Localisation Satellites
+		filiale du CNES, de l'IFREMER, et de la société d'investissement ARDIAN
+		c'est un opérateur de systèmes satellitaires et fournisseur de produits et services à la valeur ajoutée depuis 1986
+	diapo 2		
+		image = http://www.cls.fr/files/standard/public/p3_41d79505428bd1af01f69df6765ff1cdimage-illus-groupe.jpg
+		600 collabarateurs à travers le monde
+		opérant plus de 80 instruments embarqués sur près de 40 satellites
+		clients : gouvernements, organisations scientifiques, ONG, grands groupes industriels, ...
+		activités : localisation/collecte de données ; observation des océans ; surveillances des activités maritimes et terrestres ; géolocalisation de mobiles terrestres
+
+présentation projet
+	diapo 1
+		image = http://www.sundance.com/images/stories/argos%5B1%5D.jpg
+		Argos : 66 antennes terrestres et 7 satellites
+		suivi d'espèces menacées, notamment la tortue Luth
+		données anciennement traitées grâce à Matlab
+	diapo 2
+		de plus en plus de données à traiter    					      évolution des logiciels
+			                          \	 						/
+				 	           \                                                   /
+					            \						      /
+      					      recherche d'un outil plus puissant pour traiter les données
+									|
+									|
+									|
+		python : langage portable et puissant qui peut faire face à la majorité des problèmatiques rencontrées en programmation
+	diapo 3
+		durée du projet : 6 semaines
+		objectif majeur du projet : coder le code Matlab déjà existant en Python
+		objectifs facultatifs : interface graphique - filtrage de Kalman pour lisser les données - superposition de courbes
+		encadrant : Beatriz Calmettes
+		lieu : ENSEEIHT
+		
+présentation planning
+	diapo 1
+		image = image_Gantt.png
+		 
