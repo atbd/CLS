@@ -227,7 +227,7 @@ def lectureDossier(folderPath, viveLesLuth):
 
 
 liste = {}
-path = "../../tortues/DIAG/"
+path = "../../tortues/CSV/"
 lectureDossier(path, liste)
 print(liste)
 
