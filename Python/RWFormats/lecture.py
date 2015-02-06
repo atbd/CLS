@@ -13,7 +13,9 @@
         - date, heure, LC, IQ, latitudes et longitudes, infos sur les messages, durée, NOPC, fréquence et altitude. 
 """
 
-def lectureToutDS(pathDSFile, liste):
+def lectureToutDS(pathDSFile):
+
+	liste = []
 
 	with open(pathDSFile,"r") as f:
 
@@ -43,13 +45,19 @@ def lectureToutDS(pathDSFile, liste):
 			else:
 				continue
 
-def lectureToutDiag(pathDiagFile, liste):
+	return liste
+
+
+
+def lectureToutDiag(pathDiagFile):
     """
         # pathDiagFile est le chemin d'accès au fichier .DIAG
         # data est un dictionnaire qui contiendra les données d'une
         #   seul transmission
         # liste contiendra tous les dictionnaires
     """
+
+    liste = []
 
     with open(pathDiagFile, "r") as f:
 
@@ -81,18 +89,22 @@ def lectureToutDiag(pathDiagFile, liste):
 					data["IQ"] = k[7]
 
                 elif tmp.startswith("Lat"):
+
 					if k[1][-1] == "N":
 						data["lat1"] = k[1][:-1]
 					else:
 						data["lat1"] = "-"+k[1][:-1]
+
 					if k[3][-1] == "W":
 						data["lon1"] = k[3][:-1]
 					else:
 						data["lon1"] = "-"+k[3][:-1]
+
 					if k[5][-1] == "N":
 						data["lat2"] = k[5][:-1]
 					else:
 						data["lat2"] = "-"+k[5][:-1]
+
 					if k[7][-1] == "W":
 						data["lon2"] = k[7][:-1]
 					else:
@@ -117,8 +129,10 @@ def lectureToutDiag(pathDiagFile, liste):
                 liste.append(data)
                 data,dat = {},{}
 
+	return liste
 
-def lectureUnCSV(pathCSVFile, liste): # pas encore testé
+
+def lectureUnCSV(pathCSVFile): # pas encore testé
     """
         pathCSVFile = chemin d'accès au fichier CSV
         liste = contient les dictionnaires contenant les données d'une transmission
@@ -126,6 +140,7 @@ def lectureUnCSV(pathCSVFile, liste): # pas encore testé
     import csv
 
     #name = pathCSVFile.split("/")[-1].split("-")[0]
+    liste = []
 
     with open(pathCSVFile, "r") as txt:
         f = csv.reader(txt)
@@ -184,9 +199,11 @@ def lectureUnCSV(pathCSVFile, liste): # pas encore testé
             #data["freq"] = 
             #data["altitude"] =  
 			liste.append(data)
+
+	return liste
 	
 	
-def lectureDossier(folderPath, viveLesLuth):
+def lectureDossier(folderPath):
     """
         # viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant 
         # de l'émetteur, contiendra la liste correspondante (générée par lectureToutDiag())
@@ -197,6 +214,7 @@ def lectureDossier(folderPath, viveLesLuth):
 
     from os import listdir
 
+    viveLesLuth = {}
     Files = listdir(folderPath)
 
     for (num, files) in enumerate(Files,1):
@@ -207,15 +225,15 @@ def lectureDossier(folderPath, viveLesLuth):
         Format = Files[num-1].split(".")[-1].upper()
 
         if  Format == "DIAG":
-            lectureToutDiag(filePath, tmp)
+            tmp = lectureToutDiag(filePath)
             identifiant = Files[num-1].split(".")[0]
 
         elif Format == "DS":
-            lectureToutDS(filePath,tmp)
+            tmp = lectureToutDS(filePath)
             identifiant = Files[num-1].split(".")[0]
 
         elif Format == "CSV":
-            lectureUnCSV(filePath, tmp)
+            tmp = lectureUnCSV(filePath)
             identifiant = Files[num-1].split("-")[0]
             
         elif Format == "XML":
@@ -224,13 +242,17 @@ def lectureDossier(folderPath, viveLesLuth):
 
         viveLesLuth[identifiant] = tmp
 
+	return viveLesLuth
 
 
+<<<<<<< HEAD
 liste = {}
 path = "../../tortues/CSV/"
 lectureDossier(path, liste)
 print(liste)
 
+=======
+>>>>>>> f478118bb697c6e4cb74f1a013ab7bda9b18f5a7
 
 
 
