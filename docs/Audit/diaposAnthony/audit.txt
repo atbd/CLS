@@ -1,0 +1,41 @@
+# : commentaires
+- : à écrire
++ : image
+
+
+1er slide :
+	# intro après le Gantt de Jérềme
+	- titre = Dispositifs de pilotages
+		- Gantt
+		- rdv hebdo avec encadrant 
+		- Git
+		- Github
+		- Packages et modules
+
+2nd slide :
+	- titre = Git
+		+ git.png
+		- gestion de version du code
+		- retient qui modifie et pourquoi
+		- si modification du même fichier par plusieurs personnes, capable de rassembler le contenu de façon efficace automatiquement
+		- gestion de branches (souvent utilisé pour tester des solutions instables, "copie" du projet principal). Git capable de rassembler branche principal et de test par la suite si besoin.
+
+3ème slide :
+	- titre = GitHub
+		+ githuboctocat.jpg
+		- site collaboratif pour stocker des codes sources.
+		- nous sert de serveur de partage et de stockage pour notre projet.
+		- permet d'avoir accès au code le plus récent et à son historique.
+
+4ème slide :
+	- titre = Packages et modules
+		+ package.png
+		- regrouper les fonctions de même type dans un même fichier (module, par exemple : lecture.py et ecriture.py)
+		- regrouper ces modules relativement dans des packages
+		- ces packages nous serviront ensuite de bibliothèques de fonctions pour notre programme principal
+
+5ème slide :
+	- titre = Gestion des risques
+		- Problème de portabilité des programmes (espaces + tab)
+		- créer du code python non-optimisé qui serait moins rapide que le code matlab de base (6 millions de positions GPS par jour)
+		(- ne pas réussir à implémenter nos propres fonctions et ne faire que de la transcription)
