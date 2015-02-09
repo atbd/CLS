@@ -1,0 +1,38 @@
+
+File Name: 4262.DIAG                                                     
+Tag: 04262                                                               
+Reference: POTOTUWI                                                      
+                                                                         
+Date GMT of the first Argos location: 19/07/2002 (19192)                 
+Date GMT of the last Argos location:  19/08/2002 (19223)                 
+                                                                         
+Starting treatment day: 19/07/2002 (19192)                               
+Ending treatment day: 19/08/2002 (19223)                                 
+                                                                         
+Tracking duration (days): 32                                             
+                                                                         
+Number of locations: 122                                                 
+    Number of LCZ: 5 (4.10%)                                             
+    Number of LCB: 38 (31.15%)                                           
+    Number of LCA: 26 (21.31%)                                           
+    Number of LC0: 23 (18.85%)                                           
+    Number of LC1: 19 (15.57%)                                           
+    Number of LC2: 10 (8.20%)                                            
+    Number of LC3: 1 (0.82%)                                             
+                                                                         
+Frequency variance (Hz):    1247.6                                       
+                                                                         
+Distance travelled after localization and speed correction (km) : 1739.60
+                                                                         
+*********************                                                    
+                                                                         
+Treatment: Smoothing  (Epanechnikov)                                     
+                                                                         
+Number of the excluded locations:                                        
+    Double: 2                                                            
+    Earth locations: 1                                                   
+    Excessive speed (> 2.8 m/s): 10 (8.20%)                              
+    Outliers: 6                                                          
+                                                                         
+Distance travelled after treatment (km) : 1511.03                        
+                                                                         

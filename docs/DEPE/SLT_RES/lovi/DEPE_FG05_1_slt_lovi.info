@@ -1,0 +1,36 @@
+
+File Name: DEPE_FG05_1_slt.txt                                           
+Tag: 57127                                                               
+Reference: tu22_071_05                                                   
+                                                                         
+Date ot the first Argos location: 09/07/2005 (20278)                     
+Date ot the last Argos location:  05/01/2006 (20458)                     
+                                                                         
+Starting treatment day: 09/07/2005 (20278)                               
+Ending treatment day: 05/01/2006 (20458)                                 
+                                                                         
+Tracking duration (days): 181                                            
+                                                                         
+Number of locations: 90                                                  
+    Number of LCZ: 5 (5.56%)                                             
+    Number of LCB: 43 (47.78%)                                           
+    Number of LCA: 27 (30.00%)                                           
+    Number of LC0: 4 (4.44%)                                             
+    Number of LC1: 8 (8.89%)                                             
+    Number of LC2: 3 (3.33%)                                             
+    Number of LC3: 0 (0.00%)                                             
+                                                                         
+Frequency variance (Hz):       0.0                                       
+                                                                         
+Distance travelled after localization and speed correction (km) : 6366.38
+                                                                         
+*********************                                                    
+                                                                         
+Treatment: Image location and speed correction                           
+                                                                         
+Number of the excluded locations:                                        
+    Double: 2                                                            
+    Excessive speed (> 2.8 m/s): 2 (2.22%)                               
+                                                                         
+Distance travelled after treatment (km) : 6366.38                        
+                                                                         

@@ -1,0 +1,2658 @@
+         Ptfm: 25530
+Date: 18448    s: 69819       187/00  Msg:  6 >-120Db:  0 Best: -124 D_dat:  450
+Nloc: 43      LQ: 0040632715 19:23:39 Alt:  0.000 F_init: 648109.9 NJ28422WIN
+Date of processing :  5-JUL-2000 19:53:03
+Lat1:   5.7432 Lon1: 306.0621 Lat2:   7.8511 Lon2: 315.0196 F: 647904.4  NQ: 3
+Ci:    0.12   Cf:   0.20 Pb: 6. Dp:   0.457    Vl:  0.011  Df:  0.31  Tr:  4.6
+         Ptfm: 25530
+Date: 18448    s: 69819       187/00  Msg:  8 >-120Db:  0 Best: -124 D_dat:  450
+Nloc: 41      LQ: 0040602013 19:23:39 Alt:  0.000 F_init: 647904.4 NJ28422WIN
+Date of processing :  5-JUL-2000 21:34:05
+Lat1:   5.7430 Lon1: 306.0619 Lat2:   7.8516 Lon2: 315.0194 F: 647904.6  NQ: 3
+Ci:    0.10   Cf:   0.16 Pb: 7. Dp:   0.035    Vl:  0.000  Df:  0.00  Tr:  4.6
+         Ptfm: 25530
+Date: 18448    s: 81969       187/00  Msg:  1 >-120Db:  0 Best: -138 D_dat:    0
+Nloc: -2      LQ: 2040000000 22:46:09 Alt:  0.000 F_init: 647904.4 NK11154WIL
+Date of processing :  5-JUL-2000 23:04:33
+         Ptfm: 25530
+Date: 18448    s: 81834       187/00  Msg:  5 >-120Db:  0 Best: -130 D_dat:  270
+Nloc: 22      LQ: 1040542625 22:43:54 Alt:  0.000 F_init: 647904.4 NK11153WIN
+Date of processing :  5-JUL-2000 23:15:27
+Lat1:   5.7455 Lon1: 306.0771 Lat2:   7.8803 Lon2: 315.5024 F: 648030.8  NQ: 1
+Ci:    0.26   Cf:   1.08 Pb:52. Dp:   1.674    Vl:  0.139  Df:  0.63  Tr:  4.8
+         Ptfm: 25530
+Date: 18448    s: 81834       187/00  Msg:  7 >-120Db:  0 Best: -130 D_dat:  270
+Nloc: 22      LQ: 1040542625 22:43:54 Alt:  0.000 F_init: 647904.4 NK11153WIN
+Date of processing :  6-JUL-2000 00:56:44
+Lat1:   5.7455 Lon1: 306.0771 Lat2:   7.8794 Lon2: 315.5016 F: 648030.9  NQ: 1
+Ci:    0.19   Cf:   0.74 Pb:41. Dp:   1.683    Vl:  0.140  Df:  0.63  Tr:  4.8
+         Ptfm: 25530
+Date: 18449    s: 29096       188/00  Msg:  2 >-120Db:  0 Best: -122 D_dat:  106
+Nloc:  2      LQ: 0080022015  8:04:56 Alt:  0.000 F_init: 647904.4 NJ28430WIN
+Date of processing :  6-JUL-2000 09:57:43
+Lat1:   5.8020 Lon1: 306.3923 Lat2:   7.6242 Lon2: 298.5801 F: 647904.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  37.146    Vl:  0.813  Df:  0.00  Tr:  4.0
+         Ptfm: 25530
+Date: 18449    s: 41007       188/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:23:27 Alt:  0.000 F_init: 647904.4 NK18811PRL
+Date of processing :  6-JUL-2000 11:40:21
+         Ptfm: 25530
+Date: 18449    s: 40646       188/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:  721
+Nloc:  2      LQ: 0080022015 11:17:26 Alt:  0.000 F_init: 647904.4 NK11161WIN
+Date of processing :  6-JUL-2000 13:16:39
+Lat1:   1.1782 Lon1: 305.1306 Lat2:   1.6605 Lon2: 300.7279 F: 647904.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 515.287    Vl:  9.004  Df:  0.00  Tr:  2.4
+         Ptfm: 25530
+Date: 18449    s: 34449       188/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   54
+Nloc:  2      LQ: 1080022015  9:34:09 Alt:  0.000 F_init: 647904.4 NK11160WIN
+Date of processing :  6-JUL-2000 13:28:37
+Lat1:   5.6900 Lon1: 306.4655 Lat2:  -3.9648 Lon2: 350.0485 F: 647904.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  45.072    Vl:  0.883  Df:  0.00  Tr: 22.0
+         Ptfm: 25530
+Date: 18449    s: 69503       188/00  Msg:  1 >-120Db:  0 Best: -131 D_dat:    0
+Nloc: -2      LQ: 2040000000 19:18:23 Alt:  0.000 F_init: 647904.4 NJ28437WIL
+Date of processing :  6-JUL-2000 19:33:52
+         Ptfm: 25530
+Date: 18449    s: 69123       188/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  760
+Nloc:  2      LQ: 0070023025 19:12:03 Alt:  0.000 F_init: 647904.4 NJ28436WIN
+Date of processing :  6-JUL-2000 19:39:07
+Lat1:   6.4497 Lon1: 306.0942 Lat2:   9.7185 Lon2: 320.1872 F: 648027.8  NQ:-7
+Ci:    0.00   Cf:   2.11 Pb:50. Dp:  78.205    Vl:  0.912  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18449    s: 69123       188/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  760
+Nloc:  0      LQ: 0070003013 19:12:03 Alt:  0.000 F_init: 648027.8 NJ18819LAL
+Date of processing :  6-JUL-2000 19:42:22
+Lat1:   6.4497 Lon1: 306.0942 Lat2:   9.7185 Lon2: 320.1872 F: 648027.8  NQ:-7
+Ci:    0.00   Cf:   2.11 Pb:50. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18449    s: 69123       188/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  760
+Nloc:  0      LQ: 0070003013 19:12:03 Alt:  0.000 F_init: 648027.8 NJ18819HAL
+Date of processing :  6-JUL-2000 19:53:21
+Lat1:   6.4497 Lon1: 306.0942 Lat2:   9.7185 Lon2: 320.1872 F: 648027.8  NQ:-7
+Ci:    0.00   Cf:   2.11 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18449    s: 69123       188/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  760
+Nloc:  0      LQ: 0070003013 19:12:03 Alt:  0.000 F_init: 648027.8 NJ28437WIN
+Date of processing :  6-JUL-2000 21:27:20
+Lat1:   6.4497 Lon1: 306.0942 Lat2:   9.7185 Lon2: 320.1872 F: 648027.8  NQ:-7
+Ci:    0.00   Cf:   2.11 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18449    s: 80691       188/00  Msg:  1 >-120Db:  0 Best: -131 D_dat:    0
+Nloc: -2      LQ: 2040000000 22:24:51 Alt:  0.000 F_init: 648027.8 NK11168WIL
+Date of processing :  6-JUL-2000 22:38:36
+         Ptfm: 25530
+Date: 18449    s: 80668       188/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   46
+Nloc:  2      LQ: 1080043015 22:24:28 Alt:  0.000 F_init: 648027.8 NK11168WIN
+Date of processing :  7-JUL-2000 00:35:10
+Lat1:   6.3433 Lon1: 306.0710 Lat2:  11.4025 Lon2: 324.9436 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  12.043    Vl:  1.043  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18450    s: 28242       189/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   97
+Nloc: -2      LQ: 1071020000  7:50:42 Alt:  0.000 F_init: 648027.8 NJ28444WIN
+Date of processing :  7-JUL-2000 09:46:51
+         Ptfm: 25530
+Date: 18450    s: 22438       189/00  Msg:  1 >-120Db:  0 Best: -129 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:13:58 Alt:  0.000 F_init: 648027.8 NJ28443WIN
+Date of processing :  7-JUL-2000 09:57:41
+         Ptfm: 25530
+Date: 18450    s: 38804       189/00  Msg:  1 >-120Db:  0 Best: -138 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:46:44 Alt:  0.000 F_init: 648027.8 NK11175WIN
+Date of processing :  7-JUL-2000 12:56:06
+         Ptfm: 25530
+Date: 18450    s: 68303       189/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  2      LQ: 1080023015 18:58:23 Alt:  0.000 F_init: 648027.8 NJ28450WIN
+Date of processing :  7-JUL-2000 19:31:23
+Lat1:   7.0131 Lon1: 306.1063 Lat2:  11.5770 Lon2: 325.8031 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  62.324    Vl:  0.728  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18450    s: 74348       189/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080023015 20:39:08 Alt:  0.000 F_init: 648027.8 NJ18920PRL
+Date of processing :  7-JUL-2000 21:01:51
+Lat1:   7.0337 Lon1: 305.9734 Lat2:   0.4578 Lon2: 277.6010 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  65.953    Vl:  0.720  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18450    s: 68303       189/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  2      LQ: 1080023015 18:58:23 Alt:  0.000 F_init: 648027.8 NJ28451WIN
+Date of processing :  7-JUL-2000 21:14:59
+Lat1:   7.0131 Lon1: 306.1063 Lat2:  11.5770 Lon2: 325.8031 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  62.324    Vl:  0.728  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18450    s: 74348       189/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080023015 20:39:08 Alt:  0.000 F_init: 648027.8 NJ28451WIN
+Date of processing :  7-JUL-2000 21:14:60
+Lat1:   7.0337 Lon1: 305.9734 Lat2:   0.4578 Lon2: 277.6010 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  65.953    Vl:  0.720  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18450    s: 78709       189/00  Msg:  1 >-120Db:  0 Best: -129 D_dat:    0
+Nloc: -2      LQ: 2040000000 21:51:49 Alt:  0.000 F_init: 648027.8 NK11181GCN
+Date of processing :  7-JUL-2000 23:03:39
+         Ptfm: 25530
+Date: 18450    s: 74348       189/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080023015 20:39:08 Alt:  0.000 F_init: 648027.8 NJ28451GCN
+Date of processing :  7-JUL-2000 23:19:53
+Lat1:   7.0337 Lon1: 305.9734 Lat2:   0.4578 Lon2: 277.6010 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  65.953    Vl:  0.720  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18450    s: 85277       189/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  157
+Nloc:  2      LQ: 1080023015 23:41:17 Alt:  0.000 F_init: 648027.8 NK11183WIL
+Date of processing :  7-JUL-2000 23:57:33
+Lat1:   7.0662 Lon1: 306.2895 Lat2:   2.3273 Lon2: 287.5553 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  71.510    Vl:  0.697  Df:  0.00  Tr:  9.3
+         Ptfm: 25530
+Date: 18450    s: 85277       189/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  157
+Nloc:  2      LQ: 1080023015 23:41:17 Alt:  0.000 F_init: 648027.8 NK18923MIL
+Date of processing :  8-JUL-2000 00:26:35
+Lat1:   7.0662 Lon1: 306.2895 Lat2:   2.3273 Lon2: 287.5553 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  71.510    Vl:  0.697  Df:  0.00  Tr:  9.3
+         Ptfm: 25530
+Date: 18450    s: 85277       189/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  157
+Nloc:  2      LQ: 1080023015 23:41:17 Alt:  0.000 F_init: 648027.8 NK11182WIN
+Date of processing :  8-JUL-2000 01:49:24
+Lat1:   7.0662 Lon1: 306.2895 Lat2:   2.3273 Lon2: 287.5553 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  71.510    Vl:  0.697  Df:  0.00  Tr:  9.3
+         Ptfm: 25530
+Date: 18451    s: 67565       190/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  146
+Nloc: 12      LQ: 1040523025 18:46:05 Alt:  0.000 F_init: 648027.8 NJ28464GCN
+Date of processing :  8-JUL-2000 19:39:36
+Lat1:   7.5908 Lon1: 305.7652 Lat2:  13.5510 Lon2: 331.4177 F: 648060.5  NQ: 0
+Ci:    0.65   Cf:  15.37 Pb:52. Dp: 131.327    Vl:  0.767  Df:  0.00  Tr: 13.0
+         Ptfm: 25530
+Date: 18451    s: 73687       190/00  Msg:  1 >-120Db:  0 Best: -128 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:28:07 Alt:  0.000 F_init: 648027.8 NJ19020PRL
+Date of processing :  8-JUL-2000 20:46:02
+         Ptfm: 25530
+Date: 18451    s: 77905       190/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000 21:38:25 Alt:  0.000 F_init: 648027.8 NK11195GCN
+Date of processing :  8-JUL-2000 22:23:20
+         Ptfm: 25530
+Date: 18451    s: 73687       190/00  Msg:  1 >-120Db:  0 Best: -128 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:28:07 Alt:  0.000 F_init: 648027.8 NJ28465GCN
+Date of processing :  8-JUL-2000 22:51:41
+         Ptfm: 25530
+Date: 18451    s: 83914       190/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  1      LQ: 1080022013 23:18:34 Alt:  0.000 F_init: 648027.8 NK11197WIL
+Date of processing :  8-JUL-2000 23:34:12
+Lat1:   7.7634 Lon1: 306.0233 Lat2:   5.7427 Lon2: 298.4874 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 145.494    Vl:  0.000  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18451    s: 83914       190/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  1      LQ: 1080022013 23:18:34 Alt:  0.000 F_init: 648027.8 NK19023MIL
+Date of processing :  9-JUL-2000 00:08:54
+Lat1:   7.7634 Lon1: 306.0233 Lat2:   5.7427 Lon2: 298.4874 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 145.494    Vl:  0.000  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18451    s: 83914       190/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  1      LQ: 1080022013 23:18:34 Alt:  0.000 F_init: 648027.8 NK11196WIN
+Date of processing :  9-JUL-2000 01:28:13
+Lat1:   7.7634 Lon1: 306.0233 Lat2:   5.7427 Lon2: 298.4874 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 145.494    Vl:  0.000  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18451    s: 83914       190/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:   45
+Nloc:  1      LQ: 1080022013 23:18:34 Alt:  0.000 F_init: 648027.8 NK11196WIN
+Date of processing :  9-JUL-2000 01:45:11
+Lat1:   7.7634 Lon1: 306.0233 Lat2:   5.7427 Lon2: 298.4874 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 145.494    Vl:  0.000  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18452    s: 67340       191/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:  137
+Nloc:  1      LQ: 1070023013 18:42:20 Alt:  0.000 F_init: 648027.8 NJ19118HAL
+Date of processing :  9-JUL-2000 19:17:44
+Lat1:   8.6730 Lon1: 305.6318 Lat2:  16.0923 Lon2: 337.1603 F: 648099.2  NQ:-7
+Ci:    0.00   Cf:   8.79 Pb:50. Dp: 251.127    Vl:  0.000  Df:  0.00  Tr: 15.6
+         Ptfm: 25530
+Date: 18452    s: 67318       191/00  Msg:  4 >-120Db:  0 Best: -129 D_dat:  182
+Nloc: 11      LQ: 1040523023 18:41:58 Alt:  0.000 F_init: 648027.8 NJ28478GCN
+Date of processing :  9-JUL-2000 19:23:34
+Lat1:   8.4060 Lon1: 305.1750 Lat2:  16.0743 Lon2: 337.5763 F: 648028.6  NQ: 0
+Ci:    0.63   Cf:  34.99 Pb:56. Dp: 238.962    Vl:  0.000  Df:  0.00  Tr: 16.1
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ28480WIL
+Date of processing :  9-JUL-2000 20:40:02
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ19120LAL
+Date of processing :  9-JUL-2000 20:53:43
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ19120HAL
+Date of processing :  9-JUL-2000 20:57:35
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ19120MIL
+Date of processing :  9-JUL-2000 21:04:37
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ28479WIN
+Date of processing :  9-JUL-2000 22:28:49
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 73423       191/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   46
+Nloc:  1      LQ: 1080023013 20:23:43 Alt:  0.000 F_init: 648027.8 NJ28479WIN
+Date of processing :  9-JUL-2000 22:42:46
+Lat1:   8.4970 Lon1: 305.4934 Lat2:   3.2906 Lon2: 287.8966 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 235.927    Vl:  0.000  Df:  0.00  Tr:  8.8
+         Ptfm: 25530
+Date: 18452    s: 82530       191/00  Msg:  2 >-120Db:  0 Best: -122 D_dat:   45
+Nloc:  1      LQ: 1080022013 22:55:30 Alt:  0.000 F_init: 648027.8 NK11211WIL
+Date of processing :  9-JUL-2000 23:12:34
+Lat1:   8.4226 Lon1: 304.9770 Lat2:   9.6762 Lon2: 310.0153 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 250.629    Vl:  0.000  Df:  0.00  Tr:  2.7
+         Ptfm: 25530
+Date: 18452    s: 82501       191/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  101
+Nloc:  1      LQ: 1070022023 22:55:01 Alt:  0.000 F_init: 648027.8 NK11210WIN
+Date of processing : 10-JUL-2000 01:05:25
+Lat1:   8.5529 Lon1: 305.2010 Lat2:   9.6703 Lon2: 310.2036 F: 648041.1  NQ:-7
+Ci:    0.00   Cf:   6.11 Pb:50. Dp: 252.633    Vl:  0.000  Df:  0.00  Tr:  2.5
+         Ptfm: 25530
+Date: 18453    s: 32025       192/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:53:45 Alt:  0.000 F_init: 648027.8 NJ28487WIL
+Date of processing : 10-JUL-2000 09:00:54
+Lat1:   9.0627 Lon1: 305.1318 Lat2:  15.9690 Lon2: 276.1180 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 307.859    Vl:  0.000  Df:  0.00  Tr: 14.9
+         Ptfm: 25530
+Date: 18453    s: 32025       192/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:53:45 Alt:  0.000 F_init: 648027.8 NJ19208LAL
+Date of processing : 10-JUL-2000 09:07:41
+Lat1:   9.0627 Lon1: 305.1318 Lat2:  15.9690 Lon2: 276.1180 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 307.859    Vl:  0.000  Df:  0.00  Tr: 14.9
+         Ptfm: 25530
+Date: 18453    s: 32025       192/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:53:45 Alt:  0.000 F_init: 648027.8 NJ19208HAL
+Date of processing : 10-JUL-2000 09:09:03
+Lat1:   9.0627 Lon1: 305.1318 Lat2:  15.9690 Lon2: 276.1180 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 307.859    Vl:  0.000  Df:  0.00  Tr: 14.9
+         Ptfm: 25530
+Date: 18453    s: 25895       192/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:  164
+Nloc:  1      LQ: 1080023013  7:11:35 Alt:  0.000 F_init: 648027.8 NJ28486WIN
+Date of processing : 10-JUL-2000 09:12:36
+Lat1:   8.9732 Lon1: 305.4743 Lat2:   3.8602 Lon2: 324.1789 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 287.335    Vl:  0.000  Df:  0.00  Tr:  9.3
+         Ptfm: 25530
+Date: 18453    s: 32025       192/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:53:45 Alt:  0.000 F_init: 648027.8 NJ06408MIL
+Date of processing : 10-JUL-2000 09:53:34
+Lat1:   9.0627 Lon1: 305.1318 Lat2:  15.9690 Lon2: 276.1180 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 307.859    Vl:  0.000  Df:  0.00  Tr: 14.9
+         Ptfm: 25530
+Date: 18453    s: 32025       192/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:53:45 Alt:  0.000 F_init: 648027.8 NJ28487WIN
+Date of processing : 10-JUL-2000 10:53:36
+Lat1:   9.0627 Lon1: 305.1318 Lat2:  15.9690 Lon2: 276.1180 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 307.859    Vl:  0.000  Df:  0.00  Tr: 14.9
+         Ptfm: 25530
+Date: 18453    s: 40836       192/00  Msg:  1 >-120Db:  0 Best: -129 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:20:36 Alt:  0.000 F_init: 648027.8 NK19211HAL
+Date of processing : 10-JUL-2000 11:40:48
+         Ptfm: 25530
+Date: 18453    s: 81301       192/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:   91
+Nloc: -1      LQ: 1070120000 22:35:01 Alt:  0.000 F_init: 648027.8 NK11225WIL
+Date of processing : 10-JUL-2000 22:51:32
+Lat1:   9.1551 Lon1: 305.1626 Lat2:  12.8995 Lon2: 320.3256 F: 648027.8  NQ:-1
+Ci:    0.52   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18453    s: 81237       192/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  219
+Nloc: 11      LQ: 1040523023 22:33:57 Alt:  0.000 F_init: 648027.8 NK11224WIN
+Date of processing : 10-JUL-2000 23:03:11
+Lat1:   9.4782 Lon1: 305.4554 Lat2:  12.8334 Lon2: 320.4983 F: 648057.5  NQ: 0
+Ci:    0.17   Cf:   5.24 Pb:67. Dp: 342.259    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18453    s: 81237       192/00  Msg:  5 >-120Db:  0 Best: -124 D_dat:  219
+Nloc: 11      LQ: 1040523023 22:33:57 Alt:  0.000 F_init: 648027.8 NK11225WIN
+Date of processing : 11-JUL-2000 00:44:25
+Lat1:   9.4474 Lon1: 305.4026 Lat2:  12.8317 Lon2: 320.5212 F: 648050.6  NQ: 0
+Ci:    0.36   Cf:   6.47 Pb:72. Dp: 340.187    Vl:  0.000  Df:  0.00  Tr:  7.5
+         Ptfm: 25530
+Date: 18454    s:   530       193/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:   90
+Nloc:  1      LQ: 1070023013  0:08:50 Alt:  0.000 F_init: 648027.8 NK11225WIN
+Date of processing : 11-JUL-2000 00:44:26
+Lat1:   9.4155 Lon1: 305.4766 Lat2:   1.9069 Lon2: 272.1115 F: 648085.0  NQ:-7
+Ci:    0.00   Cf:   3.31 Pb:50. Dp: 334.992    Vl:  0.000  Df:  0.00  Tr: 16.9
+         Ptfm: 25530
+Date: 18454    s:   530       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   90
+Nloc:  1      LQ: 1080023013  0:08:50 Alt:  0.000 F_init: 648027.8 NK19300PRL
+Date of processing : 11-JUL-2000 00:24:11
+Lat1:   9.5051 Lon1: 305.3909 Lat2:   2.1833 Lon2: 272.2016 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 346.699    Vl:  0.000  Df:  0.00  Tr: 16.9
+         Ptfm: 25530
+Date: 18454    s:   530       193/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:   90
+Nloc:  1      LQ: 1070023013  0:08:50 Alt:  0.000 F_init: 648027.8 NK19300MIL
+Date of processing : 11-JUL-2000 01:06:04
+Lat1:   9.4155 Lon1: 305.4766 Lat2:   1.9069 Lon2: 272.1115 F: 648085.0  NQ:-7
+Ci:    0.00   Cf:   3.31 Pb:50. Dp: 334.992    Vl:  0.000  Df:  0.00  Tr: 16.9
+         Ptfm: 25530
+Date: 18454    s:   530       193/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:   90
+Nloc:  1      LQ: 1070023013  0:08:50 Alt:  0.000 F_init: 648027.8 NK11225GCN
+Date of processing : 11-JUL-2000 02:35:01
+Lat1:   9.4155 Lon1: 305.4766 Lat2:   1.9069 Lon2: 272.1115 F: 648085.0  NQ:-7
+Ci:    0.00   Cf:   3.31 Pb:50. Dp: 334.992    Vl:  0.000  Df:  0.00  Tr: 16.9
+         Ptfm: 25530
+Date: 18454    s: 31278       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  1      LQ: 1080023013  8:41:18 Alt:  0.000 F_init: 648027.8 NJ28501WIL
+Date of processing : 11-JUL-2000 08:48:59
+Lat1:   9.8532 Lon1: 305.4117 Lat2:  15.6529 Lon2: 282.0336 F: 648027.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 383.851    Vl:  0.000  Df:  0.00  Tr: 12.1
+         Ptfm: 25530
+Date: 18454    s: 25542       193/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  109
+Nloc:  2      LQ: 0070023013  7:05:42 Alt:  0.000 F_init: 648027.8 NJ28500WIN
+Date of processing : 11-JUL-2000 08:59:39
+Lat1:   9.6088 Lon1: 305.5547 Lat2:   4.0379 Lon2: 329.3529 F: 648015.1  NQ:-7
+Ci:    0.00   Cf:   1.15 Pb:50. Dp: 354.405    Vl:  0.000  Df:  0.00  Tr: 12.1
+         Ptfm: 25530
+Date: 18454    s: 31278       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080043015  8:41:18 Alt:  0.000 F_init: 648015.1 NJ19308HAL
+Date of processing : 11-JUL-2000 09:01:48
+Lat1:   9.8993 Lon1: 305.3350 Lat2:  15.6604 Lon2: 282.1198 F: 648015.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  40.172    Vl:  7.003  Df:  0.00  Tr: 12.0
+         Ptfm: 25530
+Date: 18454    s: 31278       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080043015  8:41:18 Alt:  0.000 F_init: 648015.1 NJ19308LAL
+Date of processing : 11-JUL-2000 09:06:06
+Lat1:   9.8993 Lon1: 305.3350 Lat2:  15.6604 Lon2: 282.1198 F: 648015.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  40.172    Vl:  7.003  Df:  0.00  Tr: 12.0
+         Ptfm: 25530
+Date: 18454    s: 31278       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080043015  8:41:18 Alt:  0.000 F_init: 648015.1 NJ20108MIL
+Date of processing : 11-JUL-2000 09:35:15
+Lat1:   9.8993 Lon1: 305.3350 Lat2:  15.6604 Lon2: 282.1198 F: 648015.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  40.172    Vl:  7.003  Df:  0.00  Tr: 12.0
+         Ptfm: 25530
+Date: 18454    s: 31278       193/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080043015  8:41:18 Alt:  0.000 F_init: 648015.1 NJ28501WIN
+Date of processing : 11-JUL-2000 10:42:11
+Lat1:   9.8993 Lon1: 305.3350 Lat2:  15.6604 Lon2: 282.1198 F: 648015.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  40.172    Vl:  7.003  Df:  0.00  Tr: 12.0
+         Ptfm: 25530
+Date: 18454    s: 39463       193/00  Msg:  1 >-120Db:  0 Best: -128 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:57:43 Alt:  0.000 F_init: 648015.1 NK19310HAL
+Date of processing : 11-JUL-2000 11:33:58
+         Ptfm: 25530
+Date: 18454    s: 45737       193/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:42:17 Alt:  0.000 F_init: 648015.1 NK11233WIL
+Date of processing : 11-JUL-2000 12:47:52
+         Ptfm: 25530
+Date: 18454    s: 39440       193/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:   45
+Nloc:  1      LQ: 1080031013 10:57:20 Alt:  0.000 F_init: 648015.1 NK11232WIN
+Date of processing : 11-JUL-2000 12:58:50
+Lat1:   9.7255 Lon1: 307.6101 Lat2:   9.3715 Lon2: 308.6228 F: 648015.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 225.944    Vl: 16.257  Df:  0.00  Tr:  0.4
+         Ptfm: 25530
+Date: 18454    s: 45737       193/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:42:17 Alt:  0.000 F_init: 648015.1 NK19312MIL
+Date of processing : 11-JUL-2000 13:36:08
+         Ptfm: 25530
+Date: 18454    s: 45737       193/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:42:17 Alt:  0.000 F_init: 648015.1 NK11233WIN
+Date of processing : 11-JUL-2000 14:42:56
+         Ptfm: 25530
+Date: 18454    s: 65460       193/00  Msg:  1 >-120Db:  0 Best: -131 D_dat:    0
+Nloc: -2      LQ: 2040000000 18:11:00 Alt:  0.000 F_init: 648015.1 NJ28506GCN
+Date of processing : 11-JUL-2000 18:59:51
+         Ptfm: 25530
+Date: 18454    s: 85674       193/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:47:54 Alt:  0.000 F_init: 648015.1 NK11239WIN
+Date of processing : 12-JUL-2000 02:04:31
+         Ptfm: 25530
+Date: 18455    s: 24742       194/00  Msg:  4 >-120Db:  0 Best: -125 D_dat:  166
+Nloc: 12      LQ: 0040523025  6:52:22 Alt:  0.000 F_init: 648015.1 NJ28514WIN
+Date of processing : 12-JUL-2000 08:48:18
+Lat1:  10.1349 Lon1: 305.8781 Lat2:   3.2779 Lon2: 334.9516 F: 648046.9  NQ: 0
+Ci:    0.30   Cf:   3.55 Pb:65. Dp:  68.150    Vl:  0.796  Df:  0.00  Tr: 14.7
+         Ptfm: 25530
+Date: 18455    s: 44314       194/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:  181
+Nloc:  2      LQ: 1070033815 12:18:34 Alt:  0.000 F_init: 648046.9 NK11247WIL
+Date of processing : 12-JUL-2000 12:27:00
+Lat1:  10.2332 Lon1: 305.8994 Lat2:  17.8010 Lon2: 272.3476 F: 648039.3  NQ:-7
+Ci:    0.00   Cf:   1.16 Pb:50. Dp:  11.125    Vl:  0.568  Df:  0.02  Tr: 16.8
+         Ptfm: 25530
+Date: 18455    s: 38530       194/00  Msg:  7 >-120Db:  1 Best: -120 D_dat:  663
+Nloc: 12      LQ: 0040433815 10:42:10 Alt:  0.000 F_init: 648046.9 NK11246WIN
+Date of processing : 12-JUL-2000 12:39:30
+Lat1:  10.1888 Lon1: 305.9554 Lat2:   6.9223 Lon2: 320.4691 F: 648061.1  NQ: 0
+Ci:    2.49   Cf:   3.31 Pb:56. Dp:  10.351    Vl:  0.751  Df:  0.06  Tr:  7.3
+         Ptfm: 25530
+Date: 18455    s: 44438       194/00  Msg:  5 >-120Db:  0 Best: -123 D_dat:  428
+Nloc: 24      LQ: 0040543815 12:20:38 Alt:  0.000 F_init: 648061.1 NK11247WIN
+Date of processing : 12-JUL-2000 14:22:55
+Lat1:  10.2400 Lon1: 305.9131 Lat2:  17.6871 Lon2: 272.4485 F: 648044.9  NQ: 1
+Ci:    0.21   Cf:   0.67 Pb:12. Dp:   7.327    Vl:  1.240  Df:  0.16  Tr: 16.9
+         Ptfm: 25530
+Date: 18455    s: 64947       194/00  Msg:  3 >-120Db:  0 Best: -133 D_dat:  334
+Nloc:  2      LQ: 0070032725 18:02:27 Alt:  0.000 F_init: 648044.9 NJ28520GCN
+Date of processing : 12-JUL-2000 19:18:14
+Lat1:  10.3389 Lon1: 306.0871 Lat2:  20.9757 Lon2: 352.4546 F: 648117.8  NQ:-7
+Ci:    0.00   Cf:   1.03 Pb:50. Dp:  21.975    Vl:  1.071  Df:  0.21  Tr: 23.3
+         Ptfm: 25530
+Date: 18455    s: 70844       194/00  Msg:  6 >-120Db:  1 Best: -120 D_dat:  262
+Nloc: 12      LQ: 1040541625 19:40:44 Alt:  0.000 F_init: 648117.8 NJ28521WIN
+Date of processing : 12-JUL-2000 20:12:00
+Lat1:  10.4780 Lon1: 306.1232 Lat2:  10.0178 Lon2: 304.1424 F: 648070.8  NQ: 0
+Ci:    0.57   Cf:   7.94 Pb:47. Dp:  15.889    Vl:  2.695  Df:  0.48  Tr:  1.0
+         Ptfm: 25530
+Date: 18455    s: 70844       194/00  Msg:  6 >-120Db:  1 Best: -120 D_dat:  262
+Nloc: 12      LQ: 1040541625 19:40:44 Alt:  0.000 F_init: 648117.8 NJ28521WIN
+Date of processing : 12-JUL-2000 21:53:22
+Lat1:  10.4780 Lon1: 306.1232 Lat2:  10.0178 Lon2: 304.1424 F: 648070.8  NQ: 0
+Ci:    0.57   Cf:   7.94 Pb:47. Dp:  15.889    Vl:  2.695  Df:  0.48  Tr:  1.0
+         Ptfm: 25530
+Date: 18455    s: 84742       194/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:32:22 Alt:  0.000 F_init: 648117.8 NK11254WIL
+Date of processing : 12-JUL-2000 23:49:17
+         Ptfm: 25530
+Date: 18455    s: 84742       194/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:32:22 Alt:  0.000 F_init: 648117.8 NK19423LAL
+Date of processing : 13-JUL-2000 00:05:08
+         Ptfm: 25530
+Date: 18455    s: 78122       194/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  136
+Nloc: 12      LQ: 1040533715 21:42:02 Alt:  0.000 F_init: 648117.8 NK11252WIN
+Date of processing : 13-JUL-2000 00:06:14
+Lat1:  10.4920 Lon1: 306.0591 Lat2:  18.1636 Lon2: 340.7914 F: 648048.8  NQ: 0
+Ci:    0.15   Cf:   8.85 Pb:43. Dp:  17.213    Vl:  1.306  Df:  0.31  Tr: 17.4
+         Ptfm: 25530
+Date: 18455    s: 84742       194/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:32:22 Alt:  0.000 F_init: 648117.8 NK19423LAL
+Date of processing : 13-JUL-2000 00:15:26
+         Ptfm: 25530
+Date: 18455    s: 78122       194/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  136
+Nloc: 12      LQ: 1040533715 21:42:02 Alt:  0.000 F_init: 648117.8 NK11252WIN
+Date of processing : 13-JUL-2000 00:18:18
+Lat1:  10.4920 Lon1: 306.0591 Lat2:  18.1636 Lon2: 340.7914 F: 648048.8  NQ: 0
+Ci:    0.15   Cf:   8.85 Pb:43. Dp:  17.213    Vl:  1.306  Df:  0.31  Tr: 17.4
+         Ptfm: 25530
+Date: 18455    s: 84742       194/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:32:22 Alt:  0.000 F_init: 648117.8 NK11253WIN
+Date of processing : 13-JUL-2000 01:41:47
+         Ptfm: 25530
+Date: 18455    s: 84742       194/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:32:22 Alt:  0.000 F_init: 648050.8 NK19423MIL
+Date of processing : 13-JUL-2000 16:52:05
+         Ptfm: 25530
+Date: 18456    s: 42903       195/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  193
+Nloc:  2      LQ: 1070023025 11:55:03 Alt:  0.000 F_init: 648117.8 NK11261WIL
+Date of processing : 13-JUL-2000 12:00:31
+Lat1:  10.8053 Lon1: 306.1831 Lat2:  16.0227 Lon2: 283.0461 F: 648049.2  NQ:-7
+Ci:    0.00   Cf:   0.98 Pb:50. Dp:  52.650    Vl:  0.818  Df:  0.00  Tr: 11.5
+         Ptfm: 25530
+Date: 18456    s: 42903       195/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  193
+Nloc:  2      LQ: 1070023025 11:55:03 Alt:  0.000 F_init: 648117.8 NK19511HAL
+Date of processing : 13-JUL-2000 12:40:25
+Lat1:  10.8053 Lon1: 306.1831 Lat2:  16.0227 Lon2: 283.0461 F: 648049.2  NQ:-7
+Ci:    0.00   Cf:   0.98 Pb:50. Dp:  52.650    Vl:  0.818  Df:  0.00  Tr: 11.5
+         Ptfm: 25530
+Date: 18456    s: 43043       195/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  472
+Nloc: 23      LQ: 0040523015 11:57:23 Alt:  0.000 F_init: 648117.8 NK11261WIN
+Date of processing : 13-JUL-2000 14:00:46
+Lat1:  10.7994 Lon1: 306.1942 Lat2:  15.9348 Lon2: 283.2326 F: 648050.8  NQ: 1
+Ci:    0.28   Cf:   0.53 Pb: 6. Dp:  52.276    Vl:  0.811  Df:  0.00  Tr: 11.6
+         Ptfm: 25530
+Date: 18456    s: 43043       195/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  472
+Nloc: 21      LQ: 0040503013 11:57:23 Alt:  0.000 F_init: 648050.8 NK19511MIL
+Date of processing : 13-JUL-2000 17:09:14
+Lat1:  10.7994 Lon1: 306.1942 Lat2:  15.9348 Lon2: 283.2326 F: 648050.8  NQ: 1
+Ci:    0.28   Cf:   0.53 Pb: 6. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 11.6
+         Ptfm: 25530
+Date: 18456    s: 70689       195/00  Msg:  3 >-120Db:  0 Best: -131 D_dat:   92
+Nloc: -1      LQ: 1070130000 19:38:09 Alt:  0.000 F_init: 648050.8 NJ28536WIL
+Date of processing : 13-JUL-2000 19:52:15
+Lat1:  10.9280 Lon1: 305.8720 Lat2:  12.0266 Lon2: 308.8995 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.8
+         Ptfm: 25530
+Date: 18456    s: 70689       195/00  Msg:  3 >-120Db:  0 Best: -131 D_dat:   92
+Nloc: -1      LQ: 1070130000 19:38:09 Alt:  0.000 F_init: 648050.8 NJ19519LAL
+Date of processing : 13-JUL-2000 20:13:11
+Lat1:  10.9280 Lon1: 305.8720 Lat2:  12.0266 Lon2: 308.8995 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.8
+         Ptfm: 25530
+Date: 18456    s: 70689       195/00  Msg:  3 >-120Db:  0 Best: -131 D_dat:   92
+Nloc: -1      LQ: 1070130000 19:38:09 Alt:  0.000 F_init: 648050.8 NJ19519HAL
+Date of processing : 13-JUL-2000 20:19:13
+Lat1:  10.9280 Lon1: 305.8720 Lat2:  12.0266 Lon2: 308.8995 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.8
+         Ptfm: 25530
+Date: 18456    s: 70689       195/00  Msg:  3 >-120Db:  0 Best: -131 D_dat:   92
+Nloc: -1      LQ: 1070130000 19:38:09 Alt:  0.000 F_init: 648050.8 NJ28536WIN
+Date of processing : 13-JUL-2000 21:45:20
+Lat1:  10.9280 Lon1: 305.8720 Lat2:  12.0266 Lon2: 308.8995 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.8
+         Ptfm: 25530
+Date: 18456    s: 83160       195/00  Msg:  2 >-120Db:  1 Best: -120 D_dat:   46
+Nloc:  2      LQ: 1080031015 23:06:00 Alt:  0.000 F_init: 648050.8 NK11268WIL
+Date of processing : 13-JUL-2000 23:27:03
+Lat1:  11.0297 Lon1: 306.1504 Lat2:  10.2449 Lon2: 302.9654 F: 648050.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  25.916    Vl:  0.646  Df:  0.00  Tr:  1.5
+         Ptfm: 25530
+Date: 18456    s: 83101       195/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:  165
+Nloc:  2      LQ: 1070032815 23:05:01 Alt:  0.000 F_init: 648050.8 NK11267WIN
+Date of processing : 13-JUL-2000 23:43:33
+Lat1:  11.0429 Lon1: 306.3303 Lat2:  10.3279 Lon2: 303.1464 F: 648043.9  NQ:-7
+Ci:    0.00   Cf:   2.99 Pb:50. Dp:  30.763    Vl:  0.768  Df:  0.01  Tr:  1.6
+         Ptfm: 25530
+Date: 18456    s: 83101       195/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:  165
+Nloc:  2      LQ: 1070032815 23:05:01 Alt:  0.000 F_init: 648050.8 NK19523MIL
+Date of processing : 13-JUL-2000 23:52:29
+Lat1:  11.0429 Lon1: 306.3303 Lat2:  10.3279 Lon2: 303.1464 F: 648043.9  NQ:-7
+Ci:    0.00   Cf:   2.99 Pb:50. Dp:  30.763    Vl:  0.768  Df:  0.01  Tr:  1.6
+         Ptfm: 25530
+Date: 18456    s: 83101       195/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:  165
+Nloc:  2      LQ: 1070032815 23:05:01 Alt:  0.000 F_init: 648050.8 NK19523MIL
+Date of processing : 14-JUL-2000 00:55:00
+Lat1:  11.0429 Lon1: 306.3303 Lat2:  10.3279 Lon2: 303.1464 F: 648043.9  NQ:-7
+Ci:    0.00   Cf:   2.99 Pb:50. Dp:  30.763    Vl:  0.768  Df:  0.01  Tr:  1.6
+         Ptfm: 25530
+Date: 18456    s: 83101       195/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:  165
+Nloc:  2      LQ: 1070032815 23:05:01 Alt:  0.000 F_init: 648050.8 NK11268WIN
+Date of processing : 14-JUL-2000 01:19:35
+Lat1:  11.0429 Lon1: 306.3303 Lat2:  10.3279 Lon2: 303.1464 F: 648043.9  NQ:-7
+Ci:    0.00   Cf:   2.99 Pb:50. Dp:  30.763    Vl:  0.768  Df:  0.01  Tr:  1.6
+         Ptfm: 25530
+Date: 18457    s: 29770       196/00  Msg:  3 >-120Db:  0 Best: -127 D_dat:   90
+Nloc: -1      LQ: 1070120000  8:16:10 Alt:  0.000 F_init: 648050.8 NJ19608PRL
+Date of processing : 14-JUL-2000 08:37:37
+Lat1:  11.2008 Lon1: 306.1531 Lat2:  13.3822 Lon2: 297.9989 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.1
+         Ptfm: 25530
+Date: 18457    s: 29770       196/00  Msg:  3 >-120Db:  0 Best: -127 D_dat:   90
+Nloc: -1      LQ: 1070120000  8:16:10 Alt:  0.000 F_init: 648050.8 NJ28543WIN
+Date of processing : 14-JUL-2000 10:06:45
+Lat1:  11.2008 Lon1: 306.1531 Lat2:  13.3822 Lon2: 297.9989 F: 648050.8  NQ:-1
+Ci:    0.66   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.1
+         Ptfm: 25530
+Date: 18457    s: 23111       196/00  Msg:  1 >-120Db:  0 Best: -135 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:25:11 Alt:  0.000 F_init: 648050.8 NJ28542WIN
+Date of processing : 14-JUL-2000 10:17:36
+         Ptfm: 25530
+Date: 18457    s: 41478       196/00  Msg:  7 >-120Db:  0 Best: -123 D_dat:  325
+Nloc: 12      LQ: 1040523015 11:31:18 Alt:  0.000 F_init: 648050.8 NK11275WIL
+Date of processing : 14-JUL-2000 11:41:46
+Lat1:  11.3136 Lon1: 306.3133 Lat2:  14.0784 Lon2: 293.9113 F: 648061.3  NQ: 0
+Ci:    0.40   Cf:   3.04 Pb:34. Dp:  58.347    Vl:  0.688  Df:  0.00  Tr:  6.1
+         Ptfm: 25530
+Date: 18457    s: 41478       196/00  Msg:  7 >-120Db:  0 Best: -123 D_dat:  325
+Nloc: 12      LQ: 1040523015 11:31:18 Alt:  0.000 F_init: 648050.8 NK11275WIN
+Date of processing : 14-JUL-2000 13:41:31
+Lat1:  11.3136 Lon1: 306.3133 Lat2:  14.0784 Lon2: 293.9113 F: 648061.3  NQ: 0
+Ci:    0.40   Cf:   3.04 Pb:34. Dp:  58.347    Vl:  0.688  Df:  0.00  Tr:  6.1
+         Ptfm: 25530
+Date: 18457    s: 81926       196/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  167
+Nloc: 12      LQ: 1040522015 22:45:26 Alt:  0.000 F_init: 648050.8 NK11282WIL
+Date of processing : 14-JUL-2000 22:59:24
+Lat1:  11.5755 Lon1: 306.0727 Lat2:  13.5904 Lon2: 313.0404 F: 648050.7  NQ: 0
+Ci:    0.36   Cf:  41.74 Pb:12. Dp:  86.861    Vl:  0.693  Df:  0.00  Tr:  3.8
+         Ptfm: 25530
+Date: 18457    s: 81926       196/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  167
+Nloc: 12      LQ: 1040522015 22:45:26 Alt:  0.000 F_init: 648050.8 NK19622HAL
+Date of processing : 14-JUL-2000 23:37:40
+Lat1:  11.5755 Lon1: 306.0727 Lat2:  13.5904 Lon2: 313.0404 F: 648050.7  NQ: 0
+Ci:    0.36   Cf:  41.74 Pb:12. Dp:  86.861    Vl:  0.693  Df:  0.00  Tr:  3.8
+         Ptfm: 25530
+Date: 18457    s: 81926       196/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  167
+Nloc: 12      LQ: 1040522015 22:45:26 Alt:  0.000 F_init: 648050.8 NK11281WIN
+Date of processing : 15-JUL-2000 00:53:23
+Lat1:  11.5755 Lon1: 306.0727 Lat2:  13.5904 Lon2: 313.0404 F: 648050.7  NQ: 0
+Ci:    0.36   Cf:  41.74 Pb:12. Dp:  86.861    Vl:  0.693  Df:  0.00  Tr:  3.8
+         Ptfm: 25530
+Date: 18458    s: 28584       197/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   92
+Nloc: -1      LQ: 1070120000  7:56:24 Alt:  0.000 F_init: 648050.8 NJ28557WIN
+Date of processing : 15-JUL-2000 09:53:47
+Lat1:  12.4261 Lon1: 304.1026 Lat2:  11.8570 Lon2: 306.4800 F: 648050.8  NQ:-1
+Ci:    1.32   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.1
+         Ptfm: 25530
+Date: 18458    s: 40684       197/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:18:04 Alt:  0.000 F_init: 648050.8 NK19711PRL
+Date of processing : 15-JUL-2000 11:40:55
+         Ptfm: 25530
+Date: 18458    s: 40348       197/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  672
+Nloc: -1      LQ: 0040120000 11:12:28 Alt:  0.000 F_init: 648050.8 NK11289WIN
+Date of processing : 15-JUL-2000 13:14:31
+Lat1:  11.9305 Lon1: 306.6009 Lat2:  12.3100 Lon2: 304.8851 F: 648050.8  NQ:-1
+Ci:   11.81   Cf:  -1.00 Pb:46. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  0.9
+         Ptfm: 25530
+Date: 18458    s: 40348       197/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  672
+Nloc: -1      LQ: 0040120000 11:12:28 Alt:  0.000 F_init: 648050.8 NK11289WIN
+Date of processing : 15-JUL-2000 15:04:25
+Lat1:  11.9305 Lon1: 306.6009 Lat2:  12.3100 Lon2: 304.8851 F: 648050.8  NQ:-1
+Ci:   11.81   Cf:  -1.00 Pb:46. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  0.9
+         Ptfm: 25530
+Date: 18458    s: 69224       197/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   94
+Nloc: -1      LQ: 1070120000 19:13:44 Alt:  0.000 F_init: 648050.8 NJ28564WIL
+Date of processing : 15-JUL-2000 19:28:10
+Lat1:  15.9166 Lon1: 319.1458 Lat2:  12.1374 Lon2: 306.1865 F: 648050.8  NQ:-1
+Ci:    1.68   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.1
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  8 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 22      LQ: 0040523013 19:08:51 Alt:  0.000 F_init: 648050.8 NJ28563WIN
+Date of processing : 15-JUL-2000 19:38:59
+Lat1:  12.2039 Lon1: 306.3041 Lat2:  15.4237 Lon2: 320.0665 F: 648052.2  NQ: 1
+Ci:    0.74   Cf:   1.05 Pb:15. Dp: 155.816    Vl:  0.000  Df:  0.00  Tr:  7.1
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  9 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 21      LQ: 0040503013 19:08:51 Alt:  0.000 F_init: 648052.2 NJ19719HAL
+Date of processing : 15-JUL-2000 21:08:57
+Lat1:  12.2041 Lon1: 306.3048 Lat2:  15.4252 Lon2: 320.0773 F: 648052.1  NQ: 1
+Ci:    0.67   Cf:   0.91 Pb:14. Dp:   0.083    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  9 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 21      LQ: 0040503013 19:08:51 Alt:  0.000 F_init: 648052.2 NJ28564WIN
+Date of processing : 15-JUL-2000 21:30:13
+Lat1:  12.2041 Lon1: 306.3048 Lat2:  15.4252 Lon2: 320.0773 F: 648052.1  NQ: 1
+Ci:    0.67   Cf:   0.91 Pb:14. Dp:   0.083    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18458    s: 80650       197/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:  104
+Nloc:  2      LQ: 1080043015 22:24:10 Alt:  0.000 F_init: 648052.2 NK11296WIL
+Date of processing : 15-JUL-2000 22:45:45
+Lat1:  12.1444 Lon1: 306.2045 Lat2:  16.9439 Lon2: 323.0065 F: 648052.2  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  12.680    Vl:  1.082  Df:  0.00  Tr:  8.9
+         Ptfm: 25530
+Date: 18458    s: 80650       197/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:  104
+Nloc:  2      LQ: 1080043015 22:24:10 Alt:  0.000 F_init: 648052.2 NK19722HAL
+Date of processing : 15-JUL-2000 23:10:30
+Lat1:  12.1444 Lon1: 306.2045 Lat2:  16.9439 Lon2: 323.0065 F: 648052.2  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  12.680    Vl:  1.082  Df:  0.00  Tr:  8.9
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  9 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 21      LQ: 0040503013 19:08:51 Alt:  0.000 F_init: 648052.2 NJ19719HAL
+Date of processing : 15-JUL-2000 23:57:29
+Lat1:  12.2041 Lon1: 306.3048 Lat2:  15.4252 Lon2: 320.0773 F: 648052.1  NQ: 1
+Ci:    0.67   Cf:   0.91 Pb:14. Dp:   0.083    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18458    s: 80591       197/00  Msg:  3 >-120Db:  0 Best: -121 D_dat:  221
+Nloc:  2      LQ: 1070043815 22:23:11 Alt:  0.000 F_init: 648052.2 NK11296WIN
+Date of processing : 16-JUL-2000 00:34:23
+Lat1:  12.4079 Lon1: 306.4168 Lat2:  16.3537 Lon2: 324.3514 F: 648074.1  NQ:-7
+Ci:    0.00   Cf:   2.69 Pb:50. Dp:  25.688    Vl:  2.203  Df:  0.11  Tr:  8.7
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  9 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 21      LQ: 0040503013 19:08:51 Alt:  0.000 F_init: 648052.2 NJ19719HAL
+Date of processing : 16-JUL-2000 00:48:58
+Lat1:  12.2041 Lon1: 306.3048 Lat2:  15.4252 Lon2: 320.0773 F: 648052.1  NQ: 1
+Ci:    0.67   Cf:   0.91 Pb:14. Dp:   0.083    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18458    s: 68931       197/00  Msg:  9 >-120Db:  0 Best: -122 D_dat:  680
+Nloc: 21      LQ: 0040503013 19:08:51 Alt:  0.000 F_init: 648052.2 NJ28564WIN
+Date of processing : 16-JUL-2000 00:54:56
+Lat1:  12.2041 Lon1: 306.3048 Lat2:  15.4252 Lon2: 320.0773 F: 648052.1  NQ: 1
+Ci:    0.67   Cf:   0.91 Pb:14. Dp:   0.083    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18458    s: 80591       197/00  Msg:  3 >-120Db:  0 Best: -121 D_dat:  221
+Nloc:  2      LQ: 1070043815 22:23:11 Alt:  0.000 F_init: 648052.2 NK11296WIL
+Date of processing : 16-JUL-2000 01:29:07
+Lat1:  12.4079 Lon1: 306.4168 Lat2:  16.3537 Lon2: 324.3514 F: 648074.1  NQ:-7
+Ci:    0.00   Cf:   2.69 Pb:50. Dp:  25.688    Vl:  2.203  Df:  0.11  Tr:  8.7
+         Ptfm: 25530
+Date: 18458    s: 80591       197/00  Msg:  3 >-120Db:  0 Best: -121 D_dat:  221
+Nloc:  2      LQ: 1070043815 22:23:11 Alt:  0.000 F_init: 648052.2 NK19722HAL
+Date of processing : 16-JUL-2000 01:41:36
+Lat1:  12.4079 Lon1: 306.4168 Lat2:  16.3537 Lon2: 324.3514 F: 648074.1  NQ:-7
+Ci:    0.00   Cf:   2.69 Pb:50. Dp:  25.688    Vl:  2.203  Df:  0.11  Tr:  8.7
+         Ptfm: 25530
+Date: 18459    s: 39172       198/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc:  2      LQ: 1070022025 10:52:52 Alt:  0.000 F_init: 648052.2 NK11303WIN
+Date of processing : 16-JUL-2000 13:18:56
+Lat1:  12.5153 Lon1: 306.5157 Lat2:  10.4051 Lon2: 316.0603 F: 648064.9  NQ:-7
+Ci:    0.00   Cf:   3.36 Pb:50. Dp:  41.431    Vl:  0.731  Df:  0.00  Tr:  4.8
+         Ptfm: 25530
+Date: 18459    s: 39172       198/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc:  2      LQ: 1070022025 10:52:52 Alt:  0.000 F_init: 648052.2 NK11303WIN
+Date of processing : 16-JUL-2000 14:51:39
+Lat1:  12.5153 Lon1: 306.5157 Lat2:  10.4051 Lon2: 316.0603 F: 648064.9  NQ:-7
+Ci:    0.00   Cf:   3.36 Pb:50. Dp:  41.431    Vl:  0.731  Df:  0.00  Tr:  4.8
+         Ptfm: 25530
+Date: 18459    s: 68575       198/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   73
+Nloc:  2      LQ: 1080023015 19:02:55 Alt:  0.000 F_init: 648052.2 NJ28578WIL
+Date of processing : 16-JUL-2000 19:16:14
+Lat1:  12.7889 Lon1: 306.4225 Lat2:  17.8704 Lon2: 324.1833 F: 648052.2  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  65.987    Vl:  0.767  Df:  0.00  Tr:  9.3
+         Ptfm: 25530
+Date: 18459    s: 68421       198/00  Msg:  5 >-120Db:  2 Best: -118 D_dat:  382
+Nloc: 13      LQ: 0040523015 19:00:21 Alt:  0.000 F_init: 648052.2 NJ28577WIN
+Date of processing : 16-JUL-2000 19:28:06
+Lat1:  12.7681 Lon1: 306.4638 Lat2:  17.2274 Lon2: 325.4451 F: 648060.9  NQ: 0
+Ci:    0.62   Cf:   2.05 Pb:28. Dp:  64.793    Vl:  0.754  Df:  0.00  Tr:  9.5
+         Ptfm: 25530
+Date: 18459    s: 68421       198/00  Msg:  5 >-120Db:  2 Best: -118 D_dat:  382
+Nloc: 11      LQ: 0040503013 19:00:21 Alt:  0.000 F_init: 648060.9 NJ19818HAL
+Date of processing : 16-JUL-2000 19:30:59
+Lat1:  12.7681 Lon1: 306.4638 Lat2:  17.2274 Lon2: 325.4451 F: 648060.9  NQ: 0
+Ci:    0.62   Cf:   2.05 Pb:28. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr:  9.5
+         Ptfm: 25530
+Date: 18459    s: 74063       198/00  Msg:  1 >-120Db:  0 Best: -127 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:34:23 Alt:  0.000 F_init: 648060.9 NJ19820PRL
+Date of processing : 16-JUL-2000 20:54:01
+         Ptfm: 25530
+Date: 18459    s: 68421       198/00  Msg:  5 >-120Db:  2 Best: -118 D_dat:  382
+Nloc: 11      LQ: 0040503013 19:00:21 Alt:  0.000 F_init: 648060.9 NJ28578WIN
+Date of processing : 16-JUL-2000 21:09:07
+Lat1:  12.7681 Lon1: 306.4638 Lat2:  17.2274 Lon2: 325.4451 F: 648060.9  NQ: 0
+Ci:    0.62   Cf:   2.05 Pb:28. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr:  9.5
+         Ptfm: 25530
+Date: 18459    s: 74063       198/00  Msg:  1 >-120Db:  0 Best: -127 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:34:23 Alt:  0.000 F_init: 648060.9 NJ28578WIN
+Date of processing : 16-JUL-2000 21:09:08
+         Ptfm: 25530
+Date: 18460    s: 27720       199/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  7:42:00 Alt:  0.000 F_init: 648060.9 NJ19907PRL
+Date of processing : 17-JUL-2000 08:00:02
+         Ptfm: 25530
+Date: 18460    s: 27720       199/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  7:42:00 Alt:  0.000 F_init: 648060.9 NJ28585WIN
+Date of processing : 17-JUL-2000 09:34:18
+         Ptfm: 25530
+Date: 18460    s: 37832       199/00  Msg:  2 >-120Db:  0 Best: -122 D_dat:   46
+Nloc:  2      LQ: 1080023015 10:30:32 Alt:  0.000 F_init: 648060.9 NK11317WIN
+Date of processing : 17-JUL-2000 12:25:25
+Lat1:  13.1197 Lon1: 306.4631 Lat2:   8.5363 Lon2: 327.0786 F: 648060.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  38.894    Vl:  0.697  Df:  0.00  Tr: 10.4
+         Ptfm: 25530
+Date: 18460    s: 43888       199/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:11:28 Alt:  0.000 F_init: 648060.9 NK19912PRL
+Date of processing : 17-JUL-2000 12:39:42
+         Ptfm: 25530
+Date: 18460    s: 43911       199/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:   45
+Nloc:  2      LQ: 1080023015 12:11:51 Alt:  0.000 F_init: 648060.9 NK11318WIN
+Date of processing : 17-JUL-2000 14:09:49
+Lat1:  13.1564 Lon1: 306.5399 Lat2:  19.2912 Lon2: 278.7920 F: 648060.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  43.742    Vl:  0.707  Df:  0.00  Tr: 13.7
+         Ptfm: 25530
+Date: 18460    s: 67826       199/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:   55
+Nloc:  2      LQ: 1080023015 18:50:26 Alt:  0.000 F_init: 648060.9 NJ19918HAL
+Date of processing : 17-JUL-2000 19:34:10
+Lat1:  13.2041 Lon1: 306.4707 Lat2:  19.1610 Lon2: 329.8901 F: 648060.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  48.234    Vl:  0.562  Df:  0.00  Tr: 12.0
+         Ptfm: 25530
+Date: 18460    s: 67551       199/00  Msg:  5 >-120Db:  0 Best: -126 D_dat:  604
+Nloc: 13      LQ: 0040523015 18:45:51 Alt:  0.000 F_init: 648060.9 NJ28591GCN
+Date of processing : 17-JUL-2000 19:38:45
+Lat1:  13.2248 Lon1: 306.5860 Lat2:  18.7701 Lon2: 330.6102 F: 648087.1  NQ: 0
+Ci:    0.70   Cf:   3.93 Pb:16. Dp:  52.235    Vl:  0.611  Df:  0.00  Tr: 12.2
+         Ptfm: 25530
+Date: 18461    s: 26531       200/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000  7:22:11 Alt:  0.000 F_init: 648087.1 NJ28599WIN
+Date of processing : 18-JUL-2000 09:26:49
+         Ptfm: 25530
+Date: 18461    s: 41874       200/00  Msg:  1 >-120Db:  0 Best: -138 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:37:54 Alt:  0.000 F_init: 648087.1 NK20011LAL
+Date of processing : 18-JUL-2000 12:04:17
+         Ptfm: 25530
+Date: 18461    s: 41874       200/00  Msg:  1 >-120Db:  0 Best: -138 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:37:54 Alt:  0.000 F_init: 648087.1 NK20011HAL
+Date of processing : 18-JUL-2000 12:04:57
+         Ptfm: 25530
+Date: 18461    s: 42147       200/00  Msg:  5 >-120Db:  1 Best: -119 D_dat:  547
+Nloc: 13      LQ: 0040523015 11:42:27 Alt:  0.000 F_init: 648087.1 NK20011MIL
+Date of processing : 18-JUL-2000 12:24:26
+Lat1:  13.6469 Lon1: 306.5331 Lat2:  17.3441 Lon2: 290.0728 F: 648087.6  NQ: 0
+Ci:    1.46   Cf:   2.33 Pb:18. Dp:  47.042    Vl:  0.771  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18461    s: 42170       200/00  Msg:  6 >-120Db:  1 Best: -119 D_dat:  592
+Nloc: 13      LQ: 0040413613 11:42:50 Alt:  0.000 F_init: 648087.6 NK11332WIN
+Date of processing : 18-JUL-2000 13:49:12
+Lat1:  13.6454 Lon1: 306.5242 Lat2:  17.3228 Lon2: 290.1030 F: 648084.7  NQ: 0
+Ci:    1.69   Cf:   2.39 Pb:19. Dp:   0.972    Vl:  0.000  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18461    s: 82181       200/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080031015 22:49:41 Alt:  0.000 F_init: 648087.6 NK11338WIN
+Date of processing : 18-JUL-2000 23:24:19
+Lat1:  13.7297 Lon1: 305.7473 Lat2:  14.2955 Lon2: 308.3200 F: 648087.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  85.499    Vl:  2.136  Df:  0.00  Tr:  1.3
+         Ptfm: 25530
+Date: 18461    s: 82181       200/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080031015 22:49:41 Alt:  0.000 F_init: 648087.6 NK11339WIN
+Date of processing : 19-JUL-2000 01:01:08
+Lat1:  13.7297 Lon1: 305.7473 Lat2:  14.2955 Lon2: 308.3200 F: 648087.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  85.499    Vl:  2.136  Df:  0.00  Tr:  1.3
+         Ptfm: 25530
+Date: 18462    s: 31812       201/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  112
+Nloc:  2      LQ: 1080023015  8:50:12 Alt:  0.000 F_init: 648087.6 NJ28614WIL
+Date of processing : 19-JUL-2000 08:55:56
+Lat1:  14.1692 Lon1: 306.5665 Lat2:  20.3453 Lon2: 279.3618 F: 648087.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  57.906    Vl:  0.761  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 31812       201/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  112
+Nloc:  2      LQ: 1080023015  8:50:12 Alt:  0.000 F_init: 648087.6 NJ20108HAL
+Date of processing : 19-JUL-2000 09:15:42
+Lat1:  14.1692 Lon1: 306.5665 Lat2:  20.3453 Lon2: 279.3618 F: 648087.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  57.906    Vl:  0.761  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 31812       201/00  Msg:  2 >-120Db:  0 Best: -124 D_dat:  112
+Nloc:  2      LQ: 1080023015  8:50:12 Alt:  0.000 F_init: 648087.6 NJ20108LAL
+Date of processing : 19-JUL-2000 09:18:42
+Lat1:  14.1692 Lon1: 306.5665 Lat2:  20.3453 Lon2: 279.3618 F: 648087.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  57.906    Vl:  0.761  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 31978       201/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  443
+Nloc:  2      LQ: 0070023025  8:52:58 Alt:  0.000 F_init: 648087.6 NJ20108PRL
+Date of processing : 19-JUL-2000 09:42:44
+Lat1:  14.1328 Lon1: 306.4937 Lat2:  20.3544 Lon2: 279.3505 F: 648053.8  NQ:-7
+Ci:    0.00   Cf:   0.27 Pb:50. Dp:  53.928    Vl:  0.707  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 31978       201/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  443
+Nloc:  0      LQ: 0070003013  8:52:58 Alt:  0.000 F_init: 648053.8 NJ28614WIN
+Date of processing : 19-JUL-2000 10:49:21
+Lat1:  14.1328 Lon1: 306.4937 Lat2:  20.3544 Lon2: 279.3505 F: 648053.8  NQ:-7
+Ci:    0.00   Cf:   0.27 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 40742       201/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:19:02 Alt:  0.000 F_init: 648053.8 NK20111HAL
+Date of processing : 19-JUL-2000 11:48:33
+         Ptfm: 25530
+Date: 18462    s: 40787       201/00  Msg:  3 >-120Db:  0 Best: -121 D_dat:   91
+Nloc: -1      LQ: 1070140000 11:19:47 Alt:  0.000 F_init: 648053.8 NK11346WIN
+Date of processing : 19-JUL-2000 13:23:24
+Lat1:  15.4015 Lon1: 301.4004 Lat2:  14.2271 Lon2: 306.4236 F: 648053.8  NQ:-1
+Ci:    0.98   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.4
+         Ptfm: 25530
+Date: 18462    s: 31978       201/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  443
+Nloc:  0      LQ: 0070003013  8:52:58 Alt:  0.000 F_init: 648053.8 NJ20108MIL
+Date of processing : 19-JUL-2000 13:45:34
+Lat1:  14.1328 Lon1: 306.4937 Lat2:  20.3544 Lon2: 279.3505 F: 648053.8  NQ:-7
+Ci:    0.00   Cf:   0.27 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18462    s: 66374       201/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:   92
+Nloc:  2      LQ: 1080033015 18:26:14 Alt:  0.000 F_init: 648053.8 NJ28619GCN
+Date of processing : 19-JUL-2000 19:04:32
+Lat1:  14.4292 Lon1: 306.5329 Lat2:  22.3904 Lon2: 340.9197 F: 648053.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  33.073    Vl:  0.962  Df:  0.00  Tr: 17.2
+         Ptfm: 25530
+Date: 18462    s: 66374       201/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:   92
+Nloc:  2      LQ: 1080033015 18:26:14 Alt:  0.000 F_init: 648053.8 NJ20118HAL
+Date of processing : 19-JUL-2000 19:06:36
+Lat1:  14.4292 Lon1: 306.5329 Lat2:  22.3904 Lon2: 340.9197 F: 648053.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  33.073    Vl:  0.962  Df:  0.00  Tr: 17.2
+         Ptfm: 25530
+Date: 18462    s: 80966       201/00  Msg:  2 >-120Db:  1 Best: -118 D_dat:   45
+Nloc:  2      LQ: 0080023015 22:29:26 Alt:  0.000 F_init: 648053.8 NK11352WIN
+Date of processing : 19-JUL-2000 22:57:47
+Lat1:  14.4797 Lon1: 306.6153 Lat2:  16.9774 Lon2: 318.0086 F: 648053.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  40.564    Vl:  0.828  Df:  0.00  Tr:  5.7
+         Ptfm: 25530
+Date: 18462    s: 81011       201/00  Msg:  4 >-120Db:  1 Best: -118 D_dat:  135
+Nloc: 23      LQ: 0040623015 22:30:11 Alt:  0.000 F_init: 648053.8 NK11353WIN
+Date of processing : 20-JUL-2000 00:44:08
+Lat1:  14.4745 Lon1: 306.6208 Lat2:  17.0118 Lon2: 318.0240 F: 648064.6  NQ: 1
+Ci:    0.12   Cf:   0.68 Pb:25. Dp:  40.223    Vl:  0.820  Df:  0.00  Tr:  5.7
+         Ptfm: 25530
+Date: 18462    s: 81011       201/00  Msg:  4 >-120Db:  1 Best: -118 D_dat:  135
+Nloc: 21      LQ: 0040603013 22:30:11 Alt:  0.000 F_init: 648064.6 NK11353GCN
+Date of processing : 20-JUL-2000 04:26:16
+Lat1:  14.4745 Lon1: 306.6208 Lat2:  17.0118 Lon2: 318.0240 F: 648064.6  NQ: 1
+Ci:    0.12   Cf:   0.68 Pb:25. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr:  5.7
+         Ptfm: 25530
+Date: 18463    s: 24792       202/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:53:12 Alt:  0.000 F_init: 648064.6 NJ20206HAL
+Date of processing : 20-JUL-2000 07:18:42
+         Ptfm: 25530
+Date: 18463    s: 31058       202/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   90
+Nloc:  2      LQ: 1070033815  8:37:38 Alt:  0.000 F_init: 648064.6 NJ28628WIL
+Date of processing : 20-JUL-2000 08:44:57
+Lat1:  14.7276 Lon1: 306.5917 Lat2:  19.7514 Lon2: 285.0376 F: 648014.7  NQ:-7
+Ci:    0.00   Cf:   2.63 Pb:50. Dp:  28.173    Vl:  0.773  Df:  0.08  Tr: 10.6
+         Ptfm: 25530
+Date: 18463    s: 31058       202/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   90
+Nloc:  2      LQ: 1070033815  8:37:38 Alt:  0.000 F_init: 648064.6 NJ20208LAL
+Date of processing : 20-JUL-2000 08:53:07
+Lat1:  14.7276 Lon1: 306.5917 Lat2:  19.7514 Lon2: 285.0376 F: 648014.7  NQ:-7
+Ci:    0.00   Cf:   2.63 Pb:50. Dp:  28.173    Vl:  0.773  Df:  0.08  Tr: 10.6
+         Ptfm: 25530
+Date: 18463    s: 24792       202/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:53:12 Alt:  0.000 F_init: 648064.6 NJ28627WIN
+Date of processing : 20-JUL-2000 08:57:32
+         Ptfm: 25530
+Date: 18463    s: 31058       202/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:   90
+Nloc:  2      LQ: 1070033815  8:37:38 Alt:  0.000 F_init: 648064.6 NJ20208HAL
+Date of processing : 20-JUL-2000 09:07:17
+Lat1:  14.7276 Lon1: 306.5917 Lat2:  19.7514 Lon2: 285.0376 F: 648014.7  NQ:-7
+Ci:    0.00   Cf:   2.63 Pb:50. Dp:  28.173    Vl:  0.773  Df:  0.08  Tr: 10.6
+         Ptfm: 25530
+Date: 18463    s: 31175       202/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  322
+Nloc: 24      LQ: 0040533815  8:39:35 Alt:  0.000 F_init: 648064.6 NJ20208MIL
+Date of processing : 20-JUL-2000 09:24:59
+Lat1:  14.7150 Lon1: 306.7500 Lat2:  19.7316 Lon2: 285.0210 F: 648062.8  NQ: 1
+Ci:    0.46   Cf:   1.34 Pb:21. Dp:  30.029    Vl:  0.821  Df:  0.00  Tr: 10.8
+         Ptfm: 25530
+Date: 18463    s: 31175       202/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  322
+Nloc: 21      LQ: 0040503013  8:39:35 Alt:  0.000 F_init: 648062.8 NJ28628WIN
+Date of processing : 20-JUL-2000 10:39:55
+Lat1:  14.7150 Lon1: 306.7500 Lat2:  19.7316 Lon2: 285.0210 F: 648062.8  NQ: 1
+Ci:    0.46   Cf:   1.34 Pb:21. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 10.8
+         Ptfm: 25530
+Date: 18463    s: 45397       202/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:   45
+Nloc:  2      LQ: 1080032015 12:36:37 Alt:  0.000 F_init: 648062.8 NK20212HAL
+Date of processing : 20-JUL-2000 13:08:24
+Lat1:  14.7820 Lon1: 306.7657 Lat2:  23.9700 Lon2: 264.3965 F: 648062.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   7.605    Vl:  0.535  Df:  0.00  Tr: 21.0
+         Ptfm: 25530
+Date: 18463    s: 33547       202/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:19:07 Alt:  0.000 F_init: 648062.8 NK11359WIN
+Date of processing : 20-JUL-2000 13:12:29
+         Ptfm: 25530
+Date: 18463    s: 45479       202/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  208
+Nloc: 13      LQ: 0040532825 12:37:59 Alt:  0.000 F_init: 648062.8 NK11361WIL
+Date of processing : 20-JUL-2000 13:20:50
+Lat1:  14.7901 Lon1: 306.7162 Lat2:  24.2629 Lon2: 263.9239 F: 648054.3  NQ: 0
+Ci:    0.21   Cf:   3.83 Pb:90. Dp:   9.066    Vl:  0.634  Df:  0.04  Tr: 21.0
+         Ptfm: 25530
+Date: 18463    s: 45479       202/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  208
+Nloc: 10      LQ: 0040502023 12:37:59 Alt:  0.000 F_init: 648054.3 NK20212LAL
+Date of processing : 20-JUL-2000 14:25:15
+Lat1:  14.7901 Lon1: 306.7162 Lat2:  24.2629 Lon2: 263.9239 F: 648054.3  NQ: 0
+Ci:    0.21   Cf:   3.83 Pb:90. Dp:   0.005    Vl:  0.000  Df:  0.00  Tr: 21.0
+         Ptfm: 25530
+Date: 18463    s: 45479       202/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  208
+Nloc: 10      LQ: 0040502023 12:37:59 Alt:  0.000 F_init: 648054.3 NK11361WIN
+Date of processing : 20-JUL-2000 14:44:27
+Lat1:  14.7901 Lon1: 306.7162 Lat2:  24.2629 Lon2: 263.9239 F: 648054.3  NQ: 0
+Ci:    0.21   Cf:   3.83 Pb:90. Dp:   0.005    Vl:  0.000  Df:  0.00  Tr: 21.0
+         Ptfm: 25530
+Date: 18463    s: 65517       202/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  135
+Nloc:  3      LQ: 0070032815 18:11:57 Alt:  0.000 F_init: 648054.3 NJ28633GCN
+Date of processing : 20-JUL-2000 18:52:29
+Lat1:  14.9650 Lon1: 306.8549 Lat2:  24.0565 Lon2: 346.6241 F: 648060.6  NQ:-7
+Ci:    0.00   Cf:   2.26 Pb:50. Dp:  24.446    Vl:  1.220  Df:  0.02  Tr: 19.6
+         Ptfm: 25530
+Date: 18463    s: 79326       202/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 22:02:06 Alt:  0.000 F_init: 648060.6 NK11366GCN
+Date of processing : 20-JUL-2000 22:48:20
+         Ptfm: 25530
+Date: 18463    s: 45479       202/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  208
+Nloc: 12      LQ: 0040522025 12:37:59 Alt:  0.000 F_init: 648062.0 NK45012MIL
+Date of processing : 21-JUL-2000 10:15:54
+Lat1:  14.7899 Lon1: 306.7163 Lat2:  24.2628 Lon2: 263.9237 F: 648054.4  NQ: 0
+Ci:    0.21   Cf:   3.83 Pb:90. Dp:  53.493    Vl:  0.817  Df:  0.00  Tr: 21.0
+         Ptfm: 25530
+Date: 18464    s: 30096       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   45
+Nloc:  2      LQ: 1080023015  8:21:36 Alt:  0.000 F_init: 648060.6 NJ28642WIL
+Date of processing : 21-JUL-2000 08:33:46
+Lat1:  15.2868 Lon1: 306.9401 Lat2:  20.0250 Lon2: 292.2734 F: 648060.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  36.762    Vl:  0.721  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18464    s: 30096       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   45
+Nloc:  2      LQ: 1080023015  8:21:36 Alt:  0.000 F_init: 648060.6 NJ20308LAL
+Date of processing : 21-JUL-2000 08:38:28
+Lat1:  15.2868 Lon1: 306.9401 Lat2:  20.0250 Lon2: 292.2734 F: 648060.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  36.762    Vl:  0.721  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18464    s: 30096       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   45
+Nloc:  2      LQ: 1080023015  8:21:36 Alt:  0.000 F_init: 648060.6 NJ20308HAL
+Date of processing : 21-JUL-2000 08:48:32
+Lat1:  15.2868 Lon1: 306.9401 Lat2:  20.0250 Lon2: 292.2734 F: 648060.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  36.762    Vl:  0.721  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18464    s: 24519       203/00  Msg:  5 >-120Db:  0 Best: -125 D_dat:  218
+Nloc: 12      LQ: 0040523015  6:48:39 Alt:  0.000 F_init: 648060.6 NJ28641WIN
+Date of processing : 21-JUL-2000 08:51:38
+Lat1:  15.2227 Lon1: 306.9379 Lat2:   7.7856 Lon2: 338.9901 F: 648062.0  NQ: 0
+Ci:    0.29   Cf:   2.22 Pb:45. Dp:  29.869    Vl:  0.658  Df:  0.00  Tr: 16.0
+         Ptfm: 25530
+Date: 18464    s: 44039       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080033015 12:13:59 Alt:  0.000 F_init: 648062.0 NK11375WIL
+Date of processing : 21-JUL-2000 12:24:34
+Lat1:  15.3508 Lon1: 306.9212 Lat2:  22.3494 Lon2: 275.2650 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  14.289    Vl:  0.732  Df:  0.00  Tr: 15.8
+         Ptfm: 25530
+Date: 18464    s: 44039       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080033015 12:13:59 Alt:  0.000 F_init: 648062.0 NK20312LAL
+Date of processing : 21-JUL-2000 12:35:37
+Lat1:  15.3508 Lon1: 306.9212 Lat2:  22.3494 Lon2: 275.2650 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  14.289    Vl:  0.732  Df:  0.00  Tr: 15.8
+         Ptfm: 25530
+Date: 18464    s: 44039       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080033015 12:13:59 Alt:  0.000 F_init: 648062.0 NK20312HAL
+Date of processing : 21-JUL-2000 12:51:43
+Lat1:  15.3508 Lon1: 306.9212 Lat2:  22.3494 Lon2: 275.2650 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  14.289    Vl:  0.732  Df:  0.00  Tr: 15.8
+         Ptfm: 25530
+Date: 18464    s: 44039       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080033015 12:13:59 Alt:  0.000 F_init: 648062.0 NK04418MIL
+Date of processing : 21-JUL-2000 13:04:13
+Lat1:  15.3508 Lon1: 306.9212 Lat2:  22.3494 Lon2: 275.2650 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  14.289    Vl:  0.732  Df:  0.00  Tr: 15.8
+         Ptfm: 25530
+Date: 18464    s: 30096       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   45
+Nloc:  2      LQ: 1080043015  8:21:36 Alt:  0.000 F_init: 648062.0 NJ28642WIN
+Date of processing : 21-JUL-2000 13:49:55
+Lat1:  15.2652 Lon1: 306.9552 Lat2:  20.0146 Lon2: 292.2516 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   5.056    Vl:  0.907  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18464    s: 44039       203/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080033015 12:13:59 Alt:  0.000 F_init: 648062.0 NK11375WIN
+Date of processing : 21-JUL-2000 14:21:20
+Lat1:  15.3508 Lon1: 306.9212 Lat2:  22.3494 Lon2: 275.2650 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  14.289    Vl:  0.732  Df:  0.00  Tr: 15.8
+         Ptfm: 25530
+Date: 18464    s: 64683       203/00  Msg:  3 >-120Db:  0 Best: -127 D_dat:  137
+Nloc:  2      LQ: 1070032815 17:58:03 Alt:  0.000 F_init: 648062.0 NJ28647GCN
+Date of processing : 21-JUL-2000 19:13:39
+Lat1:  15.3644 Lon1: 306.8252 Lat2:  25.5309 Lon2: 352.1806 F: 648088.0  NQ:-7
+Ci:    0.00   Cf:   4.02 Pb:50. Dp:  19.811    Vl:  0.493  Df:  0.04  Tr: 22.2
+         Ptfm: 25530
+Date: 18464    s: 70754       203/00  Msg:  2 >-120Db:  1 Best: -120 D_dat:   90
+Nloc:  2      LQ: 1080021015 19:39:14 Alt:  0.000 F_init: 648062.0 NJ28648WIN
+Date of processing : 21-JUL-2000 20:08:34
+Lat1:  15.4778 Lon1: 306.7767 Lat2:  14.8235 Lon2: 303.9244 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  33.122    Vl:  0.716  Df:  0.00  Tr:  1.4
+         Ptfm: 25530
+Date: 18464    s: 70754       203/00  Msg:  2 >-120Db:  1 Best: -120 D_dat:   90
+Nloc:  2      LQ: 1080021015 19:39:14 Alt:  0.000 F_init: 648062.0 NJ28648WIN
+Date of processing : 21-JUL-2000 21:51:53
+Lat1:  15.4778 Lon1: 306.7767 Lat2:  14.8235 Lon2: 303.9244 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  33.122    Vl:  0.716  Df:  0.00  Tr:  1.4
+         Ptfm: 25530
+Date: 18464    s: 84084       203/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  160
+Nloc:  2      LQ: 1070023025 23:21:24 Alt:  0.000 F_init: 648062.0 NK11381WIN
+Date of processing : 22-JUL-2000 01:40:14
+Lat1:  15.5696 Lon1: 306.8125 Lat2:  12.0430 Lon2: 290.7971 F: 648054.5  NQ:-7
+Ci:    0.00   Cf:   1.51 Pb:50. Dp:  40.681    Vl:  0.683  Df:  0.00  Tr:  7.9
+         Ptfm: 25530
+Date: 18465    s: 42927       204/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:55:27 Alt:  0.000 F_init: 648062.0 NK20411MIL
+Date of processing : 22-JUL-2000 12:30:58
+         Ptfm: 25530
+Date: 18465    s: 42927       204/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:55:27 Alt:  0.000 F_init: 648062.0 NK11389WIN
+Date of processing : 22-JUL-2000 13:52:42
+         Ptfm: 25530
+Date: 18465    s: 64023       204/00  Msg:  1 >-120Db:  0 Best: -135 D_dat:    0
+Nloc: -2      LQ: 2040000000 17:47:03 Alt:  0.000 F_init: 648062.0 NJ28661GCN
+Date of processing : 22-JUL-2000 18:48:08
+         Ptfm: 25530
+Date: 18465    s: 69812       204/00  Msg:  1 >-120Db:  0 Best: -128 D_dat:    0
+Nloc: -2      LQ: 2040000000 19:23:32 Alt:  0.000 F_init: 648062.0 NJ28662WIN
+Date of processing : 22-JUL-2000 19:56:13
+         Ptfm: 25530
+Date: 18465    s: 76835       204/00  Msg:  1 >-120Db:  0 Best: -131 D_dat:    0
+Nloc: -2      LQ: 2040000000 21:20:35 Alt:  0.000 F_init: 648062.0 NK11394WIN
+Date of processing : 22-JUL-2000 23:46:11
+         Ptfm: 25530
+Date: 18465    s: 76835       204/00  Msg:  1 >-120Db:  0 Best: -131 D_dat:    0
+Nloc: -2      LQ: 2040000000 21:20:35 Alt:  0.000 F_init: 648075.1 NK11394WIN
+Date of processing : 23-JUL-2000 19:13:22
+         Ptfm: 25530
+Date: 18466    s: 28670       205/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  1      LQ: 1080022013  7:57:50 Alt:  0.000 F_init: 648062.0 NJ20507LAL
+Date of processing : 23-JUL-2000 08:23:45
+Lat1:  16.5816 Lon1: 306.8221 Lat2:  17.7068 Lon2: 303.8594 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 150.893    Vl:  0.000  Df:  0.00  Tr:  1.7
+         Ptfm: 25530
+Date: 18466    s: 28670       205/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  1      LQ: 1080022013  7:57:50 Alt:  0.000 F_init: 648062.0 NJ20507HAL
+Date of processing : 23-JUL-2000 08:25:06
+Lat1:  16.5816 Lon1: 306.8221 Lat2:  17.7068 Lon2: 303.8594 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 150.893    Vl:  0.000  Df:  0.00  Tr:  1.7
+         Ptfm: 25530
+Date: 18466    s: 28670       205/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  1      LQ: 1080022013  7:57:50 Alt:  0.000 F_init: 648062.0 NJ28670WIN
+Date of processing : 23-JUL-2000 10:05:37
+Lat1:  16.5816 Lon1: 306.8221 Lat2:  17.7068 Lon2: 303.8594 F: 648062.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 150.893    Vl:  0.000  Df:  0.00  Tr:  1.7
+         Ptfm: 25530
+Date: 18466    s: 35541       205/00  Msg:  4 >-120Db:  0 Best: -125 D_dat:  136
+Nloc: 11      LQ: 0040522013  9:52:21 Alt:  0.000 F_init: 648062.0 NK11402WIN
+Date of processing : 23-JUL-2000 11:47:52
+Lat1:  16.4069 Lon1: 306.7192 Lat2:   7.8618 Lon2: 345.1748 F: 648075.1  NQ: 0
+Ci:    0.26   Cf:   7.07 Pb:45. Dp: 133.119    Vl:  0.000  Df:  0.00  Tr: 19.0
+         Ptfm: 25530
+Date: 18466    s: 63415       205/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000 17:36:55 Alt:  0.000 F_init: 648075.1 NJ28675GCN
+Date of processing : 23-JUL-2000 18:22:01
+         Ptfm: 25530
+Date: 18466    s: 69660       205/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:21:00 Alt:  0.000 F_init: 648075.1 NJ28677WIL
+Date of processing : 23-JUL-2000 19:49:00
+Lat1:  18.6449 Lon1: 314.0121 Lat2:  16.8938 Lon2: 307.0391 F: 648075.1  NQ:-1
+Ci:    1.18   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.3
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  5 >-120Db:  1 Best: -120 D_dat:  405
+Nloc: 24      LQ: 0040532815 19:18:22 Alt:  0.000 F_init: 648075.1 NJ28676WIN
+Date of processing : 23-JUL-2000 19:52:17
+Lat1:  16.5924 Lon1: 306.6037 Lat2:  18.4775 Lon2: 314.8143 F: 648058.9  NQ: 1
+Ci:    0.49   Cf:   1.44 Pb:16. Dp:  23.950    Vl:  0.705  Df:  0.03  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  5 >-120Db:  1 Best: -120 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ20519HAL
+Date of processing : 23-JUL-2000 20:11:45
+Lat1:  16.5924 Lon1: 306.6037 Lat2:  18.4775 Lon2: 314.8143 F: 648058.9  NQ: 1
+Ci:    0.49   Cf:   1.44 Pb:16. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  5 >-120Db:  1 Best: -120 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ28676WIN
+Date of processing : 23-JUL-2000 20:19:59
+Lat1:  16.5924 Lon1: 306.6037 Lat2:  18.4775 Lon2: 314.8143 F: 648058.9  NQ: 1
+Ci:    0.49   Cf:   1.44 Pb:16. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  5 >-120Db:  1 Best: -120 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ20519HAL
+Date of processing : 23-JUL-2000 20:26:38
+Lat1:  16.5924 Lon1: 306.6037 Lat2:  18.4775 Lon2: 314.8143 F: 648058.9  NQ: 1
+Ci:    0.49   Cf:   1.44 Pb:16. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 75450       205/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:30 Alt:  0.000 F_init: 648058.9 NJ20520PRL
+Date of processing : 23-JUL-2000 21:10:31
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  6 >-120Db:  2 Best: -119 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ28677WIN
+Date of processing : 23-JUL-2000 21:29:45
+Lat1:  16.5913 Lon1: 306.6060 Lat2:  18.4871 Lon2: 314.8215 F: 648059.5  NQ: 1
+Ci:    0.42   Cf:   0.69 Pb:16. Dp:   0.275    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  6 >-120Db:  2 Best: -119 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ20519LAL
+Date of processing : 23-JUL-2000 21:37:04
+Lat1:  16.5913 Lon1: 306.6060 Lat2:  18.4871 Lon2: 314.8215 F: 648059.5  NQ: 1
+Ci:    0.42   Cf:   0.69 Pb:16. Dp:   0.275    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 63415       205/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000 17:36:55 Alt:  0.000 F_init: 648058.9 NJ28675GCN
+Date of processing : 23-JUL-2000 22:04:01
+         Ptfm: 25530
+Date: 18466    s: 69502       205/00  Msg:  6 >-120Db:  2 Best: -119 D_dat:  405
+Nloc: 21      LQ: 0040502013 19:18:22 Alt:  0.000 F_init: 648058.9 NJ28676WIN
+Date of processing : 23-JUL-2000 22:06:03
+Lat1:  16.5913 Lon1: 306.6060 Lat2:  18.4871 Lon2: 314.8215 F: 648059.5  NQ: 1
+Ci:    0.42   Cf:   0.69 Pb:16. Dp:   0.275    Vl:  0.000  Df:  0.00  Tr:  4.2
+         Ptfm: 25530
+Date: 18466    s: 81782       205/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc: -1      LQ: 1070140000 22:43:02 Alt:  0.000 F_init: 648058.9 NK11410WIL
+Date of processing : 23-JUL-2000 23:00:51
+Lat1:  17.9535 Lon1: 311.7168 Lat2:  16.7012 Lon2: 306.6187 F: 648058.9  NQ:-1
+Ci:    1.29   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.3
+         Ptfm: 25530
+Date: 18466    s: 81782       205/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc: -1      LQ: 1070140000 22:43:02 Alt:  0.000 F_init: 648058.9 NK20522LAL
+Date of processing : 23-JUL-2000 23:10:47
+Lat1:  17.9535 Lon1: 311.7168 Lat2:  16.7012 Lon2: 306.6187 F: 648058.9  NQ:-1
+Ci:    1.29   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.3
+         Ptfm: 25530
+Date: 18466    s: 75450       205/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:30 Alt:  0.000 F_init: 648058.9 NJ28677GCN
+Date of processing : 23-JUL-2000 23:23:46
+         Ptfm: 25530
+Date: 18466    s: 81782       205/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc: -1      LQ: 1070140000 22:43:02 Alt:  0.000 F_init: 648058.9 NK20522HAL
+Date of processing : 23-JUL-2000 23:28:26
+Lat1:  17.9535 Lon1: 311.7168 Lat2:  16.7012 Lon2: 306.6187 F: 648058.9  NQ:-1
+Ci:    1.29   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.3
+         Ptfm: 25530
+Date: 18466    s: 81782       205/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc: -1      LQ: 1070140000 22:43:02 Alt:  0.000 F_init: 648058.9 NK11410WIN
+Date of processing : 24-JUL-2000 00:49:34
+Lat1:  17.9535 Lon1: 311.7168 Lat2:  16.7012 Lon2: 306.6187 F: 648058.9  NQ:-1
+Ci:    1.29   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.3
+         Ptfm: 25530
+Date: 18466    s: 75450       205/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:30 Alt:  0.000 F_init: 648058.9 NJ20520MIL
+Date of processing : 24-JUL-2000 14:46:05
+         Ptfm: 25530
+Date: 18467    s: 28072       206/00  Msg:  5 >-120Db:  1 Best: -119 D_dat:  304
+Nloc: -1      LQ: 1040121024  7:47:52 Alt:  0.000 F_init: 648058.9 NJ20607HAL
+Date of processing : 24-JUL-2000 08:10:56
+Lat1:  16.8379 Lon1: 307.0197 Lat2:  16.2689 Lon2: 309.0021 F: 648058.9  NQ:-1
+Ci:    2.00   Cf:  -1.00 Pb:84. Dp: 258.639    Vl:  5.751  Df:  0.00  Tr:  0.7
+         Ptfm: 25530
+Date: 18467    s: 28173       206/00  Msg:  8 >-120Db:  1 Best: -119 D_dat:  505
+Nloc: 12      LQ: 0040521025  7:49:33 Alt:  0.000 F_init: 648058.9 NJ28684WIN
+Date of processing : 24-JUL-2000 09:55:32
+Lat1:  16.8866 Lon1: 306.4903 Lat2:  16.3410 Lon2: 308.8278 F: 648064.1  NQ: 0
+Ci:    0.61   Cf:   2.89 Pb:57. Dp:  34.730    Vl:  0.771  Df:  0.00  Tr:  1.1
+         Ptfm: 25530
+Date: 18467    s: 22285       206/00  Msg:  1 >-120Db:  0 Best: -135 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:11:25 Alt:  0.000 F_init: 648058.9 NJ28683WIN
+Date of processing : 24-JUL-2000 10:03:59
+         Ptfm: 25530
+Date: 18467    s: 46056       206/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:47:36 Alt:  0.000 F_init: 648058.9 NK11418WIL
+Date of processing : 24-JUL-2000 12:56:25
+         Ptfm: 25530
+Date: 18467    s: 46056       206/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:47:36 Alt:  0.000 F_init: 648058.9 NK20612LAL
+Date of processing : 24-JUL-2000 13:07:56
+         Ptfm: 25530
+Date: 18467    s: 40294       206/00  Msg:  2 >-120Db:  0 Best: -121 D_dat:  135
+Nloc:  2      LQ: 1080021015 11:11:34 Alt:  0.000 F_init: 648058.9 NK11417WIN
+Date of processing : 24-JUL-2000 13:17:27
+Lat1:  17.0369 Lon1: 306.0565 Lat2:  16.4582 Lon2: 308.7239 F: 648058.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  76.295    Vl:  1.334  Df:  0.00  Tr:  1.3
+         Ptfm: 25530
+Date: 18467    s: 46056       206/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:47:36 Alt:  0.000 F_init: 648058.9 NK11418WIN
+Date of processing : 24-JUL-2000 15:21:03
+         Ptfm: 25530
+Date: 18467    s: 69034       206/00  Msg:  4 >-120Db:  0 Best: -128 D_dat:  136
+Nloc: 12      LQ: 1040623025 19:10:34 Alt:  0.000 F_init: 648058.9 NJ28691WIL
+Date of processing : 24-JUL-2000 19:24:51
+Lat1:  17.2875 Lon1: 306.4518 Lat2:  20.4828 Lon2: 320.6678 F: 648079.7  NQ: 0
+Ci:    0.05   Cf:   6.52 Pb:83. Dp:  78.606    Vl:  0.915  Df:  0.00  Tr:  6.7
+         Ptfm: 25530
+Date: 18467    s: 69034       206/00  Msg:  4 >-120Db:  0 Best: -128 D_dat:  136
+Nloc: 12      LQ: 1040623025 19:10:34 Alt:  0.000 F_init: 648058.9 NJ20619LAL
+Date of processing : 24-JUL-2000 19:38:37
+Lat1:  17.2875 Lon1: 306.4518 Lat2:  20.4828 Lon2: 320.6678 F: 648079.7  NQ: 0
+Ci:    0.05   Cf:   6.52 Pb:83. Dp:  78.606    Vl:  0.915  Df:  0.00  Tr:  6.7
+         Ptfm: 25530
+Date: 18467    s: 69034       206/00  Msg:  4 >-120Db:  0 Best: -128 D_dat:  136
+Nloc: 12      LQ: 1040623025 19:10:34 Alt:  0.000 F_init: 648058.9 NJ20619HAL
+Date of processing : 24-JUL-2000 19:57:32
+Lat1:  17.2875 Lon1: 306.4518 Lat2:  20.4828 Lon2: 320.6678 F: 648079.7  NQ: 0
+Ci:    0.05   Cf:   6.52 Pb:83. Dp:  78.606    Vl:  0.915  Df:  0.00  Tr:  6.7
+         Ptfm: 25530
+Date: 18467    s: 74725       206/00  Msg:  1 >-120Db:  0 Best: -123 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:45:25 Alt:  0.000 F_init: 648058.9 NJ20620PRL
+Date of processing : 24-JUL-2000 21:10:16
+         Ptfm: 25530
+Date: 18467    s: 69034       206/00  Msg:  4 >-120Db:  0 Best: -128 D_dat:  136
+Nloc: 12      LQ: 1040623025 19:10:34 Alt:  0.000 F_init: 648058.9 NJ28691WIN
+Date of processing : 24-JUL-2000 21:18:10
+Lat1:  17.2875 Lon1: 306.4518 Lat2:  20.4828 Lon2: 320.6678 F: 648079.7  NQ: 0
+Ci:    0.05   Cf:   6.52 Pb:83. Dp:  78.606    Vl:  0.915  Df:  0.00  Tr:  6.7
+         Ptfm: 25530
+Date: 18467    s: 74725       206/00  Msg:  1 >-120Db:  0 Best: -123 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:45:25 Alt:  0.000 F_init: 648058.9 NJ20620MIL
+Date of processing : 24-JUL-2000 22:09:21
+         Ptfm: 25530
+Date: 18467    s: 80617       206/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080023015 22:23:37 Alt:  0.000 F_init: 648058.9 NK11424WIL
+Date of processing : 24-JUL-2000 22:33:46
+Lat1:  17.3130 Lon1: 306.3353 Lat2:  21.9466 Lon2: 321.3565 F: 648058.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  84.716    Vl:  0.869  Df:  0.00  Tr:  7.8
+         Ptfm: 25530
+Date: 18467    s: 74725       206/00  Msg:  1 >-120Db:  0 Best: -123 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:45:25 Alt:  0.000 F_init: 648058.9 NJ28691GCN
+Date of processing : 24-JUL-2000 23:07:10
+         Ptfm: 25530
+Date: 18467    s: 80617       206/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080023015 22:23:37 Alt:  0.000 F_init: 648058.9 NK20622HAL
+Date of processing : 24-JUL-2000 23:37:45
+Lat1:  17.3130 Lon1: 306.3353 Lat2:  21.9466 Lon2: 321.3565 F: 648058.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  84.716    Vl:  0.869  Df:  0.00  Tr:  7.8
+         Ptfm: 25530
+Date: 18467    s: 80617       206/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080023015 22:23:37 Alt:  0.000 F_init: 648058.9 NK11424WIN
+Date of processing : 25-JUL-2000 00:28:15
+Lat1:  17.3130 Lon1: 306.3353 Lat2:  21.9466 Lon2: 321.3565 F: 648058.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  84.716    Vl:  0.869  Df:  0.00  Tr:  7.8
+         Ptfm: 25530
+Date: 18468    s: 39004       207/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   44
+Nloc:  2      LQ: 1080023015 10:50:04 Alt:  0.000 F_init: 648058.9 NK11431WIN
+Date of processing : 25-JUL-2000 12:44:52
+Lat1:  17.4854 Lon1: 306.1750 Lat2:  14.5502 Lon2: 319.6038 F: 648058.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 108.853    Vl:  0.765  Df:  0.00  Tr:  6.6
+         Ptfm: 25530
+Date: 18468    s: 68079       207/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  760
+Nloc: 23      LQ: 0040523015 18:54:39 Alt:  0.000 F_init: 648058.9 NJ28704GCN
+Date of processing : 25-JUL-2000 19:36:52
+Lat1:  17.6476 Lon1: 306.2190 Lat2:  22.1418 Lon2: 325.8267 F: 648051.6  NQ: 1
+Ci:    0.34   Cf:   0.62 Pb: 4. Dp: 123.742    Vl:  0.722  Df:  0.00  Tr:  9.7
+         Ptfm: 25530
+Date: 18468    s: 68079       207/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  760
+Nloc: 21      LQ: 0040503013 18:54:39 Alt:  0.000 F_init: 648051.6 NJ20718LAL
+Date of processing : 25-JUL-2000 21:04:33
+Lat1:  17.6476 Lon1: 306.2190 Lat2:  22.1418 Lon2: 325.8267 F: 648051.6  NQ: 1
+Ci:    0.34   Cf:   0.62 Pb: 4. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  9.7
+         Ptfm: 25530
+Date: 18468    s: 84741       207/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  183
+Nloc:  2      LQ: 1070033815 23:32:21 Alt:  0.000 F_init: 648051.6 NK11438WIN
+Date of processing : 26-JUL-2000 01:44:06
+Lat1:  17.7542 Lon1: 306.1933 Lat2:  13.2245 Lon2: 285.5230 F: 648048.3  NQ:-7
+Ci:    0.00   Cf:   0.97 Pb:50. Dp:  12.115    Vl:  0.727  Df:  0.01  Tr: 10.1
+         Ptfm: 25530
+Date: 18469    s: 32866       208/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:07:46 Alt:  0.000 F_init: 648051.6 NJ28713WIL
+Date of processing : 26-JUL-2000 09:17:52
+         Ptfm: 25530
+Date: 18469    s: 26736       208/00  Msg:  5 >-120Db:  0 Best: -123 D_dat:  212
+Nloc: 12      LQ: 1040623015  7:25:36 Alt:  0.000 F_init: 648051.6 NJ28712WIN
+Date of processing : 26-JUL-2000 09:26:40
+Lat1:  17.9291 Lon1: 306.1880 Lat2:  14.5469 Lon2: 320.7529 F: 648056.7  NQ: 0
+Ci:    0.12   Cf:   1.63 Pb:33. Dp:  31.331    Vl:  0.695  Df:  0.00  Tr:  7.3
+         Ptfm: 25530
+Date: 18469    s: 33007       208/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:  282
+Nloc:  2      LQ: 0080023015  9:10:07 Alt:  0.000 F_init: 648051.6 NJ20809MIL
+Date of processing : 26-JUL-2000 10:05:43
+Lat1:  17.9346 Lon1: 306.1592 Lat2:  25.3333 Lon2: 272.7305 F: 648051.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  32.391    Vl:  0.631  Df:  0.00  Tr: 16.2
+         Ptfm: 25530
+Date: 18469    s: 33007       208/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:  282
+Nloc:  2      LQ: 0080023015  9:10:07 Alt:  0.000 F_init: 648051.6 NJ28713WIN
+Date of processing : 26-JUL-2000 11:08:21
+Lat1:  17.9346 Lon1: 306.1592 Lat2:  25.3333 Lon2: 272.7305 F: 648051.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  32.391    Vl:  0.631  Df:  0.00  Tr: 16.2
+         Ptfm: 25530
+Date: 18469    s: 33007       208/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:  282
+Nloc:  2      LQ: 0080023015  9:10:07 Alt:  0.000 F_init: 648051.6 NJ20809LAL
+Date of processing : 26-JUL-2000 11:24:25
+Lat1:  17.9346 Lon1: 306.1592 Lat2:  25.3333 Lon2: 272.7305 F: 648051.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  32.391    Vl:  0.631  Df:  0.00  Tr: 16.2
+         Ptfm: 25530
+Date: 18469    s: 43417       208/00  Msg:  2 >-120Db:  1 Best: -113 D_dat:  163
+Nloc:  2      LQ: 0080023015 12:03:37 Alt:  0.000 F_init: 648051.6 NK11446WIL
+Date of processing : 26-JUL-2000 12:09:35
+Lat1:  18.0023 Lon1: 306.1515 Lat2:  23.0431 Lon2: 282.6053 F: 648051.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  39.904    Vl:  0.646  Df:  0.00  Tr: 11.5
+         Ptfm: 25530
+Date: 18469    s: 37170       208/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   44
+Nloc:  2      LQ: 1080023015 10:19:30 Alt:  0.000 F_init: 648051.6 NK11445WIN
+Date of processing : 26-JUL-2000 12:26:42
+Lat1:  18.1089 Lon1: 306.4482 Lat2:  11.9915 Lon2: 331.2185 F: 648051.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  56.546    Vl:  1.019  Df:  0.00  Tr: 11.9
+         Ptfm: 25530
+Date: 18469    s: 43543       208/00  Msg:  3 >-120Db:  1 Best: -113 D_dat:  414
+Nloc:  3      LQ: 0070023015 12:05:43 Alt:  0.000 F_init: 648051.6 NK11446WIN
+Date of processing : 26-JUL-2000 14:06:29
+Lat1:  18.0089 Lon1: 306.1552 Lat2:  23.0650 Lon2: 282.6052 F: 648058.4  NQ:-7
+Ci:    0.00   Cf:   0.20 Pb:50. Dp:  40.564    Vl:  0.656  Df:  0.00  Tr: 11.5
+         Ptfm: 25530
+Date: 18469    s: 73599       208/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:26:39 Alt:  0.000 F_init: 648058.4 NJ28720WIL
+Date of processing : 26-JUL-2000 20:42:04
+         Ptfm: 25530
+Date: 18469    s: 73599       208/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:26:39 Alt:  0.000 F_init: 648058.4 NJ20820HAL
+Date of processing : 26-JUL-2000 22:39:10
+         Ptfm: 25530
+Date: 18469    s: 73599       208/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:26:39 Alt:  0.000 F_init: 648058.4 NJ28719WIN
+Date of processing : 26-JUL-2000 22:59:29
+         Ptfm: 25530
+Date: 18469    s: 83747       208/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  147
+Nloc: 12      LQ: 1040632815 23:15:47 Alt:  0.000 F_init: 648058.4 NK11453WIL
+Date of processing : 26-JUL-2000 23:34:09
+Lat1:  18.2460 Lon1: 306.1079 Lat2:  16.0907 Lon2: 296.3351 F: 648056.1  NQ: 0
+Ci:    0.02   Cf:   1.91 Pb:23. Dp:  26.718    Vl:  0.665  Df:  0.00  Tr:  4.9
+         Ptfm: 25530
+Date: 18469    s: 83747       208/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  147
+Nloc: 12      LQ: 1040632815 23:15:47 Alt:  0.000 F_init: 648058.4 NK20823LAL
+Date of processing : 26-JUL-2000 23:50:59
+Lat1:  18.2460 Lon1: 306.1079 Lat2:  16.0907 Lon2: 296.3351 F: 648056.1  NQ: 0
+Ci:    0.02   Cf:   1.91 Pb:23. Dp:  26.718    Vl:  0.665  Df:  0.00  Tr:  4.9
+         Ptfm: 25530
+Date: 18469    s: 73599       208/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:26:39 Alt:  0.000 F_init: 648058.4 NJ20820LAL
+Date of processing : 27-JUL-2000 02:14:12
+         Ptfm: 25530
+Date: 18469    s: 83747       208/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  147
+Nloc: 12      LQ: 1040632815 23:15:47 Alt:  0.000 F_init: 648058.4 NK11453WIN
+Date of processing : 27-JUL-2000 13:00:29
+Lat1:  18.2454 Lon1: 306.1144 Lat2:  16.0866 Lon2: 296.3285 F: 648055.6  NQ: 0
+Ci:    0.01   Cf:   1.91 Pb:10. Dp:  26.521    Vl:  0.660  Df:  0.00  Tr:  4.9
+         Ptfm: 25530
+Date: 18470    s: 72373       209/00  Msg:  3 >-120Db:  0 Best: -132 D_dat:   91
+Nloc: -1      LQ: 1070120000 20:06:13 Alt:  0.000 F_init: 648058.4 NJ28733WIN
+Date of processing : 27-JUL-2000 20:41:08
+Lat1:  14.3535 Lon1: 289.5307 Lat2:  18.2418 Lon2: 305.6885 F: 648058.4  NQ:-1
+Ci:    0.87   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  8.0
+         Ptfm: 25530
+Date: 18470    s: 72373       209/00  Msg:  3 >-120Db:  0 Best: -132 D_dat:   91
+Nloc: -1      LQ: 1070120000 20:06:13 Alt:  0.000 F_init: 648058.4 NJ28733WIN
+Date of processing : 27-JUL-2000 22:26:28
+Lat1:  14.3535 Lon1: 289.5307 Lat2:  18.2418 Lon2: 305.6885 F: 648058.4  NQ:-1
+Ci:    0.87   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  8.0
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 33      LQ: 0040623015  8:43:11 Alt:  0.000 F_init: 648058.4 NJ28741WIL
+Date of processing : 28-JUL-2000 08:56:53
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:  97.936    Vl:  0.610  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 25429       210/00  Msg:  4 >-120Db:  0 Best: -122 D_dat:  200
+Nloc: 14      LQ: 0040543815  7:03:49 Alt:  0.000 F_init: 648056.9 NJ28740WIN
+Date of processing : 28-JUL-2000 09:08:55
+Lat1:  18.8433 Lon1: 305.8375 Lat2:  12.4989 Lon2: 332.9435 F: 648069.1  NQ: 0
+Ci:    0.70   Cf:   6.22 Pb:39. Dp:   4.053    Vl:  0.680  Df:  0.12  Tr: 13.3
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 31      LQ: 0040603013  8:43:11 Alt:  0.000 F_init: 648056.9 NJ21008LAL
+Date of processing : 28-JUL-2000 09:10:16
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 31      LQ: 0040603013  8:43:11 Alt:  0.000 F_init: 648056.9 NJ21008HAL
+Date of processing : 28-JUL-2000 09:13:58
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 31      LQ: 0040603013  8:43:11 Alt:  0.000 F_init: 648056.9 NJ21008MIL
+Date of processing : 28-JUL-2000 09:41:45
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 41109       210/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:25:09 Alt:  0.000 F_init: 648056.9 NK21011PRL
+Date of processing : 28-JUL-2000 11:46:49
+         Ptfm: 25530
+Date: 18471    s: 46555       210/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:55:55 Alt:  0.000 F_init: 648056.9 NK11475WIL
+Date of processing : 28-JUL-2000 13:08:04
+         Ptfm: 25530
+Date: 18471    s: 46555       210/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:55:55 Alt:  0.000 F_init: 648056.9 NK21012HAL
+Date of processing : 28-JUL-2000 13:09:28
+         Ptfm: 25530
+Date: 18471    s: 41064       210/00  Msg:  3 >-120Db:  0 Best: -126 D_dat:   90
+Nloc: -1      LQ: 1070140000 11:24:24 Alt:  0.000 F_init: 648056.9 NK11474WIN
+Date of processing : 28-JUL-2000 13:20:19
+Lat1:  18.7834 Lon1: 307.2730 Lat2:  19.6611 Lon2: 303.4853 F: 648056.9  NQ:-1
+Ci:    0.31   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.8
+         Ptfm: 25530
+Date: 18471    s: 46555       210/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:55:55 Alt:  0.000 F_init: 648056.9 NK21012LAL
+Date of processing : 28-JUL-2000 13:49:16
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 31      LQ: 0040603013  8:43:11 Alt:  0.000 F_init: 648056.9 NJ28741GCN
+Date of processing : 28-JUL-2000 14:24:08
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 31391       210/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  364
+Nloc: 31      LQ: 0040603013  8:43:11 Alt:  0.000 F_init: 648056.9 NJ28741GCN
+Date of processing : 28-JUL-2000 14:27:21
+Lat1:  18.8523 Lon1: 305.8748 Lat2:  23.7699 Lon2: 284.6854 F: 648056.9  NQ: 2
+Ci:    0.13   Cf:   0.46 Pb:10. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr: 10.3
+         Ptfm: 25530
+Date: 18471    s: 46555       210/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:55:55 Alt:  0.000 F_init: 648056.9 NK11475WIN
+Date of processing : 28-JUL-2000 14:57:52
+         Ptfm: 25530
+Date: 18471    s: 66258       210/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:   90
+Nloc:  2      LQ: 1080033015 18:24:18 Alt:  0.000 F_init: 648056.9 NJ21018HAL
+Date of processing : 28-JUL-2000 18:50:16
+Lat1:  19.0895 Lon1: 305.7563 Lat2:  27.5885 Lon2: 341.5722 F: 648056.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  29.074    Vl:  0.834  Df:  0.00  Tr: 17.6
+         Ptfm: 25530
+Date: 18471    s: 72389       210/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 20:06:29 Alt:  0.000 F_init: 648056.9 NJ28748WIL
+Date of processing : 28-JUL-2000 20:17:23
+Lat1:  14.7955 Lon1: 293.2901 Lat2:  19.1184 Lon2: 306.1289 F: 648056.9  NQ:-1
+Ci:    0.93   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.8
+         Ptfm: 25530
+Date: 18471    s: 72389       210/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 20:06:29 Alt:  0.000 F_init: 648056.9 NJ21019MIL
+Date of processing : 28-JUL-2000 20:48:26
+Lat1:  14.7955 Lon1: 293.2901 Lat2:  19.1184 Lon2: 306.1289 F: 648056.9  NQ:-1
+Ci:    0.93   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.8
+         Ptfm: 25530
+Date: 18471    s: 72389       210/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 20:06:29 Alt:  0.000 F_init: 648056.9 NJ21020LAL
+Date of processing : 28-JUL-2000 20:49:18
+Lat1:  14.7955 Lon1: 293.2901 Lat2:  19.1184 Lon2: 306.1289 F: 648056.9  NQ:-1
+Ci:    0.93   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.8
+         Ptfm: 25530
+Date: 18471    s: 72389       210/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 20:06:29 Alt:  0.000 F_init: 648056.9 NJ21020HAL
+Date of processing : 28-JUL-2000 20:53:36
+Lat1:  14.7955 Lon1: 293.2901 Lat2:  19.1184 Lon2: 306.1289 F: 648056.9  NQ:-1
+Ci:    0.93   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.8
+         Ptfm: 25530
+Date: 18471    s: 46555       210/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 12:55:55 Alt:  0.000 F_init: 648056.9 NK11475WIN
+Date of processing : 28-JUL-2000 21:23:01
+         Ptfm: 25530
+Date: 18471    s: 72389       210/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 20:06:29 Alt:  0.000 F_init: 648056.9 NJ28747WIN
+Date of processing : 28-JUL-2000 22:11:27
+Lat1:  14.7955 Lon1: 293.2901 Lat2:  19.1184 Lon2: 306.1289 F: 648056.9  NQ:-1
+Ci:    0.93   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.8
+         Ptfm: 25530
+Date: 18472    s:   718       211/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:11:58 Alt:  0.000 F_init: 648056.9 NK11482WIL
+Date of processing : 29-JUL-2000 00:25:27
+         Ptfm: 25530
+Date: 18472    s:   718       211/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:11:58 Alt:  0.000 F_init: 648056.9 NK21100LAL
+Date of processing : 29-JUL-2000 00:45:39
+         Ptfm: 25530
+Date: 18472    s:   718       211/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:11:58 Alt:  0.000 F_init: 648056.9 NK11481GCN
+Date of processing : 29-JUL-2000 04:42:25
+         Ptfm: 25530
+Date: 18472    s: 30684       211/00  Msg:  5 >-120Db:  2 Best: -119 D_dat:  403
+Nloc: 33      LQ: 0040623015  8:31:24 Alt:  0.000 F_init: 648056.9 NJ28755WIL
+Date of processing : 29-JUL-2000 08:42:21
+Lat1:  19.4166 Lon1: 305.8293 Lat2:  22.9346 Lon2: 290.6698 F: 648056.5  NQ: 2
+Ci:    0.14   Cf:   0.35 Pb: 8. Dp:  62.648    Vl:  0.731  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18472    s: 30684       211/00  Msg:  5 >-120Db:  2 Best: -119 D_dat:  403
+Nloc: 31      LQ: 0040603013  8:31:24 Alt:  0.000 F_init: 648056.5 NJ21108LAL
+Date of processing : 29-JUL-2000 08:46:45
+Lat1:  19.4166 Lon1: 305.8293 Lat2:  22.9346 Lon2: 290.6698 F: 648056.5  NQ: 2
+Ci:    0.14   Cf:   0.35 Pb: 8. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18472    s: 30684       211/00  Msg:  5 >-120Db:  2 Best: -119 D_dat:  403
+Nloc: 31      LQ: 0040603013  8:31:24 Alt:  0.000 F_init: 648056.5 NJ21108HAL
+Date of processing : 29-JUL-2000 08:51:30
+Lat1:  19.4166 Lon1: 305.8293 Lat2:  22.9346 Lon2: 290.6698 F: 648056.5  NQ: 2
+Ci:    0.14   Cf:   0.35 Pb: 8. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18472    s: 25126       211/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:58:46 Alt:  0.000 F_init: 648056.5 NJ28754WIN
+Date of processing : 29-JUL-2000 08:54:26
+         Ptfm: 25530
+Date: 18472    s: 25126       211/00  Msg:  1 >-120Db:  0 Best: -132 D_dat:    0
+Nloc: -2      LQ: 2040000000  6:58:46 Alt:  0.000 F_init: 648056.5 NJ28754WIN
+Date of processing : 29-JUL-2000 09:10:08
+         Ptfm: 25530
+Date: 18472    s: 30684       211/00  Msg:  5 >-120Db:  2 Best: -119 D_dat:  403
+Nloc: 31      LQ: 0040603013  8:31:24 Alt:  0.000 F_init: 648056.5 NJ28755WIN
+Date of processing : 29-JUL-2000 10:36:12
+Lat1:  19.4166 Lon1: 305.8293 Lat2:  22.9346 Lon2: 290.6698 F: 648056.5  NQ: 2
+Ci:    0.14   Cf:   0.35 Pb: 8. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.4
+         Ptfm: 25530
+Date: 18472    s: 45324       211/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  353
+Nloc: 14      LQ: 0040532815 12:35:24 Alt:  0.000 F_init: 648056.5 NK11489WIL
+Date of processing : 29-JUL-2000 12:42:45
+Lat1:  19.5075 Lon1: 305.8103 Lat2:  27.6523 Lon2: 268.0482 F: 648048.8  NQ: 0
+Ci:    0.57   Cf:   2.94 Pb:16. Dp:  10.255    Vl:  0.700  Df:  0.03  Tr: 18.2
+         Ptfm: 25530
+Date: 18472    s: 45324       211/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  353
+Nloc: 11      LQ: 0040502013 12:35:24 Alt:  0.000 F_init: 648048.8 NK21112LAL
+Date of processing : 29-JUL-2000 12:46:09
+Lat1:  19.5075 Lon1: 305.8103 Lat2:  27.6523 Lon2: 268.0482 F: 648048.8  NQ: 0
+Ci:    0.57   Cf:   2.94 Pb:16. Dp:   0.006    Vl:  0.000  Df:  0.00  Tr: 18.2
+         Ptfm: 25530
+Date: 18472    s: 45324       211/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  353
+Nloc: 11      LQ: 0040502013 12:35:24 Alt:  0.000 F_init: 648048.8 NK21112HAL
+Date of processing : 29-JUL-2000 12:48:33
+Lat1:  19.5075 Lon1: 305.8103 Lat2:  27.6523 Lon2: 268.0482 F: 648048.8  NQ: 0
+Ci:    0.57   Cf:   2.94 Pb:16. Dp:   0.006    Vl:  0.000  Df:  0.00  Tr: 18.2
+         Ptfm: 25530
+Date: 18472    s: 45324       211/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  353
+Nloc: 11      LQ: 0040502013 12:35:24 Alt:  0.000 F_init: 648048.8 NK11489WIN
+Date of processing : 29-JUL-2000 14:32:51
+Lat1:  19.5075 Lon1: 305.8103 Lat2:  27.6523 Lon2: 268.0482 F: 648048.8  NQ: 0
+Ci:    0.57   Cf:   2.94 Pb:16. Dp:   0.006    Vl:  0.000  Df:  0.00  Tr: 18.2
+         Ptfm: 25530
+Date: 18472    s: 70944       211/00  Msg:  3 >-120Db:  0 Best: -127 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:42:24 Alt:  0.000 F_init: 648048.8 NJ28761WIN
+Date of processing : 29-JUL-2000 20:15:17
+Lat1:  17.8719 Lon1: 300.8958 Lat2:  18.9257 Lon2: 305.1267 F: 648048.8  NQ:-1
+Ci:    0.68   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.1
+         Ptfm: 25530
+Date: 18472    s: 70944       211/00  Msg:  3 >-120Db:  0 Best: -127 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:42:24 Alt:  0.000 F_init: 648048.8 NJ28761WIN
+Date of processing : 29-JUL-2000 21:58:37
+Lat1:  17.8719 Lon1: 300.8958 Lat2:  18.9257 Lon2: 305.1267 F: 648048.8  NQ:-1
+Ci:    0.68   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.1
+         Ptfm: 25530
+Date: 18472    s: 85223       211/00  Msg:  1 >-120Db:  0 Best: -130 D_dat:    0
+Nloc: -2      LQ: 2040000000 23:40:23 Alt:  0.000 F_init: 648048.8 NK21123PRL
+Date of processing : 29-JUL-2000 23:56:34
+         Ptfm: 25530
+Date: 18472    s: 85299       211/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:  150
+Nloc:  2      LQ: 1080033015 23:41:39 Alt:  0.000 F_init: 648048.8 NK11495WIN
+Date of processing : 30-JUL-2000 00:11:48
+Lat1:  19.7533 Lon1: 305.7399 Lat2:  14.1723 Lon2: 280.2787 F: 648048.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  28.199    Vl:  0.705  Df:  0.00  Tr: 12.4
+         Ptfm: 25530
+Date: 18472    s: 85299       211/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:  150
+Nloc:  2      LQ: 1080033015 23:41:39 Alt:  0.000 F_init: 648048.8 NK11495WIN
+Date of processing : 30-JUL-2000 01:55:16
+Lat1:  19.7533 Lon1: 305.7399 Lat2:  14.1723 Lon2: 280.2787 F: 648048.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  28.199    Vl:  0.705  Df:  0.00  Tr: 12.4
+         Ptfm: 25530
+Date: 18473    s: 30146       212/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  198
+Nloc: 23      LQ: 0040522015  8:22:26 Alt:  0.000 F_init: 648048.8 NJ28769WIL
+Date of processing : 30-JUL-2000 08:33:46
+Lat1:  19.9113 Lon1: 305.7106 Lat2:  21.9463 Lon2: 296.7313 F: 648052.8  NQ: 1
+Ci:    0.41   Cf:   0.95 Pb:23. Dp:  45.906    Vl:  0.645  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18473    s: 30146       212/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  198
+Nloc: 21      LQ: 0040502013  8:22:26 Alt:  0.000 F_init: 648052.8 NJ21208LAL
+Date of processing : 30-JUL-2000 08:48:42
+Lat1:  19.9113 Lon1: 305.7106 Lat2:  21.9463 Lon2: 296.7314 F: 648052.8  NQ: 1
+Ci:    0.41   Cf:   0.95 Pb:23. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18473    s: 30304       212/00  Msg:  6 >-120Db:  1 Best: -120 D_dat:  516
+Nloc: 22      LQ: 0040512613  8:25:04 Alt:  0.000 F_init: 648052.8 NJ21208PRL
+Date of processing : 30-JUL-2000 08:56:55
+Lat1:  19.9108 Lon1: 305.7107 Lat2:  21.9335 Lon2: 296.7303 F: 648052.3  NQ: 1
+Ci:    0.46   Cf:   0.75 Pb:25. Dp:   0.058    Vl:  0.000  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18473    s: 43946       212/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  403
+Nloc:  2      LQ: 0080033015 12:12:26 Alt:  0.000 F_init: 648052.8 NK11503WIL
+Date of processing : 30-JUL-2000 12:22:39
+Lat1:  19.9666 Lon1: 305.6175 Lat2:  25.4238 Lon2: 279.3429 F: 648052.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.510    Vl:  0.834  Df:  0.00  Tr: 12.8
+         Ptfm: 25530
+Date: 18473    s: 37823       212/00  Msg:  3 >-120Db:  0 Best: -121 D_dat:   90
+Nloc:  2      LQ: 1070043715 10:30:23 Alt:  0.000 F_init: 648052.8 NK11502WIN
+Date of processing : 30-JUL-2000 12:34:01
+Lat1:  19.9730 Lon1: 305.5128 Lat2:  15.1856 Lon2: 327.0569 F: 648100.9  NQ:-7
+Ci:    0.00   Cf:   5.19 Pb:50. Dp:  21.809    Vl:  2.841  Df:  0.38  Tr: 10.6
+         Ptfm: 25530
+Date: 18473    s: 43946       212/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  403
+Nloc:  2      LQ: 0080033015 12:12:26 Alt:  0.000 F_init: 648052.8 NK21212LAL
+Date of processing : 30-JUL-2000 12:44:34
+Lat1:  19.9666 Lon1: 305.6175 Lat2:  25.4238 Lon2: 279.3429 F: 648052.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.510    Vl:  0.834  Df:  0.00  Tr: 12.8
+         Ptfm: 25530
+Date: 18473    s: 30304       212/00  Msg:  6 >-120Db:  1 Best: -120 D_dat:  516
+Nloc: 22      LQ: 0040512613  8:25:04 Alt:  0.000 F_init: 648052.8 NJ21208HAL
+Date of processing : 30-JUL-2000 13:09:24
+Lat1:  19.9108 Lon1: 305.7107 Lat2:  21.9335 Lon2: 296.7303 F: 648052.3  NQ: 1
+Ci:    0.46   Cf:   0.75 Pb:25. Dp:   0.058    Vl:  0.000  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18473    s: 43946       212/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  403
+Nloc:  2      LQ: 0080033015 12:12:26 Alt:  0.000 F_init: 648052.8 NK21212HAL
+Date of processing : 30-JUL-2000 13:15:17
+Lat1:  19.9666 Lon1: 305.6175 Lat2:  25.4238 Lon2: 279.3429 F: 648052.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.510    Vl:  0.834  Df:  0.00  Tr: 12.8
+         Ptfm: 25530
+Date: 18473    s: 30304       212/00  Msg:  8 >-120Db:  1 Best: -120 D_dat:  516
+Nloc: 23      LQ: 0040512613  8:25:04 Alt:  0.000 F_init: 648052.8 NJ28769GCN
+Date of processing : 30-JUL-2000 13:53:05
+Lat1:  19.9112 Lon1: 305.7089 Lat2:  21.9318 Lon2: 296.7338 F: 648052.2  NQ: 1
+Ci:    0.44   Cf:   0.69 Pb:28. Dp:   0.183    Vl:  0.000  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18473    s: 43946       212/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  403
+Nloc:  2      LQ: 0080033015 12:12:26 Alt:  0.000 F_init: 648052.8 NK11503WIN
+Date of processing : 30-JUL-2000 14:12:16
+Lat1:  19.9666 Lon1: 305.6175 Lat2:  25.4238 Lon2: 279.3429 F: 648052.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.510    Vl:  0.834  Df:  0.00  Tr: 12.8
+         Ptfm: 25530
+Date: 18473    s: 71013       212/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:43:33 Alt:  0.000 F_init: 648052.8 NJ28776WIL
+Date of processing : 30-JUL-2000 19:55:37
+Lat1:  18.9801 Lon1: 303.0916 Lat2:  20.4721 Lon2: 307.0328 F: 648052.8  NQ:-1
+Ci:    0.20   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.2
+         Ptfm: 25530
+Date: 18473    s: 71013       212/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:43:33 Alt:  0.000 F_init: 648052.8 NJ21219HAL
+Date of processing : 30-JUL-2000 20:16:20
+Lat1:  18.9801 Lon1: 303.0916 Lat2:  20.4721 Lon2: 307.0328 F: 648052.8  NQ:-1
+Ci:    0.20   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.2
+         Ptfm: 25530
+Date: 18473    s: 71013       212/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:43:33 Alt:  0.000 F_init: 648052.8 NJ21219LAL
+Date of processing : 30-JUL-2000 20:18:31
+Lat1:  18.9801 Lon1: 303.0916 Lat2:  20.4721 Lon2: 307.0328 F: 648052.8  NQ:-1
+Ci:    0.20   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.2
+         Ptfm: 25530
+Date: 18473    s: 71013       212/00  Msg:  3 >-120Db:  0 Best: -128 D_dat:   90
+Nloc: -1      LQ: 1070130000 19:43:33 Alt:  0.000 F_init: 648052.8 NJ28776WIN
+Date of processing : 30-JUL-2000 21:46:02
+Lat1:  18.9801 Lon1: 303.0916 Lat2:  20.4721 Lon2: 307.0328 F: 648052.8  NQ:-1
+Ci:    0.20   Cf:  99.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  2.2
+         Ptfm: 25530
+Date: 18473    s: 84251       212/00  Msg:  4 >-120Db:  0 Best: -122 D_dat:  177
+Nloc: 13      LQ: 0040523015 23:24:11 Alt:  0.000 F_init: 648052.8 NK11510WIL
+Date of processing : 30-JUL-2000 23:45:00
+Lat1:  20.1888 Lon1: 305.5011 Lat2:  16.9890 Lon2: 290.9948 F: 648050.6  NQ: 0
+Ci:    0.67   Cf:   2.53 Pb:34. Dp:  37.740    Vl:  0.698  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18473    s: 84251       212/00  Msg:  4 >-120Db:  0 Best: -122 D_dat:  177
+Nloc: 11      LQ: 0040503013 23:24:11 Alt:  0.000 F_init: 648050.6 NK21223LAL
+Date of processing : 30-JUL-2000 23:46:18
+Lat1:  20.1888 Lon1: 305.5011 Lat2:  16.9890 Lon2: 290.9948 F: 648050.6  NQ: 0
+Ci:    0.67   Cf:   2.53 Pb:34. Dp:   0.006    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18473    s: 84251       212/00  Msg:  4 >-120Db:  0 Best: -122 D_dat:  177
+Nloc: 11      LQ: 0040503013 23:24:11 Alt:  0.000 F_init: 648050.6 NK11509WIN
+Date of processing : 31-JUL-2000 01:34:49
+Lat1:  20.1888 Lon1: 305.5011 Lat2:  16.9890 Lon2: 290.9948 F: 648050.6  NQ: 0
+Ci:    0.67   Cf:   2.53 Pb:34. Dp:   0.006    Vl:  0.000  Df:  0.00  Tr:  7.0
+         Ptfm: 25530
+Date: 18474    s: 29113       213/00  Msg:  3 >-120Db:  1 Best: -117 D_dat:  223
+Nloc: -2      LQ: 1071030000  8:05:13 Alt:  0.000 F_init: 648050.6 NJ21308LAL
+Date of processing : 31-JUL-2000 08:21:37
+         Ptfm: 25530
+Date: 18474    s: 29113       213/00  Msg:  3 >-120Db:  1 Best: -117 D_dat:  223
+Nloc: -2      LQ: 1071030000  8:05:13 Alt:  0.000 F_init: 648050.6 NJ28783WIL
+Date of processing : 31-JUL-2000 08:24:40
+         Ptfm: 25530
+Date: 18474    s: 29113       213/00  Msg:  3 >-120Db:  1 Best: -117 D_dat:  223
+Nloc: -2      LQ: 1071030000  8:05:13 Alt:  0.000 F_init: 648050.6 NJ21307HAL
+Date of processing : 31-JUL-2000 08:34:27
+         Ptfm: 25530
+Date: 18474    s: 29113       213/00  Msg:  3 >-120Db:  1 Best: -117 D_dat:  223
+Nloc: -2      LQ: 1071030000  8:05:13 Alt:  0.000 F_init: 648050.6 NJ28783WIN
+Date of processing : 31-JUL-2000 10:27:07
+         Ptfm: 25530
+Date: 18474    s: 36850       213/00  Msg:  4 >-120Db:  0 Best: -125 D_dat:  180
+Nloc: 12      LQ: 1040533825 10:14:10 Alt:  0.000 F_init: 648050.6 NK11516WIN
+Date of processing : 31-JUL-2000 12:11:44
+Lat1:  20.3127 Lon1: 305.3523 Lat2:  13.0933 Lon2: 338.4430 F: 648071.4  NQ: 0
+Ci:    0.16   Cf:   4.68 Pb:78. Dp:  20.733    Vl:  0.532  Df:  0.03  Tr: 16.0
+         Ptfm: 25530
+Date: 18474    s: 70049       213/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   83
+Nloc:  2      LQ: 1080022015 19:27:29 Alt:  0.000 F_init: 648050.6 NJ28790WIL
+Date of processing : 31-JUL-2000 19:45:06
+Lat1:  20.4955 Lon1: 305.1167 Lat2:  21.9002 Lon2: 311.2351 F: 648050.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  52.573    Vl:  0.728  Df:  0.00  Tr:  3.1
+         Ptfm: 25530
+Date: 18474    s: 70049       213/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   83
+Nloc:  2      LQ: 1080022015 19:27:29 Alt:  0.000 F_init: 648050.6 NJ21319LAL
+Date of processing : 31-JUL-2000 19:48:10
+Lat1:  20.4955 Lon1: 305.1167 Lat2:  21.9002 Lon2: 311.2351 F: 648050.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  52.573    Vl:  0.728  Df:  0.00  Tr:  3.1
+         Ptfm: 25530
+Date: 18474    s: 69810       213/00  Msg:  6 >-120Db:  0 Best: -125 D_dat:  561
+Nloc: 12      LQ: 0040422015 19:23:30 Alt:  0.000 F_init: 648050.6 NJ28789WIN
+Date of processing : 31-JUL-2000 19:55:31
+Lat1:  20.5010 Lon1: 305.1955 Lat2:  21.8753 Lon2: 311.2326 F: 648074.8  NQ: 0
+Ci:    2.16   Cf:   7.39 Pb:41. Dp:  47.038    Vl:  0.654  Df:  0.00  Tr:  3.1
+         Ptfm: 25530
+Date: 18474    s: 69810       213/00  Msg:  6 >-120Db:  0 Best: -125 D_dat:  561
+Nloc: 10      LQ: 0040402013 19:23:30 Alt:  0.000 F_init: 648074.8 NJ21319HAL
+Date of processing : 31-JUL-2000 20:11:02
+Lat1:  20.5010 Lon1: 305.1955 Lat2:  21.8753 Lon2: 311.2326 F: 648074.8  NQ: 0
+Ci:    2.16   Cf:   7.39 Pb:41. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.1
+         Ptfm: 25530
+Date: 18474    s: 69810       213/00  Msg:  6 >-120Db:  0 Best: -125 D_dat:  561
+Nloc: 10      LQ: 0040402013 19:23:30 Alt:  0.000 F_init: 648074.8 NJ28789WIN
+Date of processing : 31-JUL-2000 22:16:13
+Lat1:  20.5010 Lon1: 305.1955 Lat2:  21.8753 Lon2: 311.2326 F: 648074.8  NQ: 0
+Ci:    2.16   Cf:   7.39 Pb:41. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.1
+         Ptfm: 25530
+Date: 18475    s:  2571       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   58
+Nloc:  2      LQ: 1080031015  0:42:51 Alt:  0.000 F_init: 648074.8 NK11525WIL
+Date of processing :  1-AUG-2000 00:57:37
+Lat1:  20.5598 Lon1: 305.0778 Lat2:   9.4667 Lon2: 253.3535 F: 648074.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  13.895    Vl:  0.725  Df:  0.00  Tr: 24.9
+         Ptfm: 25530
+Date: 18475    s:  2571       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   58
+Nloc:  2      LQ: 1080031015  0:42:51 Alt:  0.000 F_init: 648074.8 NK11524GCN
+Date of processing :  1-AUG-2000 05:01:35
+Lat1:  20.5598 Lon1: 305.0778 Lat2:   9.4667 Lon2: 253.3535 F: 648074.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  13.895    Vl:  0.725  Df:  0.00  Tr: 24.9
+         Ptfm: 25530
+Date: 18475    s: 41156       214/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  342
+Nloc:  2      LQ: 0070022025 11:25:56 Alt:  0.000 F_init: 648074.8 NK11531WIL
+Date of processing :  1-AUG-2000 11:37:44
+Lat1:  20.8226 Lon1: 304.8994 Lat2:  21.5282 Lon2: 301.7008 F: 648063.7  NQ:-7
+Ci:    0.00   Cf:   0.45 Pb:50. Dp:  47.121    Vl:  0.816  Df:  0.00  Tr:  1.6
+         Ptfm: 25530
+Date: 18475    s: 41156       214/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  342
+Nloc:  0      LQ: 0070002013 11:25:56 Alt:  0.000 F_init: 648063.7 NK21411HAL
+Date of processing :  1-AUG-2000 11:52:28
+Lat1:  20.8226 Lon1: 304.8994 Lat2:  21.5282 Lon2: 301.7008 F: 648063.7  NQ:-7
+Ci:    0.00   Cf:   0.45 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  1.6
+         Ptfm: 25530
+Date: 18475    s: 47169       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   80
+Nloc:  2      LQ: 1080042015 13:06:09 Alt:  0.000 F_init: 648063.7 NK11532WIL
+Date of processing :  1-AUG-2000 19:09:22
+Lat1:  20.8797 Lon1: 304.8911 Lat2:  31.4086 Lon2: 254.0565 F: 648063.7  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   6.380    Vl:  1.061  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18475    s: 47169       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   80
+Nloc:  2      LQ: 1080042015 13:06:09 Alt:  0.000 F_init: 648063.7 NK11532GCN
+Date of processing :  1-AUG-2000 20:09:02
+Lat1:  20.8797 Lon1: 304.8911 Lat2:  31.4086 Lon2: 254.0565 F: 648063.7  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   6.380    Vl:  1.061  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18475    s: 41323       214/00  Msg:  5 >-120Db:  0 Best: -124 D_dat:  677
+Nloc: 12      LQ: 0040512613 11:28:43 Alt:  0.000 F_init: 648063.7 NK11531WIN
+Date of processing :  1-AUG-2000 20:43:55
+Lat1:  20.8243 Lon1: 304.8734 Lat2:  21.4798 Lon2: 301.8381 F: 648060.0  NQ: 0
+Ci:    0.92   Cf:   3.72 Pb:22. Dp:   2.708    Vl:  0.000  Df:  0.00  Tr:  1.7
+         Ptfm: 25530
+Date: 18475    s: 75476       214/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:56 Alt:  0.000 F_init: 648060.0 NJ28805WIL
+Date of processing :  1-AUG-2000 21:18:59
+         Ptfm: 25530
+Date: 18475    s: 75476       214/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:56 Alt:  0.000 F_init: 648060.0 NJ21420LAL
+Date of processing :  1-AUG-2000 22:04:52
+         Ptfm: 25530
+Date: 18475    s: 47169       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   80
+Nloc:  2      LQ: 1080042015 13:06:09 Alt:  0.000 F_init: 648060.0 NK21413LAL
+Date of processing :  1-AUG-2000 22:06:35
+Lat1:  20.8735 Lon1: 304.8818 Lat2:  31.3999 Lon2: 254.0624 F: 648060.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   5.512    Vl:  0.943  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18475    s: 47169       214/00  Msg:  2 >-120Db:  0 Best: -131 D_dat:   80
+Nloc:  2      LQ: 1080042015 13:06:09 Alt:  0.000 F_init: 648060.0 NK21412HAL
+Date of processing :  1-AUG-2000 22:43:27
+Lat1:  20.8735 Lon1: 304.8818 Lat2:  31.3999 Lon2: 254.0624 F: 648060.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   5.512    Vl:  0.943  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18475    s: 75476       214/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 20:57:56 Alt:  0.000 F_init: 648060.0 NJ28804GCN
+Date of processing :  1-AUG-2000 23:14:27
+         Ptfm: 25530
+Date: 18476    s: 27652       215/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:   90
+Nloc:  2      LQ: 1080023015  7:40:52 Alt:  0.000 F_init: 648060.0 NJ21507HAL
+Date of processing :  2-AUG-2000 07:55:11
+Lat1:  21.2586 Lon1: 304.5506 Lat2:  17.1684 Lon2: 316.2966 F: 648060.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  58.630    Vl:  0.806  Df:  0.00  Tr:  5.5
+         Ptfm: 25530
+Date: 18476    s: 33935       215/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  376
+Nloc: 13      LQ: 0040523015  9:25:35 Alt:  0.000 F_init: 648060.0 NJ28812WIL
+Date of processing :  2-AUG-2000 09:39:53
+Lat1:  21.2768 Lon1: 304.5711 Lat2:  29.7711 Lon2: 267.2709 F: 648066.1  NQ: 0
+Ci:    0.58   Cf:   3.19 Pb:17. Dp:  59.140    Vl:  0.748  Df:  0.00  Tr: 17.7
+         Ptfm: 25530
+Date: 18476    s: 27652       215/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:   90
+Nloc:  2      LQ: 1080043015  7:40:52 Alt:  0.000 F_init: 648066.1 NJ28811WIN
+Date of processing :  2-AUG-2000 09:46:14
+Lat1:  21.2027 Lon1: 304.4308 Lat2:  17.0467 Lon2: 316.3776 F: 648066.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  16.716    Vl:  2.660  Df:  0.00  Tr:  5.6
+         Ptfm: 25530
+Date: 18476    s: 33935       215/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  376
+Nloc: 11      LQ: 0040503013  9:25:35 Alt:  0.000 F_init: 648066.1 NJ21509LAL
+Date of processing :  2-AUG-2000 09:51:11
+Lat1:  21.2769 Lon1: 304.5711 Lat2:  29.7711 Lon2: 267.2709 F: 648066.1  NQ: 0
+Ci:    0.58   Cf:   3.19 Pb:17. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr: 17.7
+         Ptfm: 25530
+Date: 18476    s: 33935       215/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  376
+Nloc: 11      LQ: 0040503013  9:25:35 Alt:  0.000 F_init: 648066.1 NJ21509HAL
+Date of processing :  2-AUG-2000 09:57:58
+Lat1:  21.2769 Lon1: 304.5711 Lat2:  29.7711 Lon2: 267.2709 F: 648066.1  NQ: 0
+Ci:    0.58   Cf:   3.19 Pb:17. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr: 17.7
+         Ptfm: 25530
+Date: 18476    s: 33935       215/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  376
+Nloc: 11      LQ: 0040503013  9:25:35 Alt:  0.000 F_init: 648066.1 NJ21509MIL
+Date of processing :  2-AUG-2000 10:22:18
+Lat1:  21.2769 Lon1: 304.5711 Lat2:  29.7711 Lon2: 267.2709 F: 648066.1  NQ: 0
+Ci:    0.58   Cf:   3.19 Pb:17. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr: 17.7
+         Ptfm: 25530
+Date: 18476    s: 39651       215/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:   96
+Nloc:  2      LQ: 1080042015 11:00:51 Alt:  0.000 F_init: 648066.1 NK21510HAL
+Date of processing :  2-AUG-2000 11:27:11
+Lat1:  21.2504 Lon1: 304.4104 Lat2:  18.3341 Lon2: 313.9619 F: 648066.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  16.929    Vl:  2.962  Df:  0.00  Tr:  4.4
+         Ptfm: 25530
+Date: 18476    s: 33935       215/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  376
+Nloc: 11      LQ: 0040503013  9:25:35 Alt:  0.000 F_init: 648066.1 NJ28812WIN
+Date of processing :  2-AUG-2000 11:38:08
+Lat1:  21.2769 Lon1: 304.5711 Lat2:  29.7711 Lon2: 267.2709 F: 648066.1  NQ: 0
+Ci:    0.58   Cf:   3.19 Pb:17. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr: 17.7
+         Ptfm: 25530
+Date: 18476    s: 45867       215/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  378
+Nloc: 14      LQ: 0040542815 12:44:27 Alt:  0.000 F_init: 648066.1 NK11546WIL
+Date of processing :  2-AUG-2000 12:59:11
+Lat1:  21.3333 Lon1: 304.5193 Lat2:  29.7792 Lon2: 265.2482 F: 648055.6  NQ: 0
+Ci:    0.36   Cf:   1.74 Pb:13. Dp:   8.245    Vl:  0.691  Df:  0.05  Tr: 18.6
+         Ptfm: 25530
+Date: 18476    s: 45867       215/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  378
+Nloc: 11      LQ: 0040502013 12:44:27 Alt:  0.000 F_init: 648055.6 NK21512HAL
+Date of processing :  2-AUG-2000 13:11:52
+Lat1:  21.3333 Lon1: 304.5193 Lat2:  29.7792 Lon2: 265.2482 F: 648055.6  NQ: 0
+Ci:    0.36   Cf:   1.74 Pb:13. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 18.6
+         Ptfm: 25530
+Date: 18476    s: 39940       215/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  676
+Nloc: 34      LQ: 0040542815 11:05:40 Alt:  0.000 F_init: 648055.6 NK11545WIN
+Date of processing :  2-AUG-2000 13:18:25
+Lat1:  21.2969 Lon1: 304.5531 Lat2:  19.4171 Lon2: 313.1516 F: 648058.5  NQ: 2
+Ci:    0.26   Cf:   0.41 Pb: 4. Dp:   5.345    Vl:  0.902  Df:  0.03  Tr:  3.9
+         Ptfm: 25530
+Date: 18476    s: 45867       215/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  378
+Nloc: 14      LQ: 0040542815 12:44:27 Alt:  0.000 F_init: 648058.5 NK21512LAL
+Date of processing :  2-AUG-2000 13:23:07
+Lat1:  21.3333 Lon1: 304.5193 Lat2:  29.7792 Lon2: 265.2482 F: 648055.6  NQ: 0
+Ci:    0.36   Cf:   1.74 Pb:13. Dp:   5.343    Vl:  0.902  Df:  0.03  Tr: 18.6
+         Ptfm: 25530
+Date: 18476    s: 45867       215/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  378
+Nloc: 14      LQ: 0040542815 12:44:27 Alt:  0.000 F_init: 648058.5 NK11546WIN
+Date of processing :  2-AUG-2000 14:49:47
+Lat1:  21.3333 Lon1: 304.5193 Lat2:  29.7792 Lon2: 265.2482 F: 648055.6  NQ: 0
+Ci:    0.36   Cf:   1.74 Pb:13. Dp:   5.343    Vl:  0.902  Df:  0.03  Tr: 18.6
+         Ptfm: 25530
+Date: 18477    s:   137       216/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:02:17 Alt:  0.000 F_init: 648058.5 NK21523LAL
+Date of processing :  3-AUG-2000 00:15:13
+         Ptfm: 25530
+Date: 18477    s:   137       216/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:02:17 Alt:  0.000 F_init: 648058.5 NK11553WIL
+Date of processing :  3-AUG-2000 00:17:49
+         Ptfm: 25530
+Date: 18477    s:   137       216/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:02:17 Alt:  0.000 F_init: 648058.5 NK11552GCN
+Date of processing :  3-AUG-2000 02:22:03
+         Ptfm: 25530
+Date: 18477    s:   137       216/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:02:17 Alt:  0.000 F_init: 648058.5 NK21600HAL
+Date of processing :  3-AUG-2000 00:26:40
+         Ptfm: 25530
+Date: 18477    s: 26972       216/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   90
+Nloc:  2      LQ: 1080023015  7:29:32 Alt:  0.000 F_init: 648058.5 NJ21607HAL
+Date of processing :  3-AUG-2000 07:55:10
+Lat1:  21.6852 Lon1: 304.2194 Lat2:  16.0816 Lon2: 322.5255 F: 648058.5  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  55.176    Vl:  0.751  Df:  0.00  Tr:  8.6
+         Ptfm: 25530
+Date: 18477    s: 26972       216/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   90
+Nloc:  2      LQ: 1080023015  7:29:32 Alt:  0.000 F_init: 648058.5 NJ28825WIN
+Date of processing :  3-AUG-2000 09:37:37
+Lat1:  21.6852 Lon1: 304.2194 Lat2:  16.0816 Lon2: 322.5255 F: 648058.5  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  55.176    Vl:  0.751  Df:  0.00  Tr:  8.6
+         Ptfm: 25530
+Date: 18477    s: 44513       216/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  505
+Nloc: 23      LQ: 0040523015 12:21:53 Alt:  0.000 F_init: 648058.5 NK11560WIL
+Date of processing :  3-AUG-2000 12:30:49
+Lat1:  21.7919 Lon1: 304.2042 Lat2:  27.8098 Lon2: 276.5478 F: 648052.8  NQ: 1
+Ci:    0.33   Cf:   1.04 Pb: 5. Dp:  65.652    Vl:  0.722  Df:  0.00  Tr: 13.3
+         Ptfm: 25530
+Date: 18477    s: 38621       216/00  Msg:  6 >-120Db:  2 Best: -118 D_dat:  587
+Nloc: 74      LQ: 0040553815 10:43:41 Alt:  0.000 F_init: 648052.8 NK11559WIN
+Date of processing :  3-AUG-2000 12:46:31
+Lat1:  21.7508 Lon1: 304.2288 Lat2:   0.6045 Lon2:  -0.3614 F: 648054.9  NQ: 1
+Ci:    0.54   Cf:   0.76 Pb: 9. Dp:   5.213    Vl:  0.885  Df:  0.02  Tr:  9.5
+         Ptfm: 25530
+Date: 18477    s: 44513       216/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  505
+Nloc: 24      LQ: 0040543815 12:21:53 Alt:  0.000 F_init: 648054.9 NK21612HAL
+Date of processing :  3-AUG-2000 12:48:52
+Lat1:  21.7919 Lon1: 304.2042 Lat2:  27.8098 Lon2: 276.5478 F: 648052.8  NQ: 1
+Ci:    0.33   Cf:   1.04 Pb: 5. Dp:   5.213    Vl:  0.885  Df:  0.02  Tr: 13.3
+         Ptfm: 25530
+Date: 18477    s: 44513       216/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  505
+Nloc: 24      LQ: 0040543815 12:21:53 Alt:  0.000 F_init: 648054.9 NK21612LAL
+Date of processing :  3-AUG-2000 12:54:55
+Lat1:  21.7919 Lon1: 304.2042 Lat2:  27.8098 Lon2: 276.5478 F: 648052.8  NQ: 1
+Ci:    0.33   Cf:   1.04 Pb: 5. Dp:   5.213    Vl:  0.885  Df:  0.02  Tr: 13.3
+         Ptfm: 25530
+Date: 18477    s: 44513       216/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  505
+Nloc: 24      LQ: 0040543815 12:21:53 Alt:  0.000 F_init: 648054.9 NK11560WIN
+Date of processing :  3-AUG-2000 14:37:46
+Lat1:  21.7919 Lon1: 304.2042 Lat2:  27.8098 Lon2: 276.5478 F: 648052.8  NQ: 1
+Ci:    0.33   Cf:   1.04 Pb: 5. Dp:   5.213    Vl:  0.885  Df:  0.02  Tr: 13.3
+         Ptfm: 25530
+Date: 18477    s: 68141       216/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  189
+Nloc:  2      LQ: 1080033015 18:55:41 Alt:  0.000 F_init: 648054.9 NJ21618HAL
+Date of processing :  3-AUG-2000 19:14:08
+Lat1:  21.9516 Lon1: 304.1375 Lat2:  27.7199 Lon2: 327.3156 F: 648054.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  24.149    Vl:  0.818  Df:  0.00  Tr: 11.4
+         Ptfm: 25530
+Date: 18477    s: 68141       216/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:  189
+Nloc:  2      LQ: 1080033015 18:55:41 Alt:  0.000 F_init: 648054.9 NJ21618LAL
+Date of processing :  3-AUG-2000 19:16:38
+Lat1:  21.9516 Lon1: 304.1375 Lat2:  27.7199 Lon2: 327.3156 F: 648054.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  24.149    Vl:  0.818  Df:  0.00  Tr: 11.4
+         Ptfm: 25530
+Date: 18477    s: 67907       216/00  Msg:  6 >-120Db:  2 Best: -119 D_dat:  658
+Nloc: 24      LQ: 0040533815 18:51:47 Alt:  0.000 F_init: 648054.9 NJ28831GCN
+Date of processing :  3-AUG-2000 19:38:00
+Lat1:  21.9583 Lon1: 304.1331 Lat2:  27.4185 Lon2: 328.3288 F: 648053.8  NQ: 1
+Ci:    0.56   Cf:   0.91 Pb: 5. Dp:  25.012    Vl:  0.854  Df:  0.00  Tr: 11.8
+         Ptfm: 25530
+Date: 18477    s: 78844       216/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   90
+Nloc:  2      LQ: 0080043015 21:54:04 Alt:  0.000 F_init: 648053.8 NK11565GCN
+Date of processing :  3-AUG-2000 22:33:49
+Lat1:  22.0688 Lon1: 304.1208 Lat2:  28.4497 Lon2: 334.5116 F: 648053.8  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  12.303    Vl:  1.125  Df:  0.00  Tr: 14.3
+         Ptfm: 25530
+Date: 18478    s: 32319       217/00  Msg:  3 >-120Db:  0 Best: -126 D_dat:   90
+Nloc: -1      LQ: 1070120000  8:58:39 Alt:  0.000 F_init: 648053.8 NJ28840WIL
+Date of processing :  4-AUG-2000 09:15:59
+Lat1:  28.5274 Lon1: 281.3077 Lat2:  22.0095 Lon2: 304.2153 F: 648053.8  NQ:-1
+Ci:    1.80   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18478    s: 32319       217/00  Msg:  3 >-120Db:  0 Best: -126 D_dat:   90
+Nloc: -1      LQ: 1070120000  8:58:39 Alt:  0.000 F_init: 648053.8 NJ21708LAL
+Date of processing :  4-AUG-2000 09:46:12
+Lat1:  28.5274 Lon1: 281.3077 Lat2:  22.0095 Lon2: 304.2153 F: 648053.8  NQ:-1
+Ci:    1.80   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18478    s: 32319       217/00  Msg:  3 >-120Db:  0 Best: -126 D_dat:   90
+Nloc: -1      LQ: 1070120000  8:58:39 Alt:  0.000 F_init: 648053.8 NJ28840WIN
+Date of processing :  4-AUG-2000 11:01:39
+Lat1:  28.5274 Lon1: 281.3077 Lat2:  22.0095 Lon2: 304.2153 F: 648053.8  NQ:-1
+Ci:    1.80   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18478    s: 43105       217/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  335
+Nloc: 23      LQ: 0040523015 11:58:25 Alt:  0.000 F_init: 648053.8 NK11574WIL
+Date of processing :  4-AUG-2000 12:07:10
+Lat1:  22.3244 Lon1: 303.8863 Lat2:  25.8761 Lon2: 287.7039 F: 648053.9  NQ: 1
+Ci:    0.20   Cf:   0.58 Pb:24. Dp:  47.870    Vl:  0.777  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18478    s: 43105       217/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  335
+Nloc: 21      LQ: 0040503013 11:58:25 Alt:  0.000 F_init: 648053.9 NK21711LAL
+Date of processing :  4-AUG-2000 12:27:03
+Lat1:  22.3244 Lon1: 303.8863 Lat2:  25.8761 Lon2: 287.7039 F: 648053.9  NQ: 1
+Ci:    0.20   Cf:   0.58 Pb:24. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18478    s: 43105       217/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  335
+Nloc: 21      LQ: 0040503013 11:58:25 Alt:  0.000 F_init: 648053.9 NK11574WIN
+Date of processing :  4-AUG-2000 14:10:12
+Lat1:  22.3244 Lon1: 303.8863 Lat2:  25.8761 Lon2: 287.7039 F: 648053.9  NQ: 1
+Ci:    0.20   Cf:   0.58 Pb:24. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  7.7
+         Ptfm: 25530
+Date: 18478    s: 43249       217/00  Msg:  7 >-120Db:  0 Best: -122 D_dat:  624
+Nloc: 33      LQ: 0040513613 12:00:49 Alt:  0.000 F_init: 648053.9 NK11574GCN
+Date of processing :  4-AUG-2000 23:05:37
+Lat1:  22.3245 Lon1: 303.8861 Lat2:  25.7480 Lon2: 287.8688 F: 648053.9  NQ: 2
+Ci:    0.20   Cf:   0.29 Pb: 2. Dp:   0.028    Vl:  0.000  Df:  0.00  Tr:  7.9
+         Ptfm: 25530
+Date: 18478    s: 83839       217/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  145
+Nloc: -1      LQ: 1040130000 23:17:19 Alt:  0.000 F_init: 648053.9 NK11581WIL
+Date of processing :  4-AUG-2000 23:30:51
+Lat1:  22.5483 Lon1: 303.7302 Lat2:  20.0632 Lon2: 296.5076 F: 648053.9  NQ:-1
+Ci:    0.58   Cf:  99.00 Pb:54. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.2
+         Ptfm: 25530
+Date: 18478    s: 83839       217/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  145
+Nloc: -1      LQ: 1040130000 23:17:19 Alt:  0.000 F_init: 648053.9 NK21723LAL
+Date of processing :  4-AUG-2000 23:46:53
+Lat1:  22.5483 Lon1: 303.7302 Lat2:  20.0632 Lon2: 296.5076 F: 648053.9  NQ:-1
+Ci:    0.58   Cf:  99.00 Pb:54. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.2
+         Ptfm: 25530
+Date: 18478    s: 83839       217/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  145
+Nloc: -1      LQ: 1040130000 23:17:19 Alt:  0.000 F_init: 648053.9 NK11580WIN
+Date of processing :  5-AUG-2000 01:20:57
+Lat1:  22.5483 Lon1: 303.7302 Lat2:  20.0632 Lon2: 296.5076 F: 648053.9  NQ:-1
+Ci:    0.58   Cf:  99.00 Pb:54. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  3.2
+         Ptfm: 25530
+Date: 18478    s: 32319       217/00  Msg:  3 >-120Db:  0 Best: -126 D_dat:   90
+Nloc: -1      LQ: 1070140000  8:58:39 Alt:  0.000 F_init: 648053.9 NJ28840WIN
+Date of processing :  5-AUG-2000 06:11:43
+Lat1:  28.5272 Lon1: 281.3068 Lat2:  22.0095 Lon2: 304.2153 F: 648053.9  NQ:-1
+Ci:    1.80   Cf:   0.00 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 10.0
+         Ptfm: 25530
+Date: 18479    s: 31776       218/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   77
+Nloc:  2      LQ: 1080023015  8:49:36 Alt:  0.000 F_init: 648053.9 NJ28854WIL
+Date of processing :  5-AUG-2000 09:04:44
+Lat1:  22.6974 Lon1: 303.4245 Lat2:  26.6783 Lon2: 286.3507 F: 648053.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  62.925    Vl:  0.840  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18479    s: 31776       218/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   77
+Nloc:  2      LQ: 1080023015  8:49:36 Alt:  0.000 F_init: 648053.9 NJ21808LAL
+Date of processing :  5-AUG-2000 09:19:36
+Lat1:  22.6974 Lon1: 303.4245 Lat2:  26.6783 Lon2: 286.3507 F: 648053.9  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  62.925    Vl:  0.840  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18479    s: 32010       218/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:  544
+Nloc:  3      LQ: 0070023015  8:53:30 Alt:  0.000 F_init: 648053.9 NJ21808PRL
+Date of processing :  5-AUG-2000 09:27:36
+Lat1:  22.6905 Lon1: 303.4311 Lat2:  26.6839 Lon2: 286.1620 F: 648055.6  NQ:-7
+Ci:    0.00   Cf:   0.38 Pb:50. Dp:  61.922    Vl:  0.824  Df:  0.00  Tr:  8.5
+         Ptfm: 25530
+Date: 18479    s: 32010       218/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  544
+Nloc: 21      LQ: 0040603013  8:53:30 Alt:  0.000 F_init: 648055.6 NJ21808MIL
+Date of processing :  5-AUG-2000 09:48:28
+Lat1:  22.6888 Lon1: 303.4327 Lat2:  26.6689 Lon2: 286.1185 F: 648055.6  NQ: 1
+Ci:    0.13   Cf:   0.65 Pb: 5. Dp:   0.259    Vl:  0.000  Df:  0.00  Tr:  8.5
+         Ptfm: 25530
+Date: 18479    s: 32010       218/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  544
+Nloc: 21      LQ: 0040603013  8:53:30 Alt:  0.000 F_init: 648055.6 NJ28854WIN
+Date of processing :  5-AUG-2000 11:14:08
+Lat1:  22.6888 Lon1: 303.4327 Lat2:  26.6689 Lon2: 286.1185 F: 648055.6  NQ: 1
+Ci:    0.13   Cf:   0.65 Pb: 5. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  8.5
+         Ptfm: 25530
+Date: 18479    s: 41856       218/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  231
+Nloc: 23      LQ: 0040542815 11:37:36 Alt:  0.000 F_init: 648055.6 NK11588WIL
+Date of processing :  5-AUG-2000 11:44:06
+Lat1:  22.7308 Lon1: 303.3689 Lat2:  23.6306 Lon2: 299.1936 F: 648052.1  NQ: 1
+Ci:    0.34   Cf:   0.77 Pb:27. Dp:   8.034    Vl:  0.816  Df:  0.02  Tr:  2.1
+         Ptfm: 25530
+Date: 18479    s: 47762       218/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:  258
+Nloc:  2      LQ: 0080041015 13:16:02 Alt:  0.000 F_init: 648052.1 NK11589WIL
+Date of processing :  5-AUG-2000 13:26:59
+Lat1:  22.7540 Lon1: 303.2647 Lat2:  33.3041 Lon2: 251.5525 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.008    Vl:  1.864  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18479    s: 47762       218/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:  258
+Nloc:  2      LQ: 0080041015 13:16:02 Alt:  0.000 F_init: 648052.1 NK21813LAL
+Date of processing :  5-AUG-2000 13:46:45
+Lat1:  22.7540 Lon1: 303.2647 Lat2:  33.3041 Lon2: 251.5525 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.008    Vl:  1.864  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18479    s: 47762       218/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:  258
+Nloc:  2      LQ: 0080041015 13:16:02 Alt:  0.000 F_init: 648052.1 NK11589GCN
+Date of processing :  5-AUG-2000 18:12:22
+Lat1:  22.7540 Lon1: 303.2647 Lat2:  33.3041 Lon2: 251.5525 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  11.008    Vl:  1.864  Df:  0.00  Tr: 24.0
+         Ptfm: 25530
+Date: 18479    s: 72897       218/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080033015 20:14:57 Alt:  0.000 F_init: 648052.1 NJ28861WIL
+Date of processing :  5-AUG-2000 20:28:10
+Lat1:  23.0286 Lon1: 303.5093 Lat2:  18.6385 Lon2: 290.7341 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  35.993    Vl:  1.160  Df:  0.00  Tr:  5.9
+         Ptfm: 25530
+Date: 18479    s: 42003       218/00  Msg:  7 >-120Db:  0 Best: -122 D_dat:  526
+Nloc: 22      LQ: 0040512613 11:40:03 Alt:  0.000 F_init: 648052.1 NK11588GCN
+Date of processing :  5-AUG-2000 20:33:10
+Lat1:  22.7325 Lon1: 303.3718 Lat2:  23.6228 Lon2: 299.2006 F: 648054.3  NQ: 1
+Ci:    0.40   Cf:   0.80 Pb:27. Dp:   0.348    Vl:  0.000  Df:  0.00  Tr:  2.1
+         Ptfm: 25530
+Date: 18479    s: 72897       218/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080033015 20:14:57 Alt:  0.000 F_init: 648052.1 NJ21820HAL
+Date of processing :  5-AUG-2000 20:42:25
+Lat1:  23.0286 Lon1: 303.5093 Lat2:  18.6385 Lon2: 290.7341 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  35.993    Vl:  1.160  Df:  0.00  Tr:  5.9
+         Ptfm: 25530
+Date: 18479    s: 66367       218/00  Msg:  4 >-120Db:  1 Best: -120 D_dat:  182
+Nloc: 12      LQ: 1040533815 18:26:07 Alt:  0.000 F_init: 648052.1 NJ28859WIN
+Date of processing :  5-AUG-2000 20:52:15
+Lat1:  22.8741 Lon1: 303.2315 Lat2:  30.9002 Lon2: 340.2124 F: 648055.3  NQ: 0
+Ci:    0.24   Cf:   4.83 Pb:51. Dp:  21.239    Vl:  0.866  Df:  0.01  Tr: 17.2
+         Ptfm: 25530
+Date: 18479    s: 72897       218/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080033015 20:14:57 Alt:  0.000 F_init: 648052.1 NJ21820LAL
+Date of processing :  5-AUG-2000 20:57:27
+Lat1:  23.0286 Lon1: 303.5093 Lat2:  18.6385 Lon2: 290.7341 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  35.993    Vl:  1.160  Df:  0.00  Tr:  5.9
+         Ptfm: 25530
+Date: 18479    s: 72897       218/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080033015 20:14:57 Alt:  0.000 F_init: 648052.1 NJ21820MIL
+Date of processing :  5-AUG-2000 21:27:12
+Lat1:  23.0286 Lon1: 303.5093 Lat2:  18.6385 Lon2: 290.7341 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  35.993    Vl:  1.160  Df:  0.00  Tr:  5.9
+         Ptfm: 25530
+Date: 18479    s: 72897       218/00  Msg:  2 >-120Db:  0 Best: -130 D_dat:   45
+Nloc:  2      LQ: 1080033015 20:14:57 Alt:  0.000 F_init: 648052.1 NJ28861WIN
+Date of processing :  5-AUG-2000 22:28:53
+Lat1:  23.0286 Lon1: 303.5093 Lat2:  18.6385 Lon2: 290.7341 F: 648052.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  35.993    Vl:  1.160  Df:  0.00  Tr:  5.9
+         Ptfm: 25530
+Date: 18480    s: 31186       219/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  147
+Nloc:  3      LQ: 0070023015  8:39:46 Alt:  0.000 F_init: 648052.1 NJ28868WIL
+Date of processing :  6-AUG-2000 08:50:42
+Lat1:  23.1202 Lon1: 303.0509 Lat2:  25.6044 Lon2: 292.0738 F: 648054.0  NQ:-7
+Ci:    0.00   Cf:   0.32 Pb:50. Dp:  54.083    Vl:  0.714  Df:  0.00  Tr:  5.2
+         Ptfm: 25530
+Date: 18480    s: 31186       219/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  147
+Nloc:  0      LQ: 0070003013  8:39:46 Alt:  0.000 F_init: 648054.0 NJ21908LAL
+Date of processing :  6-AUG-2000 08:52:30
+Lat1:  23.1202 Lon1: 303.0509 Lat2:  25.6044 Lon2: 292.0738 F: 648054.0  NQ:-7
+Ci:    0.00   Cf:   0.32 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  5.2
+         Ptfm: 25530
+Date: 18480    s: 31186       219/00  Msg:  3 >-120Db:  0 Best: -124 D_dat:  147
+Nloc:  0      LQ: 0070003013  8:39:46 Alt:  0.000 F_init: 648054.0 NJ21908HAL
+Date of processing :  6-AUG-2000 08:54:13
+Lat1:  23.1202 Lon1: 303.0509 Lat2:  25.6044 Lon2: 292.0738 F: 648054.0  NQ:-7
+Ci:    0.00   Cf:   0.32 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  5.2
+         Ptfm: 25530
+Date: 18480    s: 31286       219/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  347
+Nloc: 43      LQ: 0040613613  8:41:26 Alt:  0.000 F_init: 648054.0 NJ21908MIL
+Date of processing :  6-AUG-2000 09:46:43
+Lat1:  23.1202 Lon1: 303.0508 Lat2:  25.5508 Lon2: 292.1309 F: 648054.0  NQ: 3
+Ci:    0.00   Cf:   0.16 Pb: 0. Dp:   0.003    Vl:  0.000  Df:  0.00  Tr:  5.3
+         Ptfm: 25530
+Date: 18480    s: 46386       219/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  166
+Nloc:  2      LQ: 1070032815 12:53:06 Alt:  0.000 F_init: 648054.0 NK11603WIL
+Date of processing :  6-AUG-2000 13:04:51
+Lat1:  23.2029 Lon1: 303.0011 Lat2:  31.9316 Lon2: 262.4903 F: 648059.4  NQ:-7
+Ci:    0.00   Cf:   1.50 Pb:50. Dp:  10.475    Vl:  0.694  Df:  0.02  Tr: 18.8
+         Ptfm: 25530
+Date: 18480    s: 46386       219/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  166
+Nloc:  2      LQ: 1070032815 12:53:06 Alt:  0.000 F_init: 648054.0 NK21912LAL
+Date of processing :  6-AUG-2000 13:17:45
+Lat1:  23.2029 Lon1: 303.0011 Lat2:  31.9316 Lon2: 262.4903 F: 648059.4  NQ:-7
+Ci:    0.00   Cf:   1.50 Pb:50. Dp:  10.475    Vl:  0.694  Df:  0.02  Tr: 18.8
+         Ptfm: 25530
+Date: 18480    s: 46386       219/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  166
+Nloc:  2      LQ: 1070032815 12:53:06 Alt:  0.000 F_init: 648054.0 NK21912HAL
+Date of processing :  6-AUG-2000 13:22:08
+Lat1:  23.2029 Lon1: 303.0011 Lat2:  31.9316 Lon2: 262.4903 F: 648059.4  NQ:-7
+Ci:    0.00   Cf:   1.50 Pb:50. Dp:  10.475    Vl:  0.694  Df:  0.02  Tr: 18.8
+         Ptfm: 25530
+Date: 18480    s: 31286       219/00  Msg:  4 >-120Db:  0 Best: -124 D_dat:  347
+Nloc: 41      LQ: 0040603013  8:41:26 Alt:  0.000 F_init: 648054.0 NJ28868GCN
+Date of processing :  6-AUG-2000 14:21:50
+Lat1:  23.1202 Lon1: 303.0508 Lat2:  25.5508 Lon2: 292.1309 F: 648054.0  NQ: 3
+Ci:    0.00   Cf:   0.16 Pb: 0. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  5.3
+         Ptfm: 25530
+Date: 18480    s: 46386       219/00  Msg:  3 >-120Db:  0 Best: -125 D_dat:  166
+Nloc:  2      LQ: 1070032815 12:53:06 Alt:  0.000 F_init: 648054.0 NK11603WIN
+Date of processing :  6-AUG-2000 17:32:28
+Lat1:  23.2029 Lon1: 303.0011 Lat2:  31.9316 Lon2: 262.4903 F: 648059.4  NQ:-7
+Ci:    0.00   Cf:   1.50 Pb:50. Dp:  10.475    Vl:  0.694  Df:  0.02  Tr: 18.8
+         Ptfm: 25530
+Date: 18480    s: 66013       219/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:  101
+Nloc:  2      LQ: 1080032015 18:20:13 Alt:  0.000 F_init: 648054.0 NJ21918HAL
+Date of processing :  6-AUG-2000 18:49:16
+Lat1:  23.2864 Lon1: 302.9025 Lat2:  32.7054 Lon2: 345.0976 F: 648054.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  23.864    Vl:  0.687  Df:  0.00  Tr: 19.8
+         Ptfm: 25530
+Date: 18480    s: 66013       219/00  Msg:  2 >-120Db:  0 Best: -129 D_dat:  101
+Nloc:  2      LQ: 1080032015 18:20:13 Alt:  0.000 F_init: 648054.0 NJ21918HAL
+Date of processing :  6-AUG-2000 19:01:48
+Lat1:  23.2864 Lon1: 302.9025 Lat2:  32.7054 Lon2: 345.0976 F: 648054.0  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  23.864    Vl:  0.687  Df:  0.00  Tr: 19.8
+         Ptfm: 25530
+Date: 18480    s: 65796       219/00  Msg:  7 >-120Db:  0 Best: -125 D_dat:  535
+Nloc: 24      LQ: 0040532815 18:16:36 Alt:  0.000 F_init: 648054.0 NJ28873WIN
+Date of processing :  6-AUG-2000 20:34:17
+Lat1:  23.2984 Lon1: 302.9432 Lat2:  32.6881 Lon2: 345.6775 F: 648062.9  NQ: 1
+Ci:    0.30   Cf:   0.89 Pb: 8. Dp:  22.605    Vl:  0.655  Df:  0.02  Tr: 20.0
+         Ptfm: 25530
+Date: 18480    s: 80673       219/00  Msg:  3 >-120Db:  1 Best: -120 D_dat:   90
+Nloc:  2      LQ: 1070033815 22:24:33 Alt:  0.000 F_init: 648062.9 NK11609WIN
+Date of processing :  7-AUG-2000 01:06:25
+Lat1:  23.3629 Lon1: 302.8897 Lat2:  26.8304 Lon2: 319.4070 F: 648069.3  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:   8.990    Vl:  0.604  Df:  0.03  Tr:  7.7
+         Ptfm: 25530
+Date: 18481    s: 24566       220/00  Msg:  4 >-120Db:  0 Best: -127 D_dat:  270
+Nloc: 23      LQ: 0040622015  6:49:26 Alt:  0.000 F_init: 648062.9 NJ28881WIN
+Date of processing :  7-AUG-2000 08:52:02
+Lat1:  23.5731 Lon1: 302.8591 Lat2:  13.6901 Lon2: 346.3731 F: 648058.0  NQ: 1
+Ci:    0.03   Cf:   1.00 Pb:11. Dp:  31.608    Vl:  0.700  Df:  0.00  Tr: 20.7
+         Ptfm: 25530
+Date: 18481    s: 36622       220/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:10:22 Alt:  0.000 F_init: 648058.0 NJ28883WIL
+Date of processing :  7-AUG-2000 10:22:36
+         Ptfm: 25530
+Date: 18481    s: 36622       220/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:10:22 Alt:  0.000 F_init: 648058.0 NJ22010MIL
+Date of processing :  7-AUG-2000 11:19:27
+         Ptfm: 25530
+Date: 18481    s: 45009       220/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  367
+Nloc: 24      LQ: 0040533815 12:30:09 Alt:  0.000 F_init: 648058.0 NK11617WIL
+Date of processing :  7-AUG-2000 12:44:51
+Lat1:  23.6944 Lon1: 302.8131 Lat2:  30.0088 Lon2: 273.7406 F: 648055.4  NQ: 1
+Ci:    0.32   Cf:   1.32 Pb:15. Dp:  14.226    Vl:  0.696  Df:  0.01  Tr: 13.6
+         Ptfm: 25530
+Date: 18481    s: 45009       220/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  367
+Nloc: 21      LQ: 0040503013 12:30:09 Alt:  0.000 F_init: 648055.4 NK22012LAL
+Date of processing :  7-AUG-2000 12:49:23
+Lat1:  23.6944 Lon1: 302.8131 Lat2:  30.0088 Lon2: 273.7406 F: 648055.4  NQ: 1
+Ci:    0.32   Cf:   1.32 Pb:15. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18481    s: 45009       220/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  367
+Nloc: 21      LQ: 0040503013 12:30:09 Alt:  0.000 F_init: 648055.4 NK22012HAL
+Date of processing :  7-AUG-2000 13:09:23
+Lat1:  23.6944 Lon1: 302.8131 Lat2:  30.0088 Lon2: 273.7406 F: 648055.4  NQ: 1
+Ci:    0.32   Cf:   1.32 Pb:15. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18481    s: 36622       220/00  Msg:  1 >-120Db:  0 Best: -133 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:10:22 Alt:  0.000 F_init: 648055.4 NJ28883GCN
+Date of processing :  7-AUG-2000 14:04:15
+         Ptfm: 25530
+Date: 18481    s: 45009       220/00  Msg:  4 >-120Db:  0 Best: -123 D_dat:  367
+Nloc: 21      LQ: 0040503013 12:30:09 Alt:  0.000 F_init: 648055.4 NK11617WIN
+Date of processing :  7-AUG-2000 14:45:56
+Lat1:  23.6944 Lon1: 302.8131 Lat2:  30.0088 Lon2: 273.7406 F: 648055.4  NQ: 1
+Ci:    0.32   Cf:   1.32 Pb:15. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr: 13.6
+         Ptfm: 25530
+Date: 18481    s: 39214       220/00  Msg:  2 >-120Db:  1 Best: -119 D_dat:   90
+Nloc:  2      LQ: 1080043015 10:53:34 Alt:  0.000 F_init: 648055.4 NK11616WIN
+Date of processing :  7-AUG-2000 14:56:20
+Lat1:  23.6257 Lon1: 302.7853 Lat2:  19.5674 Lon2: 321.7327 F: 648055.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   8.117    Vl:  1.401  Df:  0.00  Tr:  8.9
+         Ptfm: 25530
+Date: 18482    s: 29480       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080021015  8:11:20 Alt:  0.000 F_init: 648055.4 NJ28896WIL
+Date of processing :  8-AUG-2000 08:25:34
+Lat1:  24.1645 Lon1: 302.7862 Lat2:  23.2879 Lon2: 305.1890 F: 648055.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  52.140    Vl:  0.736  Df:  0.00  Tr:  0.9
+         Ptfm: 25530
+Date: 18482    s: 29480       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080021015  8:11:20 Alt:  0.000 F_init: 648055.4 NJ22108HAL
+Date of processing :  8-AUG-2000 08:46:29
+Lat1:  24.1645 Lon1: 302.7862 Lat2:  23.2879 Lon2: 305.1890 F: 648055.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  52.140    Vl:  0.736  Df:  0.00  Tr:  0.9
+         Ptfm: 25530
+Date: 18482    s: 29480       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  2      LQ: 1080021015  8:11:20 Alt:  0.000 F_init: 648055.4 NJ22108LAL
+Date of processing :  8-AUG-2000 08:50:41
+Lat1:  24.1645 Lon1: 302.7862 Lat2:  23.2879 Lon2: 305.1890 F: 648055.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  52.140    Vl:  0.736  Df:  0.00  Tr:  0.9
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  3      LQ: 0070022015  9:55:53 Alt:  0.000 F_init: 648055.4 NJ28897WIL
+Date of processing :  8-AUG-2000 10:08:34
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:  64.482    Vl:  0.836  Df:  0.00  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 29480       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  1      LQ: 1080042013  8:11:20 Alt:  0.000 F_init: 648145.6 NJ28896WIN
+Date of processing :  8-AUG-2000 10:13:48
+Lat1:  23.7132 Lon1: 299.4901 Lat2:  20.7396 Lon2: 307.7903 F: 648145.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 324.214    Vl: 51.689  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  0      LQ: 0070002013  9:55:53 Alt:  0.000 F_init: 648145.6 NJ22109HAL
+Date of processing :  8-AUG-2000 10:17:04
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  0      LQ: 0070002013  9:55:53 Alt:  0.000 F_init: 648145.6 NJ22109EDL
+Date of processing :  8-AUG-2000 10:24:26
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  0      LQ: 0070002013  9:55:53 Alt:  0.000 F_init: 648145.6 NJ22109LAL
+Date of processing :  8-AUG-2000 10:26:05
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 29480       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   45
+Nloc:  1      LQ: 1080042013  8:11:20 Alt:  0.000 F_init: 648145.6 NJ28896WIN
+Date of processing :  8-AUG-2000 10:35:22
+Lat1:  23.7132 Lon1: 299.4901 Lat2:  20.7396 Lon2: 307.7903 F: 648145.6  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 324.214    Vl: 51.689  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  0      LQ: 0070002013  9:55:53 Alt:  0.000 F_init: 648145.6 NJ22109MIL
+Date of processing :  8-AUG-2000 10:47:10
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 43766       221/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  376
+Nloc: 13      LQ: 0040443615 12:09:26 Alt:  0.000 F_init: 648145.6 NK11631WIL
+Date of processing :  8-AUG-2000 12:16:53
+Lat1:  24.1734 Lon1: 302.5425 Lat2:  27.8930 Lon2: 285.0774 F: 648086.5  NQ: 0
+Ci:    1.95   Cf:   3.86 Pb:23. Dp:  11.682    Vl:  1.458  Df:  0.44  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 43766       221/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  376
+Nloc: 11      LQ: 0040403013 12:09:26 Alt:  0.000 F_init: 648086.5 NK22112HAL
+Date of processing :  8-AUG-2000 12:18:36
+Lat1:  24.1734 Lon1: 302.5425 Lat2:  27.8930 Lon2: 285.0774 F: 648086.5  NQ: 0
+Ci:    1.95   Cf:   3.86 Pb:23. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 43766       221/00  Msg:  5 >-120Db:  0 Best: -121 D_dat:  376
+Nloc: 11      LQ: 0040403013 12:09:26 Alt:  0.000 F_init: 648086.5 NK22112LAL
+Date of processing :  8-AUG-2000 12:20:44
+Lat1:  24.1734 Lon1: 302.5425 Lat2:  27.8930 Lon2: 285.0774 F: 648086.5  NQ: 0
+Ci:    1.95   Cf:   3.86 Pb:23. Dp:   0.004    Vl:  0.000  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 38077       221/00  Msg:  4 >-120Db:  0 Best: -126 D_dat:  136
+Nloc: 12      LQ: 1040643815 10:34:37 Alt:  0.000 F_init: 648086.5 NK11630WIN
+Date of processing :  8-AUG-2000 12:34:09
+Lat1:  24.0509 Lon1: 302.5045 Lat2:  17.4858 Lon2: 333.1878 F: 648071.0  NQ: 0
+Ci:    0.02   Cf:   5.01 Pb:20. Dp:  14.108    Vl:  2.480  Df:  0.16  Tr: 14.5
+         Ptfm: 25530
+Date: 18482    s: 43860       221/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  563
+Nloc: 12      LQ: 0040413613 12:11:00 Alt:  0.000 F_init: 648086.5 NK22112PRL
+Date of processing :  8-AUG-2000 12:39:51
+Lat1:  24.1569 Lon1: 302.5221 Lat2:  27.8235 Lon2: 285.1089 F: 648075.4  NQ: 0
+Ci:    2.41   Cf:   3.50 Pb:23. Dp:   2.762    Vl:  0.000  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  3      LQ: 0070042615  9:55:53 Alt:  0.000 F_init: 648086.5 NJ28897GCN
+Date of processing :  8-AUG-2000 13:45:55
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:  11.684    Vl:  1.458  Df:  0.44  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 43860       221/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  563
+Nloc: 12      LQ: 0040413613 12:11:00 Alt:  0.000 F_init: 648086.5 NK11631WIN
+Date of processing :  8-AUG-2000 14:16:29
+Lat1:  24.1569 Lon1: 302.5221 Lat2:  27.8235 Lon2: 285.1089 F: 648075.4  NQ: 0
+Ci:    2.41   Cf:   3.50 Pb:23. Dp:   2.762    Vl:  0.000  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 35753       221/00  Msg:  3 >-120Db:  0 Best: -130 D_dat:  136
+Nloc:  3      LQ: 0070042615  9:55:53 Alt:  0.000 F_init: 648086.5 NJ28897GCN
+Date of processing :  8-AUG-2000 18:48:46
+Lat1:  24.2495 Lon1: 302.6221 Lat2:  34.5256 Lon2: 256.2101 F: 648145.6  NQ:-7
+Ci:    0.00   Cf:   2.91 Pb:50. Dp:  11.684    Vl:  1.458  Df:  0.44  Tr: 21.3
+         Ptfm: 25530
+Date: 18482    s: 70414       221/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:   90
+Nloc:  2      LQ: 0070032825 19:33:34 Alt:  0.000 F_init: 648086.5 NJ28903WIL
+Date of processing :  8-AUG-2000 19:50:21
+Lat1:  24.3192 Lon1: 302.6017 Lat2:  25.6936 Lon2: 308.8196 F: 648082.2  NQ:-7
+Ci:    0.00   Cf:   0.59 Pb:50. Dp:  17.234    Vl:  0.647  Df:  0.01  Tr:  3.0
+         Ptfm: 25530
+Date: 18482    s: 43860       221/00  Msg:  6 >-120Db:  0 Best: -121 D_dat:  563
+Nloc: 13      LQ: 0040433815 12:11:00 Alt:  0.000 F_init: 648082.2 NK11631GCN
+Date of processing :  8-AUG-2000 21:01:37
+Lat1:  24.1569 Lon1: 302.5221 Lat2:  27.8230 Lon2: 285.1086 F: 648075.4  NQ: 0
+Ci:    2.41   Cf:   3.50 Pb:23. Dp:  19.716    Vl:  0.742  Df:  0.02  Tr:  8.3
+         Ptfm: 25530
+Date: 18482    s: 76730       221/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:   45
+Nloc:  2      LQ: 1080042015 21:18:50 Alt:  0.000 F_init: 648082.2 NJ28904WIL
+Date of processing :  8-AUG-2000 21:32:58
+Lat1:  24.3921 Lon1: 302.3322 Lat2:  14.4925 Lon2: 259.9346 F: 648082.2  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  28.514    Vl:  4.514  Df:  0.00  Tr: 19.8
+         Ptfm: 25530
+Date: 18482    s: 70391       221/00  Msg:  4 >-120Db:  0 Best: -122 D_dat:  135
+Nloc: 11      LQ: 0040512613 19:33:11 Alt:  0.000 F_init: 648082.2 NJ28903WIN
+Date of processing :  8-AUG-2000 21:43:27
+Lat1:  24.2998 Lon1: 302.5808 Lat2:  25.6836 Lon2: 308.8530 F: 648098.4  NQ: 0
+Ci:    0.63   Cf:   4.08 Pb:45. Dp:   3.018    Vl:  0.000  Df:  0.00  Tr:  3.0
+         Ptfm: 25530
+Date: 18482    s: 76730       221/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:   45
+Nloc:  2      LQ: 1080042015 21:18:50 Alt:  0.000 F_init: 648098.4 NJ22121MIL
+Date of processing :  8-AUG-2000 21:53:27
+Lat1:  24.3742 Lon1: 302.2544 Lat2:  14.5075 Lon2: 260.0147 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  34.137    Vl:  5.385  Df:  0.00  Tr: 19.7
+         Ptfm: 25530
+Date: 18482    s: 76730       221/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:   45
+Nloc:  2      LQ: 1080042015 21:18:50 Alt:  0.000 F_init: 648098.4 NJ22121LAL
+Date of processing :  8-AUG-2000 21:54:40
+Lat1:  24.3742 Lon1: 302.2544 Lat2:  14.5075 Lon2: 260.0147 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  34.137    Vl:  5.385  Df:  0.00  Tr: 19.7
+         Ptfm: 25530
+Date: 18482    s: 76730       221/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:   45
+Nloc:  2      LQ: 1080042015 21:18:50 Alt:  0.000 F_init: 648098.4 NJ28903GCN
+Date of processing :  8-AUG-2000 23:32:13
+Lat1:  24.3742 Lon1: 302.2544 Lat2:  14.5075 Lon2: 260.0147 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  34.137    Vl:  5.385  Df:  0.00  Tr: 19.7
+         Ptfm: 25530
+Date: 18482    s: 84482       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   73
+Nloc:  2      LQ: 1080032015 23:28:02 Alt:  0.000 F_init: 648098.4 NK11638WIL
+Date of processing :  8-AUG-2000 23:40:19
+Lat1:  24.8588 Lon1: 301.4180 Lat2:  21.8600 Lon2: 292.6188 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 133.066    Vl:  9.443  Df:  0.00  Tr:  3.9
+         Ptfm: 25530
+Date: 18482    s: 84482       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   73
+Nloc:  2      LQ: 1080032015 23:28:02 Alt:  0.000 F_init: 648098.4 NK22123LAL
+Date of processing :  8-AUG-2000 23:53:14
+Lat1:  24.8588 Lon1: 301.4180 Lat2:  21.8600 Lon2: 292.6188 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 133.066    Vl:  9.443  Df:  0.00  Tr:  3.9
+         Ptfm: 25530
+Date: 18482    s: 84482       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   73
+Nloc:  2      LQ: 1080032015 23:28:02 Alt:  0.000 F_init: 648098.4 NK11637WIN
+Date of processing :  9-AUG-2000 01:34:22
+Lat1:  24.8588 Lon1: 301.4180 Lat2:  21.8600 Lon2: 292.6188 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 133.066    Vl:  9.443  Df:  0.00  Tr:  3.9
+         Ptfm: 25530
+Date: 18482    s: 84482       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   73
+Nloc:  2      LQ: 1080032015 23:28:02 Alt:  0.000 F_init: 648098.4 NK11637WIN
+Date of processing :  9-AUG-2000 01:44:33
+Lat1:  24.8588 Lon1: 301.4180 Lat2:  21.8600 Lon2: 292.6188 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 133.066    Vl:  9.443  Df:  0.00  Tr:  3.9
+         Ptfm: 25530
+Date: 18482    s: 84482       221/00  Msg:  2 >-120Db:  0 Best: -125 D_dat:   73
+Nloc:  2      LQ: 1080032015 23:28:02 Alt:  0.000 F_init: 648098.4 NK22123HAL
+Date of processing :  9-AUG-2000 02:18:17
+Lat1:  24.8588 Lon1: 301.4180 Lat2:  21.8600 Lon2: 292.6188 F: 648098.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp: 133.066    Vl:  9.443  Df:  0.00  Tr:  3.9
+         Ptfm: 25530
+Date: 18483    s: 29069       222/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000  8:04:29 Alt:  0.000 F_init: 648098.4 NJ22207HAL
+Date of processing :  9-AUG-2000 08:51:53
+         Ptfm: 25530
+Date: 18483    s: 29210       222/00  Msg:  7 >-120Db:  2 Best: -119 D_dat:  282
+Nloc: 22      LQ: 0040522025  8:06:50 Alt:  0.000 F_init: 648098.4 NJ28910WIN
+Date of processing :  9-AUG-2000 10:05:26
+Lat1:  24.5108 Lon1: 302.3910 Lat2:  22.7495 Lon2: 310.3243 F: 648056.1  NQ: 1
+Ci:    0.33   Cf:   0.70 Pb:52. Dp:  30.279    Vl:  0.670  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18483    s: 29210       222/00  Msg:  7 >-120Db:  2 Best: -119 D_dat:  282
+Nloc: 20      LQ: 0040502023  8:06:50 Alt:  0.000 F_init: 648056.1 NJ22208CYL
+Date of processing :  9-AUG-2000 12:45:16
+Lat1:  24.5108 Lon1: 302.3910 Lat2:  22.7495 Lon2: 310.3243 F: 648056.1  NQ: 1
+Ci:    0.33   Cf:   0.70 Pb:52. Dp:   0.001    Vl:  0.000  Df:  0.00  Tr:  3.7
+         Ptfm: 25530
+Date: 18483    s: 42584       222/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080032015 11:49:44 Alt:  0.000 F_init: 648056.1 NK11645WIL
+Date of processing :  9-AUG-2000 12:59:01
+Lat1:  24.5405 Lon1: 302.6586 Lat2:  25.9325 Lon2: 295.9448 F: 648056.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  27.314    Vl:  2.042  Df:  0.00  Tr:  3.2
+         Ptfm: 25530
+Date: 18483    s: 48291       222/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000 13:24:51 Alt:  0.000 F_init: 648056.1 NK22213HAL
+Date of processing :  9-AUG-2000 13:49:31
+         Ptfm: 25530
+Date: 18483    s: 48291       222/00  Msg:  1 >-120Db:  0 Best: -134 D_dat:    0
+Nloc: -2      LQ: 2040000000 13:24:51 Alt:  0.000 F_init: 648056.1 NK22213LAL
+Date of processing :  9-AUG-2000 13:52:48
+         Ptfm: 25530
+Date: 18483    s: 42584       222/00  Msg:  2 >-120Db:  0 Best: -127 D_dat:   44
+Nloc:  2      LQ: 1080032015 11:49:44 Alt:  0.000 F_init: 648056.1 NK11645WIN
+Date of processing :  9-AUG-2000 13:55:01
+Lat1:  24.5405 Lon1: 302.6586 Lat2:  25.9325 Lon2: 295.9448 F: 648056.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  27.314    Vl:  2.042  Df:  0.00  Tr:  3.2
+         Ptfm: 25530
+Date: 18483    s: 48346       222/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:  109
+Nloc:  2      LQ: 0080031015 13:25:46 Alt:  0.000 F_init: 648056.1 NK11646WIL
+Date of processing :  9-AUG-2000 14:05:58
+Lat1:  24.6037 Lon1: 302.3608 Lat2:  35.5426 Lon2: 248.3035 F: 648056.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  10.732    Vl:  0.561  Df:  0.00  Tr: 24.5
+         Ptfm: 25530
+Date: 18483    s: 48346       222/00  Msg:  2 >-120Db:  0 Best: -134 D_dat:  109
+Nloc:  2      LQ: 0080031015 13:25:46 Alt:  0.000 F_init: 648056.1 NK11646GCN
+Date of processing :  9-AUG-2000 18:59:18
+Lat1:  24.6037 Lon1: 302.3608 Lat2:  35.5426 Lon2: 248.3035 F: 648056.1  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  10.732    Vl:  0.561  Df:  0.00  Tr: 24.5
+         Ptfm: 25530
+Date: 18484    s: 34527       223/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:35:27 Alt:  0.000 F_init: 648056.1 NJ28925WIL
+Date of processing : 10-AUG-2000 09:45:15
+         Ptfm: 25530
+Date: 18484    s: 34527       223/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:35:27 Alt:  0.000 F_init: 648056.1 NJ22309LAL
+Date of processing : 10-AUG-2000 09:53:32
+         Ptfm: 25530
+Date: 18484    s: 28275       223/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:  279
+Nloc:  3      LQ: 0070023015  7:51:15 Alt:  0.000 F_init: 648056.1 NJ28924WIN
+Date of processing : 10-AUG-2000 09:58:56
+Lat1:  24.9089 Lon1: 302.2311 Lat2:  21.6964 Lon2: 316.2710 F: 648065.8  NQ:-7
+Ci:    0.00   Cf:   0.37 Pb:50. Dp:  46.975    Vl:  0.550  Df:  0.00  Tr:  6.6
+         Ptfm: 25530
+Date: 18484    s: 34527       223/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:35:27 Alt:  0.000 F_init: 648065.8 NJ22309MIL
+Date of processing : 10-AUG-2000 10:27:11
+         Ptfm: 25530
+Date: 18484    s: 28275       223/00  Msg:  3 >-120Db:  0 Best: -123 D_dat:  279
+Nloc:  0      LQ: 0070003013  7:51:15 Alt:  0.000 F_init: 648065.8 NJ22307HAL
+Date of processing : 10-AUG-2000 12:02:52
+Lat1:  24.9089 Lon1: 302.2311 Lat2:  21.6964 Lon2: 316.2710 F: 648065.8  NQ:-7
+Ci:    0.00   Cf:   0.37 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr:  6.6
+         Ptfm: 25530
+Date: 18484    s: 40894       223/00  Msg:  1 >-120Db:  0 Best: -123 D_dat:    0
+Nloc: -2      LQ: 2040000000 11:21:34 Alt:  0.000 F_init: 648065.8 NK22311HAL
+Date of processing : 10-AUG-2000 12:05:39
+         Ptfm: 25530
+Date: 18484    s: 34527       223/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000  9:35:27 Alt:  0.000 F_init: 648065.8 NJ28925WIN
+Date of processing : 10-AUG-2000 12:07:03
+         Ptfm: 25530
+Date: 18484    s: 46938       223/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:  259
+Nloc:  3      LQ: 0070032815 13:02:18 Alt:  0.000 F_init: 648065.8 NK11660WIL
+Date of processing : 10-AUG-2000 13:17:39
+Lat1:  25.0112 Lon1: 302.2389 Lat2:  34.2547 Lon2: 259.1924 F: 648070.9  NQ:-7
+Ci:    0.00   Cf:   0.94 Pb:50. Dp:  11.359    Vl:  0.609  Df:  0.02  Tr: 19.6
+         Ptfm: 25530
+Date: 18484    s: 41096       223/00  Msg:  5 >-120Db:  0 Best: -123 D_dat:  404
+Nloc: 12      LQ: 0040442725 11:24:56 Alt:  0.000 F_init: 648070.9 NK11659WIN
+Date of processing : 10-AUG-2000 13:25:01
+Lat1:  24.9466 Lon1: 302.3204 Lat2:  23.8909 Lon2: 307.2154 F: 648092.5  NQ: 0
+Ci:    2.38   Cf:   6.06 Pb:85. Dp:  10.901    Vl:  1.866  Df:  0.22  Tr:  2.1
+         Ptfm: 25530
+Date: 18484    s: 46938       223/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:  259
+Nloc:  3      LQ: 0070042715 13:02:18 Alt:  0.000 F_init: 648092.5 NK22312LAL
+Date of processing : 10-AUG-2000 13:28:41
+Lat1:  25.0112 Lon1: 302.2389 Lat2:  34.2547 Lon2: 259.1924 F: 648070.9  NQ:-7
+Ci:    0.00   Cf:   0.94 Pb:50. Dp:  10.901    Vl:  1.866  Df:  0.22  Tr: 19.6
+         Ptfm: 25530
+Date: 18484    s: 46938       223/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:  259
+Nloc:  3      LQ: 0070042715 13:02:18 Alt:  0.000 F_init: 648092.5 NK22312HAL
+Date of processing : 10-AUG-2000 13:31:28
+Lat1:  25.0112 Lon1: 302.2389 Lat2:  34.2547 Lon2: 259.1924 F: 648070.9  NQ:-7
+Ci:    0.00   Cf:   0.94 Pb:50. Dp:  10.901    Vl:  1.866  Df:  0.22  Tr: 19.6
+         Ptfm: 25530
+Date: 18484    s: 46938       223/00  Msg:  3 >-120Db:  0 Best: -129 D_dat:  259
+Nloc:  3      LQ: 0070042715 13:02:18 Alt:  0.000 F_init: 648092.5 NK11660GCN
+Date of processing : 10-AUG-2000 18:42:04
+Lat1:  25.0112 Lon1: 302.2389 Lat2:  34.2547 Lon2: 259.1924 F: 648070.9  NQ:-7
+Ci:    0.00   Cf:   0.94 Pb:50. Dp:  10.901    Vl:  1.866  Df:  0.22  Tr: 19.6
+         Ptfm: 25530
+Date: 18484    s: 68946       223/00  Msg:  1 >-120Db:  0 Best: -126 D_dat:    0
+Nloc: -2      LQ: 2040000000 19:09:06 Alt:  0.000 F_init: 648092.5 NJ28930WIN
+Date of processing : 10-AUG-2000 19:34:32
+         Ptfm: 25530
+Date: 18484    s: 68969       223/00  Msg:  2 >-120Db:  1 Best: -120 D_dat:   45
+Nloc:  2      LQ: 1080033015 19:09:29 Alt:  0.000 F_init: 648092.5 NJ28931WIN
+Date of processing : 10-AUG-2000 21:40:19
+Lat1:  25.0815 Lon1: 302.2674 Lat2:  28.9600 Lon2: 319.9756 F: 648092.5  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  15.874    Vl:  0.570  Df:  0.00  Tr:  8.3
+         Ptfm: 25530
+Date: 18485    s:   728       224/00  Msg:  1 >-120Db:  0 Best: -136 D_dat:    0
+Nloc: -2      LQ: 2040000000  0:12:08 Alt:  0.000 F_init: 648092.5 NK11666GCN
+Date of processing : 11-AUG-2000 04:34:28
+         Ptfm: 25530
+Date: 18485    s: 39430       224/00  Msg:  1 >-120Db:  0 Best: -128 D_dat:    0
+Nloc: -2      LQ: 2040000000 10:57:10 Alt:  0.000 F_init: 648092.5 NK22410HAL
+Date of processing : 11-AUG-2000 11:31:04
+         Ptfm: 25530
+Date: 18485    s: 45718       224/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  230
+Nloc:  2      LQ: 0070023025 12:41:58 Alt:  0.000 F_init: 648092.5 NK11674WIL
+Date of processing : 11-AUG-2000 13:02:55
+Lat1:  25.3653 Lon1: 302.0040 Lat2:  31.9910 Lon2: 270.5210 F: 648057.4  NQ:-7
+Ci:    0.00   Cf:   0.46 Pb:50. Dp:  56.286    Vl:  0.618  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18485    s: 45718       224/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  230
+Nloc:  0      LQ: 0070003013 12:41:58 Alt:  0.000 F_init: 648057.4 NK22412HAL
+Date of processing : 11-AUG-2000 13:15:47
+Lat1:  25.3653 Lon1: 302.0040 Lat2:  31.9910 Lon2: 270.5210 F: 648057.4  NQ:-7
+Ci:    0.00   Cf:   0.46 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18485    s: 39408       224/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:   45
+Nloc:  2      LQ: 1080043015 10:56:48 Alt:  0.000 F_init: 648057.4 NK11673WIN
+Date of processing : 11-AUG-2000 13:19:08
+Lat1:  25.3045 Lon1: 302.0574 Lat2:  20.1746 Lon2: 319.3130 F: 648057.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   8.617    Vl:  1.366  Df:  0.00  Tr:  7.8
+         Ptfm: 25530
+Date: 18485    s: 45718       224/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  230
+Nloc:  0      LQ: 0070003013 12:41:58 Alt:  0.000 F_init: 648057.4 NK22412LAL
+Date of processing : 11-AUG-2000 13:29:33
+Lat1:  25.3653 Lon1: 302.0040 Lat2:  31.9910 Lon2: 270.5210 F: 648057.4  NQ:-7
+Ci:    0.00   Cf:   0.46 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18485    s: 45718       224/00  Msg:  3 >-120Db:  0 Best: -122 D_dat:  230
+Nloc:  0      LQ: 0070003013 12:41:58 Alt:  0.000 F_init: 648057.4 NK11674WIN
+Date of processing : 11-AUG-2000 14:50:03
+Lat1:  25.3653 Lon1: 302.0040 Lat2:  31.9910 Lon2: 270.5210 F: 648057.4  NQ:-7
+Ci:    0.00   Cf:   0.46 Pb:50. Dp:   0.000    Vl:  0.000  Df:  0.00  Tr: 14.5
+         Ptfm: 25530
+Date: 18485    s: 39408       224/00  Msg:  2 >-120Db:  0 Best: -128 D_dat:   45
+Nloc:  2      LQ: 1080043015 10:56:48 Alt:  0.000 F_init: 648057.4 NK11673WIN
+Date of processing : 11-AUG-2000 15:01:41
+Lat1:  25.3045 Lon1: 302.0574 Lat2:  20.1746 Lon2: 319.3130 F: 648057.4  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   8.617    Vl:  1.366  Df:  0.00  Tr:  7.8
+         Ptfm: 25530
+Date: 18485    s: 68461       224/00  Msg:  1 >-120Db:  0 Best: -124 D_dat:    0
+Nloc: -2      LQ: 2040000000 19:01:01 Alt:  0.000 F_init: 648057.4 NJ22419HAL
+Date of processing : 11-AUG-2000 19:43:02
+         Ptfm: 25530
+Date: 18485    s: 68231       224/00  Msg:  6 >-120Db:  3 Best: -120 D_dat:  460
+Nloc: 33      LQ: 0040633815 18:57:11 Alt:  0.000 F_init: 648057.4 NJ28944WIN
+Date of processing : 11-AUG-2000 21:14:25
+Lat1:  25.4355 Lon1: 301.9130 Lat2:  30.6128 Lon2: 325.7675 F: 648048.3  NQ: 2
+Ci:    0.12   Cf:   0.26 Pb:11. Dp:  12.017    Vl:  0.534  Df:  0.02  Tr: 11.1
+         Ptfm: 25530
+Date: 18486    s: 27171       225/00  Msg:  2 >-120Db:  0 Best: -126 D_dat:   44
+Nloc:  2      LQ: 1080023015  7:32:51 Alt:  0.000 F_init: 648048.3 NJ22507CYL
+Date of processing : 12-AUG-2000 07:52:44
+Lat1:  25.6216 Lon1: 301.7429 Lat2:  19.6863 Lon2: 328.4598 F: 648048.3  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  26.782    Vl:  0.591  Df:  0.00  Tr: 12.5
+         Ptfm: 25530
+Date: 18486    s: 33081       225/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080023015  9:11:21 Alt:  0.000 F_init: 648048.3 NJ28953WIL
+Date of processing : 12-AUG-2000 09:20:35
+Lat1:  25.5938 Lon1: 301.7187 Lat2:  30.2672 Lon2: 280.3214 F: 648048.3  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  26.246    Vl:  0.512  Df:  0.00  Tr:  9.9
+         Ptfm: 25530
+Date: 18486    s: 33081       225/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080023015  9:11:21 Alt:  0.000 F_init: 648048.3 NJ22509HAL
+Date of processing : 12-AUG-2000 09:22:03
+Lat1:  25.5938 Lon1: 301.7187 Lat2:  30.2672 Lon2: 280.3214 F: 648048.3  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:  26.246    Vl:  0.512  Df:  0.00  Tr:  9.9
+         Ptfm: 25530
+Date: 18486    s: 27081       225/00  Msg:  5 >-120Db:  0 Best: -122 D_dat:  225
+Nloc: 22      LQ: 0040523015  7:31:21 Alt:  0.000 F_init: 648048.3 NJ28952WIN
+Date of processing : 12-AUG-2000 09:31:15
+Lat1:  25.6217 Lon1: 301.7647 Lat2:  19.6882 Lon2: 328.4282 F: 648055.3  NQ: 1
+Ci:    0.16   Cf:   0.87 Pb:49. Dp:  25.451    Vl:  0.562  Df:  0.00  Tr: 12.4
+         Ptfm: 25530
+Date: 18486    s: 33081       225/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080043015  9:11:21 Alt:  0.000 F_init: 648055.3 NJ22509MIL
+Date of processing : 12-AUG-2000 09:53:18
+Lat1:  25.6047 Lon1: 301.7118 Lat2:  30.2737 Lon2: 280.3333 F: 648055.3  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   5.636    Vl:  0.939  Df:  0.00  Tr:  9.9
+         Ptfm: 25530
+Date: 18486    s: 33081       225/00  Msg:  2 >-120Db:  0 Best: -123 D_dat:   45
+Nloc:  2      LQ: 1080043015  9:11:21 Alt:  0.000 F_init: 648055.3 NJ22509LAL
+Date of processing : 12-AUG-2000 09:54:20
+Lat1:  25.6047 Lon1: 301.7118 Lat2:  30.2737 Lon2: 280.3333 F: 648055.3  NQ:-8
+Ci:    0.00   Cf:  -1.00 Pb:50. Dp:   5.636    Vl:  0.939  Df:  0.00  Tr:  9.9

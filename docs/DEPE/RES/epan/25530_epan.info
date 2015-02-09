@@ -1,0 +1,37 @@
+
+File Name: 25530.DIAG                                                    
+Tag: 25530                                                               
+Reference: TURT10                                                        
+                                                                         
+Date GMT of the first Argos location: 05/07/2000 (18448)                 
+Date GMT of the last Argos location:  12/08/2000 (18486)                 
+                                                                         
+Starting treatment day: 05/07/2000 (18448)                               
+Ending treatment day: 12/08/2000 (18486)                                 
+                                                                         
+Tracking duration (days): 39                                             
+                                                                         
+Number of locations: 136                                                 
+    Number of LCZ: 10 (7.35%)                                            
+    Number of LCB: 45 (33.09%)                                           
+    Number of LCA: 22 (16.18%)                                           
+    Number of LC0: 32 (23.53%)                                           
+    Number of LC1: 18 (13.24%)                                           
+    Number of LC2: 6 (4.41%)                                             
+    Number of LC3: 3 (2.21%)                                             
+                                                                         
+Frequency variance (Hz):    1033.8                                       
+                                                                         
+Distance travelled after localization and speed correction (km) : 2675.47
+                                                                         
+*********************                                                    
+                                                                         
+Treatment: Smoothing  (Epanechnikov)                                     
+                                                                         
+Number of the excluded locations:                                        
+    Double: 0                                                            
+    Excessive speed (> 2.8 m/s): 16 (11.76%)                             
+    Outliers: 6                                                          
+                                                                         
+Distance travelled after treatment (km) : 2448.70                        
+                                                                         

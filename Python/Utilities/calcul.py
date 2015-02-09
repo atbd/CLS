@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
 
-def calculDistances(latitudes, longitudes):
+def calculDistances(latitudes, longitudes): 
 	"""
 		Calcul la distance grâce à des listes de toutes les latitudes et longitudes concernées (régatives pour S et W, positives pour N et E)
 
@@ -9,17 +9,15 @@ def calculDistances(latitudes, longitudes):
 	"""
 
 	from math import acos, sin, cos, pi
-	#import numpy as np
 
-	R = 6378.137 # rayon de la Terre (sphère GRS80)
+	R = 6378.137 # rayon de la Terre en km(sphère GRS80)
 	# R = 6371.598 # (sphère de Picard)
 
-	#deltaLat = [j-i for i,j in zip(latitudes[:-1], latitudes[1:])]
 	deltaLon = [j-i for i,j in zip(longitudes[:-1], longitudes[1:])]
 
 	a = [sin(j*pi/180)*sin(i*pi/180) for i,j in zip(latitudes[:-1], latitudes[1:])]
 
-	b = [cos(j*pi/180)*cos(i*pi/180) for i,j in zip(longitudes[:-1], longitudes[1:])]
+	b = [cos(j*pi/180)*cos(i*pi/180) for i,j in zip(latitudes[:-1], latitudes[1:])]
 
 	c = [j*cos(i*pi/180) for i,j in zip(deltaLon, b)]
 
@@ -44,7 +42,7 @@ def calculVitesses(latitudes, longitudes, temps):
 	for i in range(len(deltaTemps)):
 
 		if deltaTemps[i] != 0:
-			vit.append(1000 * dist[i]/deltaTemps[i])
+			vit.append(1000*dist[i]/deltaTemps[i])
 		else:
 			vit.append(0)
 
@@ -62,7 +60,7 @@ def convertDateToSecond(dictDate):
 
 	ref = dt.datetime(2000, 1, 1, 0, 0, 0)
 
-	aConv = dt.datetime(dictDate["annee"], dictDate["mois"], dictDate["jour"], dictDate["heure"], dictDate["min"], dictDate["sec"])
+	aConv = dt.datetime(int(dictDate["annee"]), int(dictDate["mois"]), int(dictDate["jour"]), int(dictDate["heure"]), int(dictDate["min"]), int(dictDate["sec"]))
 
 	return (aConv - ref).total_seconds()
 

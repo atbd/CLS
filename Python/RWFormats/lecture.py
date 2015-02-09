@@ -10,7 +10,7 @@
 """
     Chaque Luth sera identifié dans le dictionnaire par son numero de balise et donnera accès à la liste de données.
     Cette liste contiendra un dictionnaire pour chaque transmission, il contiendra :
-        - date, heure, LC, IQ, latitudes et longitudes, infos sur les messages, durée, NOPC, fréquence et altitude. 
+        - date, heure, LC, IQ, latitudes et longitudes, infos sur les messages, durée, NOPC, fréquence et altitude.
 """
 
 def lectureToutDS(pathDSFile):
@@ -62,7 +62,7 @@ def lectureToutDiag(pathDiagFile):
     with open(pathDiagFile, "r") as f:
 
         data,dat = {},{}
-        
+
         for (num, line) in enumerate(f,1):
             if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
 
@@ -71,10 +71,10 @@ def lectureToutDiag(pathDiagFile):
 
                 if k == []:     # on évite les lignes vides
                     continue
-                
+
                 k = [w for w in k if w != ":"]
 
-                if (k[0].isdigit()):  
+                if (k[0].isdigit()):
                     #data["num"] = k[0]
 					tmp = k[2].split(".")
 					tmp2 = k[3].split(":")
@@ -185,30 +185,30 @@ def lectureUnCSV(pathCSVFile): # pas encore testé
 			dat["min"] = tmp2[1]
 			dat["sec"] = tmp2[2]
 			data["date"] = dat
-            #data["LC"] = 
-            #data["IQ"] = 
+            #data["LC"] =
+            #data["IQ"] =
 			data["lat1"] = row[9]
 			data["lon1"] = row[10]
 			data["lat2"] = row[12]
 			data["lon2"] = row[13]
 			data["nbrMess"] = row[3]
-            #data["nbMessSupp120dB"] = 
-            #data["bestdB"] = 
+            #data["nbMessSupp120dB"] =
+            #data["bestdB"] =
 			data["passDuration"] = row[4] # time Offset ?
-            #data["NOPC"] = 
-            #data["freq"] = 
-            #data["altitude"] =  
+            #data["NOPC"] =
+            #data["freq"] =
+            #data["altitude"] =
 			liste.append(data)
 
 	return liste
-	
-	
+
+
 def lectureDossier(folderPath):
     """
-        # viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant 
+        # viveLesLuth contiendra un dictionnaire dont chaque entrée, identifié par l'identifiant
         # de l'émetteur, contiendra la liste correspondante (générée par lectureToutDiag())
         #
-        # folderPath est le chemin du répertoire contenant tous les .DIAG 
+        # folderPath est le chemin du répertoire contenant tous les .DIAG
         # NB : ne pas oublier le "/" à la fin de folderPath
     """
 
@@ -218,7 +218,7 @@ def lectureDossier(folderPath):
     Files = listdir(folderPath)
 
     for (num, files) in enumerate(Files,1):
-        
+
         filePath = folderPath + Files[num-1]
         tmp = []
 
@@ -235,7 +235,7 @@ def lectureDossier(folderPath):
         elif Format == "CSV":
             tmp = lectureUnCSV(filePath)
             identifiant = Files[num-1].split("-")[0]
-            
+
         elif Format == "XML":
             # à faire
             continue
@@ -244,10 +244,8 @@ def lectureDossier(folderPath):
 
 	return viveLesLuth
 
+# faire une fonction pour lire un fichier quelque soit son format (ou pas si ça fait doublon avec le "lireDossier" qui choisit selon le format)
 
-
-path = "../../tortues/CSV/"
-print(lectureDossier(path))
 
 
 

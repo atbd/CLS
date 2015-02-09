@@ -1,0 +1,37 @@
+
+File Name: 10248.DIAG                                                     
+Tag: 10248                                                                
+Reference: MAELI                                                          
+                                                                          
+Date GMT of the first Argos location: 27/07/2001 (18835)                  
+Date GMT of the last Argos location:  23/11/2002 (19319)                  
+                                                                          
+Starting treatment day: 27/07/2001 (18835)                                
+Ending treatment day: 23/11/2002 (19319)                                  
+                                                                          
+Tracking duration (days): 485                                             
+                                                                          
+Number of locations: 1110                                                 
+    Number of LCZ: 47 (4.23%)                                             
+    Number of LCB: 531 (47.84%)                                           
+    Number of LCA: 245 (22.07%)                                           
+    Number of LC0: 134 (12.07%)                                           
+    Number of LC1: 88 (7.93%)                                             
+    Number of LC2: 40 (3.60%)                                             
+    Number of LC3: 25 (2.25%)                                             
+                                                                          
+Frequency variance (Hz):    3450.8                                        
+                                                                          
+Distance travelled after localization and speed correction (km) : 17586.33
+                                                                          
+*********************                                                     
+                                                                          
+Treatment: Smoothing  (Epanechnikov)                                      
+                                                                          
+Number of the excluded locations:                                         
+    Double: 47                                                            
+    Excessive speed (> 2.8 m/s): 157 (14.14%)                             
+    Outliers: 51                                                          
+                                                                          
+Distance travelled after treatment (km) : 15163.31                        
+                                                                          

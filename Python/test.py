@@ -1,5 +1,23 @@
+#!/usr/bin/python
+# -*-coding:utf-8 -*
+
 import Utilities.calcul as ut
+import RWFormats.lecture as rd
+import RWFormats.nettoyage as laver
+import RWFormats.recuperation as recup
 
-tmp = [1, 2,3,4]
+path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 
-print(ut.calculDistances(tmp,tmp))
+liste = rd.lectureToutDiag(path)
+liste = laver.monsieurPropre(liste, "lat1")
+
+latitudes = map(float, recup.recuperation(liste, "lat1")) # changer lat1 -> lat plus tard
+longitudes = map(float, recup.recuperation(liste, "lon1")) # lon1 -> lon
+
+tmp = recup.recuperation(liste, "date")
+temps = ut.convertArrayOfTime(tmp)
+#print(temps)
+
+vitesses = ut.calculVitesses(latitudes, longitudes, temps)
+
+print(vitesses)

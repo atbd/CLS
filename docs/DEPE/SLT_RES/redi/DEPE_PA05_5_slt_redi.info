@@ -1,0 +1,37 @@
+
+File Name: DEPE_PA05_5_slt.txt                                            
+Tag: 66266                                                                
+Reference: tu26_E_05                                                      
+                                                                          
+Date ot the first Argos location: 16/06/2006 (20620)                      
+Date ot the last Argos location:  05/05/2007 (20943)                      
+                                                                          
+Starting treatment day: 16/06/2006 (20620)                                
+Ending treatment day: 05/05/2007 (20943)                                  
+                                                                          
+Tracking duration (days): 324                                             
+                                                                          
+Number of locations: 837                                                  
+    Number of LCZ: 76 (9.08%)                                             
+    Number of LCB: 324 (38.71%)                                           
+    Number of LCA: 168 (20.07%)                                           
+    Number of LC0: 182 (21.74%)                                           
+    Number of LC1: 58 (6.93%)                                             
+    Number of LC2: 20 (2.39%)                                             
+    Number of LC3: 9 (1.08%)                                              
+                                                                          
+Frequency variance (Hz): 399936501.6                                      
+                                                                          
+Distance travelled after localization and speed correction (km) : 16810.64
+                                                                          
+*********************                                                     
+                                                                          
+Treatment: Temporal re-sampling                                           
+                                                                          
+Threshold for the outliers exclusion (km) :                               
+Number of the excluded locations:                                         
+    Double: 20                                                            
+    Excessive speed (> 2.8 m/s): 113 (13.50%)                             
+                                                                          
+Distance travelled after treatment (km) : 15965.18                        
+                                                                          

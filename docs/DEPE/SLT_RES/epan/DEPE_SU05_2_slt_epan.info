@@ -1,0 +1,37 @@
+
+File Name: DEPE_SU05_2_slt.txt                                            
+Tag: 59393                                                                
+Reference: tu27_B_05                                                      
+                                                                          
+Date GMT of the first Argos location: 25/06/2005 (20264)                      
+Date GMT of the last Argos location:  09/06/2007 (20978)                      
+                                                                          
+Starting treatment day: 25/06/2005 (20264)                                
+Ending treatment day: 09/06/2007 (20978)                                  
+                                                                          
+Tracking duration (days): 715                                             
+                                                                          
+Number of locations: 429                                                  
+    Number of LCZ: 35 (8.16%)                                             
+    Number of LCB: 191 (44.52%)                                           
+    Number of LCA: 90 (20.98%)                                            
+    Number of LC0: 70 (16.32%)                                            
+    Number of LC1: 34 (7.93%)                                             
+    Number of LC2: 4 (0.93%)                                              
+    Number of LC3: 5 (1.17%)                                              
+                                                                          
+Frequency variance (Hz): 749297715.6                                      
+                                                                          
+Distance travelled after localization and speed correction (km) : 15551.75
+                                                                          
+*********************                                                     
+                                                                          
+Treatment: Smoothing  (Epanechnikov)                                      
+                                                                          
+Number of the excluded locations:                                         
+    Double: 14                                                            
+    Excessive speed (> 2.8 m/s): 36 (8.39%)                               
+    Outliers: 21                                                          
+                                                                          
+Distance travelled after treatment (km) : 14154.25                        
+                                                                          
