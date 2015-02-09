@@ -40,7 +40,7 @@ def lectureToutDS(pathDSFile):
 				data["date"] = dat
 				data["lat"] = k[8]
 				data["lon"] = k[9]
-				data["freq"] = k[11][:9]
+				#data["freq"] = k[11][:9]
 				liste.append(data)
 			else:
 				continue
@@ -86,31 +86,31 @@ def lectureToutDiag(pathDiagFile):
 					dat["sec"] = tmp2[2]
 					data["date"] = dat
 					data["LC"] = k[5]
-					data["IQ"] = k[7]
+					#data["IQ"] = k[7]
 
                 elif tmp.startswith("Lat"):
 
 					if k[1][-1] == "N":
-						data["lat1"] = k[1][:-1]
+						data["lat"] = k[1][:-1]
 					else:
-						data["lat1"] = "-"+k[1][:-1]
+						data["lat"] = "-"+k[1][:-1]
 
 					if k[3][-1] == "W":
-						data["lon1"] = k[3][:-1]
+						data["lon"] = k[3][:-1]
 					else:
-						data["lon1"] = "-"+k[3][:-1]
+						data["lon"] = "-"+k[3][:-1]
 
 					if k[5][-1] == "N":
-						data["lat2"] = k[5][:-1]
+						data["lat_image"] = k[5][:-1]
 					else:
-						data["lat2"] = "-"+k[5][:-1]
+						data["lat_image"] = "-"+k[5][:-1]
 
 					if k[7][-1] == "W":
-						data["lon2"] = k[7][:-1]
+						data["lon_image"] = k[7][:-1]
 					else:
-						data["lon2"] = "-"+k[7][:-1]
+						data["lon_image"] = "-"+k[7][:-1]
 
-                elif tmp.startswith("Nb"):
+                """elif tmp.startswith("Nb"):
                     data["nbrMess"] = k[2]
                     data["nbMessSupp120dB"] = k[5]
                     data["bestdB"] = k[8]
@@ -121,7 +121,7 @@ def lectureToutDiag(pathDiagFile):
 
                 elif tmp.startswith("Calcul"):
                     data["freq"] = k[2] + k[3]
-                    data["altitude"] = k[6]
+                    data["altitude"] = k[6]"""
                 else:
                     continue
 
@@ -132,7 +132,7 @@ def lectureToutDiag(pathDiagFile):
 	return liste
 
 
-def lectureUnCSV(pathCSVFile): # pas encore testé
+def lectureUnCSV(pathCSVFile): 
     """
         pathCSVFile = chemin d'accès au fichier CSV
         liste = contient les dictionnaires contenant les données d'une transmission
@@ -187,14 +187,14 @@ def lectureUnCSV(pathCSVFile): # pas encore testé
 			data["date"] = dat
             #data["LC"] = 
             #data["IQ"] = 
-			data["lat1"] = row[9]
-			data["lon1"] = row[10]
-			data["lat2"] = row[12]
-			data["lon2"] = row[13]
-			data["nbrMess"] = row[3]
+			data["lat"] = row[9]
+			data["lon"] = row[10]
+			data["lat_image"] = row[12]
+			data["lon_image"] = row[13]
+			#data["nbrMess"] = row[3]
             #data["nbMessSupp120dB"] = 
             #data["bestdB"] = 
-			data["passDuration"] = row[4] # time Offset ?
+			#data["passDuration"] = row[4] # time Offset ?
             #data["NOPC"] = 
             #data["freq"] = 
             #data["altitude"] =  
@@ -246,7 +246,7 @@ def lectureDossier(folderPath):
 
 
 
-path = "../../tortues/CSV/"
+path = "../../tortues/DIAG/"
 print(lectureDossier(path))
 
 
