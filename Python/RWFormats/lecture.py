@@ -110,18 +110,6 @@ def lectureToutDiag(pathDiagFile):
 					else:
 						data["lon_image"] = "-"+k[7][:-1]
 
-                """elif tmp.startswith("Nb"):
-                    data["nbrMess"] = k[2]
-                    data["nbMessSupp120dB"] = k[5]
-                    data["bestdB"] = k[8]
-
-                elif tmp.startswith("Pass"):
-                    data["passDuration"] = k[2]
-                    data["NOPC"] = k[4]
-
-                elif tmp.startswith("Calcul"):
-                    data["freq"] = k[2] + k[3]
-                    data["altitude"] = k[6]"""
                 else:
                     continue
 
@@ -132,7 +120,7 @@ def lectureToutDiag(pathDiagFile):
 	return liste
 
 
-def lectureUnCSV(pathCSVFile): 
+def lectureUnCSV(pathCSVFile):
     """
         pathCSVFile = chemin d'accès au fichier CSV
         liste = contient les dictionnaires contenant les données d'une transmission
@@ -185,7 +173,6 @@ def lectureUnCSV(pathCSVFile):
 			dat["min"] = tmp2[1]
 			dat["sec"] = tmp2[2]
 			data["date"] = dat
-<<<<<<< HEAD
             #data["LC"] =
             #data["IQ"] =
 			data["lat1"] = row[9]
@@ -199,21 +186,19 @@ def lectureUnCSV(pathCSVFile):
             #data["NOPC"] =
             #data["freq"] =
             #data["altitude"] =
-=======
-            #data["LC"] = 
-            #data["IQ"] = 
+            #data["LC"] =
+            #data["IQ"] =
 			data["lat"] = row[9]
 			data["lon"] = row[10]
 			data["lat_image"] = row[12]
 			data["lon_image"] = row[13]
 			#data["nbrMess"] = row[3]
-            #data["nbMessSupp120dB"] = 
-            #data["bestdB"] = 
+            #data["nbMessSupp120dB"] =
+            #data["bestdB"] =
 			#data["passDuration"] = row[4] # time Offset ?
-            #data["NOPC"] = 
-            #data["freq"] = 
-            #data["altitude"] =  
->>>>>>> 5525c81df78973bacbef7ed62c21b9b4a7b83ebd
+            #data["NOPC"] =
+            #data["freq"] =
+            #data["altitude"] =
 			liste.append(data)
 
 	return liste
@@ -262,13 +247,6 @@ def lectureDossier(folderPath):
 
 # faire une fonction pour lire un fichier quelque soit son format (ou pas si ça fait doublon avec le "lireDossier" qui choisit selon le format)
 
-
-<<<<<<< HEAD
-=======
-path = "../../tortues/DIAG/"
-print(lectureDossier(path))
-
->>>>>>> 5525c81df78973bacbef7ed62c21b9b4a7b83ebd
 
 
 
