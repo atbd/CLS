@@ -10,9 +10,10 @@ path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 
 liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat")
+liste = ut.correctionChoixLoc(liste)
 
-latitudes = map(float, recup.recuperation(liste, "lat")) # changer lat1 -> lat plus tard
-longitudes = map(float, recup.recuperation(liste, "lon")) # lon1 -> lon
+latitudes = map(float, recup.recuperation(liste, "lat")) 
+longitudes = map(float, recup.recuperation(liste, "lon")) 
 
 tmp = recup.recuperation(liste, "date")
 temps = ut.convertArrayOfTime(tmp)
