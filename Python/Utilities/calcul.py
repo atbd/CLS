@@ -69,7 +69,6 @@ def calculVitesses(latitudes, longitudes, temps):
 		else:
 			vit.append(0)
 
-	#return [1000 * j/i for i,j in zip(deltaTemps, dist) if i != 0]
 	return vit
 
 
@@ -124,8 +123,9 @@ def correctionChoixLoc(formatCommun):
 		tmp = calculUneDistance(latPr, lat, lonPr, lon)
 		tmp_im = calculUneDistance(latPr, lat_im, lonPr, lon_im)
 
-		if tmp > tmp_im: # si la loc image est la bonne
-			donneeCorrigee[i+1]["lat"] = donneeCorrigee[i+1]["lat_image"]	#remplacement
+		# si la loc image est la bonne -> remplacement
+		if tmp > tmp_im:
+			donneeCorrigee[i+1]["lat"] = donneeCorrigee[i+1]["lat_image"]
 			donneeCorrigee[i+1]["lon"] = donneeCorrigee[i+1]["lon_image"]
 
 		# suppression des inutiles
