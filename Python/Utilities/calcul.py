@@ -7,6 +7,8 @@ def calculDistances(latitudes, longitudes):
 
 		Retourne un tableau de toutes les distances (en km)
 	"""
+	
+	""" En dessous : fonctionne mais mieux calculer un par un pour correction loc
 
 	from math import acos, sin, cos, pi
 
@@ -22,6 +24,27 @@ def calculDistances(latitudes, longitudes):
 	c = [j*cos(i*pi/180) for i,j in zip(deltaLon, b)]
 
 	return [R * acos(j+i) for i,j in zip(a,c)]
+	"""
+
+	return [calculUneDistance(latitudes[i], latitudes[i+1], longitudes[i], longitudes[i+1]) for i in range(len(latitudes)-1)]
+
+
+def calculUneDistance(latitude1, latitude2, longitude1, longitude2):
+	"""
+		Calcul une distance. 
+	"""
+
+	from math import acos, sin, cos, pi
+
+	R = 6378.137 # rayon de la Terre en km(sphère GRS80)
+	# R = 6371.598 # (sphère de Picard)
+
+	deltaLon = longitude2 - longitude1
+
+	a = sin(latitude1*pi/180)*sin(latitude2*pi/180)
+	b = cos(latitude1*pi/180)*cos(latitude2*pi/180)*cos(deltaLon*pi/180)
+
+	return R * acos(a + b)
 
 
 
@@ -46,7 +69,6 @@ def calculVitesses(latitudes, longitudes, temps):
 		else:
 			vit.append(0)
 
-	#return [1000 * j/i for i,j in zip(deltaTemps, dist) if i != 0]
 	return vit
 
 
@@ -65,7 +87,7 @@ def convertDateToSecond(dictDate):
 	return (aConv - ref).total_seconds()
 
 
-def convertArrayOfTime(arrayOfTime): # pas encore testé
+def convertArrayOfTime(arrayOfTime): 
 	"""
 		D'une liste de dictionnaire "dictDate" donnera une liste de temps en secondes (boucle de convertDateToSecond ?)
 	"""
@@ -91,8 +113,88 @@ choix par défaut = gaussien
 		else:
 			return (3/4/h)*(1-(valeur/h)**2)
 
+<<<<<<< HEAD
 	else:
 		return 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+=======
+def correctionChoixLoc(formatCommun):
+	"""
+		Prend en entrée les données (sorties des fichiers) au format commun (liste de dico) ainsi que la fonction recuperation de RWFormats.
+		En sortie donne les données corrigées avec seulement une paire de latitudes/longitudes.
+
+		NB : ne sera utile que pour les .DIAG
+	"""
+
+	donneeCorrigee = formatCommun
+
+	# initialisation
+	latPr = float(donneeCorrigee[0]["lat"])
+	lonPr = float(donneeCorrigee[0]["lon"])
+
+	for i in range(len(formatCommun)-1):
+
+		# suivantes pour calculer les distances
+		lat = float(donneeCorrigee[i+1]["lat"])
+		lon = float(donneeCorrigee[i+1]["lon"])
+		lat_im = float(donneeCorrigee[i+1]["lat_image"])
+		lon_im = float(donneeCorrigee[i+1]["lon_image"])
+
+		# calcul des distances
+		tmp = calculUneDistance(latPr, lat, lonPr, lon)
+		tmp_im = calculUneDistance(latPr, lat_im, lonPr, lon_im)
+
+		# si la loc image est la bonne -> remplacement
+		if tmp > tmp_im:
+			donneeCorrigee[i+1]["lat"] = donneeCorrigee[i+1]["lat_image"]
+			donneeCorrigee[i+1]["lon"] = donneeCorrigee[i+1]["lon_image"]
+
+		# suppression des inutiles
+		del donneeCorrigee[i+1]["lat_image"]
+		del donneeCorrigee[i+1]["lon_image"]
+
+		# "rebouclage"
+		latPr = float(donneeCorrigee[i+1]["lat"])
+		lonPr = float(donneeCorrigee[i+1]["lon"])
+
+	return donneeCorrigee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 5d95005f846f74c006267c63ffbcae41d9e5e82d
 
 
 def regressionLineaire(choix, latitudes, longitudes, temps, seuil) # pas encore testée
