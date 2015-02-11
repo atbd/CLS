@@ -10,9 +10,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
+#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DS/119853.DS"
 
 liste = rd.lectureToutDiag(path)
-liste = laver.monsieurPropre(liste, "lat")
+#liste = rd.lectureToutDS(path)
+
+liste = laver.monsieurPropre(liste, "lat") #juste pour les diag
 liste = ut.correctionChoixLoc(liste)
 #print(liste)
 
@@ -38,13 +41,7 @@ m.drawparallels(parallels,labels=[False,True,True,False])
 meridians = np.arange(10.,351.,20.)
 m.drawmeridians(meridians,labels=[True,False,False,True])
 
-lon, lat = longitudes, latitudes # Location of Boulder
-#lon, lat = [-50.9, -51.2], [6.5,6.3]
-# convert to map projection coords.
-# Note that lon,lat can be scalars, lists or numpy arrays.
-xpt,ypt = m(lon,lat)
-# convert back to lat/lon
-lonpt, latpt = m(xpt,ypt,inverse=True)
+xpt,ypt = m(longitudes,latitudes)
 m.plot(xpt,ypt,'ro')  # plot a blue dot there
 
 plt.show()
