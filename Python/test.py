@@ -12,19 +12,21 @@ import numpy as np
 path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 
 liste = rd.lectureToutDiag(path)
-print(liste)
 liste = laver.monsieurPropre(liste, "lat")
 liste = ut.correctionChoixLoc(liste)
+#print(liste)
 
 latitudes = map(float, recup.recuperation(liste, "lat")) 
 longitudes = map(float, recup.recuperation(liste, "lon")) 
+
+#print(latitudes)
+#print(longitudes)
 
 #tmp = recup.recuperation(liste, "date")
 #temps = ut.convertArrayOfTime(tmp)
 #print(temps)
 
 #vitesses = ut.calculVitesses(latitudes, longitudes, temps)
-"""
 
 m = Basemap(width=12000000,height=9000000,projection='lcc',
             resolution=None,lat_1=10.,lat_2=20,lat_0=30,lon_0=-70.)
@@ -36,8 +38,8 @@ m.drawparallels(parallels,labels=[False,True,True,False])
 meridians = np.arange(10.,351.,20.)
 m.drawmeridians(meridians,labels=[True,False,False,True])
 
-#lon, lat = longitudes, latitudes # Location of Boulder
-lon, lat = [-50.9, -51.2], [6.5,6.3]
+lon, lat = longitudes, latitudes # Location of Boulder
+#lon, lat = [-50.9, -51.2], [6.5,6.3]
 # convert to map projection coords.
 # Note that lon,lat can be scalars, lists or numpy arrays.
 xpt,ypt = m(lon,lat)
@@ -46,4 +48,3 @@ lonpt, latpt = m(xpt,ypt,inverse=True)
 m.plot(xpt,ypt,'ro')  # plot a blue dot there
 
 plt.show()
-"""
