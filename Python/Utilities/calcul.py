@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
+from numpy import *
 
 def calculDistances(latitudes, longitudes): 
 	"""
@@ -104,6 +105,7 @@ choix 2 = gaussien
 choix par défaut = gaussien
 	"""
 	from math import pi, sqrt, exp
+	valeur = array(valeur) 
 
 	if choix == 2:
 		return 1/sqrt(2*pi)*exp(-1/2*valeur**2)
