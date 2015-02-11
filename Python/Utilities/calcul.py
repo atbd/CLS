@@ -106,6 +106,7 @@ choix par défaut = gaussien
 	"""
 	from math import pi, sqrt, exp
 	valeur = array(valeur) 
+	h = array(h)
 
 	if choix == 2:
 		return 1/sqrt(2*pi)*exp(-1/2*valeur**2)
@@ -160,31 +161,30 @@ def correctionChoixLoc(formatCommun):
 
 	return donneeCorrigee
 
-def regressionLineaire(choix, latitudes, longitudes, temps, seuil): # pas encore testée
+def regressionLineaire(choix, formatCommun, seuil): # pas encore testée
 	"""
 		Cette fonction retire les localisations pour lesquelles la localisation
 estimée est trop éloignée de la position mesurée
 	"""
 
-	if len(latitudes) != len(longitudes):
-		print("Les vecteurs latitudes et longitudes doivent être de même taille")
-		#break
-	
 	h = 0
-	for i in range(len(latitudes))[1:]:
-		h = max(h,latitudes[i]-latitudes[i-2])
-	for i in range(len(longitudes))[1:]:
-		h = max(h,longitudes[i]-longitudes[i-2])
+	for i in range(len(formatCommun))[1:]:
+		h = max(h,formatCommun[i]["lat"]-formatCommun[i-2]["lat"])
+	for i in range(len(formatCommun))[1:]:
+		h = max(h,formatCommun[i]["lon"]-formatCommun[i-2]["lon"])
 
 
 	k = []
+	donneeRegressee = {}
 	lat_clean = []
 	lon_clean = []
-	temps_clean = []
+	date_clean = []
 	new_lat = 0
 	new_lon = 0
 	lat_reg = []
 	lon_reg = []
+	latitudes = formatCommun["lat"]
+	longitudes = formatCommun["lon"]
 
 	for i in range(len(latitudes)-2)[2:]:
 		k = kernel(choix,latitudes[i-2:i+2],h)
@@ -204,6 +204,9 @@ estimée est trop éloignée de la position mesurée
 		if lat[i]-new_lat[i]<=seuil and lon[i]-new_lon[i]<=seuil:
 			lat_clean.append(lat[i])
 			lon_clean.append(lon[i])
-			temps_clean.append(temps[i])
-
-	return lat_clean, lon_clean
+			date_clean.append(formatCommun["date"][i])
+			
+	donneeRegresse["lat"] = lat_clean
+	donneeRegresse["lon"] = lon_clean
+	donneeRegresse["date"] = date_clean
+	return donneeRegressee
