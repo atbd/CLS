@@ -9,16 +9,16 @@ from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
 
-path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
 
 liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat")
 liste = ut.correctionChoixLoc(liste)
 #print(liste)
 
-latitudes = map(float, recup.recuperation(liste, "lat")) 
-longitudes = map(float, recup.recuperation(liste, "lon")) 
-
+latitudes = map(float, recup.recuperation(liste, "lat"))
+longitudes = map(float, recup.recuperation(liste, "lon"))
+#latitudes, longitudes = ut.regressionLineaire(2, latitudes, longitudes, [], 1)
 #print(latitudes)
 #print(longitudes)
 
@@ -29,7 +29,7 @@ longitudes = map(float, recup.recuperation(liste, "lon"))
 #vitesses = ut.calculVitesses(latitudes, longitudes, temps)
 
 m = Basemap(width=12000000,height=9000000,projection='lcc',
-            resolution=None,lat_1=10.,lat_2=20,lat_0=30,lon_0=-70.)
+            resolution=None,lat_1=10.,lat_2=20,lat_0=30,lon_0=-30.)
 m.etopo()
 
 parallels = np.arange(0.,81,10.)

@@ -204,4 +204,4 @@ estimée est trop éloignée de la position mesurée
 			lon_clean.append(lon[i])
 			temps_clean.append(temps[i])
 
-
+	return lat_clean, lon_clean
