@@ -95,7 +95,7 @@ def lectureToutDiag(pathDiagFile):
 					else:
 						data["lat"] = "-"+k[1][:-1]
 
-					if k[3][-1] == "W":
+					if k[3][-1] == "E":
 						data["lon"] = k[3][:-1]
 					else:
 						data["lon"] = "-"+k[3][:-1]

@@ -158,45 +158,6 @@ def correctionChoixLoc(formatCommun):
 
 	return donneeCorrigee
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 5d95005f846f74c006267c63ffbcae41d9e5e82d
-
-
 def regressionLineaire(choix, latitudes, longitudes, temps, seuil) # pas encore testée
 	"""
 		Cette fonction retire les localisations pour lesquelles la localisation
