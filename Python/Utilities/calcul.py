@@ -205,14 +205,14 @@ estimée est trop éloignée de la position mesurée
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
-			new_lon = new_lat + k[j]*float(f(formatCommun, "lon")[j])
+			new_lon = new_lon + k[j]*float(f(formatCommun, "lon")[j])
 		new_lon = new_lon/sum(k)
 		lon_reg.append(new_lon)
 	print(len(lat_reg))	
 	for i in range(len(lon_reg)):
 		if float(f(formatCommun, "lat")[i+2])-lat_reg[i]<=seuil and float(f(formatCommun, "lon")[i+2])-lon_reg[i]<=seuil:
 			lat_clean.append(f(formatCommun, "lat")[i+2])
-			lon_clean.append(f(formatCommun, "lat")[i+2])
+			lon_clean.append(f(formatCommun, "lon")[i+2])
 			date_clean.append(f(formatCommun, "date")[i+2])
 			lc_clean.append(f(formatCommun, "LC")[i+2])
 	print(len(lat_clean))
