@@ -44,7 +44,10 @@ def calculUneDistance(latitude1, latitude2, longitude1, longitude2):
 	a = sin(latitude1*pi/180)*sin(latitude2*pi/180)
 	b = cos(latitude1*pi/180)*cos(latitude2*pi/180)*cos(deltaLon*pi/180)
 
-	return R * acos(a + b)
+	if (a+b>1):
+		return 0
+	else:
+		return R * acos(a + b)
 
 
 
