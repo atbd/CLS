@@ -112,10 +112,6 @@ def suppVitesseExcess(liste,recuperation,convertArrayOfTime,calculVitesses,vites
     return liste    
 
 
-<<<<<<< HEAD
-=======
-#os.system("pause")
->>>>>>> 4e40cff7e89ecce44799defb352ed6f0e101765e
 
 
 
