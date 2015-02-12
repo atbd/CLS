@@ -6,6 +6,7 @@ import Utilities.carte as mp
 import RWFormats.lecture as rd
 import RWFormats.nettoyage as laver
 import RWFormats.recuperation as recup
+import Utilities.suppVitesseExcess as sv
 
 # pour les cartes
 from mpl_toolkits.basemap import Basemap

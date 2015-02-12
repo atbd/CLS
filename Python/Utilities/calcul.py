@@ -114,7 +114,7 @@ choix par défaut = gaussien
 
 	elif choix == 1:
 		if (valeur<-h or valeur>h):
-			return 0
+			return 0.1
 		else:
 			res = (3/4/h)*(1-(valeur/h)**2)
 			return res
@@ -191,19 +191,19 @@ estimée est trop éloignée de la position mesurée
 
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
 		for l in range(5):
-			k[l] = kernel(choix,f(formatCommun, "lat")[i+l-2],h)
+			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 		for j in range(5):
-			new_lat = new_lat + k[j]*f(formatCommun, "lat")[j]
+			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[j])
 		new_lat = new_lat/sum(k)
-		lat_reg[i] = new_lat
+		lat_reg.append(new_lat)
 
 	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
 		for l in range(5):
-			k[l] = kernel(choix,f(formatCommun, "lon")[i+l-2],h)
+			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
-			new_lon = new_lat + k[j]*f(formatCommun, "lon")[j]
+			new_lon = new_lat + k[j]*float(f(formatCommun, "lon")[j])
 		new_lon = new_lon/sum(k)
-		lon_reg[i] = new_lon
+		lon_reg.append(new_lon)
 		
 	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
 		if lat[i]-new_lat[i]<=seuil and lon[i]-new_lon[i]<=seuil:

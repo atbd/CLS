@@ -33,9 +33,6 @@ def suppVitesseExcess(listeVitesse,listePosition,listeTemps,listeClasse,vitesseM
     return listePosition    
 
 
-A = suppVitesseExcess([1,2,3,4,5,6,7,8],[1,10,11,14,15,16,44,33],[1,3,5,7,9,11,13,15],[1,2,3,4,4,5,7,8],2.8)
-print(A)
-os.system("pause")
 
 
 
