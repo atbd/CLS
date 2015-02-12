@@ -109,15 +109,18 @@ choix par défaut = gaussien
 	h = array(h)
 
 	if choix == 2:
-		return 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		return res
 
 	elif choix == 1:
 		if (valeur<-h or valeur>h):
 			return 0
 		else:
-			return (3/4/h)*(1-(valeur/h)**2)
+			res = (3/4/h)*(1-(valeur/h)**2)
+			return res
 	else:
-		return 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		return res
 
 
 def correctionChoixLoc(formatCommun):
