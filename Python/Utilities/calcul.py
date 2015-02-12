@@ -117,7 +117,7 @@ choix par défaut = gaussien
 
 	elif choix == 1:
 		if (valeur<-h or valeur>h):
-			return 0.1
+			return 0
 		else:
 			res = (3/4/h)*(1-(valeur/h)**2)
 			return res
@@ -181,10 +181,11 @@ estimée est trop éloignée de la position mesurée
 
 
 	k = []
-	donneeRegressee = {}
+	donneeRegressee = []
 	lat_clean = []
 	lon_clean = []
 	date_clean = []
+	lc_clean = []
 	new_lat = 0
 	new_lon = 0
 	lat_reg = []
@@ -202,21 +203,25 @@ estimée est trop éloignée de la position mesurée
 
 	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
 		for l in range(5):
-			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
+			k.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
 			new_lon = new_lat + k[j]*float(f(formatCommun, "lon")[j])
 		new_lon = new_lon/sum(k)
 		lon_reg.append(new_lon)
-		
-	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
-		if lat[i]-new_lat[i]<=seuil and lon[i]-new_lon[i]<=seuil:
-			lat_clean.append(lat[i])
-			lon_clean.append(lon[i])
-			date_clean.append(formatCommun[i]['date'])
-	
-	for i in range(len(lat_clean)):	
-		donneeRegresse[i]['lat'] = lat_clean
-		donneeRegresse[i]['lon'] = lon_clean
-		donneeRegresse[i]['date'] = date_clean
+	print(len(lat_reg))	
+	for i in range(len(lon_reg)):
+		if float(f(formatCommun, "lat")[i+2])-lat_reg[i]<=seuil and float(f(formatCommun, "lon")[i+2])-lon_reg[i]<=seuil:
+			lat_clean.append(f(formatCommun, "lat")[i+2])
+			lon_clean.append(f(formatCommun, "lat")[i+2])
+			date_clean.append(f(formatCommun, "date")[i+2])
+			lc_clean.append(f(formatCommun, "LC")[i+2])
+	print(len(lat_clean))
+	for i in range(len(lat_clean)):
+		tmp={}
+		tmp["lat"]=lat_clean[i]
+		tmp["lon"]=lon_clean[i]
+		tmp["date"]=date_clean[i]
+		tmp["LC"]=lc_clean[i]	
+		donneeRegressee.append(tmp)
 	
 	return donneeRegressee
