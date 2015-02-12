@@ -193,14 +193,16 @@ estimée est trop éloignée de la position mesurée
 	#longitudes = formatCommun['lon']
 
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
-		k = kernel(choix,f(formatCommun, "lat")[i-2:i+2],h)
+		for l in range(5):
+			k[l] = kernel(choix,f(formatCommun, "lat")[i+l-2],h)
 		for j in range(5):
 			new_lat = new_lat + k[j]*f(formatCommun, "lat")[j]
 		new_lat = new_lat/sum(k)
 		lat_reg[i] = new_lat
 
 	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
-		k = kernel(choix,f(formatCommun, "lon")[i-2:i+2],h)
+		for l in range(5):
+			k[l] = kernel(choix,f(formatCommun, "lon")[i+l-2],h)
 		for j in range(5):
 			new_lon = new_lat + k[j]*f(formatCommun, "lon")[j]
 		new_lon = new_lon/sum(k)
