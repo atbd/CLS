@@ -2,12 +2,25 @@
 # -*-coding:utf-8 -*
 
 import Utilities.calcul as ut
+<<<<<<< HEAD
+import Utilities.suppVitesseExcess as sup
+=======
 import Utilities.carte as mp
+>>>>>>> origin/master
 import RWFormats.lecture as rd
 import RWFormats.nettoyage as laver
 import RWFormats.recuperation as recup
 import Utilities.suppVitesseExcess as sv
 
+<<<<<<< HEAD
+#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+path ="/Users/Benoit/Documents/GitHub/CLS/tortues/DIAG/10248.DIAG"
+
+liste = rd.lectureToutDiag(path)
+liste = laver.monsieurPropre(liste, "lat")
+liste = ut.correctionChoixLoc(liste)
+liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,0.5)
+=======
 # pour les cartes
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
@@ -18,6 +31,7 @@ path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
 
 liste = rd.lectureToutDiag(path)
 #liste = rd.lectureToutDS(path)
+>>>>>>> origin/master
 
 liste = laver.monsieurPropre(liste, "lat") #juste pour les diag
 liste = ut.correctionChoixLoc(liste)
@@ -28,6 +42,13 @@ liste = ut.regressionLineaire(1, liste, 0.1, recup.recuperation)
 #print(latitudes)
 #print(longitudes)
 
+<<<<<<< HEAD
+tmp = recup.recuperation(liste, "date")
+temps = ut.convertArrayOfTime(tmp)
+
+vitesses = ut.calculVitesses(latitudes, longitudes, temps)
+print(vitesses)
+=======
 #tmp = recup.recuperation(liste, "date")
 #temps = ut.convertArrayOfTime(tmp)
 #print(temps)
@@ -35,3 +56,4 @@ liste = ut.regressionLineaire(1, liste, 0.1, recup.recuperation)
 #vitesses = ut.calculVitesses(latitudes, longitudes, temps)
 
 mp.tracerCarte(longitudes, latitudes)
+>>>>>>> origin/master
