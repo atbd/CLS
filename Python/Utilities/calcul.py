@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
+from numpy import *
 
 def calculDistances(latitudes, longitudes): 
 	"""
@@ -98,6 +99,31 @@ def convertArrayOfTime(arrayOfTime):
 	return [convertDateToSecond(arrayOfTime[i]) for i in range(len(arrayOfTime))]
 
 
+def kernel(choix,valeur,h):
+	"""
+		Cette fonction permet de choisir le kernel souhaité pour pondérer le
+poids des observations lors de la régression linéaire
+choix 1 = epanechnikov
+choix 2 = gaussien
+choix par défaut = gaussien
+	"""
+	from math import pi, sqrt, exp
+	valeur = array(valeur) 
+	h = array(h)
+
+	if choix == 2:
+		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		return res
+
+	elif choix == 1:
+		if (valeur<-h or valeur>h):
+			return 0
+		else:
+			res = (3/4/h)*(1-(valeur/h)**2)
+			return res
+	else:
+		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		return res
 
 
 def correctionChoixLoc(formatCommun):
@@ -141,44 +167,54 @@ def correctionChoixLoc(formatCommun):
 
 	return donneeCorrigee
 
+def regressionLineaire(choix, formatCommun, seuil, f): # pas encore testée
+	"""
+		Cette fonction retire les localisations pour lesquelles la localisation
+estimée est trop éloignée de la position mesurée
+	"""
+
+	h = 0
+	for i in range(len(formatCommun))[1:]:
+		h = max(h,float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
+	for i in range(len(formatCommun))[1:]:
+		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']))
 
 
+	k = []
+	donneeRegressee = {}
+	lat_clean = []
+	lon_clean = []
+	date_clean = []
+	new_lat = 0
+	new_lon = 0
+	lat_reg = []
+	lon_reg = []
+	#latitudes = formatCommun['lat']
+	#longitudes = formatCommun['lon']
 
+	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
+		k = kernel(choix,f(formatCommun, "lat")[i-2:i+2],h)
+		for j in range(5):
+			new_lat = new_lat + k[j]*f(formatCommun, "lat")[j]
+		new_lat = new_lat/sum(k)
+		lat_reg[i] = new_lat
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
+		k = kernel(choix,f(formatCommun, "lon")[i-2:i+2],h)
+		for j in range(5):
+			new_lon = new_lat + k[j]*f(formatCommun, "lon")[j]
+		new_lon = new_lon/sum(k)
+		lon_reg[i] = new_lon
+		
+	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
+		if lat[i]-new_lat[i]<=seuil and lon[i]-new_lon[i]<=seuil:
+			lat_clean.append(lat[i])
+			lon_clean.append(lon[i])
+			date_clean.append(formatCommun[i]['date'])
+	
+	for i in range(len(lat_clean)):	
+		donneeRegresse[i]['lat'] = lat_clean
+		donneeRegresse[i]['lon'] = lon_clean
+		donneeRegresse[i]['date'] = date_clean
+	
+	return donneeRegressee

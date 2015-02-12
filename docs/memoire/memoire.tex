@@ -1,0 +1,142 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[11p, a4papert]{article}
+
+\usepackage{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[some]{background}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{stmaryrd}
+\DeclareMathOperator{\sinc}{sinc}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{lipsum}
+
+%Pour faire des dessins : tikz
+\usepackage{pgf}
+\usepackage{pgfgantt}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=1,
+contents={\begin{tikzpicture}[remember picture,overlay]
+ \path [fill=titlepagecolor] (current page.west)rectangle (current page.north east); 
+ \draw [color=white, very thick] (5,0)--(5,0.5\paperheight);
+\end{tikzpicture}}
+}
+
+\makeatletter                   
+\def\printauthor{%                  
+    {\large \@author}}          
+\makeatother
+
+\author{%
+    Anthony Delannoy \\
+    %Department name \\
+    \texttt{anthony.delannoy@etu.enseeiht.fr}\vspace{40pt} \\
+    Benoit Madiot \\
+    %Department name \\
+    \texttt{benoit.madiot@etu.enseeiht.fr}\vspace{40pt} \\
+    Jérôme Combaniere \\
+    %Department name \\
+    \texttt{jerome.combaniere@etu.enseeiht.fr} 
+    }
+
+%première page
+\begin{document}
+
+\begin{titlepage}
+\BgThispage
+\newgeometry{left=1cm,right=6cm,bottom=3cm}
+\vspace*{0.4\textheight}
+\noindent
+\textcolor{white}{\huge\textbf{\textsf{Méthode de lissage appliquées aux trajectoires ARGOS}}}
+\vspace*{3cm}\par
+\noindent
+\begin{minipage}{0.5\linewidth}
+    \begin{flushright}
+        \printauthor
+    \end{flushright}
+\end{minipage} \hspace{15pt}
+%
+\begin{minipage}{0.02\linewidth}
+    \rule{1pt}{175pt}
+\end{minipage} \hspace{-10pt}
+%
+\begin{minipage}{0.63\linewidth}
+\vspace{5pt}
+    \begin{abstract} 
+\lipsum[1]
+    \end{abstract}
+\end{minipage}
+\end{titlepage}
+\restoregeometry
+
+%Table des matieres
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+%%%%%%%Debut du contenu%%%%%%%
+
+\part{Introduction}
+\part{Plan de management} % à laisser ?
+\part{Code}
+\section{RWFormats}
+\subsection{Lecture des fichiers}
+\subsubsection{Mise en format commun}
+
+\paragraph{Format d'une transmission}
+Les éléments essentiels d'une transmission sont stockés dans un dictionnaire respectant l'architecture ci-dessous. Les éléments sont tous des strings sauf "date" qui est un dictionnaire.
+\vspace{1cm}
+\begin{center}
+$uneTransmission = \left\{\begin{array}{c} "date" \\"LC" \\"lat" \\"lon" \\"lat\_image" \\"lon\_image" \\ \end{array}\right\}$
+\end{center}
+
+\paragraph{Format du dictionnaire des dates}
+\begin{center}
+$dicoDate = \left\{\begin{array}{c} "annee" \\"mois" \\"jour" \\"heure" \\"min" \\"sec" \\ \end{array}\right\}$
+\end{center}
+
+\paragraph{}
+L'utilisation des dictionnaires permettent un rangement et une récupération des données simplifiés, il suffit de connaître la clé de la donnée pour y accéder.
+
+\paragraph{Format des transmissions de tout un fichier}
+Comme nous l'avons vu, chaque transmission est stockée comme un dictionnaire. Afin de les ranger dans l'ordre nous les mettons ensuite dans une liste.
+
+\begin{center}
+$formatCommun = \left[\begin{array}{cccc} dico[1] & dico[2[ & ... & dico[n] \\ \end{array}\right]$
+\end{center}
+
+\subsubsection{Format DIAG}
+\subsubsection{Format DS}
+\subsubsection{Format CSV}
+
+\subsection{Écriture des fichiers} % à laisser ?
+\section{Utilities}
+\section{Tracé des cartes}
+\part{Conclusion}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
