@@ -21,10 +21,9 @@ liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat") #juste pour les diag
 liste = ut.correctionChoixLoc(liste)
 #print(liste)
-
-latitudes = map(float, recup.recuperation(liste, "lat"))
-longitudes = map(float, recup.recuperation(liste, "lon"))
-#latitudes, longitudes = ut.regressionLineaire(2, latitudes, longitudes, [], 1)
+liste = ut.regressionLineaire(2, liste, 0.1, recup.recuperation)
+#latitudes = map(float, recup.recuperation(liste, "lat"))
+#longitudes = map(float, recup.recuperation(liste, "lon"))
 #print(latitudes)
 #print(longitudes)
 
