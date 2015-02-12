@@ -97,6 +97,33 @@ contents={\begin{tikzpicture}[remember picture,overlay]
 \section{RWFormats}
 \subsection{Lecture des fichiers}
 \subsubsection{Mise en format commun}
+
+\paragraph{Format d'une transmission}
+Les éléments essentiels d'une transmission sont stockés dans un dictionnaire respectant l'architecture ci-dessous. Les éléments sont tous des strings sauf "date" qui est un dictionnaire.
+\vspace{1cm}
+\begin{center}
+$uneTransmission = \left\{\begin{array}{c} "date" \\"LC" \\"lat" \\"lon" \\"lat\_image" \\"lon\_image" \\ \end{array}\right\}$
+\end{center}
+
+\paragraph{Format du dictionnaire des dates}
+\begin{center}
+$dicoDate = \left\{\begin{array}{c} "annee" \\"mois" \\"jour" \\"heure" \\"min" \\"sec" \\ \end{array}\right\}$
+\end{center}
+
+\paragraph{}
+L'utilisation des dictionnaires permettent un rangement et une récupération des données simplifiés, il suffit de connaître la clé de la donnée pour y accéder.
+
+\paragraph{Format des transmissions de tout un fichier}
+Comme nous l'avons vu, chaque transmission est stockée comme un dictionnaire. Afin de les ranger dans l'ordre nous les mettons ensuite dans une liste.
+
+\begin{center}
+$formatCommun = \left[\begin{array}{cccc} dico[1] & dico[2[ & ... & dico[n] \\ \end{array}\right]$
+\end{center}
+
+\subsubsection{Format DIAG}
+\subsubsection{Format DS}
+\subsubsection{Format CSV}
+
 \subsection{Écriture des fichiers} % à laisser ?
 \section{Utilities}
 \section{Tracé des cartes}
