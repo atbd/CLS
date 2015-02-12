@@ -161,7 +161,7 @@ def correctionChoixLoc(formatCommun):
 
 	return donneeCorrigee
 
-def regressionLineaire(choix, formatCommun, seuil): # pas encore testée
+def regressionLineaire(choix, formatCommun, seuil, f): # pas encore testée
 	"""
 		Cette fonction retire les localisations pour lesquelles la localisation
 estimée est trop éloignée de la position mesurée
@@ -169,9 +169,9 @@ estimée est trop éloignée de la position mesurée
 
 	h = 0
 	for i in range(len(formatCommun))[1:]:
-		h = max(h,formatCommun[i]["lat"]-formatCommun[i-2]["lat"])
+		h = max(h,float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
 	for i in range(len(formatCommun))[1:]:
-		h = max(h,formatCommun[i]["lon"]-formatCommun[i-2]["lon"])
+		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']))
 
 
 	k = []
@@ -183,30 +183,32 @@ estimée est trop éloignée de la position mesurée
 	new_lon = 0
 	lat_reg = []
 	lon_reg = []
-	latitudes = formatCommun["lat"]
-	longitudes = formatCommun["lon"]
+	#latitudes = formatCommun['lat']
+	#longitudes = formatCommun['lon']
 
 	for i in range(len(latitudes)-2)[2:]:
-		k = kernel(choix,latitudes[i-2:i+2],h)
+		k = kernel(choix,f(formatCommun, "lat")[i-2:i+2],h)
 		for j in range(5):
-			new_lat = new_lat + k[j]*latitudes[j]
+			new_lat = new_lat + k[j]*f(formatCommun, "lat")[j]
 		new_lat = new_lat/sum(k)
 		lat_reg[i] = new_lat
 
 	for i in range(len(longitudes)-2)[2:]:
-		k = kernel(choix,longitudes[i-2:i+2],h)
+		k = kernel(choix,f(formatCommun, "lon")[i-2:i+2],h)
 		for j in range(5):
-			new_lon = new_lat + k[j]*longitudes[j]
+			new_lon = new_lat + k[j]*f(formatCommun, "lon")[j]
 		new_lon = new_lon/sum(k)
 		lon_reg[i] = new_lon
 		
-	for i in range(len(longitudes)-2)[2:]:
+	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
 		if lat[i]-new_lat[i]<=seuil and lon[i]-new_lon[i]<=seuil:
 			lat_clean.append(lat[i])
 			lon_clean.append(lon[i])
-			date_clean.append(formatCommun["date"][i])
-			
-	donneeRegresse["lat"] = lat_clean
-	donneeRegresse["lon"] = lon_clean
-	donneeRegresse["date"] = date_clean
+			date_clean.append(formatCommun[i]['date'])
+	
+	for i in range(len(lat_clean)):	
+		donneeRegresse[i]['lat'] = lat_clean
+		donneeRegresse[i]['lon'] = lon_clean
+		donneeRegresse[i]['date'] = date_clean
+	
 	return donneeRegressee
