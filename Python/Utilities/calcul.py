@@ -221,7 +221,7 @@ estimée est trop éloignée de la position mesurée
 			date_clean.append(f(formatCommun, "date")[i+2])
 			lc_clean.append(f(formatCommun, "LC")[i+2])
 	
-	for i in range(len(lat_clean)):
+	for i in range(len(lat_clean)): #on copie toutes les positions qui valident le critère précédent
 		tmp={}
 		tmp["lat"]=lat_clean[i]
 		tmp["lon"]=lon_clean[i]
