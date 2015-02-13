@@ -13,8 +13,8 @@ from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
 
-#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
-path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
+path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+#path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 
 
 liste = rd.lectureToutDiag(path)
@@ -23,12 +23,12 @@ liste = ut.correctionChoixLoc(liste)
 liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
 #print(liste)
 
-liste = ut.regressionLineaire(2, liste, 38, recup.recuperation)
+#liste = ut.regressionLineaire(2, liste, 38, recup.recuperation)
 #print(liste)
 latitudes = map(float, recup.recuperation(liste, "lat"))
 longitudes = map(float, recup.recuperation(liste, "lon"))
 #print(latitudes)
 #print(longitudes)
 
-#mp.tracerCarte(longitudes, latitudes)
+mp.tracerCarte(longitudes, latitudes)
 
