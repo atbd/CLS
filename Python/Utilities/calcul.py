@@ -108,21 +108,21 @@ choix 2 = gaussien
 choix par défaut = gaussien
 	"""
 	from math import pi, sqrt, exp
-	valeur = array(valeur) 
-	h = array(h)
+	valeur = float(valeur) 
+	h = float(h)
 
 	if choix == 2:
-		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		res = 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
 		return res
 
 	elif choix == 1:
 		if (valeur<-h or valeur>h):
-			return 0
+			return 0.0
 		else:
-			res = (3/4/h)*(1-(valeur/h)**2)
+			res = (3.0/4.0/h)*(1.0-(valeur/h)**2)
 			return res
 	else:
-		res = 1/sqrt(2*pi)*exp(-1/2*valeur**2)
+		res = 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
 		return res
 
 
@@ -205,17 +205,17 @@ estimée est trop éloignée de la position mesurée
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
-			new_lon = new_lat + k[j]*float(f(formatCommun, "lon")[j])
+			new_lon = new_lon + k[j]*float(f(formatCommun, "lon")[j])
 		new_lon = new_lon/sum(k)
 		lon_reg.append(new_lon)
-	print(len(lat_reg))	
+	
 	for i in range(len(lon_reg)):
 		if float(f(formatCommun, "lat")[i+2])-lat_reg[i]<=seuil and float(f(formatCommun, "lon")[i+2])-lon_reg[i]<=seuil:
 			lat_clean.append(f(formatCommun, "lat")[i+2])
-			lon_clean.append(f(formatCommun, "lat")[i+2])
+			lon_clean.append(f(formatCommun, "lon")[i+2])
 			date_clean.append(f(formatCommun, "date")[i+2])
 			lc_clean.append(f(formatCommun, "LC")[i+2])
-	print(len(lat_clean))
+	
 	for i in range(len(lat_clean)):
 		tmp={}
 		tmp["lat"]=lat_clean[i]
