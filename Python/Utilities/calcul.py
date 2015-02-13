@@ -186,17 +186,17 @@ estimée est trop éloignée de la position mesurée
 	lc_clean = []
 	lat_reg = []
 	lon_reg = []
-	#latitudes = formatCommun['lat']
-	#longitudes = formatCommun['lon']
 
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
 		new_lat = 0.
 		new_lon = 0.
 		k = []
 		p = []
+		
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
+		
 		for j in range(5):
 			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[i+j-2])
 			new_lon = new_lon + p[j]*float(f(formatCommun, "lon")[i+j-2])
@@ -206,7 +206,8 @@ estimée est trop éloignée de la position mesurée
 		lon_reg.append(new_lon)
 
 	for i in range(len(lon_reg)):
-		if float(f(formatCommun, "lat")[i+2])-lat_reg[i]<=seuil and float(f(formatCommun, "lon")[i+2])-lon_reg[i]<=seuil:
+		
+		if ((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil:
 			lat_clean.append(f(formatCommun, "lat")[i+2])
 			lon_clean.append(f(formatCommun, "lon")[i+2])
 			date_clean.append(f(formatCommun, "date")[i+2])
@@ -219,8 +220,5 @@ estimée est trop éloignée de la position mesurée
 		tmp["date"]=date_clean[i]
 		tmp["LC"]=lc_clean[i]	
 		donneeRegressee.append(tmp)
-
-	#print(len(lon_reg))
-	#print(len(f(formatCommun, "lon")))
 	
 	return donneeRegressee
