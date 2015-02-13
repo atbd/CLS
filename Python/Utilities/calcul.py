@@ -181,13 +181,14 @@ estimée est trop éloignée de la position mesurée
 
 
 	k = []
+	p = []
 	donneeRegressee = []
 	lat_clean = []
 	lon_clean = []
 	date_clean = []
 	lc_clean = []
-	new_lat = 0
-	new_lon = 0
+	new_lat = 0.0
+	new_lon = 0.0
 	lat_reg = []
 	lon_reg = []
 	#latitudes = formatCommun['lat']
@@ -196,19 +197,15 @@ estimée est trop éloignée de la position mesurée
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
+			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
 			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[i+j-2])
 		new_lat = new_lat/sum(k)
 		lat_reg.append(new_lat)
-
-	for i in range(len(f(formatCommun, "lon"))-2)[2:]:
-		for l in range(5):
-			k.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
-		for j in range(5):
-			new_lon = new_lon + k[j]*float(f(formatCommun, "lon")[i+j-2])
-		new_lon = new_lon/sum(k)
+			new_lon = new_lon + p[j]*float(f(formatCommun, "lon")[i+j-2])
+		new_lon = new_lon/sum(p)
 		lon_reg.append(new_lon)
-	
+
 	for i in range(len(lon_reg)):
 		if float(f(formatCommun, "lat")[i+2])-lat_reg[i]<=seuil and float(f(formatCommun, "lon")[i+2])-lon_reg[i]<=seuil:
 			lat_clean.append(f(formatCommun, "lat")[i+2])
