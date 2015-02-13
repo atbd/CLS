@@ -179,22 +179,21 @@ estimée est trop éloignée de la position mesurée
 	for i in range(len(formatCommun))[1:]:
 		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']))
 
-
-	k = []
-	p = []
 	donneeRegressee = []
 	lat_clean = []
 	lon_clean = []
 	date_clean = []
 	lc_clean = []
-	new_lat = 0.0
-	new_lon = 0.0
 	lat_reg = []
 	lon_reg = []
 	#latitudes = formatCommun['lat']
 	#longitudes = formatCommun['lon']
 
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]:
+		new_lat = 0.
+		new_lon = 0.
+		k = []
+		p = []
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
@@ -220,5 +219,8 @@ estimée est trop éloignée de la position mesurée
 		tmp["date"]=date_clean[i]
 		tmp["LC"]=lc_clean[i]	
 		donneeRegressee.append(tmp)
+
+	#print(len(lon_reg))
+	#print(len(f(formatCommun, "lon")))
 	
 	return donneeRegressee
