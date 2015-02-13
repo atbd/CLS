@@ -197,7 +197,7 @@ estimée est trop éloignée de la position mesurée
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 		for j in range(5):
-			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[j])
+			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[i+j-2])
 		new_lat = new_lat/sum(k)
 		lat_reg.append(new_lat)
 
@@ -205,7 +205,7 @@ estimée est trop éloignée de la position mesurée
 		for l in range(5):
 			k.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
 		for j in range(5):
-			new_lon = new_lon + k[j]*float(f(formatCommun, "lon")[j])
+			new_lon = new_lon + k[j]*float(f(formatCommun, "lon")[i+j-2])
 		new_lon = new_lon/sum(k)
 		lon_reg.append(new_lon)
 	
