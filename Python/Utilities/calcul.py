@@ -213,19 +213,13 @@ estimée est trop éloignée de la position mesurée
 
 	for i in range(len(lon_reg)):
 		
-		if sqrt((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			lat_clean.append(f(formatCommun, "lat")[i+2])
-			lon_clean.append(f(formatCommun, "lon")[i+2])
-			date_clean.append(f(formatCommun, "date")[i+2])
-			lc_clean.append(f(formatCommun, "LC")[i+2])
-	
-	for i in range(len(lat_clean)): #on copie toutes les positions qui valident le critère précédent
 		tmp={}
-		tmp["lat"]=lat_clean[i]
-		tmp["lon"]=lon_clean[i]
-		tmp["date"]=date_clean[i]
-		tmp["LC"]=lc_clean[i]	
-		donneeRegressee.append(tmp)
+		if sqrt((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+			tmp["lat"]=(f(formatCommun, "lat")[i+2])
+			tmp["lon"]=(f(formatCommun, "lon")[i+2])
+			tmp["date"](f(formatCommun, "date")[i+2])
+			tmp["LC"](f(formatCommun, "LC")[i+2])
+			donneeRegressee.append(tmp)
 
 	for i in range(2): #on rajoute les 2 dernières positions
 		m=2-i
