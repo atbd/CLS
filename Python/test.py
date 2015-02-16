@@ -13,8 +13,8 @@ from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
 
-path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
-#path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
+#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 
 
 liste = rd.lectureToutDiag(path)
