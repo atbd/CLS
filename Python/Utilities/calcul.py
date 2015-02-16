@@ -199,22 +199,18 @@ estimée est trop éloignée de la position mesurée
 		k = []
 		p = []
 		
-		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré 
+		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
-		
-		for j in range(5): #on calcule la position estimée du point considéré
-			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[i+j-2])
-			new_lon = new_lon + p[j]*float(f(formatCommun, "lon")[i+j-2])
+			new_lat = new_lat + k[l]*float(f(formatCommun, "lat")[i+l-2])
+			new_lon = new_lon + p[l]*float(f(formatCommun, "lon")[i+l-2])
 		new_lat = new_lat/sum(k)
 		lat_reg.append(new_lat)
 		new_lon = new_lon/sum(p)
 		lon_reg.append(new_lon)
-
-	for i in range(len(lon_reg)):
 		
 		tmp={}
-		if sqrt((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+		if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
 			tmp["lat"]=(f(formatCommun, "lat")[i+2])
 			tmp["lon"]=(f(formatCommun, "lon")[i+2])
 			tmp["date"]=(f(formatCommun, "date")[i+2])
