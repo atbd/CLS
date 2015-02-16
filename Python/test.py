@@ -8,7 +8,6 @@ import RWFormats.lecture as rd
 import RWFormats.nettoyage as laver
 import RWFormats.recuperation as recup
 
-<<<<<<< HEAD
 # pour les cartes
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
@@ -16,10 +15,6 @@ import numpy as np
 
 #path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
-
-=======
-path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
->>>>>>> d18dfe69e834f3efd7a9d5c00d9e0fa76bec559b
 
 liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat")

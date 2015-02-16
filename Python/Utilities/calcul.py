@@ -217,8 +217,8 @@ estimée est trop éloignée de la position mesurée
 		if sqrt((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
 			tmp["lat"]=(f(formatCommun, "lat")[i+2])
 			tmp["lon"]=(f(formatCommun, "lon")[i+2])
-			tmp["date"](f(formatCommun, "date")[i+2])
-			tmp["LC"](f(formatCommun, "LC")[i+2])
+			tmp["date"]=(f(formatCommun, "date")[i+2])
+			tmp["LC"]=(f(formatCommun, "LC")[i+2])
 			donneeRegressee.append(tmp)
 
 	for i in range(2): #on rajoute les 2 dernières positions
