@@ -1,20 +1,45 @@
-<?xml version='1.0'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>GroupBox</class>
- <widget name="GroupBox" class="QGroupBox">
-  <property name="title">
-   <string>GroupBox</string>
-  </property>
+ <widget class="QGroupBox" name="GroupBox">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>661</width>
+    <height>532</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>GroupBox</string>
   </property>
+  <property name="title">
+   <string>GroupBox</string>
+  </property>
+  <widget class="QPushButton" name="fileButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>50</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>File</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>99</y>
+     <width>661</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
+ <resources/>
+ <connections/>
 </ui>

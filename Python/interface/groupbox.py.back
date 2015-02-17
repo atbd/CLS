@@ -54,6 +54,7 @@ class Ui_GroupBox(object):
 
         self.layout.addWidget(self.canvas)
         self.layout.addWidget(self.mpl_toolbar)
+        #self.axes = self.fig.add_subplot(111)
         rect = 0,0,1,1
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
@@ -61,9 +62,11 @@ class Ui_GroupBox(object):
         def buttonFct():
             lats, lons = gui.toutEnUn()
             # provisoire
-            # TODO: faire pour plusieurs fichiers. Sortir le QFiledialog et le mettre ici. Puis parcourir tous les fichiers avec toutEnUn puis bouclage sur les tracés comme dans la fonction carte. Voir pour les couleurs comment faire. Faire les stats aussi.
             listLatitudes = [lats]
             listLongitudes = [lons]
+            #print(listLatitudes)
+            #print(listLongitudes)
+            #input("Appuyez sur ENTREE pour fermer ce programme...")
             couleurs = ["r"]
 
             monLon = sum(listLongitudes[0])/len(listLongitudes[0])
@@ -72,8 +75,10 @@ class Ui_GroupBox(object):
             m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
             m.etopo()        
 
+            # compute the native map projection coordinates for cities.
             x,y = m(lons,lats)
-            m.plot(x,y,'ro')
+            # plot filled circles at the locations of the cities.
+            m.plot(x,y,'r-')
 
             self.canvas.draw()
 
@@ -85,7 +90,7 @@ class Ui_GroupBox(object):
     def retranslateUi(self, GroupBox):
         GroupBox.setWindowTitle(_translate("GroupBox", "GroupBox", None))
         GroupBox.setTitle(_translate("GroupBox", "GroupBox", None))
-        self.fileButton.setText(_translate("GroupBox", "File(s)", None))
+        self.fileButton.setText(_translate("GroupBox", "File", None))
 
 
 if __name__ == "__main__":

@@ -15,37 +15,37 @@
 
 def lectureToutDS(pathDSFile):
 
-	liste = []
+    liste = []
 
-	with open(pathDSFile,"r") as f:
+    with open(pathDSFile,"r") as f:
 
-		for line in f:
-			k = filter(None,line.split(" "))
+        for line in f:
+            k = filter(None,line.split(" "))
 
-			if k == []: #on évite les lignes vides
-				continue
+            if k == []: #on évite les lignes vides
+                continue
 
-			if len(k) >= 10:
-				data = {}
-				dat = {}
-				data["LC"] = k[5]
-				tmp = k[6].split("-")
-				tmp2 = k[7].split(":")
-				dat["annee"] = tmp[0]
-				dat["mois"] = tmp[1]
-				dat["jour"] = tmp[2]
-				dat["heure"] = tmp2[0]
-				dat["min"] = tmp2[1]
-				dat["sec"] = tmp2[2]
-				data["date"] = dat
-				data["lat"] = k[8]
-				data["lon"] = k[9]
-				#data["freq"] = k[11][:9]
-				liste.append(data)
-			else:
-				continue
+            if len(k) >= 10:
+                data = {}
+                dat = {}
+                data["LC"] = k[5]
+                tmp = k[6].split("-")
+                tmp2 = k[7].split(":")
+                dat["annee"] = tmp[0]
+                dat["mois"] = tmp[1]
+                dat["jour"] = tmp[2]
+                dat["heure"] = tmp2[0]
+                dat["min"] = tmp2[1]
+                dat["sec"] = tmp2[2]
+                data["date"] = dat
+                data["lat"] = k[8]
+                data["lon"] = k[9]
+                #data["freq"] = k[11][:9]
+                liste.append(data)
+            else:
+                continue
 
-	return liste
+    return liste
 
 
 
@@ -76,39 +76,39 @@ def lectureToutDiag(pathDiagFile):
 
                 if (k[0].isdigit()):
                     #data["num"] = k[0]
-					tmp = k[2].split(".")
-					tmp2 = k[3].split(":")
-					dat["annee"] = "20"+tmp[2]
-					dat["mois"] = tmp[1]
-					dat["jour"] = tmp[0]
-					dat["heure"] = tmp2[0]
-					dat["min"] = tmp2[1]
-					dat["sec"] = tmp2[2]
-					data["date"] = dat
-					data["LC"] = k[5]
-					#data["IQ"] = k[7]
+                    tmp = k[2].split(".")
+                    tmp2 = k[3].split(":")
+                    dat["annee"] = "20"+tmp[2]
+                    dat["mois"] = tmp[1]
+                    dat["jour"] = tmp[0]
+                    dat["heure"] = tmp2[0]
+                    dat["min"] = tmp2[1]
+                    dat["sec"] = tmp2[2]
+                    data["date"] = dat
+                    data["LC"] = k[5]
+                    #data["IQ"] = k[7]
 
                 elif tmp.startswith("Lat"):
 
-					if k[1][-1] == "N":
-						data["lat"] = k[1][:-1]
-					else:
-						data["lat"] = "-"+k[1][:-1]
+                    if k[1][-1] == "N":
+                        data["lat"] = k[1][:-1]
+                    else:
+                        data["lat"] = "-"+k[1][:-1]
 
-					if k[3][-1] == "E":
-						data["lon"] = k[3][:-1]
-					else:
-						data["lon"] = "-"+k[3][:-1]
+                    if k[3][-1] == "E":
+                        data["lon"] = k[3][:-1]
+                    else:
+                        data["lon"] = "-"+k[3][:-1]
 
-					if k[5][-1] == "N":
-						data["lat_image"] = k[5][:-1]
-					else:
-						data["lat_image"] = "-"+k[5][:-1]
+                    if k[5][-1] == "N":
+                        data["lat_image"] = k[5][:-1]
+                    else:
+                        data["lat_image"] = "-"+k[5][:-1]
 
-					if k[7][-1] == "E":
-						data["lon_image"] = k[7][:-1]
-					else:
-						data["lon_image"] = "-"+k[7][:-1]
+                    if k[7][-1] == "E":
+                        data["lon_image"] = k[7][:-1]
+                    else:
+                        data["lon_image"] = "-"+k[7][:-1]
 
                 else:
                     continue
@@ -117,7 +117,7 @@ def lectureToutDiag(pathDiagFile):
                 liste.append(data)
                 data,dat = {},{}
 
-	return liste
+    return liste
 
 
 def lectureUnCSV(pathCSVFile):
@@ -134,74 +134,74 @@ def lectureUnCSV(pathCSVFile):
         f = csv.reader(txt)
 
         for row in f:   # voir encadrant pour info sur ceux commentés + les données dans CSV que j'ai pas pris
-			row = filter(None, row)
-			if row == [] or len(row) <= 15 or row[0].startswith("Name"):
-				continue
-			data = {}
-			dat = {}
-			tmp = row[1].split("-")
-			tmp2 = row[2].split(":")
-			dat["annee"] = tmp[2]
-			mois = tmp[1].upper()
-			if mois == "JAN":
-				tmp[1] = "01"
-			elif mois == "FEB":
-				tmp[1] = "02"
-			elif mois == "MAR":
-				tmp[1] = "03"
-			elif mois == "APR":
-				tmp[1] = "04"
-			elif mois == "MAY":
-				tmp[1] = "05"
-			elif mois == "JUN":
-				tmp[1] = "06"
-			elif mois == "JUL":
-				tmp[1] = "07"
-			elif mois == "AUG":
-				tmp[1] = "08"
-			elif mois == "SEP":
-				tmp[1] = "09"
-			elif mois == "OCT.":
-				tmp[1] = "10"
-			elif mois == "NOV":
-				tmp[1] = "11"
-			elif mois == "DEC":
-				tmp[1] = "12"
-			dat["mois"] = tmp[1]
-			dat["jour"] = tmp[0]
-			dat["heure"] = tmp2[0]
-			dat["min"] = tmp2[1]
-			dat["sec"] = tmp2[2]
-			data["date"] = dat
+            row = filter(None, row)
+            if row == [] or len(row) <= 15 or row[0].startswith("Name"):
+                continue
+            data = {}
+            dat = {}
+            tmp = row[1].split("-")
+            tmp2 = row[2].split(":")
+            dat["annee"] = tmp[2]
+            mois = tmp[1].upper()
+            if mois == "JAN":
+                tmp[1] = "01"
+            elif mois == "FEB":
+                tmp[1] = "02"
+            elif mois == "MAR":
+                tmp[1] = "03"
+            elif mois == "APR":
+                tmp[1] = "04"
+            elif mois == "MAY":
+                tmp[1] = "05"
+            elif mois == "JUN":
+                tmp[1] = "06"
+            elif mois == "JUL":
+                tmp[1] = "07"
+            elif mois == "AUG":
+                tmp[1] = "08"
+            elif mois == "SEP":
+                tmp[1] = "09"
+            elif mois == "OCT.":
+                tmp[1] = "10"
+            elif mois == "NOV":
+                tmp[1] = "11"
+            elif mois == "DEC":
+                tmp[1] = "12"
+            dat["mois"] = tmp[1]
+            dat["jour"] = tmp[0]
+            dat["heure"] = tmp2[0]
+            dat["min"] = tmp2[1]
+            dat["sec"] = tmp2[2]
+            data["date"] = dat
             #data["LC"] =
             #data["IQ"] =
-			data["lat1"] = row[9]
-			data["lon1"] = row[10]
-			data["lat2"] = row[12]
-			data["lon2"] = row[13]
-			data["nbrMess"] = row[3]
+            data["lat1"] = row[9]
+            data["lon1"] = row[10]
+            data["lat2"] = row[12]
+            data["lon2"] = row[13]
+            data["nbrMess"] = row[3]
             #data["nbMessSupp120dB"] =
             #data["bestdB"] =
-			data["passDuration"] = row[4] # time Offset ?
+            data["passDuration"] = row[4] # time Offset ?
             #data["NOPC"] =
             #data["freq"] =
             #data["altitude"] =
             #data["LC"] =
             #data["IQ"] =
-			data["lat"] = row[9]
-			data["lon"] = row[10]
-			data["lat_image"] = row[12]
-			data["lon_image"] = row[13]
-			#data["nbrMess"] = row[3]
+            data["lat"] = row[9]
+            data["lon"] = row[10]
+            data["lat_image"] = row[12]
+            data["lon_image"] = row[13]
+            #data["nbrMess"] = row[3]
             #data["nbMessSupp120dB"] =
             #data["bestdB"] =
-			#data["passDuration"] = row[4] # time Offset ?
+            #data["passDuration"] = row[4] # time Offset ?
             #data["NOPC"] =
             #data["freq"] =
             #data["altitude"] =
-			liste.append(data)
+            liste.append(data)
 
-	return liste
+    return liste
 
 
 def lectureDossier(folderPath):
@@ -243,7 +243,7 @@ def lectureDossier(folderPath):
 
         viveLesLuth[identifiant] = tmp
 
-	return viveLesLuth
+    return viveLesLuth
 
 # faire une fonction pour lire un fichier quelque soit son format (ou pas si ça fait doublon avec le "lireDossier" qui choisit selon le format)
 
