@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
-from numpy import *
+# from numpy import *
 
 def calculDistances(latitudes, longitudes): 
 	"""
@@ -167,7 +167,7 @@ def correctionChoixLoc(formatCommun):
 
 	return donneeCorrigee
 
-def regressionLineaire(choix, formatCommun, seuil, f): # pas encore testée
+def regressionLineaire(choix, formatCommun, seuil, f): 
 	"""
 		Cette fonction retire les localisations pour lesquelles la localisation
 estimée est trop éloignée de la position mesurée
@@ -175,9 +175,7 @@ estimée est trop éloignée de la position mesurée
 
 	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
 	for i in range(len(formatCommun))[1:]:
-		h = max(h,float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
-	for i in range(len(formatCommun))[1:]:
-		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']))
+		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']),float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
 
 	donneeRegressee = []
 	lat_clean = []
@@ -201,33 +199,23 @@ estimée est trop éloignée de la position mesurée
 		k = []
 		p = []
 		
-		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré 
+		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
 			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
 			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
-		
-		for j in range(5): #on calcule la position estimée du point considéré
-			new_lat = new_lat + k[j]*float(f(formatCommun, "lat")[i+j-2])
-			new_lon = new_lon + p[j]*float(f(formatCommun, "lon")[i+j-2])
+			new_lat = new_lat + k[l]*float(f(formatCommun, "lat")[i+l-2])
+			new_lon = new_lon + p[l]*float(f(formatCommun, "lon")[i+l-2])
 		new_lat = new_lat/sum(k)
 		lat_reg.append(new_lat)
 		new_lon = new_lon/sum(p)
 		lon_reg.append(new_lon)
-
-	for i in range(len(lon_reg)):
 		
-		if sqrt((float(f(formatCommun, "lat")[i+2])-lat_reg[i])**2 + (float(f(formatCommun, "lon")[i+2])-lon_reg[i])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			lat_clean.append(f(formatCommun, "lat")[i+2])
-			lon_clean.append(f(formatCommun, "lon")[i+2])
-			date_clean.append(f(formatCommun, "date")[i+2])
-			lc_clean.append(f(formatCommun, "LC")[i+2])
-	
-	for i in range(len(lat_clean)): #on copie toutes les positions qui valident le critère précédent
 		tmp={}
-		tmp["lat"]=lat_clean[i]
-		tmp["lon"]=lon_clean[i]
-		tmp["date"]=date_clean[i]
-		tmp["LC"]=lc_clean[i]	
-		donneeRegressee.append(tmp)
+		if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+			tmp["lat"]=(f(formatCommun, "lat")[i+2])
+			tmp["lon"]=(f(formatCommun, "lon")[i+2])
+			tmp["date"]=(f(formatCommun, "date")[i+2])
+			tmp["LC"]=(f(formatCommun, "LC")[i+2])
+			donneeRegressee.append(tmp)
 
 	for i in range(2): #on rajoute les 2 dernières positions
 		m=2-i
