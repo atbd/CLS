@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
-from numpy import *
+# from numpy import *
 
 def calculDistances(latitudes, longitudes): 
 	"""
