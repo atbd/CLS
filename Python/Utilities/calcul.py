@@ -172,7 +172,7 @@ def regressionLineaire(choix, formatCommun, seuil, f):
 		Cette fonction retire les localisations pour lesquelles la localisation
 estimée est trop éloignée de la position mesurée
 	"""
-
+	from math import pi, sqrt, exp
 	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
 	for i in range(len(formatCommun))[1:]:
 		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']),float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
