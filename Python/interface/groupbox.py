@@ -15,6 +15,7 @@ from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt4agg import NavigationToolbar2QTAgg as NavigationToolbar
 from matplotlib.figure import Figure
 from mpl_toolkits.basemap import Basemap
+import numpy as np
 
 # bibli perso
 import interface.fctInterface as gui
@@ -54,28 +55,37 @@ class Ui_GroupBox(object):
 
         self.layout.addWidget(self.canvas)
         self.layout.addWidget(self.mpl_toolbar)
-        rect = 0,0,1,1
+        rect = 0,0.05,1,0.9
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
         def buttonFct():
-            lats, lons = gui.toutEnUn()
-            # provisoire
-            # TODO: faire pour plusieurs fichiers. Sortir le QFiledialog et le mettre ici. Puis parcourir tous les fichiers avec toutEnUn puis bouclage sur les tracés comme dans la fonction carte. Voir pour les couleurs comment faire. Faire les stats aussi.
-            listLatitudes = [lats]
-            listLongitudes = [lons]
-            couleurs = ["r"]
+            self.canvas.clean()
+            path = QtGui.QFileDialog.getOpenFileNames(None, "Choix un ou plusieurs fichiers", "", "(*.DIAG *.DS *.CSV)")
 
-            monLon = sum(listLongitudes[0])/len(listLongitudes[0])
-            monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+            if path != []:
+                listLatitudes = []
+                listLongitudes = []
 
-            m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
-            m.etopo()        
+                for i in range(len(path)):
+                    lats, lons = gui.toutEnUn(path[i])
+                    listLatitudes.append(lats)
+                    listLongitudes.append(lons)
 
-            x,y = m(lons,lats)
-            m.plot(x,y,'ro')
+                monLon = sum(listLongitudes[0])/len(listLongitudes[0])
+                monLat = sum(listLatitudes[0])/len(listLatitudes[0])
 
-            self.canvas.draw()
+                m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
+                m.etopo()        
+                
+                m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
+                m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
+
+                for i in range(len(listLatitudes)):
+                    x,y = m(listLongitudes[i],listLatitudes[i])
+                    m.plot(x,y,'-')
+
+                self.canvas.draw()
 
         self.fileButton.clicked.connect(buttonFct)
 
