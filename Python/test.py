@@ -16,21 +16,18 @@ fichierTest2 = open("fichierTest2.txt", "w")
 # import matplotlib.pyplot as plt
 # import numpy as np
 
-<<<<<<< HEAD
 #path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
 #path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 path = "/Users/Benoit/Documents/GitHub/CLS/tortues/DIAG/10248.DIAG"
 
-=======
 #path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
->>>>>>> 7d87aab99caf2b6f871a73ed2f1002012ec35e93
 
 liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat")
 liste = ut.correctionChoixLoc(liste)
 liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
-<<<<<<< HEAD
+
 lat = recup.recuperation(liste,'lat')
 lon = recup.recuperation(liste,'lon')
 for j in range(len(liste)):
@@ -51,7 +48,7 @@ fichierTest2.close()
 # #print(longitudes)
 
 # mp.tracerCarte(longitudes, latitudes)
-=======
+
 print(len(liste))
 
 latitudes = map(float, recup.recuperation(liste, "lat"))
@@ -63,7 +60,6 @@ print(len(liste))
 latitudes2 = map(float, recup.recuperation(liste, "lat"))
 longitudes2 = map(float, recup.recuperation(liste, "lon"))
 
-
 mp.tracerCarte([longitudes, longitudes2],[latitudes, latitudes2], ["b", "r"])
->>>>>>> 7d87aab99caf2b6f871a73ed2f1002012ec35e93
+
 
