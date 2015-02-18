@@ -29,12 +29,13 @@ def toutEnUn(path):
 
         elif Format == "CSV":
             liste = rd.lectureUnCSV(path)
+            liste = ut.correctionChoixLoc(liste)
 
         else:
             print("Format de fichier non supporté.")
             
-        liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
-        #liste = ut.regressionLineaire(1, liste, 0.2, recup.recuperation)
+        liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3) # marche pas avec CSV: pas de LC
+        liste = ut.regressionLineaire(1, liste, 0.2, recup.recuperation)
 
         latitudes = map(float, recup.recuperation(liste, "lat"))
         longitudes = map(float, recup.recuperation(liste, "lon"))

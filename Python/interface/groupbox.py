@@ -59,8 +59,10 @@ class Ui_GroupBox(object):
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
+        self.dejaVu = 0
+
         def buttonFct():
-            self.canvas.clean()
+            #self.canvas.remove()
             path = QtGui.QFileDialog.getOpenFileNames(None, "Choix un ou plusieurs fichiers", "", "(*.DIAG *.DS *.CSV)")
 
             if path != []:
@@ -72,18 +74,20 @@ class Ui_GroupBox(object):
                     listLatitudes.append(lats)
                     listLongitudes.append(lons)
 
-                monLon = sum(listLongitudes[0])/len(listLongitudes[0])
-                monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+                if self.dejaVu == 0:
+                    monLon = sum(listLongitudes[0])/len(listLongitudes[0])
+                    monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+                    self.dejaVu = 1
 
-                m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
-                m.etopo()        
-                
-                m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
-                m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
+                    self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
+                    self.m.etopo()      
+                    
+                    self.m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
+                    self.m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
 
                 for i in range(len(listLatitudes)):
-                    x,y = m(listLongitudes[i],listLatitudes[i])
-                    m.plot(x,y,'-')
+                    x,y = self.m(listLongitudes[i],listLatitudes[i])
+                    self.m.plot(x,y,'-')
 
                 self.canvas.draw()
 

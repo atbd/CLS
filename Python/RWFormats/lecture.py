@@ -175,10 +175,10 @@ def lectureUnCSV(pathCSVFile):
             data["date"] = dat
             #data["LC"] =
             #data["IQ"] =
-            data["lat1"] = row[9]
-            data["lon1"] = row[10]
-            data["lat2"] = row[12]
-            data["lon2"] = row[13]
+            #data["lat1"] = row[9]
+            #data["lon1"] = row[10]
+            #data["lat2"] = row[12]
+            #data["lon2"] = row[13]
             data["nbrMess"] = row[3]
             #data["nbMessSupp120dB"] =
             #data["bestdB"] =
