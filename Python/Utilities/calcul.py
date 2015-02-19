@@ -1,6 +1,20 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
-# from numpy import *
+import numpy as np
+from scipy import *
+from Sphinx import *
+from numpydoc import *
+from nose import *
+from pykalman import KalmanFilter
+"""
+pykalman depends on the following modules,
+
+    numpy (for core functionality)
+    scipy (for core functionality)
+    Sphinx (for generating documentation)
+    numpydoc (for generating documentation)
+    nose (for running tests)
+"""
 
 def calculDistances(latitudes, longitudes): 
 	"""
@@ -227,3 +241,18 @@ estimée est trop éloignée de la position mesurée
 		donneeRegressee.append(tpm)
 	
 	return donneeRegressee
+
+def kalman(lat,lon,vit): #
+	import numpy as np
+	from scipy import *
+	from Sphinx import *
+	from numpydoc import *
+	from nose import *
+	from pykalman import KalmanFilter
+
+	kf = KalmanFilter(initial_state_mean=0, n_dim_obs=3)
+	measures = zip(lat,lon,vit)	
+	kf = kf.em(measures)
+	(smoothed_state_means, smoothed_state_covariances) = kf.smooth(measurements)
+
+	return smoothed_state_means
