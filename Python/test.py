@@ -16,15 +16,17 @@ import RWFormats.recuperation as recup
 # import matplotlib.pyplot as plt
 # import numpy as np
 
-#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
+path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
 #path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 #path = "/Users/Benoit/Documents/GitHub/CLS/tortues/DIAG/10248.DIAG"
 
-path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
 #path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
-path2 = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST.DIAG"
-
+#path2 = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST1.DIAG"
+#path = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST - Copie.DIAG"
 liste = rd.lectureToutDiag(path)
+print(len(liste))
+"""
 liste = laver.monsieurPropre(liste, "lat")
 liste = ut.correctionChoixLoc(liste)
 liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
@@ -44,6 +46,7 @@ lats = map(float, recup.recuperation(liste2, "lat"))
 lons = map(float, recup.recuperation(liste2, "lon"))
 
 mp.tracerCarte([lon,lons],[lat,lats],["r","b"])
+"""
 """
 for j in range(len(liste)):
 	fichierTest1.write(str(lat[j]))

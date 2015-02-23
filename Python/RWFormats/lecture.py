@@ -64,17 +64,19 @@ def lectureToutDiag(pathDiagFile):
         data,dat = {},{}
 
         for (num, line) in enumerate(f,1):
-            if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
+            #if num % 7 != 0:    #pour éviter la dernière ligne de chiffres
 
-                tmp = line.strip()
-                k = filter(None, tmp.split(" "))
+            tmp = line.strip()
+            k = filter(None, tmp.split(" "))
 
-                if k == []:     # on évite les lignes vides
-                    continue
+            #    if k == []:     # on évite les lignes vides
+            #        continue
+
+            if k != []:
 
                 k = [w for w in k if w != ":"]
 
-                if (k[0].isdigit()):
+                if (k[0].isdigit() and len(k) > 4):
                     #data["num"] = k[0]
                     tmp = k[2].split(".")
                     tmp2 = k[3].split(":")
@@ -113,7 +115,7 @@ def lectureToutDiag(pathDiagFile):
                 else:
                     continue
 
-            else:
+            elif (k == [] and num != 1):
                 liste.append(data)
                 data,dat = {},{}
 
