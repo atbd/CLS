@@ -119,7 +119,7 @@ def lectureToutDiag(pathDiagFile):
                 liste.append(data)
                 data,dat = {},{}
 
-    return liste
+    return [w for w in liste if bool(w)]
 
 
 def lectureUnCSV(pathCSVFile):
