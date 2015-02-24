@@ -17,24 +17,6 @@ def calculDistances(latitudes, longitudes):
 		Retourne un tableau de toutes les distances (en km)
 	"""
 
-	""" En dessous : fonctionne mais mieux calculer un par un pour correction loc
-
-	from math import acos, sin, cos, pi
-
-	R = 6378.137 # rayon de la Terre en km(sphère GRS80)
-	# R = 6371.598 # (sphère de Picard)
-
-	deltaLon = [j-i for i,j in zip(longitudes[:-1], longitudes[1:])]
-
-	a = [sin(j*pi/180)*sin(i*pi/180) for i,j in zip(latitudes[:-1], latitudes[1:])]
-
-	b = [cos(j*pi/180)*cos(i*pi/180) for i,j in zip(latitudes[:-1], latitudes[1:])]
-
-	c = [j*cos(i*pi/180) for i,j in zip(deltaLon, b)]
-
-	return [R * acos(j+i) for i,j in zip(a,c)]
-	"""
-
 	return [calculUneDistance(latitudes[i], latitudes[i+1], longitudes[i], longitudes[i+1]) for i in range(len(latitudes)-1)]
 
 

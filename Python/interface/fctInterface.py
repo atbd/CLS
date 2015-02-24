@@ -10,25 +10,68 @@ import RWFormats.recuperation as recup
 
 from mpl_toolkits.basemap import Basemap
 
-def toutEnUn(path):
+def toutEnUn(path, debut=0, fin=0):
     """
         Servira à tracer la carte sur la GUI. 
     """
-    #TODO: faire pour tout les formats
 
     if len(path) != 0: 
         Format = path.split(".")[-1].toUpper()
 
         if Format == "DIAG":
             liste = rd.lectureToutDiag(path)
+            
+            if debut != 0:
+                for i in range(len(liste)):
+                    tmp = ut.convertDateToSecond(liste[i]["date"])
+                    if tmp >= debut:
+                        liste = liste[i:]
+                        break
+
+            if fin != 0:
+                for i in xrange(1,len(liste)):
+                    tmp = ut.convertDateToSecond(liste[-i]["date"])
+                    if tmp <= fin:
+                        liste = liste[:-i+1]
+                        break
+
             liste = laver.monsieurPropre(liste, "lat")
             liste = ut.correctionChoixLoc(liste)
 
         elif Format == "DS":
             liste = rd.lectureToutDS(path)
 
+            if debut != 0:
+                for i in range(len(liste)):
+                    tmp = ut.convertDateToSecond(liste[i]["date"])
+                    if tmp >= debut:
+                        liste = liste[i:]
+                        break
+
+            if fin != 0:
+                for i in xrange(1,len(liste)):
+                    tmp = ut.convertDateToSecond(liste[-i]["date"])
+                    if tmp <= fin:
+                        liste = liste[:-i+1]
+                        break
+
         elif Format == "CSV":
             liste = rd.lectureUnCSV(path)
+
+            if debut != 0:
+                for i in range(len(liste)):
+                    tmp = ut.convertDateToSecond(liste[i]["date"])
+                    if tmp >= debut:
+                        liste = liste[i:]
+                        break
+
+            if fin != 0:
+                for i in xrange(1,len(liste)):
+                    tmp = ut.convertDateToSecond(liste[-i]["date"])
+                    if tmp <= fin:
+                        liste = liste[:-i+1]
+                        break
+
             liste = ut.correctionChoixLoc(liste)
 
         else:
