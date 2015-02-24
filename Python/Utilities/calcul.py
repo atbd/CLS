@@ -163,58 +163,85 @@ def regressionLineaire(choix, formatCommun, seuil, f):
 estimée est trop éloignée de la position mesurée
 	"""
 	from math import pi, sqrt, exp
-	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
-	for i in range(len(formatCommun))[1:]:
-		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']),float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
+	import numpy as np
+	#from scipy import *
+	#from Sphinx import *
+	#from numpydoc import *
+	#from nose import *
+	from pykalman import KalmanFilter
 
-	donneeRegressee = []
-	lat_clean = []
-	lon_clean = []
-	date_clean = []
-	lc_clean = []
-	lat_reg = []
-	lon_reg = []
-
-	for i in range(2): #on rajoute les 2 premières positions
+	if choix ==3:
+		lat = []
+		lon = []
+		vit = []
 		tpm={}
-		tpm["lat"]=f(formatCommun, "lat")[i]
-		tpm["lon"]=f(formatCommun, "lon")[i]
-		tpm["date"]=f(formatCommun, "date")[i]
-		tpm["LC"]=f(formatCommun, "LC")[i]
-		donneeRegressee.append(tpm)
+		for i in range(len(formatCommun)):
+			lat.append(f(formatCommun, "lat")[i])
+			lon.append(f(formatCommun, "lon")[i])
+			vit.append(f(formatCommun, "vit")[i])
+		kf = KalmanFilter(initial_state_mean=[5,-50,0], n_dim_obs=3)
+		measures = zip(lat,lon,vit)
+		kf = kf.em(measures)
+		(smoothed_state_means, smoothed_state_covariances) = kf.smooth(measures)
+		for i in range(len(smoothed_state_means)):
+			tpm["lat"]=f(smoothed_state_means, "lat")[i]
+			tpm["lon"]=f(smoothed_state_means, "lon")[i]
+			tpm["date"]=f(formatCommun, "date")[i]
+			tpm["LC"]=f(formatCommun, "LC")[i]
+			donneeRegressee.append(tpm)
+	else:
+		h = 0 #h sert à délimiter le support du noyau d'epanechnikov
+		for i in range(len(formatCommun))[1:]:
+			h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']),float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
 
-	for i in range(len(f(formatCommun, "lat"))-2)[2:]: #on itère sur tous les points de la courbe sauf les 2 premiers et les derniers (à cause de la taille de la fenêtre)
-		new_lat = 0.
-		new_lon = 0.
-		k = []
-		p = []
+		donneeRegressee = []
+		lat_clean = []
+		lon_clean = []
+		date_clean = []
+		lc_clean = []
+		lat_reg = []
+		lon_reg = []
 
-		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
-			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
-			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
-			new_lat = new_lat + k[l]*float(f(formatCommun, "lat")[i+l-2])
-			new_lon = new_lon + p[l]*float(f(formatCommun, "lon")[i+l-2])
-		new_lat = new_lat/sum(k)
-		lat_reg.append(new_lat)
-		new_lon = new_lon/sum(p)
-		lon_reg.append(new_lon)
+		for i in range(2): #on rajoute les 2 premières positions
+			tpm={}
+			tpm["lat"]=f(formatCommun, "lat")[i]
+			tpm["lon"]=f(formatCommun, "lon")[i]
+			tpm["date"]=f(formatCommun, "date")[i]
+			tpm["LC"]=f(formatCommun, "LC")[i]
+			donneeRegressee.append(tpm)
 
-		tmp={}
-		if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			tmp["lat"]=(f(formatCommun, "lat")[i+2])
-			tmp["lon"]=(f(formatCommun, "lon")[i+2])
-			tmp["date"]=(f(formatCommun, "date")[i+2])
-			tmp["LC"]=(f(formatCommun, "LC")[i+2])
-			donneeRegressee.append(tmp)
+		for i in range(len(f(formatCommun, "lat"))-2)[2:]: #on itère sur tous les points de la courbe sauf les 2 premiers et les derniers (à cause de la taille de la fenêtre)
+			new_lat = 0.
+			new_lon = 0.
+			k = []
+			p = []
 
-	for i in range(2): #on rajoute les 2 dernières positions
-		m=2-i
-		tpm={}
-		tpm["lat"]=f(formatCommun, "lat")[-m]
-		tpm["lon"]=f(formatCommun, "lon")[-m]
-		tpm["date"]=f(formatCommun, "date")[-m]
-		tpm["LC"]=f(formatCommun, "LC")[-m]
-		donneeRegressee.append(tpm)
+			for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
+				k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
+				p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
+				new_lat = new_lat + k[l]*float(f(formatCommun, "lat")[i+l-2])
+				new_lon = new_lon + p[l]*float(f(formatCommun, "lon")[i+l-2])
+			new_lat = new_lat/sum(k)
+			lat_reg.append(new_lat)
+			new_lon = new_lon/sum(p)
+			lon_reg.append(new_lon)
+
+			tmp={}
+			if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+				tmp["lat"]=(f(formatCommun, "lat")[i+2])
+				tmp["lon"]=(f(formatCommun, "lon")[i+2])
+				tmp["date"]=(f(formatCommun, "date")[i+2])
+				tmp["LC"]=(f(formatCommun, "LC")[i+2])
+				donneeRegressee.append(tmp)
+
+		for i in range(2): #on rajoute les 2 dernières positions
+			m=2-i
+			tpm={}
+			tpm["lat"]=f(formatCommun, "lat")[-m]
+			tpm["lon"]=f(formatCommun, "lon")[-m]
+			tpm["date"]=f(formatCommun, "date")[-m]
+			tpm["LC"]=f(formatCommun, "LC")[-m]
+			donneeRegressee.append(tpm)
 
 	return donneeRegressee
 
