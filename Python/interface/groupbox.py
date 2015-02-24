@@ -97,8 +97,10 @@ class Ui_GroupBox(object):
                     monLat = sum(listLatitudes[0])/len(listLatitudes[0])
                     self.dejaVu = 1
 
-                    self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
-                    self.m.etopo()      
+                    self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution='c', ax=self.axes)
+                    self.m.drawcoastlines()
+                    #self.m.drawmapboundary(fill_color='aqua')
+                    self.m.fillcontinents(color='coral',lake_color='aqua')
                     
                     self.m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
                     self.m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
