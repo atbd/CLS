@@ -15,6 +15,7 @@ from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt4agg import NavigationToolbar2QTAgg as NavigationToolbar
 from matplotlib.figure import Figure
 from mpl_toolkits.basemap import Basemap
+import numpy as np
 
 # bibli perso
 import interface.fctInterface as gui
@@ -54,33 +55,41 @@ class Ui_GroupBox(object):
 
         self.layout.addWidget(self.canvas)
         self.layout.addWidget(self.mpl_toolbar)
-        #self.axes = self.fig.add_subplot(111)
-        rect = 0,0,1,1
+        rect = 0,0.05,1,0.9
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
+        self.dejaVu = 0
+
         def buttonFct():
-            lats, lons = gui.toutEnUn()
-            # provisoire
-            listLatitudes = [lats]
-            listLongitudes = [lons]
-            #print(listLatitudes)
-            #print(listLongitudes)
-            #input("Appuyez sur ENTREE pour fermer ce programme...")
-            couleurs = ["r"]
+            #self.canvas.remove()
+            path = QtGui.QFileDialog.getOpenFileNames(None, "Choix un ou plusieurs fichiers", "", "(*.DIAG *.DS *.CSV)")
 
-            monLon = sum(listLongitudes[0])/len(listLongitudes[0])
-            monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+            if path != []:
+                listLatitudes = []
+                listLongitudes = []
 
-            m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
-            m.etopo()        
+                for i in range(len(path)):
+                    lats, lons = gui.toutEnUn(path[i])
+                    listLatitudes.append(lats)
+                    listLongitudes.append(lons)
 
-            # compute the native map projection coordinates for cities.
-            x,y = m(lons,lats)
-            # plot filled circles at the locations of the cities.
-            m.plot(x,y,'r-')
+                if self.dejaVu == 0:
+                    monLon = sum(listLongitudes[0])/len(listLongitudes[0])
+                    monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+                    self.dejaVu = 1
 
-            self.canvas.draw()
+                    self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution=None, ax=self.axes)
+                    self.m.etopo()      
+                    
+                    self.m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
+                    self.m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
+
+                for i in range(len(listLatitudes)):
+                    x,y = self.m(listLongitudes[i],listLatitudes[i])
+                    self.m.plot(x,y,'-')
+
+                self.canvas.draw()
 
         self.fileButton.clicked.connect(buttonFct)
 
@@ -90,7 +99,7 @@ class Ui_GroupBox(object):
     def retranslateUi(self, GroupBox):
         GroupBox.setWindowTitle(_translate("GroupBox", "GroupBox", None))
         GroupBox.setTitle(_translate("GroupBox", "GroupBox", None))
-        self.fileButton.setText(_translate("GroupBox", "File", None))
+        self.fileButton.setText(_translate("GroupBox", "File(s)", None))
 
 
 if __name__ == "__main__":
