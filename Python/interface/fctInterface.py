@@ -96,11 +96,11 @@ def saveRes(filesName, listLong, listLat, temps):
     """
         Créera un fichier .res pour chaque tracé sur la carte.
     """
-    for i in filesName:
-        with open(filesName[i], "w") as f:
-            f.write("Day    Lon    Lat") # voir quel autre section rajouter (vitesse?)
-            for x in listLong[i]:
-                f.write("%s    %s    %s" % ())
+    for i in xrange(len(filesName)):
+        with open("res/" + filesName[i] + ".res", "w") as f:
+            f.write("Day    Time    Lon    Lat\n") # voir quel autre section rajouter (vitesse?)
+            for x in xrange(len(listLong[i])):
+                f.write("%s.%s.%s   %s:%s:%s    %s    %s\n" % (temps[i][x]["jour"], temps[i][x]["mois"], temps[i][x]["annee"], temps[i][x]["heure"], temps[i][x]["min"], temps[i][x]["sec"], listLong[i][x], listLat[i][x]))
 
 
 

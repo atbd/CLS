@@ -93,7 +93,7 @@ class Ui_GroupBox(object):
                     self.listLatitudes.append(lats)
                     self.listLongitudes.append(lons)
                     self.listId.append(identifiant)
-                    #self.listTemps.append(temps)
+                    self.listTemps.append(temps)
 
                 if self.dejaVu == 0:
                     monLon = sum(self.listLongitudes[0])/len(self.listLongitudes[0])
@@ -124,7 +124,7 @@ class Ui_GroupBox(object):
 
         def sauvegarder():
             # servira à creer les .res (fonction à mettre dans fctInterface.py
-            print("Pas encore supporté")
+            gui.saveRes(self.listId, self.listLongitudes, self.listLatitudes, self.listTemps)
 
         self.saveButton.clicked.connect(sauvegarder)
 
