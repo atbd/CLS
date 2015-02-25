@@ -25,11 +25,11 @@ def ecritureUneTransmission(data): # pas encore testé
     thirdLine = "      Nb mes : %s  Nb mes>-120dB : %s  Best level : %s dB\n" % (data["nbrMess"], data["nbMessSupp120dB"], data["bestdB"])
 
     fourthLine = "      Pass duration : %ss  NOPC : %s\n" % (data["passDuration"], data["NOPC"])
-    
+
     fifthLine = "      Calcul freq : %s Hz   Altitude :   %s m\n" % (data["freq"], data["altitude"])
-    
+
     sixthLine = "                 00          00          00          00\n" # sais pas encore
-    
+
     total = "\n" + firstLine + secondLine + thirdLine + fourthLine + fifthLine + sixthLine
 
     return total
@@ -48,3 +48,8 @@ def ecritureDIAG(liste, nomFichier): # pas encore testé
         for i in liste:
             tmp = ecritureUneTransmission(liste[i])
             f.write(tmp)
+
+
+
+
+
