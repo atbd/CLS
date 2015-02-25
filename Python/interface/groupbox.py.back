@@ -83,45 +83,56 @@ class Ui_GroupBox(object):
                 if startSecond > endSecond:
                     startSecond, endSecond = endSecond, startSecond
 
-                listLatitudes = []
-                listLongitudes = []
+                self.listLatitudes = []
+                self.listLongitudes = []
+                self.listId = []
+                self.listTemps = []
 
                 for i in range(len(path)):
-                    lats, lons = gui.toutEnUn(path[i], startSecond, endSecond)
-                    listLatitudes.append(lats)
-                    listLongitudes.append(lons)
+                    lats, lons, identifiant, temps = gui.toutEnUn(path[i], startSecond, endSecond)
+                    self.listLatitudes.append(lats)
+                    self.listLongitudes.append(lons)
+                    self.listId.append(identifiant)
+                    self.listTemps.append(temps)
 
                 if self.dejaVu == 0:
-                    monLon = sum(listLongitudes[0])/len(listLongitudes[0])
-                    monLat = sum(listLatitudes[0])/len(listLatitudes[0])
+                    monLon = sum(self.listLongitudes[0])/len(self.listLongitudes[0])
+                    monLat = sum(self.listLatitudes[0])/len(self.listLatitudes[0])
                     self.dejaVu = 1
 
+                    # Mise en place de la carte au premier passage/clic sur "file(s)"
                     self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution='c', ax=self.axes)
                     self.m.drawcoastlines()
                     #self.m.drawmapboundary(fill_color='aqua')
                     self.m.fillcontinents(color='coral',lake_color='aqua')
-                    
+
                     self.m.drawmeridians(np.arange(10,351,30), labels=[0,1,1,0])
                     self.m.drawparallels(np.arange(0,90,10), labels=[1,0,0,1])
 
-                for i in range(len(listLatitudes)):
-                    x,y = self.m(listLongitudes[i],listLatitudes[i])
+                for i in range(len(self.listLatitudes)):
+                    x,y = self.m(self.listLongitudes[i],self.listLatitudes[i])
                     self.m.plot(x,y,'-')
 
                 self.canvas.draw()
 
         self.fileButton.clicked.connect(buttonFct)
-        
+
         # Bouton sauvegarder
         self.saveButton = QtGui.QPushButton(GroupBox)
         self.saveButton.setGeometry(QtCore.QRect(0, 60, 115, 32))
         self.saveButton.setObjectName(_fromUtf8("saveButton"))
-        
+
+        def sauvegarder():
+            # servira à creer les .res (fonction à mettre dans fctInterface.py
+            gui.saveRes(self.listId, self.listLongitudes, self.listLatitudes, self.listTemps)
+
+        self.saveButton.clicked.connect(sauvegarder)
+
         # label end
         self.labelEnd = QtGui.QLabel(GroupBox)
         self.labelEnd.setGeometry(QtCore.QRect(500, 20, 59, 16))
         self.labelEnd.setObjectName(_fromUtf8("labelEnd"))
-        
+
         # label start
         self.labelStart = QtGui.QLabel(GroupBox)
         self.labelStart.setGeometry(QtCore.QRect(260, 20, 59, 16))

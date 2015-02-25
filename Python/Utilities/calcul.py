@@ -68,12 +68,14 @@ def calculVitesses(latitudes, longitudes, temps):
 
 def convertSecondToDatetime(totalSecond):
     """
-        Cette fonction prend en entrée le résultat d'un .total_seconds() et ressort un datetime.
+        Cette fonction prend en entrée le résultat d'un .total_seconds() et ressort un dico au format "date" du format commun.
     """
     import datetime as dt
 
     ref = dt.datetime(2000,1,1,0,0,0)
-    return (ref + dt.timedelta(seconds=totalSecond))
+    date = ref + dt.timedelta(seconds=totalSecond)
+
+    return {"annee":date.year, "mois":date.month, "jour":date.day, "heure":date.hour, "min":date.minute, "sec":date.second}
 
 def convertDateToSecond(dictDate):
 	"""
