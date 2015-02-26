@@ -5,7 +5,7 @@ import numpy as np
 
 def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime):
 
-    cpt = 1
+    cpt = 0
     temps1 = convertArrayOfTime(recuperation(estim1,'date'))
     temps1 = map(int,temps1)
     temps2 = convertArrayOfTime(recuperation(estim2,'date'))    

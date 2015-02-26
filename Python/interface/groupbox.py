@@ -53,17 +53,26 @@ class Ui_GroupBox(object):
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
-        # date&time start
+        # choix filtrage date
+        # debut
         self.dateTimeEditStart = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditStart.setGeometry(QtCore.QRect(210, 40, 194, 24))
+        self.dateTimeEditStart.setGeometry(QtCore.QRect(210, 20, 191, 24))
         self.dateTimeEditStart.setObjectName(_fromUtf8("dateTimeEditStart"))
-
-        # date&time end
+        # fin
         self.dateTimeEditEnd = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditEnd.setGeometry(QtCore.QRect(440, 40, 194, 24))
+        self.dateTimeEditEnd.setGeometry(QtCore.QRect(210, 70, 191, 24))
         self.dateTimeEditEnd.setObjectName(_fromUtf8("dateTimeEditEnd"))
 
-        # Bouton choix fichier
+        # choix filtre
+        self.comboBox = QtGui.QComboBox(GroupBox)
+        self.comboBox.setGeometry(QtCore.QRect(470, 40, 141, 26))
+        self.comboBox.setObjectName(_fromUtf8("comboBox"))
+
+        self.comboBox.insertItem(0,"Epanechnikov")
+        self.comboBox.insertItem(1,"Gaussian")
+        self.comboBox.insertItem(2,"Kalman")
+
+        # Bouton file
         self.fileButton = QtGui.QPushButton(GroupBox)
         self.fileButton.setGeometry(QtCore.QRect(0, 20, 115, 32))
         self.fileButton.setObjectName(_fromUtf8("fileButton"))
@@ -89,7 +98,7 @@ class Ui_GroupBox(object):
                 self.listTemps = []
 
                 for i in range(len(path)):
-                    lats, lons, identifiant, temps = gui.toutEnUn(path[i], startSecond, endSecond)
+                    lats, lons, identifiant, temps = gui.toutEnUn(path[i], startSecond, endSecond, self.comboBox.currentIndex())
                     self.listLatitudes.append(lats)
                     self.listLongitudes.append(lons)
                     self.listId.append(identifiant)
@@ -117,9 +126,9 @@ class Ui_GroupBox(object):
 
         self.fileButton.clicked.connect(buttonFct)
 
-        # Bouton sauvegarder
+        # sauvegarde
         self.saveButton = QtGui.QPushButton(GroupBox)
-        self.saveButton.setGeometry(QtCore.QRect(0, 60, 115, 32))
+        self.saveButton.setGeometry(QtCore.QRect(0, 70, 115, 32))
         self.saveButton.setObjectName(_fromUtf8("saveButton"))
 
         def sauvegarder():
@@ -128,14 +137,12 @@ class Ui_GroupBox(object):
 
         self.saveButton.clicked.connect(sauvegarder)
 
-        # label end
+        # labels
         self.labelEnd = QtGui.QLabel(GroupBox)
-        self.labelEnd.setGeometry(QtCore.QRect(500, 20, 59, 16))
+        self.labelEnd.setGeometry(QtCore.QRect(170, 70, 59, 16))
         self.labelEnd.setObjectName(_fromUtf8("labelEnd"))
-
-        # label start
         self.labelStart = QtGui.QLabel(GroupBox)
-        self.labelStart.setGeometry(QtCore.QRect(260, 20, 59, 16))
+        self.labelStart.setGeometry(QtCore.QRect(150, 20, 59, 16))
         self.labelStart.setAlignment(QtCore.Qt.AlignCenter)
         self.labelStart.setObjectName(_fromUtf8("labelStart"))
 

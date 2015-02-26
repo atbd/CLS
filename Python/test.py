@@ -1,12 +1,14 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*
 
+import Utilities.estimation2 as est
 import Utilities.calcul as ut
 import Utilities.suppVitesseExcess as sup
 import Utilities.carte as mp
 import RWFormats.lecture as rd
 import RWFormats.nettoyage as laver
 import RWFormats.recuperation as recup
+import Utilities.comblerTrous as combl
 
 #fichierTest1 = open("fichierTest1.txt", "w")
 #fichierTest2 = open("fichierTest2.txt", "w")
@@ -17,36 +19,43 @@ import RWFormats.recuperation as recup
 # import numpy as np
 
 #path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
-path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
+#path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 #path = "/Users/Benoit/Documents/GitHub/CLS/tortues/DIAG/10248.DIAG"
 
-#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
+path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 #path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 #path2 = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST1.DIAG"
 #path = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST - Copie.DIAG"
 liste = rd.lectureToutDiag(path)
-print(len(liste))
-"""
 liste = laver.monsieurPropre(liste, "lat")
 liste = ut.correctionChoixLoc(liste)
 liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
+#liste = ut.regressionLineaire(2, liste, 0.02, recup.recuperation)
+
+#lats = map(float, recup.recuperation(liste, "lat"))
+#lons = map(float, recup.recuperation(liste, "lon"))
+
+liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
+
 
 lat = map(float, recup.recuperation(liste,'lat'))
 lon = map(float, recup.recuperation(liste,'lon'))
-tps = ut.convertArrayOfTime(recup.recuperation(liste,"date"))
-vit = ut.calculVitesses(lat,lon,tps)
+#tps = ut.convertArrayOfTime(recup.recuperation(liste,"date"))
+#vit = ut.calculVitesses(lat,lon,tps)
 
 #res = ut.kalman(lat, lon, vit)
 #print(res[2][0])
 #lats = [res[i][0] for i in range(len(res))]
 #lons = [res[i][1] for i in range(len(res))]
 
-liste2 = rd.lectureToutDiag(path2)
-lats = map(float, recup.recuperation(liste2, "lat"))
-lons = map(float, recup.recuperation(liste2, "lon"))
+#liste2 = rd.lectureToutDiag(path2)
+#lats = map(float, recup.recuperation(liste2, "lat"))
+#lons = map(float, recup.recuperation(liste2, "lon"))
 
-mp.tracerCarte([lon,lons],[lat,lats],["r","b"])
-"""
+#mp.tracerCarte([lon[2:], lons],[lat[2:], lats],["r","b"])
+
+print(lat)
+mp.tracerCarte([lon],[lat],["r"])
 """
 for j in range(len(liste)):
 	fichierTest1.write(str(lat[j]))
@@ -58,8 +67,8 @@ fichierTest1.close()
 fichierTest2.close()
 """
 
-liste = ut.regressionLineaire(2, liste, 0.02, recup.recuperation)
-print(len(liste))
+#liste = ut.regressionLineaire(2, liste, 0.02, recup.recuperation)
+#print(len(liste))
 # latitudes = map(float, recup.recuperation(liste, "lat"))
 # longitudes = map(float, recup.recuperation(liste, "lon"))
 # #print(latitudes)

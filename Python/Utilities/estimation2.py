@@ -31,17 +31,18 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 	deuxiemeTemps = ecartCumule[1]
 	avantDernierTemps = ecartCumule[len(liste)-2]
 	ecartCumule=map(int,ecartCumule)
-	
+
 
 
 	repartitionPtOk = 0
 
-	cpteurEstim = cpteurEstim+1
 
 	estim[cpteurEstim][0] = temps[0]
 	estim[cpteurEstim][1] = lat[0]
 	estim[cpteurEstim][2] = lon[0]
 	estim[cpteurEstim][3] = 0
+
+
 
 	pasEstim = 0
 
@@ -53,14 +54,14 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 			cpteurPtGauche=0
 			cpteurPtDroite=0
 			cpteurLC=0
-			
+
 
 			for j in range(len(liste)):
 
 				if (ecartCumule[j]>(i-tailleDemiFen) and ecartCumule[j]<(i+tailleDemiFen)):
 
 					cpteurPt = cpteurPt + 1
-					
+
 
 					K[cpteurPt] = kernel(1,i-ecartCumule[j],tailleDemiFen)
 					X[cpteurPt][0] = 1
@@ -68,7 +69,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 					YLat[cpteurPt] = lat[j]
 					YLon[cpteurPt] = lon[j]
 
-					cpteurLC = LC[j] 
+					cpteurLC = LC[j]
 
 					if ((ecartCumule[j]-i)>0):
 
@@ -132,10 +133,10 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 		repartitionPtOk = 0
 		pasEstim = 0
 
-		
+
 		nouvListe=[]
 
-		
+
 
 
 	for k in range(cpteurEstim):
@@ -144,36 +145,36 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 		dico["lat"] = estim[k][1]
 		dico["lon"] = estim[k][2]
 		nouvListe.append(dico)
-		
-		
-	#print(dico["temps"])	
+
+
+	#print(dico["temps"])
 
 	#print(nouvListe)
-		
+
 
 	nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
 
 	return nouvListe
 
 
-			
-
-			
 
 
 
-		
 
 
 
-					
-					
 
 
-			
 
 
-			
+
+
+
+
+
+
+
+
 
 
 
