@@ -19,10 +19,10 @@ import Utilities.comblerTrous as combl
 # import numpy as np
 
 #path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/25532.DIAG"
-#path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
+path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 #path = "/Users/Benoit/Documents/GitHub/CLS/tortues/DIAG/10248.DIAG"
 
-path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
+#path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 #path ="/home/jcombani/3A/Projet long/tortues/DIAG/10248.DIAG"
 #path2 = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST1.DIAG"
 #path = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST - Copie.DIAG"
@@ -40,21 +40,21 @@ liste = laver.monsieurPropre(liste, "lat")
 
 lat = map(float, recup.recuperation(liste,'lat'))
 lon = map(float, recup.recuperation(liste,'lon'))
-#tps = ut.convertArrayOfTime(recup.recuperation(liste,"date"))
-#vit = ut.calculVitesses(lat,lon,tps)
+tps = ut.convertArrayOfTime(recup.recuperation(liste,"date"))
+vit = ut.calculVitesses(lat,lon,tps)
 
-#res = ut.kalman(lat, lon, vit)
+res = ut.kalman(lat, lon, vit)
 #print(res[2][0])
-#lats = [res[i][0] for i in range(len(res))]
-#lons = [res[i][1] for i in range(len(res))]
+lats = [res[i][0] for i in range(len(res))]
+lons = [res[i][1] for i in range(len(res))]
 
 #liste2 = rd.lectureToutDiag(path2)
 #lats = map(float, recup.recuperation(liste2, "lat"))
 #lons = map(float, recup.recuperation(liste2, "lon"))
 
-#mp.tracerCarte([lon[2:], lons],[lat[2:], lats],["r","b"])
+mp.tracerCarte([lon[2:], lons],[lat[2:], lats],["r","b"])
 
-print(lat)
+#print(lat)
 mp.tracerCarte([lon],[lat],["r"])
 """
 for j in range(len(liste)):
