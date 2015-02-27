@@ -34,11 +34,10 @@ def filtrageDate(debut, fin, listeAChanger):
 
     return liste
 
-def toutEnUn(path, debut=0, fin=0, choixFiltre=0):
+def lectureListesEtId(path):
     """
-        Servira à tracer la carte sur la GUI.
+        Fait la lecture à partir du path puis renvoi la liste de dico à la gui + identifiant.
     """
-
     if len(path) != 0:
         pathSplit = path.split(".")
         Format = pathSplit[-1].toUpper()
@@ -46,35 +45,37 @@ def toutEnUn(path, debut=0, fin=0, choixFiltre=0):
 
         if Format == "DIAG":
             liste = rd.lectureToutDiag(path)
-
-            liste = filtrageDate(debut, fin, liste)
-
             liste = laver.monsieurPropre(liste, "lat")
             liste = ut.correctionChoixLoc(liste)
 
         elif Format == "DS":
             liste = rd.lectureToutDS(path)
-            liste = filtrageDate(debut, fin, liste)
 
         elif Format == "CSV":
             liste = rd.lectureUnCSV(path)
-            liste = filtrageDate(debut, fin, liste)
-
             liste = ut.correctionChoixLoc(liste)
 
         else:
             print("Format de fichier non supporté.")
 
-        liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3) # marche pas avec CSV: pas de LC
-        liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
-        liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
+    return liste, identifiant
 
-        latitudes = map(float, recup.recuperation(liste, "lat"))
-        longitudes = map(float, recup.recuperation(liste, "lon"))
-        #temps = [ut.convertDateToSecond(i) for i in recup.recuperation(liste,"date")]
-        temps = recup.recuperation(liste,"date")
 
-    return latitudes, longitudes, str(identifiant), temps
+def toutEnUn(listeATraiter, debut=0, fin=0, choixFiltre=0):
+    """
+        Servira à tracer la carte sur la GUI.
+    """
+    liste = filtrageDate(debut, fin, listeATraiter)
+
+    liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3) # marche pas avec CSV: pas de LC
+    liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
+    liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
+
+    latitudes = map(float, recup.recuperation(liste, "lat"))
+    longitudes = map(float, recup.recuperation(liste, "lon"))
+    temps = recup.recuperation(liste,"date")
+
+    return latitudes, longitudes, temps
 
 def saveRes(filesName, listLong, listLat, temps):
     """

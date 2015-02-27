@@ -22,7 +22,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 	X=np.zeros((len(liste),2))
 	YLat=np.zeros(len(liste))
 	YLon=np.zeros(len(liste))
-	print(len(X))
+	#print(len(X))
 
 
 	for p in range(1,len(liste)):
