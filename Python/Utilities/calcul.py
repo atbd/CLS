@@ -205,21 +205,21 @@ estimée est trop éloignée de la position mesurée
 		p = []
 
 		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
-			k.append(kernel(choix,float(f(formatCommun, "lat")[i]) - float(f(formatCommun, "lat")[i+l-2]), h))
-			p.append(kernel(choix,float(f(formatCommun, "lon")[i]) - float(f(formatCommun, "lon")[i+l-2]), h))
-			new_lat = new_lat + k[l]*float(f(formatCommun, "lat")[i+l-2])
-			new_lon = new_lon + p[l]*float(f(formatCommun, "lon")[i+l-2])
+			k.append(kernel(choix,float(tpm["lat"][i]) - float(tpm["lat"][i+l-2]), h))
+			p.append(kernel(choix,float(tpm["lon"][i]) - float(tpm["lon"][i+l-2]), h))
+			new_lat = new_lat + k[l]*float(tpm["lat"][i+l-2])
+			new_lon = new_lon + p[l]*float(tpm["lon"][i+l-2])
 		new_lat = new_lat/sum(k)
 		lat_reg.append(new_lat)
 		new_lon = new_lon/sum(p)
 		lon_reg.append(new_lon)
 
 		tmp={}
-		if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			tmp["lat"]=tpm["lat"][i+2])
-			tmp["lon"]=tpm["lon"][i+2])
-			tmp["date"]=tpm["date"][i+2])
-			tmp["LC"]=tpm["LC"][i+2])
+		if sqrt((float(tpm["lat"][i])-lat_reg[i-2])**2 + (float(tpm["lon"][i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+			tmp["lat"]=tpm["lat"][i+2]
+			tmp["lon"]=tpm["lon"][i+2]
+			tmp["date"]=tpm["date"][i+2]
+			tmp["LC"]=tpm["LC"][i+2]
 			donneeRegressee.append(tmp)
 
 	for i in range(2): #on rajoute les 2 dernières positions
