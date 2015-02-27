@@ -175,9 +175,6 @@ estimée est trop éloignée de la position mesurée
 	"""
 	from math import pi, sqrt, exp
 	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
-	for i in range(len(formatCommun))[1:]:
-		h = max(h,float(formatCommun[i]['lon'])-float(formatCommun[i-2]['lon']),float(formatCommun[i]['lat'])-float(formatCommun[i-2]['lat']))
-
 	donneeRegressee = []
 	lat_clean = []
 	lon_clean = []
@@ -190,6 +187,10 @@ estimée est trop éloignée de la position mesurée
 	tpm["lon"]=f(formatCommun, "lon")
 	tpm["date"]=f(formatCommun, "date")
 	tpm["LC"]=f(formatCommun, "LC")
+	
+	for i in range(len(formatCommun))[1:]:
+		h = max(h,float(tpm["lon"][i])-float(tpm["lon"][i-2]),float(tpm["lat"][i])-float(tpm["lat"][i-2]))
+
 	for i in range(2): #on rajoute les 2 premières positions
 		tp={}
 		tp["lat"]=tpm["lat"][i]
