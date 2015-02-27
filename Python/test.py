@@ -28,14 +28,14 @@ path ="/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/10248.DIAG"
 #path = "/Users/atnd/Documents/ENSEEIHT/ProjetLong/CLS/tortues/DIAG/TEST - Copie.DIAG"
 liste = rd.lectureToutDiag(path)
 liste = laver.monsieurPropre(liste, "lat")
-liste = ut.correctionChoixLoc(liste)
-liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
+#liste = ut.correctionChoixLoc(liste)
+#liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3)
 #liste = ut.regressionLineaire(2, liste, 0.02, recup.recuperation)
 
 #lats = map(float, recup.recuperation(liste, "lat"))
 #lons = map(float, recup.recuperation(liste, "lon"))
 
-liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
+#liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
 
 
 lat = map(float, recup.recuperation(liste,'lat'))
