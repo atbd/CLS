@@ -68,7 +68,12 @@ def toutEnUn(listeATraiter, debut=0, fin=0, choixFiltre=0):
     liste = filtrageDate(debut, fin, listeATraiter)
 
     liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3) # marche pas avec CSV: pas de LC
-    liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
+    
+    if choixFiltre == 0 or choixFiltre == 1: # gauss ou epa
+        liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
+    elif choixFiltre == 2: # kalman
+        print("en cours")
+    
     liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
 
     latitudes = map(float, recup.recuperation(liste, "lat"))
@@ -82,10 +87,12 @@ def saveRes(filesName, listLong, listLat, temps):
         Créera un fichier .res pour chaque tracé sur la carte.
     """
     for i in xrange(len(filesName)):
+        vit = ut.calculVitesses(listLat[i], listLong[i], ut.convertArrayOfTime(temps[i]))
+
         with open("res/" + filesName[i] + ".res", "w") as f:
-            f.write("Day    Time    Lon    Lat\n") # voir quel autre section rajouter (vitesse?)
-            for x in xrange(len(listLong[i])):
-                f.write("%s.%s.%s   %s:%s:%s    %s    %s\n" % (temps[i][x]["jour"], temps[i][x]["mois"], temps[i][x]["annee"], temps[i][x]["heure"], temps[i][x]["min"], temps[i][x]["sec"], listLong[i][x], listLat[i][x]))
+            f.write("Day    Time    Lon    Lat    Vit (m/s)\n")
+            for x in xrange(len(listLong[i]) - 1):
+                f.write("%s.%s.%s   %s:%s:%s    %s    %s    %s\n" % (temps[i][x]["jour"], temps[i][x]["mois"], temps[i][x]["annee"], temps[i][x]["heure"], temps[i][x]["min"], temps[i][x]["sec"], listLong[i][x], listLat[i][x], vit[x]))
 
 
 
