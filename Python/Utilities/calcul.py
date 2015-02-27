@@ -185,14 +185,18 @@ estimée est trop éloignée de la position mesurée
 	lc_clean = []
 	lat_reg = []
 	lon_reg = []
-
+	tpm={}
+	tpm["lat"]=f(formatCommun, "lat")
+	tpm["lon"]=f(formatCommun, "lon")
+	tpm["date"]=f(formatCommun, "date")
+	tpm["LC"]=f(formatCommun, "LC")
 	for i in range(2): #on rajoute les 2 premières positions
-		tpm={}
-		tpm["lat"]=f(formatCommun, "lat")[i]
-		tpm["lon"]=f(formatCommun, "lon")[i]
-		tpm["date"]=f(formatCommun, "date")[i]
-		tpm["LC"]=f(formatCommun, "LC")[i]
-		donneeRegressee.append(tpm)
+		tp={}
+		tp["lat"]=tpm["lat"][i]
+		tp["lon"]=tpm["lon"][i]
+		tp["date"]=tpm["date"][i]
+		tp["LC"]=tpm["LC"][i]
+		donneeRegressee.append(tp)
 
 	for i in range(len(f(formatCommun, "lat"))-2)[2:]: #on itère sur tous les points de la courbe sauf les 2 premiers et les derniers (à cause de la taille de la fenêtre)
 		new_lat = 0.
@@ -212,20 +216,21 @@ estimée est trop éloignée de la position mesurée
 
 		tmp={}
 		if sqrt((float(f(formatCommun, "lat")[i])-lat_reg[i-2])**2 + (float(f(formatCommun, "lon")[i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			tmp["lat"]=(f(formatCommun, "lat")[i+2])
-			tmp["lon"]=(f(formatCommun, "lon")[i+2])
-			tmp["date"]=(f(formatCommun, "date")[i+2])
-			tmp["LC"]=(f(formatCommun, "LC")[i+2])
+			tmp["lat"]=tpm["lat"][i+2])
+			tmp["lon"]=tpm["lon"][i+2])
+			tmp["date"]=tpm["date"][i+2])
+			tmp["LC"]=tpm["LC"][i+2])
 			donneeRegressee.append(tmp)
 
 	for i in range(2): #on rajoute les 2 dernières positions
 		m=2-i
-		tpm={}
-		tpm["lat"]=f(formatCommun, "lat")[-m]
-		tpm["lon"]=f(formatCommun, "lon")[-m]
-		tpm["date"]=f(formatCommun, "date")[-m]
-		tpm["LC"]=f(formatCommun, "LC")[-m]
-		donneeRegressee.append(tpm)
+		tp={}
+		tp["lat"]=tpm["lat"][-m]
+		tp["lon"]=tpm["lon"][-m]
+		tp["date"]=tpm["date"][-m]
+		tp["LC"]=tpm["LC"][-m]
+		donneeRegressee.append(tp)	
+	
 
 	return donneeRegressee
 
