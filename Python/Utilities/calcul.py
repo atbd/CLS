@@ -17,7 +17,7 @@ def calculDistances(latitudes, longitudes):
 		Retourne un tableau de toutes les distances (en km)
 	"""
 
-	return [calculUneDistance(latitudes[i], latitudes[i+1], longitudes[i], longitudes[i+1]) for i in range(len(latitudes)-1)]
+	return [calculUneDistance(latitudes[i], latitudes[i+1], longitudes[i], longitudes[i+1]) for i in xrange(len(latitudes)-1)]
 
 
 def calculUneDistance(latitude1, latitude2, longitude1, longitude2):
@@ -56,7 +56,7 @@ def calculVitesses(latitudes, longitudes, temps):
 
 	vit = []
 
-	for i in range(len(deltaTemps)):
+	for i in xrange(len(deltaTemps)):
 
 		if deltaTemps[i] != 0:
 			vit.append(1000*dist[i]/deltaTemps[i])
@@ -97,7 +97,7 @@ def convertArrayOfTime(arrayOfTime):
 		D'une liste de dictionnaire "dictDate" donnera une liste de temps en secondes (boucle de convertDateToSecond)
 	"""
 
-	return [convertDateToSecond(arrayOfTime[i]) for i in range(len(arrayOfTime))]
+	return [convertDateToSecond(arrayOfTime[i]) for i in xrange(len(arrayOfTime))]
 
 
 def kernel(choix,valeur,h):
@@ -141,7 +141,7 @@ def correctionChoixLoc(formatCommun):
 	latPr = float(donneeCorrigee[0]["lat"])
 	lonPr = float(donneeCorrigee[0]["lon"])
 
-	for i in range(len(formatCommun)-1):
+	for i in xrange(len(formatCommun)-1):
 
 		# suivantes pour calculer les distances
 		lat = float(donneeCorrigee[i+1]["lat"])
@@ -176,62 +176,35 @@ estimée est trop éloignée de la position mesurée
 	from math import pi, sqrt, exp
 	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
 	donneeRegressee = []
-	lat_clean = []
-	lon_clean = []
-	date_clean = []
-	lc_clean = []
 	lat_reg = []
 	lon_reg = []
-	tpm={}
-	tpm["lat"]=f(formatCommun, "lat")
-	tpm["lon"]=f(formatCommun, "lon")
-	tpm["date"]=f(formatCommun, "date")
-	tpm["LC"]=f(formatCommun, "LC")
+	tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
+	h = max([j-i for i,j in zip(tpm["lon"][:-2], tpm["lon"][2:])] + [j-i for i,j in zip(tpm["lat"][:-2], tpm["lat"][2:])])
 	
-	for i in range(len(formatCommun))[1:]:
-		h = max(h,float(tpm["lon"][i])-float(tpm["lon"][i-2]),float(tpm["lat"][i])-float(tpm["lat"][i-2]))
+	donneeRegressee.append(formatCommun[0])
+	donneeRegressee.append(formatCommun[1])
 
-	for i in range(2): #on rajoute les 2 premières positions
-		tp={}
-		tp["lat"]=tpm["lat"][i]
-		tp["lon"]=tpm["lon"][i]
-		tp["date"]=tpm["date"][i]
-		tp["LC"]=tpm["LC"][i]
-		donneeRegressee.append(tp)
-
-	for i in range(len(f(formatCommun, "lat"))-2)[2:]: #on itère sur tous les points de la courbe sauf les 2 premiers et les derniers (à cause de la taille de la fenêtre)
+	for i in xrange(2, len(f(formatCommun, "lat"))-2): #on itère sur tous les points de la courbe sauf les 2 premiers et les derniers (à cause de la taille de la fenêtre)
 		new_lat = 0.
 		new_lon = 0.
 		k = []
 		p = []
 
-		for l in range(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
-			k.append(kernel(choix,float(tpm["lat"][i]) - float(tpm["lat"][i+l-2]), h))
-			p.append(kernel(choix,float(tpm["lon"][i]) - float(tpm["lon"][i+l-2]), h))
-			new_lat = new_lat + k[l]*float(tpm["lat"][i+l-2])
-			new_lon = new_lon + p[l]*float(tpm["lon"][i+l-2])
-		new_lat = new_lat/sum(k)
-		lat_reg.append(new_lat)
-		new_lon = new_lon/sum(p)
-		lon_reg.append(new_lon)
+		for l in xrange(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
+			k.append(kernel(choix,tpm["lat"][i] - tpm["lat"][i+l-2], h))
+			p.append(kernel(choix,tpm["lon"][i] - tpm["lon"][i+l-2], h))
+			new_lat = new_lat + k[l]*tpm["lat"][i+l-2]
+			new_lon = new_lon + p[l]*tpm["lon"][i+l-2]
 
-		tmp={}
-		if sqrt((float(tpm["lat"][i])-lat_reg[i-2])**2 + (float(tpm["lon"][i])-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
-			tmp["lat"]=tpm["lat"][i+2]
-			tmp["lon"]=tpm["lon"][i+2]
-			tmp["date"]=tpm["date"][i+2]
-			tmp["LC"]=tpm["LC"][i+2]
+		lat_reg.append(new_lat/sum(k))
+		lon_reg.append(new_lon/sum(p))
+
+		if sqrt((tpm["lat"][i]-lat_reg[i-2])**2 + (tpm["lon"][i]-lon_reg[i-2])**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
+			tmp={"lat":tpm["lat"][i+2], "lon":tpm["lon"][i+2], "date":tpm["date"][i+2], "LC":tpm["LC"][i+2]}
 			donneeRegressee.append(tmp)
 
-	for i in range(2): #on rajoute les 2 dernières positions
-		m=2-i
-		tp={}
-		tp["lat"]=tpm["lat"][-m]
-		tp["lon"]=tpm["lon"][-m]
-		tp["date"]=tpm["date"][-m]
-		tp["LC"]=tpm["LC"][-m]
-		donneeRegressee.append(tp)	
-	
+	donneeRegressee.append(formatCommun[-2])
+	donneeRegressee.append(formatCommun[-1])
 
 	return donneeRegressee
 
@@ -242,7 +215,7 @@ def kalman(formatCommun ,f ,convertArrayOfTime, calculVitesses):
 	# recup temps
 	temps = convertArrayOfTime(f(formatCommun, "date"))
 
-	#for i in range(len(formatCommun)):
+	#for i in xrange(len(formatCommun)):
 	lat=map(float,f(formatCommun, "lat"))
 	lon=map(float,f(formatCommun, "lon"))
 
@@ -253,7 +226,7 @@ def kalman(formatCommun ,f ,convertArrayOfTime, calculVitesses):
 	measures = zip(lat,lon,vit)
 	kf = kf.em(measures)
 	(smoothed_state_means, smoothed_state_covariances) = kf.smooth(measures)
-	for i in range(len(formatCommun) - 1):
+	for i in xrange(len(formatCommun) - 1):
 		formatCommun[i]["lat"]=smoothed_state_means[i][0]
 		formatCommun[i]["lon"]=smoothed_state_means[i][1]
 	
