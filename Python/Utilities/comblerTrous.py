@@ -1,5 +1,5 @@
-# -*-coding:Latin-1 -*
-# -*-coding:Latin-1 -*
+# -*- coding: utf-8 -*-
+
 import os # On importe le module os
 import numpy as np
 
@@ -96,6 +96,7 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
             matr[cpt][0] = temps2[i]
             matr[cpt][1] = latEstim2[i]
             matr[cpt][2] = lonEstim2[i]
+
     if (temps1[len(estim1)-1] - temps2[len(estim2)-1])>pasEchantillonnage:
 
         for j in range(pasEchantillonnage,temps1[len(estim1)-1] - temps2[len(estim2)-1],pasEchantillonnage):
