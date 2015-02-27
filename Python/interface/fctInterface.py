@@ -72,7 +72,7 @@ def toutEnUn(listeATraiter, debut=0, fin=0, choixFiltre=0):
     if choixFiltre == 0 or choixFiltre == 1: # gauss ou epa
         liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
     elif choixFiltre == 2: # kalman
-        print("en cours")
+        liste = ut.kalman(liste, recup.recuperation, ut.convertArrayOfTime, ut.calculVitesses)
     
     liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
 

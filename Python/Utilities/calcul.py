@@ -229,22 +229,25 @@ estimée est trop éloignée de la position mesurée
 
 	return donneeRegressee
 
-def kalman(formatCommun,vit,f):
+def kalman(formatCommun ,f ,convertArrayOfTime, calculVitesses):
 	import numpy as np
-	#from scipy import *
-	#from Sphinx import *
-	#from numpydoc import *
-	#from nose import *
 	from pykalman import KalmanFilter
-	for i in range(len(formatCommun)):
-		lat=f(formatCommun, "lat")[i]
-		lon=f(formatCommun, "lon")[i]
+
+	# recup temps
+	temps = convertArrayOfTime(f(formatCommun, "date"))
+
+	#for i in range(len(formatCommun)):
+	lat=map(float,f(formatCommun, "lat"))
+	lon=map(float,f(formatCommun, "lon"))
+
+	# calcul vit
+	vit = calculVitesses(lat, lon, temps)
 
 	kf = KalmanFilter(initial_state_mean=[5,-50,0], n_dim_obs=3)
 	measures = zip(lat,lon,vit)
 	kf = kf.em(measures)
 	(smoothed_state_means, smoothed_state_covariances) = kf.smooth(measures)
-	for i in range(len(formatCommun)):
+	for i in range(len(formatCommun) - 1):
 		formatCommun[i]["lat"]=smoothed_state_means[i][0]
 		formatCommun[i]["lon"]=smoothed_state_means[i][1]
 	
