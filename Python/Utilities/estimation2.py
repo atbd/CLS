@@ -36,13 +36,14 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 
 	repartitionPtOk = 0
 
-	cpteurEstim = cpteurEstim+1
+	
 
 	estim[cpteurEstim][0] = temps[0]
 	estim[cpteurEstim][1] = lat[0]
 	estim[cpteurEstim][2] = lon[0]
 	estim[cpteurEstim][3] = 0
 
+	
 	pasEstim = 0
 
 	for i in range(int(PasEchantillonnage),ecartCumule[len(liste)-1],int(PasEchantillonnage)):
@@ -111,6 +112,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 		if pasEstim==0:
 
 			cpteurEstim = cpteurEstim + 1
+			
 
 			Ka = np.diag(K)
 
@@ -133,7 +135,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 		pasEstim = 0
 
 		
-		nouvListe=[]
+	nouvListe=[]
 
 		
 
@@ -142,13 +144,14 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 		dico={}
 		dico["date"] = convertSecondToDatetime(estim[k][0])
 		dico["lat"] = estim[k][1]
+		print(estim[1][1])
 		dico["lon"] = estim[k][2]
 		nouvListe.append(dico)
 		
 		
-	#print(dico["temps"])	
+		
 
-	#print(nouvListe)
+	
 		
 
 	nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
