@@ -125,10 +125,8 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
         repartitionPtOk = 0
         pasEstim = 0
 
-
     nouvListe = [{"date":convertSecondToDatetime(estim[k][0]), "lat":estim[k][1], "lon":estim[k][2]} for k in xrange(len(estim))]
     nouvListe = [w for w in nouvListe if int(w["lat"]) != 0]
-
     nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
 
     return nouvListe

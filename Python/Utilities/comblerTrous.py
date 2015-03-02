@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
 
-import os # On importe le module os
 import numpy as np
 
 def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime):
 
     cpt = 0
-    nouvListe = []
-    temps1 = convertArrayOfTime(recuperation(estim1,'date'))
-    temps1 = map(int,temps1)
-    temps2 = convertArrayOfTime(recuperation(estim2,'date'))   
-    temps2 = map(int,temps2)
+    temps1 = map(int, convertArrayOfTime(recuperation(estim1,'date')))
+    temps2 = map(int,convertArrayOfTime(recuperation(estim2,'date')))
     temps1 = map(int,convertArrayOfTime(recuperation(estim1,'date')))
     temps2 = map(int,convertArrayOfTime(recuperation(estim2,'date')))    
     classe = recuperation(estim1,'LC')
@@ -118,6 +114,7 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
                     lon2 = lonEstim1[k]
                     tps2 = temps1[k]
                     break
+
             aLat = (lat2 - lat1) / (tps2 - tps1)
             bLat = (lat1 * tps2 - lat2 * tps1) / (tps2 - tps1)  
 
@@ -131,22 +128,8 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
             matr[cpt][0]=tpsEsti
             matr[cpt][1]=estiLat
             matr[cpt][2]=estiLon
-
-
-    """
-    for i in xrange(cpt):
-
-        dico ={}
-        dico["date"]=convertSecondToDatetime(matr[i][0])
-        dico["lat"]=matr[i][1]
-        dico["lon"]=matr[i][2]
-        nouveListe.append(dico)
-    """
     
-    nouvListe = [{"date":convertSecondToDatetime(matr[i][0]), "lat":matr[i][1], "lon":matr[i][2]} for i in xrange(cpt)]
-    #nouvListe = [w for w in nouvListe if int(w["lat"]) != 0]
-    
-    return nouvListe   
+    return [{"date":convertSecondToDatetime(matr[i][0]), "lat":matr[i][1], "lon":matr[i][2]} for i in xrange(cpt)]
             
 
 
