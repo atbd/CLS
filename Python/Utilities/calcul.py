@@ -183,26 +183,25 @@ estimée est trop éloignée de la position mesurée
 	lat_reg = []
 	lon_reg = []
 
-	for i in range(len(formatCommun)):
-		if tpm["LC"][i]=="A":
-			tpm["LOC"]=1
-		elif tpm["LC"][i]=="B":
-			tpm["LOC"]=1
-		elif tpm["LC"][i]=="Z":
-			tpm["LOC"]=1
-		elif tpm["LC"][i]=="1":
-			tpm["LOC"]=2
-		elif tpm["LC"][i]=="2":
-			tpm["LOC"]=3
-		elif tpm["LC"][i]=="3":
-			tpm["LOC"]=7
-		elif tpm["LC"][i]=="0":
-			tpm["LOC"]=1.1
-		else:
-			tpm["LOC"]=0
-
-    tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
+	tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
     h = max([j-i for i,j in zip(tpm["lon"][:-2], tpm["lon"][2:])] + [j-i for i,j in zip(tpm["lat"][:-2], tpm["lat"][2:])])
+	for i in range(len(formatCommun)):
+			if tpm["LC"][i]=="A":
+				tpm["LOC"]=1
+			elif tpm["LC"][i]=="B":
+				tpm["LOC"]=1
+			elif tpm["LC"][i]=="Z":
+				tpm["LOC"]=1
+			elif tpm["LC"][i]=="1":
+				tpm["LOC"]=2
+			elif tpm["LC"][i]=="2":
+				tpm["LOC"]=3
+			elif tpm["LC"][i]=="3":
+				tpm["LOC"]=7
+			elif tpm["LC"][i]=="0":
+				tpm["LOC"]=1.1
+			else:
+				tpm["LOC"]=0
 
     donneeRegressee.append(formatCommun[0])
     donneeRegressee.append(formatCommun[1])
