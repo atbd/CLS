@@ -78,15 +78,6 @@ def readxml(pathXmlFile):
 
 
 
-
-
-
-
-
-
-test = readxml("Param_elephantsdemer.xml")
-print(test)
-
         
 
          

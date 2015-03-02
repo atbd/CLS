@@ -48,20 +48,11 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
             cpteurLC=0
 
 
-<<<<<<< HEAD
-	
-=======
             for j in xrange(len(liste)):
->>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
                 if (ecartCumule[j]>(i-tailleDemiFen) and ecartCumule[j]<(i+tailleDemiFen)):
 
-<<<<<<< HEAD
-	
-	pasEstim = 0
-=======
                     cpteurPt = cpteurPt + 1
->>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
 
                     K[cpteurPt] = kernel(1,i-ecartCumule[j],tailleDemiFen)
@@ -124,12 +115,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
             solLon = np.dot(np.dot(np.eye(1,2),inv(np.dot(np.transpose(X),np.dot(Ka,X)))),np.dot(np.transpose(X),np.dot(Ka,YLon)))
             estim[cpteurEstim][2] = solLon
 
-<<<<<<< HEAD
-			cpteurEstim = cpteurEstim + 1
-			
-=======
         tailleDemiFen = tailleDeminFenSave
->>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
         K=np.zeros(len(liste))
         X=np.zeros((len(liste),2))
@@ -153,31 +139,10 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 
     return nouvListe
 
-<<<<<<< HEAD
-		
-	nouvListe=[]
-=======
->>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
 
 
-<<<<<<< HEAD
-	for k in range(cpteurEstim):
-		dico={}
-		dico["date"] = convertSecondToDatetime(estim[k][0])
-		dico["lat"] = estim[k][1]
-		print(estim[1][1])
-		dico["lon"] = estim[k][2]
-		nouvListe.append(dico)
-		
-		
-		
 
-	
-		
-=======
-
->>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
 
 
