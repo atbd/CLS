@@ -10,6 +10,20 @@ pykalman depends on the following modules,
     nose (for running tests)
 """
 
+def vitLat(latitudes, temps):
+	vitesseLat = []
+	for i in range(len(latitudes)-1):
+		vitesseLat.append((latitudes[i+1]-latitudes[i])/(temps[i+1]-temps[i]))
+
+	return vitesseLat
+
+def vitLon(longitudes, temps):
+	vitesseLon = []
+	for i in range(len(longitudes)-1):
+		vitesseLon.append((longitudes[i+1]-longitudes[i])/(temps[i+1]-temps[i]))
+
+	return vitesseLon
+
 def calculDistances(latitudes, longitudes):
     """
         Calcul la distance grâce à des listes de toutes les latitudes et longitudes concernées (régatives pour S et W, positives pour N et E)
