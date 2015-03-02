@@ -6,31 +6,28 @@ import numpy as np
 def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime):
 
     cpt = 0
-    temps1 = convertArrayOfTime(recuperation(estim1,'date'))
-    temps1 = map(int,temps1)
-    temps2 = convertArrayOfTime(recuperation(estim2,'date'))    
-    temps2 = map(int,temps2)
+    temps1 = map(int,convertArrayOfTime(recuperation(estim1,'date')))
+    temps2 = map(int,convertArrayOfTime(recuperation(estim2,'date')))    
     classe = recuperation(estim1,'LC')
-    latEstim1 = recuperation(estim1,'lat')
-    latEstim1 = map(float,latEstim1)
-    lonEstim1 = recuperation(estim1,'lon')
-    lonEstim1 = map(float,lonEstim1)
-    latEstim2 = recuperation(estim2,'lat')
-    latEstim2 = map(float,latEstim2)
-    lonEstim2 = recuperation(estim2,'lon')
-    lonEstim2 = map(float,lonEstim2)
+    latEstim1 = map(float,recuperation(estim1,'lat'))
+    lonEstim1 = map(float,recuperation(estim1,'lon'))
+    latEstim2 = map(float,recuperation(estim2,'lat'))
+    lonEstim2 = map(float,recuperation(estim2,'lon'))
 
     matr=np.zeros((10000,3))
 
-    for l in range(len(classe)):
-                if (classe[l]=='A'):
-                        classe[l]=-1.0
-                elif(classe[l]=='B'):
-                        classe[l]=-2.0
-                elif(classe[l]=='Z'):
-                        classe[l]=-3.0
-                else:
-                        classe[l]=float(classe[l]) 
+    for l in xrange(len(classe)):
+        if (classe[l]=='A'):
+            classe[l]=-1.0
+        
+        elif(classe[l]=='B'):
+            classe[l]=-2.0
+        
+        elif(classe[l]=='Z'):
+            classe[l]=-3.0
+        
+        else:
+            classe[l]=float(classe[l]) 
 
 
     matr[0][0] = temps2[0]
@@ -38,18 +35,18 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
     matr[0][2] = lonEstim2[0]
 
 
-    for i in range(1,len(estim2)):
+    for i in xrange(1,len(estim2)):
 
         if(temps2[i] - temps2[i-1])>pasEchantillonnage:
 
-            for j in range(pasEchantillonnage,temps2[i]-temps2[i-1]-1,pasEchantillonnage):
+            for j in xrange(pasEchantillonnage,temps2[i]-temps2[i-1]-1,pasEchantillonnage):
 
                 tpsEsti = j + temps2[i-1]
                 lat1 = matr[cpt][1]
                 lon1 = matr[cpt][2]
                 tps1 = matr[cpt][0]
 
-                for k in range(len(estim1)):
+                for k in xrange(len(estim1)):
 
                     if temps1[k]>tpsEsti:
                         if temps1[k]>temps2[i]:
@@ -99,14 +96,14 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
 
     if (temps1[len(estim1)-1] - temps2[len(estim2)-1])>pasEchantillonnage:
 
-        for j in range(pasEchantillonnage,temps1[len(estim1)-1] - temps2[len(estim2)-1],pasEchantillonnage):
+        for j in xrange(pasEchantillonnage,temps1[len(estim1)-1] - temps2[len(estim2)-1],pasEchantillonnage):
 
             tpsEsti = j+temps2[len(estim2)-1]
             lat1 = matr[cpt][1]
             lon1 = matr[cpt][2]
             tps1 = matr[cpt][0]
 
-            for k in range(len(estim1)):
+            for k in xrange(len(estim1)):
 
                 if temps1[k]>tpsEsti:
 
@@ -132,7 +129,7 @@ def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTim
     
     nouveListe = []
 
-    for i in range(cpt):
+    for i in xrange(cpt):
 
         dico ={}
         dico["date"]=convertSecondToDatetime(matr[i][0])

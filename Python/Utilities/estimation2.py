@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os # On importe le module os
 import numpy as np
 from numpy.linalg import inv
 
@@ -23,7 +22,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
     #print(len(X))
 
 
-    for p in range(1,len(liste)):
+    for p in xrange(1,len(liste)):
         ecartCumule[p] = ecartCumule[p-1] + (temps[p]-temps[p-1])
     
     deuxiemeTemps = ecartCumule[1]
@@ -39,7 +38,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 
     pasEstim = 0
 
-    for i in range(int(PasEchantillonnage),ecartCumule[len(liste)-1],int(PasEchantillonnage)):
+    for i in xrange(int(PasEchantillonnage),ecartCumule[len(liste)-1],int(PasEchantillonnage)):
 
         while (repartitionPtOk==0 and pasEstim==0):
 
@@ -49,7 +48,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
             cpteurLC=0
 
 
-            for j in range(len(liste)):
+            for j in xrange(len(liste)):
 
                 if (ecartCumule[j]>(i-tailleDemiFen) and ecartCumule[j]<(i+tailleDemiFen)):
 
@@ -129,7 +128,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 
     #nouvListe=[]
 
-    for k in range(cpteurEstim):
+    for k in xrange(cpteurEstim):
         dico={}
         dico["date"] = convertSecondToDatetime(estim[k][0])
         dico["lat"] = estim[k][1]
