@@ -6,8 +6,15 @@ import numpy as np
 def comblerTrous(estim1,estim2,pasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime):
 
     cpt = 0
+<<<<<<< HEAD
+    temps1 = convertArrayOfTime(recuperation(estim1,'date'))
+    temps1 = map(int,temps1)
+    temps2 = convertArrayOfTime(recuperation(estim2,'date'))    
+    temps2 = map(int,temps2)
+=======
     temps1 = map(int,convertArrayOfTime(recuperation(estim1,'date')))
     temps2 = map(int,convertArrayOfTime(recuperation(estim2,'date')))    
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
     classe = recuperation(estim1,'LC')
     latEstim1 = map(float,recuperation(estim1,'lat'))
     lonEstim1 = map(float,recuperation(estim1,'lon'))

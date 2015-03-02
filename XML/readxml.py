@@ -73,7 +73,7 @@ def readxml(pathXmlFile):
                 k = k[0].split(">")
                 data[k[0]] = k[1]
 
-    print(data)            
+    return data
 
 
 
@@ -84,9 +84,9 @@ def readxml(pathXmlFile):
 
 
 
+test = readxml("Param_elephantsdemer.xml")
+print(test)
 
-readxml("Param_elephantsdemer.xml")
-os.system("pause")
         
 
          
