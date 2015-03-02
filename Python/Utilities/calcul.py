@@ -172,10 +172,35 @@ def regressionLineaire(choix, formatCommun, seuil, f):
     """
         Cette fonction retire les localisations pour lesquelles la localisation
 estimée est trop éloignée de la position mesurée
-    """
+	"""
     from math import pi, sqrt, exp
-    #h sert à délimiter le support du noyau d'epanechnikov
-    donneeRegressee = []
+	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
+	donneeRegressee = []
+	lat_clean = []
+	lon_clean = []
+	date_clean = []
+	lc_clean = []
+	lat_reg = []
+	lon_reg = []
+
+	for i in range(len(formatCommun)):
+		if tpm["LC"][i]=="A":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="B":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="Z":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="1":
+			tpm["LOC"]=2
+		elif tpm["LC"][i]=="2":
+			tpm["LOC"]=3
+		elif tpm["LC"][i]=="3":
+			tpm["LOC"]=7
+		elif tpm["LC"][i]=="0":
+			tpm["LOC"]=1.1
+		else:
+			tpm["LOC"]=0
+
     tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
     h = max([j-i for i,j in zip(tpm["lon"][:-2], tpm["lon"][2:])] + [j-i for i,j in zip(tpm["lat"][:-2], tpm["lat"][2:])])
 
@@ -190,8 +215,8 @@ estimée est trop éloignée de la position mesurée
         b = kernel(choix, tpm["lon"][i] - tpm["lon"][i-2], h)
 
         for l in xrange(5): #on calcule les poids associés à chacune des positions dans la fenêtre (2 à gauche et 2 à droite) du point considéré, puis la position de ce point
-            a, new_lat, sum_lat = kernel(choix, tpm["lat"][i] - tpm["lat"][i+l-2], h), new_lat + a*tpm["lat"][i+l-2], sum_lat + a
-            b, new_lon, sum_lon = kernel(choix, tpm["lon"][i] - tpm["lon"][i+l-2], h), new_lon + b*tpm["lon"][i+l-2], sum_lon + b
+            a, new_lat, sum_lat = kernel(choix, tpm["lat"][i] - tpm["lat"][i+l-2], h), new_lat + a*tpm["lat"][i+l-2]*tpm["LOC"][i+l-2], sum_lat + a
+            b, new_lon, sum_lon = kernel(choix, tpm["lon"][i] - tpm["lon"][i+l-2], h), new_lon + b*tpm["lon"][i+l-2]*tpm["LOC"][i+l-2], sum_lon + b
 
         if sqrt((tpm["lat"][i]-(new_lat/sum_lat))**2 + (tpm["lon"][i]-(new_lon/sum_lon))**2) <=seuil: #on teste si la distance entre le point considéré et son estimée est inférieure à un seuil
             tmp={"lat":tpm["lat"][i+2], "lon":tpm["lon"][i+2], "date":tpm["date"][i+2], "LC":tpm["LC"][i+2]}
@@ -201,6 +226,7 @@ estimée est trop éloignée de la position mesurée
     donneeRegressee.append(formatCommun[-1])
 
     return donneeRegressee
+
 
 def kalman(formatCommun ,f ,convertArrayOfTime, calculVitesses):
     import numpy as np
