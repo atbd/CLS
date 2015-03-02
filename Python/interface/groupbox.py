@@ -3,6 +3,7 @@
 import sys
 import os
 from matplotlib.backends import qt4_compat
+import matplotlib.patches as mpatches
 from PyQt4 import QtGui, QtCore
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt4agg import NavigationToolbar2QTAgg as NavigationToolbar
@@ -99,8 +100,8 @@ class Ui_GroupBox(object):
                 tmpMax = ut.convertSecondToDatetime(max(self.dateMax))
                 self.QDateMin = QtCore.QDateTime(tmpMin["annee"], tmpMin["mois"], tmpMin["jour"], tmpMin["heure"], tmpMin["min"], tmpMin["sec"])
                 self.QDateMax = QtCore.QDateTime(tmpMax["annee"], tmpMax["mois"], tmpMax["jour"], tmpMax["heure"], tmpMax["min"], tmpMax["sec"])
-                self.dateTimeEditStart.setDateTimeRange(self.QDateMin, self.QDateMax) 
-                self.dateTimeEditEnd.setDateTimeRange(self.QDateMin, self.QDateMax)
+                #self.dateTimeEditStart.setDateTimeRange(self.QDateMin, self.QDateMax) #blocage date min
+                #self.dateTimeEditEnd.setDateTimeRange(self.QDateMin, self.QDateMax)    #blocage date max
                 self.dateTimeEditStart.setDateTime(self.QDateMin)
                 self.dateTimeEditEnd.setDateTime(self.QDateMax) 
 
@@ -179,6 +180,7 @@ class Ui_GroupBox(object):
             for i in range(len(self.listLatitudes)):
                 x,y = self.m(self.listLongitudes[i],self.listLatitudes[i])
                 self.m.plot(x,y,'-')
+                seslf.m.legend(mpatches.Patch(label='The red data'))
 
             self.canvas.draw()
 
