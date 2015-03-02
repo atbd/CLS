@@ -187,7 +187,24 @@ estimée est trop éloignée de la position mesurée
 	tpm["lon"]=f(formatCommun, "lon")
 	tpm["date"]=f(formatCommun, "date")
 	tpm["LC"]=f(formatCommun, "LC")
-	
+	for i in range(len(formatCommun)):
+		if tpm["LC"][i]=="A":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="B":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="Z":
+			tpm["LOC"]=1
+		elif tpm["LC"][i]=="1":
+			tpm["LOC"]=2
+		elif tpm["LC"][i]=="2":
+			tpm["LOC"]=3
+		elif tpm["LC"][i]=="3":
+			tpm["LOC"]=7
+		elif tpm["LC"][i]=="0":
+			tpm["LOC"]=1.1
+		else:
+			tpm["LOC"]=0
+
 	for i in range(len(formatCommun))[1:]:
 		h = max(h,float(tpm["lon"][i])-float(tpm["lon"][i-2]),float(tpm["lat"][i])-float(tpm["lat"][i-2]))
 
