@@ -14,7 +14,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
     LC = recuperation(liste,'LC')
     tailleDeminFenSave = tailleDemiFen
     ecartCumule = [0]*len(liste)
-    estim=np.zeros((len(liste),4))
+    estim=np.zeros((2*len(liste),4))
     K=np.zeros(len(liste))
     X=np.zeros((len(liste),2))
     YLat=np.zeros(len(liste))
@@ -126,14 +126,8 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
         pasEstim = 0
 
 
-    #nouvListe=[]
-
-    for k in xrange(cpteurEstim):
-        dico={}
-        dico["date"] = convertSecondToDatetime(estim[k][0])
-        dico["lat"] = estim[k][1]
-        dico["lon"] = estim[k][2]
-        nouvListe.append(dico)
+    nouvListe = [{"date":convertSecondToDatetime(estim[k][0]), "lat":estim[k][1], "lon":estim[k][2]} for k in xrange(len(estim))]
+    nouvListe = [w for w in nouvListe if int(w["lat"]) != 0]
 
     nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
 

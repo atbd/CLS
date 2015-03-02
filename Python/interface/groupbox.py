@@ -169,7 +169,7 @@ class Ui_GroupBox(object):
                 self.dejaVu = 1
 
                 # Mise en place de la carte au premier passage/clic sur "file(s)"
-                self.m = Basemap(width=12000000,height=9000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution='c', ax=self.axes)
+                self.m = Basemap(width=12000000,height=12000000,projection='lcc', lat_0=monLat, lon_0=monLon, resolution='c', ax=self.axes)
                 self.m.drawcoastlines()
                 #self.m.drawmapboundary(fill_color='aqua')
                 self.m.fillcontinents(color='coral',lake_color='aqua')
@@ -180,7 +180,7 @@ class Ui_GroupBox(object):
             for i in range(len(self.listLatitudes)):
                 x,y = self.m(self.listLongitudes[i],self.listLatitudes[i])
                 self.m.plot(x,y,'-')
-                seslf.m.legend(mpatches.Patch(label='The red data'))
+                #seslf.m.legend(mpatches.Patch(label='The red data'))
 
             self.canvas.draw()
 

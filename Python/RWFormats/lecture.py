@@ -80,7 +80,12 @@ def lectureToutDiag(pathDiagFile):
                     #data["num"] = k[0]
                     tmp = k[2].split(".")
                     tmp2 = k[3].split(":")
-                    dat["annee"] = "20"+tmp[2]
+                    
+                    if int(tmp[2]) > 90:
+                        dat["annee"] = "19"+tmp[2]
+                    else:
+                        dat["annee"] = "20"+tmp[2]
+
                     dat["mois"] = tmp[1]
                     dat["jour"] = tmp[0]
                     dat["heure"] = tmp2[0]
