@@ -1,145 +1,167 @@
-# -*-coding:Latin-1 -*
-import os # On importe le module os
+# -*- coding: utf-8 -*-
 
 import numpy as np
 from numpy.linalg import inv
 
-
-
-
 def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonnage,minEstim2,recuperation,convertArrayOfTime,kernel,comblerTrous,convertSecondToDatetime):
 
-	cpteurEstim = 0
-	cpteurPt = 0
-	lat = recuperation(liste,'lat')
-	lon = recuperation(liste,'lon')
-	temps = convertArrayOfTime(recuperation(liste,'date'))
-	LC = recuperation(liste,'LC')
-	tailleDeminFenSave = tailleDemiFen
-	ecartCumule = [0]*len(liste)
-	estim=np.zeros((len(liste),4))
-	K=np.zeros(len(liste))
-	X=np.zeros((len(liste),2))
-	YLat=np.zeros(len(liste))
-	YLon=np.zeros(len(liste))
-	print(len(X))
+    cpteurEstim = 0
+    nouvListe=[]
+    cpteurPt = 0
+    lat = recuperation(liste,'lat')
+    lon = recuperation(liste,'lon')
+    temps = convertArrayOfTime(recuperation(liste,'date'))
+    LC = recuperation(liste,'LC')
+    tailleDeminFenSave = tailleDemiFen
+    ecartCumule = [0]*len(liste)
+    estim=np.zeros((len(liste),4))
+    K=np.zeros(len(liste))
+    X=np.zeros((len(liste),2))
+    YLat=np.zeros(len(liste))
+    YLon=np.zeros(len(liste))
+    #print(len(X))
 
 
-	for p in range(1,len(liste)):
+    for p in xrange(1,len(liste)):
+        ecartCumule[p] = ecartCumule[p-1] + (temps[p]-temps[p-1])
+    
+    deuxiemeTemps = ecartCumule[1]
+    avantDernierTemps = ecartCumule[len(liste)-2]
+    ecartCumule=map(int,ecartCumule)
 
-		ecartCumule[p] = ecartCumule[p-1] + (temps[p]-temps[p-1])
-	deuxiemeTemps = ecartCumule[1]
-	avantDernierTemps = ecartCumule[len(liste)-2]
-	ecartCumule=map(int,ecartCumule)
+    repartitionPtOk = 0
+
+    estim[cpteurEstim][0] = temps[0]
+    estim[cpteurEstim][1] = lat[0]
+    estim[cpteurEstim][2] = lon[0]
+    estim[cpteurEstim][3] = 0
+
+    pasEstim = 0
+
+    for i in xrange(int(PasEchantillonnage),ecartCumule[len(liste)-1],int(PasEchantillonnage)):
+
+        while (repartitionPtOk==0 and pasEstim==0):
+
+            cpteurPt=0
+            cpteurPtGauche=0
+            cpteurPtDroite=0
+            cpteurLC=0
+
+
+<<<<<<< HEAD
 	
+=======
+            for j in xrange(len(liste)):
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
+                if (ecartCumule[j]>(i-tailleDemiFen) and ecartCumule[j]<(i+tailleDemiFen)):
 
-	repartitionPtOk = 0
-
-	
-
-	estim[cpteurEstim][0] = temps[0]
-	estim[cpteurEstim][1] = lat[0]
-	estim[cpteurEstim][2] = lon[0]
-	estim[cpteurEstim][3] = 0
-
+<<<<<<< HEAD
 	
 	pasEstim = 0
-
-	for i in range(int(PasEchantillonnage),ecartCumule[len(liste)-1],int(PasEchantillonnage)):
-
-		while (repartitionPtOk==0 and pasEstim==0):
-
-			cpteurPt=0
-			cpteurPtGauche=0
-			cpteurPtDroite=0
-			cpteurLC=0
-			
-
-			for j in range(len(liste)):
-
-				if (ecartCumule[j]>(i-tailleDemiFen) and ecartCumule[j]<(i+tailleDemiFen)):
-
-					cpteurPt = cpteurPt + 1
-					
-
-					K[cpteurPt] = kernel(1,i-ecartCumule[j],tailleDemiFen)
-					X[cpteurPt][0] = 1
-					X[cpteurPt][1] = ecartCumule[j] - i
-					YLat[cpteurPt] = lat[j]
-					YLon[cpteurPt] = lon[j]
-
-					cpteurLC = LC[j] 
-
-					if ((ecartCumule[j]-i)>0):
-
-						cpteurPtDroite = cpteurPtDroite+1
-
-					else:
-
-						cpteurPtGauche=cpteurPtGauche+1
+=======
+                    cpteurPt = cpteurPt + 1
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
 
-				else:
+                    K[cpteurPt] = kernel(1,i-ecartCumule[j],tailleDemiFen)
+                    X[cpteurPt][0] = 1
+                    X[cpteurPt][1] = ecartCumule[j] - i
+                    YLat[cpteurPt] = lat[j]
+                    YLon[cpteurPt] = lon[j]
 
-					if((ecartCumule[j]-i)>tailleDemiFen):
+                    cpteurLC = LC[j]
 
-						break
+                    if ((ecartCumule[j]-i)>0):
 
-			if ((i-tailleDemiFen)<=deuxiemeTemps or (i+tailleDemiFen)>= avantDernierTemps):
+                        cpteurPtDroite = cpteurPtDroite+1
 
-				pasEstim = 1
+                    else:
 
-			else:
+                        cpteurPtGauche=cpteurPtGauche+1
 
-				if (cpteurPt>=minEstim2) and (cpteurPtDroite>=nbPtDemiFen) and (cpteurPtGauche>=nbPtDemiFen):
 
-					repartitionPtOk=1
-				else:
+                else:
 
-					tailleDemiFen = tailleDemiFen + 1800
+                    if((ecartCumule[j]-i)>tailleDemiFen):
 
-				if tailleDemiFen>tailleDemiFenMax:
+                        break
 
-					if ((cpteurPtDroite>=1) and (cpteurPtGauche>=1) and (cpteurPt>=2)) or (i<deuxiemeTemps) or (i>avantDernierTemps):
+            if ((i-tailleDemiFen)<=deuxiemeTemps or (i+tailleDemiFen)>= avantDernierTemps):
 
-						repartitionPtOk = 1
+                pasEstim = 1
 
-					else:
+            else:
 
-						pasEstim = 1
+                if (cpteurPt>=minEstim2) and (cpteurPtDroite>=nbPtDemiFen) and (cpteurPtGauche>=nbPtDemiFen):
 
-		if pasEstim==0:
+                    repartitionPtOk=1
+                else:
 
+                    tailleDemiFen = tailleDemiFen + 1800
+
+                if tailleDemiFen>tailleDemiFenMax:
+
+                    if ((cpteurPtDroite>=1) and (cpteurPtGauche>=1) and (cpteurPt>=2)) or (i<deuxiemeTemps) or (i>avantDernierTemps):
+
+                        repartitionPtOk = 1
+
+                    else:
+
+                        pasEstim = 1
+
+        if pasEstim==0:
+
+            cpteurEstim = cpteurEstim + 1
+
+            Ka = np.diag(K)
+
+
+            solLat = np.dot(np.dot(np.eye(1,2),inv(np.dot(np.transpose(X),np.dot(Ka,X)))),np.dot(np.transpose(X),np.dot(Ka,YLat)))
+            estim[cpteurEstim][0] = i+temps[0]
+            estim[cpteurEstim][1] = solLat
+
+            solLon = np.dot(np.dot(np.eye(1,2),inv(np.dot(np.transpose(X),np.dot(Ka,X)))),np.dot(np.transpose(X),np.dot(Ka,YLon)))
+            estim[cpteurEstim][2] = solLon
+
+<<<<<<< HEAD
 			cpteurEstim = cpteurEstim + 1
 			
+=======
+        tailleDemiFen = tailleDeminFenSave
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
-			Ka = np.diag(K)
+        K=np.zeros(len(liste))
+        X=np.zeros((len(liste),2))
+        YLat=np.zeros(len(liste))
+        YLon=np.zeros(len(liste))
+
+        repartitionPtOk = 0
+        pasEstim = 0
 
 
-			solLat = np.dot(np.dot(np.eye(1,2),inv(np.dot(np.transpose(X),np.dot(Ka,X)))),np.dot(np.transpose(X),np.dot(Ka,YLat)))
-			estim[cpteurEstim][0] = i+temps[0]
-			estim[cpteurEstim][1] = solLat
+    #nouvListe=[]
 
-			solLon = np.dot(np.dot(np.eye(1,2),inv(np.dot(np.transpose(X),np.dot(Ka,X)))),np.dot(np.transpose(X),np.dot(Ka,YLon)))
-			estim[cpteurEstim][2] = solLon
+    for k in xrange(cpteurEstim):
+        dico={}
+        dico["date"] = convertSecondToDatetime(estim[k][0])
+        dico["lat"] = estim[k][1]
+        dico["lon"] = estim[k][2]
+        nouvListe.append(dico)
 
-		tailleDemiFen = tailleDeminFenSave
+    nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
 
-		K=np.zeros(len(liste))
-		X=np.zeros((len(liste),2))
-		YLat=np.zeros(len(liste))
-		YLon=np.zeros(len(liste))
+    return nouvListe
 
-		repartitionPtOk = 0
-		pasEstim = 0
-
+<<<<<<< HEAD
 		
 	nouvListe=[]
+=======
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
-		
 
 
+<<<<<<< HEAD
 	for k in range(cpteurEstim):
 		dico={}
 		dico["date"] = convertSecondToDatetime(estim[k][0])
@@ -153,30 +175,24 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
 
 	
 		
+=======
 
-	nouvListe = comblerTrous(liste,nouvListe,PasEchantillonnage,recuperation,convertArrayOfTime,convertSecondToDatetime)
-
-	return nouvListe
-
-
-			
-
-			
+>>>>>>> 9efa70fa8404f15af119e0d7eb4f441fbd541e13
 
 
 
-		
 
 
 
-					
-					
 
 
-			
 
 
-			
+
+
+
+
+
 
 
 
