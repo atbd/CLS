@@ -11,18 +11,18 @@ pykalman depends on the following modules,
 """
 
 def vitLat(latitudes, temps):
-	vitesseLat = []
-	for i in range(len(latitudes)-1):
-		vitesseLat.append((latitudes[i+1]-latitudes[i])/(temps[i+1]-temps[i]))
+    vitesseLat = []
+    for i in range(len(latitudes)-1):
+        vitesseLat.append((latitudes[i+1]-latitudes[i])/(temps[i+1]-temps[i]))
 
-	return vitesseLat
+    return vitesseLat
 
 def vitLon(longitudes, temps):
-	vitesseLon = []
-	for i in range(len(longitudes)-1):
-		vitesseLon.append((longitudes[i+1]-longitudes[i])/(temps[i+1]-temps[i]))
+    vitesseLon = []
+    for i in range(len(longitudes)-1):
+        vitesseLon.append((longitudes[i+1]-longitudes[i])/(temps[i+1]-temps[i]))
 
-	return vitesseLon
+    return vitesseLon
 
 def calculDistances(latitudes, longitudes):
     """
@@ -188,40 +188,40 @@ def regressionLineaire(choix, formatCommun, seuil, f):
 estimée est trop éloignée de la position mesurée
     """
     from math import pi, sqrt, exp
-<<<<<<< HEAD
+
     #h sert à délimiter le support du noyau d'epanechnikov
     donneeRegressee = []
     tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
-=======
-	h = 0 #h sert à délimiter le support du noyau d'epanechnikov
-	donneeRegressee = []
-	lat_clean = []
-	lon_clean = []
-	date_clean = []
-	lc_clean = []
-	lat_reg = []
-	lon_reg = []
 
-	tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
->>>>>>> 0c7fabfa4fefa4b81e2871113980042fd6658e34
+    h = 0 #h sert à délimiter le support du noyau d'epanechnikov
+    donneeRegressee = []
+    lat_clean = []
+    lon_clean = []
+    date_clean = []
+    lc_clean = []
+    lat_reg = []
+    lon_reg = []
+
+    tpm={"lat":map(float,f(formatCommun, "lat")), "lon":map(float,f(formatCommun, "lon")), "date":f(formatCommun, "date"), "LC":f(formatCommun, "LC")}
     h = max([j-i for i,j in zip(tpm["lon"][:-2], tpm["lon"][2:])] + [j-i for i,j in zip(tpm["lat"][:-2], tpm["lat"][2:])])
-	for i in range(len(formatCommun)):
-			if tpm["LC"][i]=="A":
-				tpm["LOC"]=1
-			elif tpm["LC"][i]=="B":
-				tpm["LOC"]=1
-			elif tpm["LC"][i]=="Z":
-				tpm["LOC"]=1
-			elif tpm["LC"][i]=="1":
-				tpm["LOC"]=2
-			elif tpm["LC"][i]=="2":
-				tpm["LOC"]=3
-			elif tpm["LC"][i]=="3":
-				tpm["LOC"]=7
-			elif tpm["LC"][i]=="0":
-				tpm["LOC"]=1.1
-			else:
-				tpm["LOC"]=0
+    
+    for i in xrange(len(formatCommun)):
+            if tpm["LC"][i]=="A":
+                tpm["LOC"]=1
+            elif tpm["LC"][i]=="B":
+                tpm["LOC"]=1
+            elif tpm["LC"][i]=="Z":
+                tpm["LOC"]=1
+            elif tpm["LC"][i]=="1":
+                tpm["LOC"]=2
+            elif tpm["LC"][i]=="2":
+                tpm["LOC"]=3
+            elif tpm["LC"][i]=="3":
+                tpm["LOC"]=7
+            elif tpm["LC"][i]=="0":
+                tpm["LOC"]=1.1
+            else:
+                tpm["LOC"]=0
 
     donneeRegressee.append(formatCommun[0])
     donneeRegressee.append(formatCommun[1])
