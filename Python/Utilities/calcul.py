@@ -15,7 +15,7 @@ def vitLatEtLon(latitudes, longitudes, temps):
     deltaLat = [(j-i) for i,j in zip(latitudes[:-1], latitudes[1:])]
     deltaLon = [(j-i) for i,j in zip(longitudes[:-1], longitudes[1:])]
 
-    return [lat/tps for (lat, tps) in zip(deltaLat, deltaTemps)], [lon/tps for (lon, tps) in zip(deltaLon, deltaTemps)] 
+    return [1000*lat/tps for (lat, tps) in zip(deltaLat, deltaTemps)], [1000*lon/tps for (lon, tps) in zip(deltaLon, deltaTemps)] 
 
 def calculDistances(latitudes, longitudes):
     """
@@ -43,7 +43,7 @@ def calculUneDistance(latitude1, latitude2, longitude1, longitude2):
     b = cos(latitude1*pi/180)*cos(latitude2*pi/180)*cos(deltaLon*pi/180)
 
     if (a+b>1):
-        return 0
+        return 0.
     else:
         return R * acos(a + b)
 
@@ -141,18 +141,9 @@ def correctionChoixLoc(formatCommun):
 
     for i, j in zip(formatCommun[:-1], formatCommun[1:]):
 
-        latPr = float(i["lat"])
-        lonPr = float(i["lon"])
-
-        # suivantes pour calculer les distances
-        lat = float(j["lat"])
-        lon = float(j["lon"])
-        lat_im = float(j["lat_image"])
-        lon_im = float(j["lon_image"])
-
         # calcul des distances
-        tmp = calculUneDistance(latPr, lat, lonPr, lon)
-        tmp_im = calculUneDistance(latPr, lat_im, lonPr, lon_im)
+        tmp = calculUneDistance(float(i["lat"]), float(j["lat"]), float(i["lon"]), float(j["lon"]))
+        tmp_im = calculUneDistance(float(i["lat"]), float(j["lat_image"]), float(i["lon"]), float(j["lon_image"]))
 
         # si la loc image est la bonne -> remplacement
         if tmp > tmp_im:
