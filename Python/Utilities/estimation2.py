@@ -14,7 +14,7 @@ def estimation2(liste,tailleDemiFen,tailleDemiFenMax,nbPtDemiFen,PasEchantillonn
     LC = recuperation(liste,'LC')
     tailleDeminFenSave = tailleDemiFen
     ecartCumule = [0]*len(liste)
-    estim=np.zeros((2*len(liste),4))
+    estim=np.zeros((5*len(liste),4))
     K=np.zeros(len(liste))
     X=np.zeros((len(liste),2))
     YLat=np.zeros(len(liste))
