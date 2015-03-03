@@ -131,14 +131,16 @@ class Ui_GroupBox(object):
 
         def sauvegarder():
             # servira à creer les .res (fonction à mettre dans fctInterface.py)
+            self.listIdTmp = []
+
             if self.comboBox.currentIndex() == 0: # epan
-                self.listId = [w + "-epan" for w in self.listId]
+                self.listIdTmp = [w + "-epan" for w in self.listId]
             elif self.comboBox.currentIndex() == 1: # gauss
-                self.listId = [w + "-gauss" for w in self.listId]
+                self.listIdTmp = [w + "-gauss" for w in self.listId]
             elif self.comboBox.currentIndex() == 2: # kalman
-                self.listId = [w + "-kalman" for w in self.listId]
+                self.listIdTmp = [w + "-kalman" for w in self.listId]
             
-            gui.saveRes(self.listId, self.listLongitudes, self.listLatitudes, self.listTemps)
+            gui.saveRes(self.listIdTmp, self.listLongitudes, self.listLatitudes, self.listTemps)
 
         self.saveButton.clicked.connect(sauvegarder)
         
