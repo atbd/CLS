@@ -10,19 +10,12 @@ pykalman depends on the following modules,
     nose (for running tests)
 """
 
-def vitLat(latitudes, temps, f):
-    vitesseLat = []
-    for i in range(len(latitudes)-1):
-        vitesseLat.append((latitudes[i+1]-latitudes[i])/(f(temps[i+1])-f(temps[i])))
+def vitLatEtLon(latitudes, longitudes, temps):
+    deltaTemps = [(j-i) for i,j in zip(temps[:-1], temps[1:])]
+    deltaLat = [(j-i) for i,j in zip(latitudes[:-1], latitudes[1:])]
+    deltaLon = [(j-i) for i,j in zip(longitudes[:-1], longitudes[1:])]
 
-    return vitesseLat
-
-def vitLon(longitudes, temps; f):
-    vitesseLon = []
-    for i in range(len(longitudes)-1):
-        vitesseLon.append((longitudes[i+1]-longitudes[i])/(f(temps[i+1])-f(temps[i])))
-
-    return vitesseLon
+    return [lat/tps for (lat, tps) in zip(deltaLat, deltaTemps)], [lon/tps for (lon, tps) in zip(deltaLon, deltaTemps)] 
 
 def calculDistances(latitudes, longitudes):
     """
@@ -70,10 +63,10 @@ def calculVitesses(latitudes, longitudes, temps):
 
     vit = []
 
-    for i in xrange(len(deltaTemps)):
+    for i,j in zip(dist, deltaTemps):
 
-        if deltaTemps[i] != 0:
-            vit.append(1000*dist[i]/deltaTemps[i])
+        if j != 0:
+            vit.append(1000*i/j)
         else:
             vit.append(0)
 
@@ -111,7 +104,7 @@ def convertArrayOfTime(arrayOfTime):
         D'une liste de dictionnaire "dictDate" donnera une liste de temps en secondes (boucle de convertDateToSecond)
     """
 
-    return [convertDateToSecond(arrayOfTime[i]) for i in xrange(len(arrayOfTime))]
+    return [convertDateToSecond(i) for i in arrayOfTime]
 
 
 def kernel(choix,valeur,h):
@@ -127,18 +120,15 @@ choix par défaut = gaussien
     h = float(h)
 
     if choix == 2:
-        res = 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
-        return res
+        return 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
 
     elif choix == 1:
         if (valeur<-h or valeur>h):
             return 0.0
         else:
-            res = (3.0/4.0/h)*(1.0-(valeur/h)**2)
-            return res
+            return (3.0/4.0/h)*(1.0-(valeur/h)**2)
     else:
-        res = 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
-        return res
+        return 1.0/sqrt(2.0*pi)*exp(-1.0/2.0*valeur**2)
 
 
 def correctionChoixLoc(formatCommun):
@@ -149,19 +139,16 @@ def correctionChoixLoc(formatCommun):
         NB : ne sera utile que pour les .DIAG
     """
 
-    donneeCorrigee = formatCommun
+    for i, j in zip(formatCommun[:-1], formatCommun[1:]):
 
-    # initialisation
-    latPr = float(donneeCorrigee[0]["lat"])
-    lonPr = float(donneeCorrigee[0]["lon"])
-
-    for i in xrange(len(formatCommun)-1):
+        latPr = float(i["lat"])
+        lonPr = float(i["lon"])
 
         # suivantes pour calculer les distances
-        lat = float(donneeCorrigee[i+1]["lat"])
-        lon = float(donneeCorrigee[i+1]["lon"])
-        lat_im = float(donneeCorrigee[i+1]["lat_image"])
-        lon_im = float(donneeCorrigee[i+1]["lon_image"])
+        lat = float(j["lat"])
+        lon = float(j["lon"])
+        lat_im = float(j["lat_image"])
+        lon_im = float(j["lon_image"])
 
         # calcul des distances
         tmp = calculUneDistance(latPr, lat, lonPr, lon)
@@ -169,18 +156,14 @@ def correctionChoixLoc(formatCommun):
 
         # si la loc image est la bonne -> remplacement
         if tmp > tmp_im:
-            donneeCorrigee[i+1]["lat"] = donneeCorrigee[i+1]["lat_image"]
-            donneeCorrigee[i+1]["lon"] = donneeCorrigee[i+1]["lon_image"]
+            j["lat"] = j["lat_image"]
+            j["lon"] = j["lon_image"]
 
         # suppression des inutiles
-        del donneeCorrigee[i+1]["lat_image"]
-        del donneeCorrigee[i+1]["lon_image"]
+        del j["lat_image"]
+        del j["lon_image"]
 
-        # "rebouclage"
-        latPr = float(donneeCorrigee[i+1]["lat"])
-        lonPr = float(donneeCorrigee[i+1]["lon"])
-
-    return donneeCorrigee
+    return formatCommun
 
 def regressionLineaire(choix, formatCommun, seuil, f):
     """
