@@ -10,17 +10,17 @@ pykalman depends on the following modules,
     nose (for running tests)
 """
 
-def vitLat(latitudes, temps):
+def vitLat(latitudes, temps, f):
     vitesseLat = []
     for i in range(len(latitudes)-1):
-        vitesseLat.append((latitudes[i+1]-latitudes[i])/(temps[i+1]-temps[i]))
+        vitesseLat.append((latitudes[i+1]-latitudes[i])/(f(temps[i+1])-f(temps[i])))
 
     return vitesseLat
 
-def vitLon(longitudes, temps):
+def vitLon(longitudes, temps; f):
     vitesseLon = []
     for i in range(len(longitudes)-1):
-        vitesseLon.append((longitudes[i+1]-longitudes[i])/(temps[i+1]-temps[i]))
+        vitesseLon.append((longitudes[i+1]-longitudes[i])/(f(temps[i+1])-f(temps[i])))
 
     return vitesseLon
 
