@@ -1,6 +1,4 @@
-# -*-coding:Latin-1 -*
-import os # On importe le module os
-
+# -*- coding: utf-8 -*-
 
 def readxml(pathXmlFile):
 
@@ -34,9 +32,9 @@ def readxml(pathXmlFile):
                 data[k[0]] = k[1]
 
             elif tmp.startswith("<min_estim1"):
-                                k = filter(None, tmp.split("<"))
-                                k = k[0].split(">")
-                                data[k[0]] = k[1] 
+                k = filter(None, tmp.split("<"))
+                k = k[0].split(">")
+                data[k[0]] = k[1] 
 
             elif tmp.startswith("<min_estim2"):
                 k = filter(None, tmp.split("<"))
@@ -77,8 +75,8 @@ def readxml(pathXmlFile):
 
 
 
-
-        
+#path = "../../XML/DefautParametres.xml"
+#print(readxml(path))
 
          
                 

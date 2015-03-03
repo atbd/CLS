@@ -61,20 +61,20 @@ def lectureListesEtId(path):
     return liste, identifiant
 
 
-def toutEnUn(listeATraiter, debut=0, fin=0, choixFiltre=0):
+def toutEnUn(listeATraiter, debut, fin, choixFiltre, param):
     """
         Servira à tracer la carte sur la GUI.
     """
     liste = filtrageDate(debut, fin, listeATraiter)
 
-    liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,3) # marche pas avec CSV: pas de LC
+    liste = sup.suppVitesseExcess(liste,recup.recuperation,ut.convertArrayOfTime,ut.calculVitesses,float(param["vitesse_max"])) # marche pas avec CSV: pas de LC
     
     if choixFiltre == 0 or choixFiltre == 1: # gauss ou epa
         liste = ut.regressionLineaire(choixFiltre + 1, liste, 0.2, recup.recuperation)
     elif choixFiltre == 2: # kalman
         liste = ut.kalman(liste, recup.recuperation, ut.convertArrayOfTime, ut.calculVitesses)
     
-    liste = est.estimation2(liste, 86000, 86400, 2, 28000, 5, recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
+    liste = est.estimation2(liste, int(param["demi_fenetre_min_estim2"]), int(param["demi_fenetre_max_estim2"]), int(param["nb_pt_demi_fenetre_estim2"]), int(param["periode"]), int(param["min_estim2"]), recup.recuperation, ut.convertArrayOfTime, ut.kernel, combl.comblerTrous, ut.convertSecondToDatetime)
 
     latitudes = map(float, recup.recuperation(liste, "lat"))
     longitudes = map(float, recup.recuperation(liste, "lon"))
