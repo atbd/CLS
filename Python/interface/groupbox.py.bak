@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import sys
-import os
 from matplotlib.backends import qt4_compat
 import matplotlib.patches as mpatches
 from PyQt4 import QtGui, QtCore
@@ -15,6 +13,7 @@ import numpy as np
 import interface.fctInterface as gui
 import datetime as dt
 import Utilities.calcul as ut
+import RWFormats.readxml as xml
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -33,18 +32,18 @@ except AttributeError:
 class Ui_GroupBox(object):
     def setupUi(self, GroupBox):
         GroupBox.setObjectName(_fromUtf8("GroupBox"))
-        GroupBox.resize(661, 532)
+        GroupBox.resize(722, 718)
         GroupBox.setFixedSize(GroupBox.size())
-        
+
         # QWidget
         self.fig = Figure()
         self.canvas = FigureCanvas(self.fig)
 
         self.widget = QtGui.QWidget(GroupBox)
-        self.widget.setGeometry(QtCore.QRect(-1, 99, 661, 431))
+        self.widget.setGeometry(QtCore.QRect(-1, 89, 721, 631))
         self.widget.setAutoFillBackground(True)
         self.widget.setObjectName(_fromUtf8("widget"))
-        
+
         self.layout = QtGui.QVBoxLayout(self.widget)
         self.mpl_toolbar = NavigationToolbar(self.canvas, self.widget, coordinates = False)
 
@@ -54,26 +53,44 @@ class Ui_GroupBox(object):
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
-        # Choix filtrage date
+        # choix dates
         self.dateTimeEditStart = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditStart.setGeometry(QtCore.QRect(210, 20, 191, 24))
+        self.dateTimeEditStart.setGeometry(QtCore.QRect(260, 20, 191, 24))
         self.dateTimeEditStart.setObjectName(_fromUtf8("dateTimeEditStart"))
         self.dateTimeEditEnd = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditEnd.setGeometry(QtCore.QRect(210, 70, 191, 24))
+        self.dateTimeEditEnd.setGeometry(QtCore.QRect(260, 60, 191, 24))
         self.dateTimeEditEnd.setObjectName(_fromUtf8("dateTimeEditEnd"))
 
         # choix filtre
         self.comboBox = QtGui.QComboBox(GroupBox)
-        self.comboBox.setGeometry(QtCore.QRect(470, 20, 141, 26))
+        self.comboBox.setGeometry(QtCore.QRect(520, 20, 141, 26))
         self.comboBox.setObjectName(_fromUtf8("comboBox"))
 
         self.comboBox.insertItem(0,"Epanechnikov")
         self.comboBox.insertItem(1,"Gaussian")
         self.comboBox.insertItem(2,"Kalman")
 
-        # file button
+        # choix fichier paramètres xml
+        self.xmlButton = QtGui.QPushButton(GroupBox)
+        self.xmlButton.setGeometry(QtCore.QRect(460, 60, 115, 32))
+        self.xmlButton.setObjectName(_fromUtf8("xmlButton"))
+
+        self.param = {}
+
+        def choixXML():
+            pathXML = QtGui.QFileDialog.getOpenFileName(None, "Choix du fichier paramètre", "", "(*.xml)")
+
+            if pathXML != []:
+                self.param = xml.readxml(pathXML)
+                #for key in self.param:
+                #    self.param[key] = int(self.param[key])
+                #print(self.param)
+
+        self.xmlButton.clicked.connect(choixXML)
+
+        # choix fichier(s)
         self.fileButton = QtGui.QPushButton(GroupBox)
-        self.fileButton.setGeometry(QtCore.QRect(0, 20, 115, 32))
+        self.fileButton.setGeometry(QtCore.QRect(20, 20, 115, 32))
         self.fileButton.setObjectName(_fromUtf8("fileButton"))
 
         def buttonFct():    # choix fichiers, récup liste et id + mise en place date min et max
@@ -106,30 +123,39 @@ class Ui_GroupBox(object):
                 self.dateTimeEditEnd.setDateTime(self.QDateMax) 
 
         self.fileButton.clicked.connect(buttonFct)
-
-        # Save button        
-        self.saveButton = QtGui.QPushButton(GroupBox)
-        self.saveButton.setGeometry(QtCore.QRect(0, 70, 115, 32))
-        self.saveButton.setObjectName(_fromUtf8("saveButton"))
         
+        # sauvegarder
+        self.saveButton = QtGui.QPushButton(GroupBox)
+        self.saveButton.setGeometry(QtCore.QRect(20, 60, 115, 32))
+        self.saveButton.setObjectName(_fromUtf8("saveButton"))
+
         def sauvegarder():
             # servira à creer les .res (fonction à mettre dans fctInterface.py)
-            gui.saveRes(self.listId, self.listLongitudes, self.listLatitudes, self.listTemps)
+            self.listIdTmp = []
+
+            if self.comboBox.currentIndex() == 0: # epan
+                self.listIdTmp = [w + "-epan" for w in self.listId]
+            elif self.comboBox.currentIndex() == 1: # gauss
+                self.listIdTmp = [w + "-gauss" for w in self.listId]
+            elif self.comboBox.currentIndex() == 2: # kalman
+                self.listIdTmp = [w + "-kalman" for w in self.listId]
+            
+            gui.saveRes(self.listIdTmp, self.listLongitudes, self.listLatitudes, self.listTemps)
 
         self.saveButton.clicked.connect(sauvegarder)
-
+        
         # labels
         self.labelEnd = QtGui.QLabel(GroupBox)
-        self.labelEnd.setGeometry(QtCore.QRect(170, 70, 59, 16))
+        self.labelEnd.setGeometry(QtCore.QRect(220, 60, 59, 16))
         self.labelEnd.setObjectName(_fromUtf8("labelEnd"))
         self.labelStart = QtGui.QLabel(GroupBox)
-        self.labelStart.setGeometry(QtCore.QRect(150, 20, 59, 16))
+        self.labelStart.setGeometry(QtCore.QRect(200, 20, 59, 16))
         self.labelStart.setAlignment(QtCore.Qt.AlignCenter)
         self.labelStart.setObjectName(_fromUtf8("labelStart"))
         
-        # go button
+        # GO!
         self.goButton = QtGui.QPushButton(GroupBox)
-        self.goButton.setGeometry(QtCore.QRect(480, 60, 115, 32))
+        self.goButton.setGeometry(QtCore.QRect(600, 60, 115, 32))
         self.goButton.setObjectName(_fromUtf8("goButton"))
 
         self.dejaVu = 0
@@ -152,13 +178,16 @@ class Ui_GroupBox(object):
             else:
                 endSecond = (end - ref).total_seconds()
 
+            if self.param == {}:
+                self.param = xml.readxml("../XML/DefautParametres.xml")
+
             # init
             self.listLatitudes = []
             self.listLongitudes = []
             self.listTemps = []
 
             for i in range(len(self.listList)):
-                lats, lons, temps = gui.toutEnUn(self.listList[i], startSecond, endSecond, self.comboBox.currentIndex())
+                lats, lons, temps = gui.toutEnUn(self.listList[i], startSecond, endSecond, self.comboBox.currentIndex(), self.param)
                 self.listLatitudes.append(lats)
                 self.listLongitudes.append(lons)
                 self.listTemps.append(temps)
@@ -197,6 +226,7 @@ class Ui_GroupBox(object):
         self.labelEnd.setText(_translate("GroupBox", "End", None))
         self.labelStart.setText(_translate("GroupBox", "Start", None))
         self.goButton.setText(_translate("GroupBox", "Go", None))
+        self.xmlButton.setText(_translate("GroupBox", "XML", None))
 
 
 if __name__ == "__main__":

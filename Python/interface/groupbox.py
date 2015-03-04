@@ -34,7 +34,7 @@ class Ui_GroupBox(object):
         GroupBox.setObjectName(_fromUtf8("GroupBox"))
         GroupBox.resize(722, 718)
         GroupBox.setFixedSize(GroupBox.size())
-
+        
         # QWidget
         self.fig = Figure()
         self.canvas = FigureCanvas(self.fig)
@@ -53,24 +53,24 @@ class Ui_GroupBox(object):
         self.axes = self.fig.add_axes(rect)
         self.widget.setLayout(self.layout)
 
-        # choix dates
+        # choix filtrage date
         self.dateTimeEditStart = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditStart.setGeometry(QtCore.QRect(260, 20, 191, 24))
+        self.dateTimeEditStart.setGeometry(QtCore.QRect(240, 20, 191, 24))
         self.dateTimeEditStart.setObjectName(_fromUtf8("dateTimeEditStart"))
         self.dateTimeEditEnd = QtGui.QDateTimeEdit(GroupBox)
-        self.dateTimeEditEnd.setGeometry(QtCore.QRect(260, 60, 191, 24))
+        self.dateTimeEditEnd.setGeometry(QtCore.QRect(240, 60, 191, 24))
         self.dateTimeEditEnd.setObjectName(_fromUtf8("dateTimeEditEnd"))
 
-        # choix filtre
+        # Choix filtre        
         self.comboBox = QtGui.QComboBox(GroupBox)
-        self.comboBox.setGeometry(QtCore.QRect(520, 20, 141, 26))
+        self.comboBox.setGeometry(QtCore.QRect(450, 20, 141, 26))
         self.comboBox.setObjectName(_fromUtf8("comboBox"))
-
+        
         self.comboBox.insertItem(0,"Epanechnikov")
         self.comboBox.insertItem(1,"Gaussian")
         self.comboBox.insertItem(2,"Kalman")
 
-        # choix fichier paramètres xml
+        # Fichier paramètre xml
         self.xmlButton = QtGui.QPushButton(GroupBox)
         self.xmlButton.setGeometry(QtCore.QRect(460, 60, 115, 32))
         self.xmlButton.setObjectName(_fromUtf8("xmlButton"))
@@ -123,7 +123,7 @@ class Ui_GroupBox(object):
                 self.dateTimeEditEnd.setDateTime(self.QDateMax) 
 
         self.fileButton.clicked.connect(buttonFct)
-        
+
         # sauvegarder
         self.saveButton = QtGui.QPushButton(GroupBox)
         self.saveButton.setGeometry(QtCore.QRect(20, 60, 115, 32))
@@ -146,14 +146,14 @@ class Ui_GroupBox(object):
         
         # labels
         self.labelEnd = QtGui.QLabel(GroupBox)
-        self.labelEnd.setGeometry(QtCore.QRect(220, 60, 59, 16))
+        self.labelEnd.setGeometry(QtCore.QRect(200, 60, 59, 16))
         self.labelEnd.setObjectName(_fromUtf8("labelEnd"))
         self.labelStart = QtGui.QLabel(GroupBox)
-        self.labelStart.setGeometry(QtCore.QRect(200, 20, 59, 16))
+        self.labelStart.setGeometry(QtCore.QRect(180, 20, 59, 16))
         self.labelStart.setAlignment(QtCore.Qt.AlignCenter)
         self.labelStart.setObjectName(_fromUtf8("labelStart"))
         
-        # GO!
+        # Go!
         self.goButton = QtGui.QPushButton(GroupBox)
         self.goButton.setGeometry(QtCore.QRect(600, 60, 115, 32))
         self.goButton.setObjectName(_fromUtf8("goButton"))
@@ -214,6 +214,19 @@ class Ui_GroupBox(object):
             self.canvas.draw()
 
         self.goButton.clicked.connect(gogoGadgeto)
+        
+        # Destroy everything
+        self.clearButton = QtGui.QPushButton(GroupBox)
+        self.clearButton.setGeometry(QtCore.QRect(600, 20, 115, 32))
+        self.clearButton.setObjectName(_fromUtf8("clearButton"))
+
+        def destroyEverything(): # clear figure
+            self.fig.clf()
+            self.fig.canvas.draw()
+            self.dejaVu = 0
+            self.axes = self.fig.add_axes(rect)
+            
+        self.clearButton.clicked.connect(destroyEverything)
 
         self.retranslateUi(GroupBox)
         QtCore.QMetaObject.connectSlotsByName(GroupBox)
@@ -227,6 +240,7 @@ class Ui_GroupBox(object):
         self.labelStart.setText(_translate("GroupBox", "Start", None))
         self.goButton.setText(_translate("GroupBox", "Go", None))
         self.xmlButton.setText(_translate("GroupBox", "XML", None))
+        self.clearButton.setText(_translate("GroupBox", "Clear", None))
 
 
 if __name__ == "__main__":
