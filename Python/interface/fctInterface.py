@@ -88,12 +88,12 @@ def saveRes(filesName, listLong, listLat, temps):
     """
     for i in xrange(len(filesName)):
         vitTotal = ut.calculVitesses(listLat[i], listLong[i], ut.convertArrayOfTime(temps[i]))
-        vitLat, vitLon = ut.vitLatEtLon(listLat[i], listLong[i], ut.convertArrayOfTime(temps[i]))
+        vitLat, vitLon, direction = ut.vitLatEtLon(listLat[i], listLong[i], ut.convertArrayOfTime(temps[i]))
 
         with open("res/" + filesName[i] + ".res", "w") as f:
-            f.write("Day    Time    Lon    Lat    VitLat(m/s)    VitLon(m/s)    VitTotal (m/s)\n")
+            f.write("Day    Time    Lon    Lat    VitLat(m/s)    VitLon(m/s)    Direction (degrees)    VitTotal (m/s)\n")
             for x in xrange(len(listLong[i]) - 1):
-                f.write("%s.%s.%s    %s:%s:%s    %s    %s    %s    %s    %s\n" % (temps[i][x]["jour"], temps[i][x]["mois"], temps[i][x]["annee"], temps[i][x]["heure"], temps[i][x]["min"], temps[i][x]["sec"], listLong[i][x], listLat[i][x], vitLat[x], vitLon[x], vitTotal[x]))
+                f.write("%s.%s.%s    %s:%s:%s    %s    %s    %s    %s    %s    %s\n" % (temps[i][x]["jour"], temps[i][x]["mois"], temps[i][x]["annee"], temps[i][x]["heure"], temps[i][x]["min"], temps[i][x]["sec"], listLong[i][x], listLat[i][x], vitLat[x], vitLon[x], direction[x], vitTotal[x]))
 
 
 
