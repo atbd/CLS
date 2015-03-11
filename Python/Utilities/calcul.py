@@ -10,12 +10,23 @@ pykalman depends on the following modules,
     nose (for running tests)
 """
 
-def vitLatEtLon(latitudes, longitudes, temps):
-    deltaTemps = [(j-i) for i,j in zip(temps[:-1], temps[1:])]
-    deltaLat = [(j-i) for i,j in zip(latitudes[:-1], latitudes[1:])]
-    deltaLon = [(j-i) for i,j in zip(longitudes[:-1], longitudes[1:])]
+def vitLatEtLon(latitudes, longitudes, temps):    
+    # Calcul les vitesses lat/lon + la direction (degrees)
+    from math import atan2, degrees
 
-    return [1000*lat/tps for (lat, tps) in zip(deltaLat, deltaTemps)], [1000*lon/tps for (lon, tps) in zip(deltaLon, deltaTemps)] 
+    zeros = [0]*len(latitudes)
+    vitLat = calculVitesses(latitudes, zeros, temps)
+    vitLon = calculVitesses(zeros, longitudes, temps)
+
+    for i in xrange(len(vitLat)):
+        if latitudes[i] > latitudes[i+1]:
+            vitLat[i] = -vitLat[i]
+
+        if longitudes[i] > longitudes[i+1]:
+            vitLon[i] = -vitLon[i]
+
+    return vitLat, vitLon, [degrees(atan2(i,j)) for i,j in zip(vitLon, vitLat)]
+
 
 def calculDistances(latitudes, longitudes):
     """
