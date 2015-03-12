@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.6)  12 FEB 2015 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.6)  12 MAR 2015 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,7 +918,14 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
 LaTeX Warning: Unused global option(s):
     [11p,a4papert].
 
-(./memoire.aux)
+(./memoire.aux
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig2' multiply defined.
+
+)
 \openout1 = `memoire.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -1120,32 +1127,109 @@ $[]$   $[]$   $[]$
 
  [1
 
-] [2] [3] (./memoire.aux) ) 
+] [2] [3] [4]
+<avecCorrecDistance.png, id=33, 239.89626pt x 245.91875pt>
+File: avecCorrecDistance.png Graphic file (type png)
+
+<use avecCorrecDistance.png>
+Package pdftex.def Info: avecCorrecDistance.png used on input line 163.
+(pdftex.def)             Requested size: 203.91277pt x 209.0319pt.
+ <avecVitEx.png, id=35, 341.275pt x 497.86pt>
+File: avecVitEx.png Graphic file (type png)
+
+<use avecVitEx.png>
+Package pdftex.def Info: avecVitEx.png used on input line 164.
+(pdftex.def)             Requested size: 153.57233pt x 224.03493pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--179
+
+ []
+
+[5 <./avecCorrecDistance.png> <./avecVitEx.png>]
+<SansEst2.png, id=42, 394.47375pt x 510.90875pt>
+File: SansEst2.png Graphic file (type png)
+ <use SansEst2.png>
+Package pdftex.def Info: SansEst2.png used on input line 210.
+(pdftex.def)             Requested size: 177.51154pt x 229.90681pt.
+
+<AvecEst2.png, id=43, 405.515pt x 514.92375pt>
+File: AvecEst2.png Graphic file (type png)
+ <use AvecEst2.png>
+Package pdftex.def Info: AvecEst2.png used on input line 212.
+(pdftex.def)             Requested size: 182.48006pt x 231.71355pt.
+
+Overfull \hbox (5.55913pt too wide) in paragraph at lines 209--224
+[]
+ []
+
+[6 <./SansEst2.png> <./AvecEst2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
+
+ []
+
+<klman.png, id=50, 401.5pt x 202.7575pt>
+File: klman.png Graphic file (type png)
+ <use klman.png>
+Package pdftex.def Info: klman.png used on input line 240.
+(pdftex.def)             Requested size: 321.20042pt x 162.2062pt.
+ [7 <./klman.png>]
+<gui.png, id=55, 837.1275pt x 855.195pt>
+File: gui.png Graphic file (type png)
+ <use gui.png>
+Package pdftex.def Info: gui.png used on input line 249.
+(pdftex.def)             Requested size: 418.56273pt x 427.59647pt.
+ [8 <./gui.png>] [9]
+[10] (./memoire.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17273 strings out of 493117
- 349871 string characters out of 6135434
- 504266 words of memory out of 5000000
- 20342 multiletter control sequences out of 15000+600000
- 55069 words of font info for 42 fonts, out of 8000000 for 9000
+ 17312 strings out of 493117
+ 350446 string characters out of 6135434
+ 505321 words of memory out of 5000000
+ 20372 multiletter control sequences out of 15000+600000
+ 62127 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,66p,468b,1113s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/
-lm/lm-mathex.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.e
-nc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/l
-ocal/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/lm/lmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/lm/lmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi
-10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/lm/lmtt12.pfb>
-Output written on memoire.pdf (4 pages, 214773 bytes).
+ 62i,11n,66p,660b,1113s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/20
+14/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2014/texmf-dist/
+fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/lm/lmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/l
+m/lmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmbx9.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/lm/lmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr
+i10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on memoire.pdf (11 pages, 512769 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
